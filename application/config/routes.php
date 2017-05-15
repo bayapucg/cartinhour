@@ -391,7 +391,7 @@ $route['seller/products/(:any)/(:any)/search'] = "seller/products/search";
 
 $route['default_controller'] = 'home';
 
-$route['seller'] = "seller/login";
+$route['trunk/seller'] = "seller/login";
 
 
 //$route['home/add/(:any)/(:any)'] = "home/add";
