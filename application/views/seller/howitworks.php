@@ -38,7 +38,12 @@
   <div class="pricing_main">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-xs-12">
+		<div class=" hidden-lg hidden-md">
+		<h1 class="head_title">Four Step Process</h1>
+			<img class="img-responsive"src="<?php echo base_url();?>assets/seller_login/images/fivesteps.jpg">
+		</div>
+		<div class="hidden-xs">
         <h1 class="head_title">Four Step Process</h1>
           <ul class="timeline">
             <li>
@@ -79,7 +84,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-12">
         <div class="get_call">
         <h1 class="head_title" align="center">One Step Process</h1>
         <div class="get_img"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/call.jpg" alt=""> </div>
@@ -88,6 +93,7 @@
         
         </div>
         </div>
+      </div>
       </div>
     </div>
   </div>

@@ -8,6 +8,9 @@ body {
 	padding: 0px 0px;
 	font-family: 'Open Sans', sans-serif;
 }
+.md_hide{
+	display:none;
+}
 .nav_wrapper {
 	width: 100%;
 	height: auto;
@@ -326,14 +329,13 @@ body {
 .nav-side-menu .menu-list .menu-content {
 	display: block;
 }
+
 }
 
 .bdy_ser {
 	background: #f2f2f2;
 }
-.md_hide{
-	display:none;
-}
+
 .add_lsit {
 	margin: 0px auto;
 	padding: 69px 0;

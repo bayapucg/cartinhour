@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>::Cart in Hour::</title>
 <link rel="icon" href="<?php echo base_url();?>assets/seller_login/images/fav.ico" type="image/x-icon" />
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600" rel="stylesheet">
@@ -15,6 +16,7 @@
 <script src="<?php echo base_url();?>assets/seller_login/js/bootstrap.min.js"></script>
 <!--javascript end here -->
 
+
 </head>
 
 <body>
@@ -23,9 +25,15 @@
   <div class="nav-wrapper">
     <div class="container">
       <div class="header">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-6">
           <div class="logo">
-            <p><a href="<?php echo base_url(); ?>seller/login"><img src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a></p>
+            <p><a href="<?php echo base_url(); ?>seller/login"><img src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
+			</p>
+          </div>
+        </div>
+		<div class="col-md-6 col-xs-6 hidden-lg ">
+          <div class="pull-right">
+              <input type="submit" data-toggle="modal" data-target="#myModa2" class="btn btn-primary " value="Login">
           </div>
         </div>
         <div class="col-md-6 col-xs-12 hidden-xs">
@@ -59,6 +67,30 @@
     </div>
   </div>
   <!--header part end here --> 
+  <!--login  Modal -->
+   <div class="modal fade" id="myModa2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#002f3f;color:#fff;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+       <div class="modal-body">
+            <form method="post" action='' name="login_form">
+              <p><input  class="form-control" type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
+              <p><input class="form-control" type="password" class="span3" name="passwd" placeholder="Password"></p>
+              <p><button type="submit" class="btn btn-primary">Sign in</button>
+                <a href="#">Forgot Password?</a>
+              </p>
+            </form>
+          </div>
+          <div class="modal-footer">
+            New To MyWebsite.com?
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+      </div>
+    </div>
+  </div>
   <!--Forget Password Modal -->
           <div class="modal fade" id="myModal1" role="dialog">
               <div class="modal-dialog modal-sm">

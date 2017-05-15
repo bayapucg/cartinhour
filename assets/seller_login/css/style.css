@@ -580,8 +580,12 @@ a.socialIcon:hover, .socialHoverClass {
 .logo p {
 	text-align: center;
 }
+.v-center{
+	display: table;
+    height: 10px;
+}
 .logo p a img {
-	width: 46%;
+	width:70%;
 }
 .cih_fee li {
 	width: 100%;

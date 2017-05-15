@@ -36,7 +36,7 @@
   </div>
   <!--banenr end here -->
   
-  <div class="container-fluid" style="background-color:transparent;color:#fff;height:502px;"> </div>
+  <div class="container-fluid"><!--style="background-color:transparent;color:#fff;height:502px;"--> </div>
   <nav class="navbar navbar-default hm_nav" data-spy="affix" data-offset-top="522">
     <div class="container">
       <div class="navbar-header">
@@ -78,7 +78,7 @@
   <!--body part start here -->
   <div class="container-fluid gallery-like-area c-h-mb">
     <div class="row">
-      <div class="col-md-6 col-sm-6 text-center hidden-sm hidden-xs bubble-img ">
+      <div class="col-md-6 col-sm-6 text-center  "><!-- hidden-sm hidden-xs-->
         <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/hyd.jpg" alt=""> </div>
       </div>
       <div class="col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact ">
@@ -105,12 +105,13 @@
           </ul>
 		    <button type="submit" class="btn btn-primary" onclick="window.location='<?php echo base_url(); ?>seller/login/register';return false;">Register</button>
         </div>
+	<br>
       </div>
-      <div class="col-md-6 col-sm-6 text-center hidden-sm hidden-xs bubble-img ">
+      <div class="col-md-6 col-sm-6 text-center   ">
         <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/business.jpg" alt=""> </div>
       </div>
       <div class="clearfix"></div>
-      <div class="col-md-6 col-sm-6 text-center hidden-sm hidden-xs bubble-img ">
+      <div class="col-md-6 col-sm-6 text-center   ">
         <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/price.jpg" alt=""> </div>
       </div>
       <div class="col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact ">
@@ -137,7 +138,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6 text-center hidden-sm hidden-xs bubble-img ">
+      <div class="col-md-6 col-sm-6 text-center ">
         <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
       </div>
     </div>
