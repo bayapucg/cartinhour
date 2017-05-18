@@ -38,7 +38,7 @@
   
   <div class="container-fluid"><!--style="background-color:transparent;color:#fff;height:502px;"--> </div>
   <nav class="navbar navbar-default hm_nav" data-spy="affix" data-offset-top="522">
-    <div class="container">
+    <div class="">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <!--<a class="navbar-brand" href="#">Brand</a>--> 

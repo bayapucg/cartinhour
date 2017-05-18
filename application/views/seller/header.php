@@ -23,7 +23,7 @@
 <div class="main_wrapper"> 
   <!--header part start here -->
   <div class="nav-wrapper">
-    <div class="container">
+    <div class="">
       <div class="header">
         <div class="col-md-6 col-xs-6">
           <div class="logo">
