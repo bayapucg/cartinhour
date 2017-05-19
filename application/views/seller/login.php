@@ -1,4 +1,9 @@
-
+<style>
+.navbar-nav {
+   
+    padding-top: 10px;
+}
+</style>
   <!--banenr start here -->
   <div class="banner">
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1500px;height:450px;overflow:hidden;visibility:hidden;"> 
@@ -7,7 +12,7 @@
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1500px;height:450px;overflow:hidden;">
         <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/Bnr_1.jpg" />
           <div class="bnr_title">
-            <h3><a href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
+            <h3><a class="blink" href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
           </div>
         </div>
         <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/Bnr_2.jpg" />
@@ -34,55 +39,89 @@
       <!-- Arrow Navigator --> 
       <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span> <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span> </div>
   </div>
+  <div class="clearfix"></div>
   <!--banenr end here -->
-  
-  <div class="container-fluid"><!--style="background-color:transparent;color:#fff;height:502px;"--> </div>
-  <nav class="navbar navbar-default hm_nav" data-spy="affix" data-offset-top="522">
-    <div class="">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <!--<a class="navbar-brand" href="#">Brand</a>--> 
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="<?php echo base_url(); ?>seller/login">HOME <span class="sr-only">(current)</span></a></li>
-          <li><a href="<?php echo base_url(); ?>seller/benifits">BENIFITS</a></li>
-		  <li><a href="<?php echo base_url(); ?>seller/howitworks">HOW IT WORKS</a></li>
-          <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOW IT WORKS <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>-->
-          <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICINGS</a></li>
-          <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
-          <!--<li><a href="<?php //echo base_url();?>seller/LearningCenter">HELP</a></li>-->
-		  <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HELP <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="<?php //echo base_url();?>seller/faq">FAQ's</a></li>
-              <li><a href="<?php //echo base_url();?>seller/LearningCenter">Learning Center</a></li>
-            </ul>
-          </li>-->
-        </ul>
-      </div>
-      <!-- /.navbar-collapse --> 
-    </div>
-    <!-- /.container-fluid -->
-    <div class="underline"></div>
-  </nav>
+ 
+  <div class="container mar_t15 ">
+   <h3 class="text-center"><span class="span_bg_g">CATEGORIES</span></h3>
+  <div class="title_lines"></div>
+	<div class="row mar_t10">
+		
+        	<div class="col-lg-3">
+    				<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+						<p style="text-align:center;">
+							<img src="<?php echo base_url();?>assets/seller_login/images/cat4.png" class="img-responsive thumbnail" alt="">
+						</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">FOOD</h3>
+								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+								<a class=" btn btn-default" href="#" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
+							</div>
+						</div>
+					</div>
+				
+	    </div>
+        <div class="col-lg-3">
+        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+						<p style="text-align:center;">
+							<img src="<?php echo base_url();?>assets/seller_login/images/cat3.png" class="img-responsive thumbnail" alt="">
+						</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">FASHION</h3>
+								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+								<a class=" btn btn-default" href="https://plus.google.com/u/0/100371904807783155711/posts" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
+							</div>
+						</div>
+					</div>
+				
+	    </div>
+        <div class="col-lg-3">
+        			<div class="cuadro_intro_hover" style="background-color:#cccccc;">
+						<p style="text-align:center;">
+							<img src="<?php echo base_url();?>assets/seller_login/images/cat2.png" class="img-responsive thumbnail" alt="">
+						</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">ELECTRONICS</h3>
+								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+								<a class=" btn btn-default" href="https://plus.google.com/u/0/100371904807783155711/posts" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
+							</div>
+						</div>
+					</div>
+				
+	    </div>
+        <div class="col-lg-3">
+        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
+						<p style="text-align:center;">
+							<img src="<?php echo base_url();?>assets/seller_login/images/cat1.png" class="img-responsive thumbnail" alt="">
+						</p>
+						<div class="caption">
+							<div class="blur"></div>
+							<div class="caption-text">
+								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">GROCERY</h3>
+								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+								<a class=" btn btn-default" href="https://plus.google.com/u/0/100371904807783155711/posts" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
+							</div>
+						</div>
+					</div>
+				
+	    </div>
+		
+	</div>
+ 
   <!--body part start here -->
-  <div class="container-fluid gallery-like-area c-h-mb">
+  <div class="container-fluid gallery-like-area c-h-mb mar_t15" >
     <div class="row">
       <div class="col-md-6 col-sm-6 text-center  "><!-- hidden-sm hidden-xs-->
-        <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/hyd.jpg" alt=""> </div>
+        <div class="row"> <img class=" thumbnail img-responsive" src="<?php echo base_url();?>assets/seller_login/images/hyd.jpg" alt=""> </div>
       </div>
-      <div class="col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact ">
-        <div class="content">
+      <div class=" col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact ">
+        <div class="content ">
           <h4>Who Are We</h4>
           <ul class="checkmark">
             <li>we are a platform for all offline/local sellers.</li>
@@ -108,11 +147,11 @@
 	<br>
       </div>
       <div class="col-md-6 col-sm-6 text-center   ">
-        <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/business.jpg" alt=""> </div>
+        <div class="row"> <img class=" thumbnail img-responsive" src="<?php echo base_url();?>assets/seller_login/images/business.jpg" alt=""> </div>
       </div>
       <div class="clearfix"></div>
       <div class="col-md-6 col-sm-6 text-center   ">
-        <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/price.jpg" alt=""> </div>
+        <div class="row"> <img class=" thumbnail img-responsive" src="<?php echo base_url();?>assets/seller_login/images/price.jpg" alt=""> </div>
       </div>
       <div class="col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact ">
         <div class="content">
@@ -139,7 +178,7 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6 text-center ">
-        <div class="row"> <img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
+        <div class="row"> <img class=" thumbnail img-responsive" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
       </div>
     </div>
   </div>

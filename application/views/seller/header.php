@@ -24,8 +24,9 @@
   <!--header part start here -->
   <div class="nav-wrapper">
     <div class="">
-      <div class="header">
-        <div class="col-md-6 col-xs-6">
+	  <!-- <nav class="navbar navbar-default hm_nav" data-spy="affix" data-offset-top="522">-->
+      <div class="header hm_nav" data-spy="affix" data-offset-top="400">
+       <!-- <div class="col-md-2 col-xs-6">
           <div class="logo">
             <p><a href="<?php echo base_url(); ?>seller/login"><img src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
 			</p>
@@ -35,9 +36,68 @@
           <div class="pull-right">
               <input type="submit" data-toggle="modal" data-target="#myModa2" class="btn btn-primary " value="Login">
           </div>
-        </div>
-        <div class="col-md-6 col-xs-12 hidden-xs">
-          <div class="loginfields">
+        </div>-->
+    <div class="container-fluid">
+		
+		
+	<nav class="navbar ">
+    <div class="">
+	 <div class="navbar-header">
+      <a class="navbar-brand" href="#"><div class="">
+            <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:25%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
+			</p>
+          </div></a>
+    </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <!--<a class="navbar-brand" href="#">Brand</a>--> 
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="<?php echo base_url(); ?>seller/login">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="<?php echo base_url(); ?>seller/benifits">BENIFITS</a></li>
+		  <li><a href="<?php echo base_url(); ?>seller/howitworks">HOW IT WORKS</a></li>
+          <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOW IT WORKS <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>-->
+          <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICINGS</a></li>
+          <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
+          <!--<li><a href="<?php //echo base_url();?>seller/LearningCenter">HELP</a></li>-->
+		  <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HELP <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="<?php //echo base_url();?>seller/faq">FAQ's</a></li>
+              <li><a href="<?php //echo base_url();?>seller/LearningCenter">Learning Center</a></li>
+            </ul>
+          </li>-->
+		 
+        </ul>
+	<ul class="nav navbar-nav navbar-right">
+      <li><a data-toggle="modal" data-target="#myModa3"></span> Sign Up</a></li>
+      <li><a  data-toggle="modal" data-target="#myModa2"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+      </div>
+      <!-- /.navbar-collapse --> 
+    </div>
+    <!-- /.container-fluid
+    <div class="underline"></div> -->
+  </nav>
+		
+		
+		
+		
+		
+		
+		
+		
+          <!--<div class="loginfields">
             <form action="<?php echo base_url();?>seller/login/do_login" method="post" onSubmit="return loginvalidateof();">
               <div class="form-group">
                 <div class="col-md-1"> &nbsp </div>
@@ -60,7 +120,7 @@
               </div>
             </form>
 			
-          </div>
+          </div>-->
 		  <?php echo $this->session->flashdata('msg'); ?>
         </div>
       </div>
@@ -69,15 +129,15 @@
   <!--header part end here --> 
   <!--login  Modal -->
    <div class="modal fade" id="myModa2" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-md">
       <div class="modal-content">
-        <div class="modal-header" style="background-color:#002f3f;color:#fff;">
+        <div class="modal-header" style="background-color:#39b9f9;color:#fff;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Login</h4>
         </div>
        <div class="modal-body">
             <form method="post" action='' name="login_form">
-              <p><input  class="form-control" type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
+              <p><input  class="form-control" type="text" class="span3" name="eid" id="email" placeholder="Email" autofocus></p>
               <p><input class="form-control" type="password" class="span3" name="passwd" placeholder="Password"></p>
               <p><button type="submit" class="btn btn-primary">Sign in</button>
                 <a href="#">Forgot Password?</a>
@@ -91,6 +151,91 @@
       </div>
     </div>
   </div>
+  
+  <!--register  Modal -->
+
+   <div class="modal fade" id="myModa3" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#39b9f9;color:#fff;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Register</h4>
+        </div>
+       <div class="modal-body">
+            <form action="<?php echo base_url(); ?>seller/login/insert" method="post" enctype="multipart/form-data" onSubmit="return sellerinfvalidateof();">
+              <div class="form-group">
+			  <?php echo $this->session->flashdata('msg1'); ?>
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex1">Name</label>
+                  <input class="form-control" id="seller_fullname" name="seller_fullname" type="text" autofocus>
+				  <span id="errorname1" style="color:red; font-size: 13px;"></span>
+                </div>
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex2">Email Id</label>
+                  <input class="form-control" id="seller_email" name="seller_email" type="text">
+				  <span id="erroremail" style="color:red; font-size: 13px;"></span>
+                </div>
+                
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex4">Mobile Number</label>
+                  <input class="form-control" id="seller_mobile" name="seller_mobile" maxlength="10" type="text">
+				  <span id="errorphone" style="color:red; font-size: 13px;"></span>
+                </div>
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex5">Shop Name</label>
+                  <input class="form-control" id="seller_shop" name="seller_shop" type="text">
+				  <span id="errorshop" style="color:red; font-size: 13px;"></span>
+                </div>
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex6">Shop Location</label>
+                  <select class="form-control" id="location_name" name="location_name">
+                         <option value="">-Select Location-</option>
+						 <?php foreach($locationdata as $location_data)  { ?>
+                         <option value="<?php echo $location_data->location_name;?>"><?php echo $location_data->location_name;?></option>
+                         
+						 <?php } ?>
+                      </select>
+					  <span id="errorlocation" style="color:red; font-size: 13px;"></span>
+                </div>
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex7">VAT/TIN Number</label>
+                  <input class="form-control" id="seller_license" name="seller_license" type="text">
+				  <span id="errorlicense" style="color:red; font-size: 13px;"></span>
+                </div>
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex8">Aadhar Number</label>
+                  <input class="form-control" id="seller_adhar" name="seller_adhar" maxlength="12"  type="text">
+				  <span id="erroradhar" style="color:red; font-size: 13px;"></span>
+                </div>
+                <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                  <label for="ex9">Bank Acc Number</label>
+                  <input class="form-control" id="seller_bank" name="seller_bank" type="text">
+				  <span id="errorbank" style="color:red; font-size: 13px;"></span>
+                </div>
+               
+                <div class="col-xs-12 col-md-12 nopaddingright reginput">
+                  <label for="ex12">Address</label>
+                  <textarea class="form-control" id="seller_address" name="seller_address"></textarea>
+				  <span id="erroraddress" style="color:red; font-size: 13px;"></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox" value="check" id="terms_condition">
+                  If you have read and agree to the <a href="#">Terms and Conditions,</a> please continue</label>
+				 <div id="errorterms" style="color:red; font-size: 13px;"></div> 
+              </div>
+			  
+              <input type="submit" class="btn btn-primary" value="Submit" onclick="if(!this.form.checkbox.checked){alert('You must agree to the Terms and Conditions first.');return false}">
+            </form>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  
+  
   <!--Forget Password Modal -->
           <div class="modal fade" id="myModal1" role="dialog">
               <div class="modal-dialog modal-sm">
