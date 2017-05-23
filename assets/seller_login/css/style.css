@@ -1195,3 +1195,167 @@ body{font-family: 'Raleway', sans-serif;}
 	color:#a52a2a;
 	position:absolute;top:35%;
 }
+
+
+
+
+/*
+Aboutus styles
+*/
+
+body {
+    font-family: Source Sans Pro, sans-serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden
+}
+a {
+    text-decoration: none
+}
+ul {
+    padding: 0;
+    list-style-type: none
+}
+/* hr {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+ */
+
+
+.hidden {
+    display: none
+}
+#white-overlay {
+    top: 0;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: hsla(0, 0%, 100%, .55)
+}
+.relative {
+    position: relative
+}
+.header-wrapper.scrolling {
+    position: fixed
+}
+#svgContainer {
+    z-index: -2;
+    position: absolute;
+    opacity: .5;
+    top: 15%;
+    left: 20%
+}
+#svgContainer svg {
+    width: 548px;
+    height: 1748px
+}
+
+.layer {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background: #fff
+}
+#process {
+    position: relative
+}
+#process .row {
+    font-size: 0
+}
+#process .row .col {
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    position: relative;
+    z-index: 2
+}
+#process .row .col  li{
+    text-align: left;
+    
+}
+#process .row .col p {
+    color: #4a4a4a;
+    padding: 0 20%;
+    line-height: 1.5
+}
+#process .row .col.c1 h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    color: #ff3b30;
+    margin: 0
+}
+#process .row .col.c1 h3 {
+    margin-top: 15px;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    color: #ff3b30;
+    font-weight: 600
+}
+#process .row .col.c2 {
+    padding: 8% 0
+}
+#process .row .col.c2 img {
+    width: 90%
+}
+#process .row.share .c2 img {
+    width: 50%
+}
+#process .row.describe,
+#process .row.interview {
+    background: rgba(73, 143, 226, .03)
+}
+
+@media only screen and (max-width: 768px) {
+    #hero-container {
+        height: 100vh
+    }
+    #hero-container .hero-content {
+        width: 100%
+    }
+    #hero-container .hero-content h3 {
+        font-size: 24px
+    }
+    #hero-container .hero-content p {
+        font-size: 16px;
+        padding: 0 20px
+    }
+    #svgContainer,
+    .layer {
+        display: none
+    }
+    #process .row {
+        padding: 15% 0
+    }
+    #process .row .col {
+        display: block;
+        width: 100%
+    }
+    #process .row .col.c1 {
+        padding-bottom: 10%
+    }
+    #process .row .col.c1 h1 {
+        font-size: 42px
+    }
+    #process .row .col.c1 h3 {
+        font-size: 20px;
+        padding: 0 4%
+    }
+    #process .row .col.c1 p {
+        font-size: 16px;
+        padding: 0 3%
+    }
+    #process .row .col.c2 {
+        padding-top: 10%;
+        padding-bottom: 10%
+    }
+}

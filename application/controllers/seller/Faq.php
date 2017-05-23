@@ -16,11 +16,6 @@ class Faq extends CI_Controller {
 }
 
  public function index() {
-	 
-	  
-	  
-	 
-	 
 	$this->load->view('seller/header');
   $this->load->view('seller/faq');
 $this->load->view('seller/footer');

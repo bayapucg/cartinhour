@@ -102,7 +102,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="<?php echo base_url();?>seller_admin/dashboard">Home</a></li>
+            <li class="active"><a href="<?php echo base_url();?>seller/dashboard">Home</a></li>
             <!--<li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -111,10 +111,10 @@
             <li><a href="#">Page 1-3</a></li>
           </ul>
         </li>-->
-            <li><a href="<?php echo base_url();?>seller_admin/aboutus">About Us</a></li>
+            <li><a href="<?php echo base_url();?>seller/aboutus">About Us</a></li>
             <li><a href="#">FAQ's</a></li>
             <li><a href="#">Help</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="<?php echo base_url();?>seller/contactus">Contact Us</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right sm_hide">
             <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
