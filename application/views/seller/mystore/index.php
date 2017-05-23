@@ -4,12 +4,15 @@
    <!--body start here -->
   <div class="faq_main">
     <div class="container" style="width:100%">
-      <h1 class="head_title">Store Details</h1>
+	<div class="panel panel-primary">
+      <div class="panel-heading"><span class="head_title2 font_25">Store Details</span></div>
+      <div class="panel-body">
+      
 	  <div><?php echo $this->session->flashdata('message');?></div>
       <div class="faq"> 
         
         <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
-        <h1 data-toggle="collapse" data-target="#storedetails">My Store</h1>
+        <h1 class="btn btn-primary"data-toggle="collapse" data-target="#storedetails">My Store <span class="caret"></span></h1>
         <div class="demo"> 
           <!--<div id="gry" style="display:none">-->
           <div id="storedetails" class="collapse">
@@ -96,7 +99,7 @@
          
 		 
 		 
-		<h1 data-toggle="collapse" data-target="#inventorydetails">My Inventory</h1> 
+		<h1 class="btn btn-primary" data-toggle="collapse" data-target="#inventorydetails">My Inventory <span class="caret"></span></h1> 
 		 
 		 
 		 
@@ -135,7 +138,7 @@
 	  
         <?php  foreach($catitemdata as $catitem_data )  {    ?>
         <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
-        <h1 data-toggle="collapse" data-target="#gry<?php echo $catitem_data->category_name;   ?>"><?php echo $catitem_data->category_name;   ?></h1>
+        <h1 class="btn btn-primary" data-toggle="collapse" data-target="#gry<?php echo $catitem_data->category_name;   ?>"><?php echo $catitem_data->category_name;   ?> <span class="caret"></span></h1>
         <div class="demo"> 
           <!--<div id="gry" style="display:none">-->
           <div id="gry<?php echo $catitem_data->category_name;   ?>" class="collapse">
@@ -285,6 +288,8 @@
     </div>
   </div>
   
+  </div>
+  </div>
   </div>
   </div>
    </div>

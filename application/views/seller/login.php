@@ -43,7 +43,7 @@
   <!--banenr end here -->
  
   <div class="container mar_t15 ">
-   <h3 class="text-center"><span class="span_bg_g">CATEGORIES</span></h3>
+   <h3 class="text-center"><span class="span_bg_g">OUR Salient Features</span></h3>
   <div class="title_lines"></div>
 	<div class="row mar_t10">
 	

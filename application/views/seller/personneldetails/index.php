@@ -43,12 +43,15 @@ $(document).ready(function(){
    <!--body start here -->
   <div class="faq_main">
     <div class="container" style="width:100%">
-      <h1 class="head_title">Personnel Details</h1>
+	<div class="panel panel-primary">
+      <div class="panel-heading"><span class="head_title2 font_25">Personnel Details</span></div>
+      <div class="panel-body">
+     
 	  <div><?php echo $this->session->flashdata('message');?></div>
       <div class="faq"> 
         
         <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
-        <h1 data-toggle="collapse" data-target="#displaydetails">Display details</h1>
+        <h1 class="btn btn-primary" data-toggle="collapse" data-target="#displaydetails">Display details<span class="caret"></span></h1>
         <div class="demo"> 
           <!--<div id="gry" style="display:none">-->
           <div id="displaydetails" class="collapse">
@@ -165,7 +168,7 @@ document.getElementById('seller_location').options[i].selected=true
             </div>
           </div>
           <!-- panel-group -->
-          <h1 data-toggle="collapse" data-target="#personneldetails">Personnel details</h1>
+          <h1 class="btn btn-primary" data-toggle="collapse" data-target="#personneldetails">Personnel details <span class="caret"></span></h1>
           <div id="personneldetails" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                   <div class="panel-body">
@@ -265,7 +268,7 @@ document.getElementById('seller_location').options[i].selected=true
 				  </div>
             </div>
           </div>
-          <h1 data-toggle="collapse" data-target="#businessdetails">Business details</h1>
+          <h1 class="btn btn-primary" data-toggle="collapse" data-target="#businessdetails">Business details <span class="caret"></span></h1>
           <div id="businessdetails" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               
@@ -368,7 +371,7 @@ document.getElementById('seller_location').options[i].selected=true
     
             </div>
           </div>
-          <h1 data-toggle="collapse" data-target="#bankdetails">Bank details</h1>
+          <h1 class="btn btn-primary" data-toggle="collapse" data-target="#bankdetails">Bank details <span class="caret"></span></h1>
           <div id="bankdetails" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             
@@ -478,6 +481,8 @@ document.getElementById('seller_location').options[i].selected=true
     </div>
   </div>
   
+  </div>
+  </div>
   </div>
   </div>
    </div>
