@@ -90,13 +90,6 @@
     <div class="underline"></div> -->
   </nav>
 		
-		
-		
-		
-		
-		
-		
-		
           <!--<div class="loginfields">
             <form action="<?php echo base_url();?>seller/login/do_login" method="post" onSubmit="return loginvalidateof();">
               <div class="form-group">
@@ -138,7 +131,9 @@
        <div class="modal-body">
             <form method="post" action="<?php echo base_url();?>seller/login/do_login" name="login_form" onSubmit="return loginvalidateof();">
               <p><input  class="form-control" type="text" class="span3" name="seller_name" id="seller_name" placeholder="Email" autofocus></p>
+              <span id="errorname" style="color:red; font-size: 13px;"></span>
               <p><input class="form-control" type="password" class="span3" name="seller_password" name="seller_password" placeholder="Password"></p>
+              <span id="errorpassword" style="color:red; font-size: 13px;"></span>
               <p><button type="submit" class="btn btn-primary">Sign in</button>
                 <a href="#">Forgot Password?</a>
               </p>

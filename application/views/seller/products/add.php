@@ -45,7 +45,14 @@
                   </select>
 				   <span style="color:red" id="errorsubcategory"></span>
                 </div>
-				
+				<div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputPassword1">Select subitem</label>
+                  <select class="form-control" id="subitem_id" name="subitem_id">
+                    <option value="">Select Subitem</option>
+          
+                  </select>
+           <span style="color:red" id="errorsubitem"></span>
+                </div>
 				
                 
 				 <div class="form-group nopaddingRight col-md-6 san-lg">

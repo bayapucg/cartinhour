@@ -18,7 +18,7 @@ class Apis extends REST_Controller
     public function login()
     {
 
-      $username   = $this->input->post('seller_email');
+      $username   = $this->input->post('seller_name');
       $password = md5($this->input->post('seller_password'));
       $result   = $this->login_model->get_data($username, $password);
 

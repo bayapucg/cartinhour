@@ -60,6 +60,21 @@ public function getsubcatdata($cat_id)
 	}	
 	
 	
+	// item data
+
+
+	public function getsubitemdata($subcat_id)
+ {
+  
+  $this->db->select('*');
+ $this->db->from('sub_items');
+ $this->db->where('sub_items.subcategory_id', $subcat_id);
+  $query=$this->db->get();
+  return $query->result();
+  
+ }
+
+
 public function getproductdata($id)
 {
 	$sid = $this->session->userdata('seller_id');

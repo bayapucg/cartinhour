@@ -34,12 +34,12 @@ class Login_model extends CI_Model
 
     }
 
-    
+
     //apis login model
     public function get_data($username, $password)
 
     {
-      //  echo $username.$password;exit;
+      
          $this->db->where('seller_name',$username);
             $this->db->where('seller_password',$password);
              $user=$this->db->get('sellers');

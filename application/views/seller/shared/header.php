@@ -183,8 +183,8 @@
 			<ul class="dropdown-menu extended logout">
             <div class="log-arrow-up"></div>
             <!--<li class="eborder-top"> <a href="#"><i class="icon_profile"></i> My Profile</a> </li>-->
-			<li> <a href="<?php echo base_url() ; ?>/seller_admin/dashboard/changepassword"><i class="fa fa-lock" aria-hidden="true"></i> Change Password</a> </li>
-            <li> <a href="<?php echo base_url() ; ?>/seller_admin/login/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a> </li>
+			<li> <a href="<?php echo base_url() ; ?>seller/dashboard/change_password"><i class="fa fa-lock" aria-hidden="true"></i> Change Password</a> </li>
+            <li> <a href="<?php echo base_url() ; ?>seller/login/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a> </li>
           </ul>
 			
 			</li>

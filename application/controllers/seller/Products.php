@@ -56,11 +56,22 @@ class Products extends Admin_Controller {
 	}
 	exit;	
 		
-		
-		
-		
-		
 	}
+
+	public function getajaxsubitem()
+	{
+		
+	$subcat=$this->input->post('subcategory_id');
+	$result=$this->products_model->getsubitemdata($subcat);
+	echo '<option value="">Select Subitem</option>';
+	foreach($result as $alldata)
+	{
+	echo '<option value="'.$alldata->subitem_id.'">'.$alldata->subitem_name.'</option>';
+	}
+	exit;	
+			
+		
+	}	
 	
 	
 	
