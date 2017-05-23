@@ -136,9 +136,9 @@
           <h4 class="modal-title">Login</h4>
         </div>
        <div class="modal-body">
-            <form method="post" action='' name="login_form">
-              <p><input  class="form-control" type="text" class="span3" name="eid" id="email" placeholder="Email" autofocus></p>
-              <p><input class="form-control" type="password" class="span3" name="passwd" placeholder="Password"></p>
+            <form method="post" action="<?php echo base_url();?>seller/login/do_login" name="login_form" onSubmit="return loginvalidateof();">
+              <p><input  class="form-control" type="text" class="span3" name="seller_name" id="seller_name" placeholder="Email" autofocus></p>
+              <p><input class="form-control" type="password" class="span3" name="seller_password" name="seller_password" placeholder="Password"></p>
               <p><button type="submit" class="btn btn-primary">Sign in</button>
                 <a href="#">Forgot Password?</a>
               </p>
@@ -146,7 +146,7 @@
           </div>
           <div class="modal-footer">
             New To MyWebsite.com?
-            <a href="#" class="btn btn-primary">Register</a>
+            <a href="<?php echo base_url();?>seller/login/register" class="btn btn-primary">Register</a>
           </div>
       </div>
     </div>
