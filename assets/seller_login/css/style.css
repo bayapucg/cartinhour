@@ -167,7 +167,7 @@ body {
 	display: block;
 	vertical-align: none;
 	text-align: left;
-	margin: 30px 0 0 0;
+	/* margin: 30px 0 0 0; */
 }
 .content h4 {
 	color: #23527c;
@@ -1074,3 +1074,115 @@ body{font-family: 'Raleway', sans-serif;}
     visibility: hidden;
   }
 }
+/* ======================== Features Box ============================ */
+
+.our-features-box {
+	overflow: hidden;
+	padding: 0px;
+	width: 100%;
+	margin: auto;
+	padding: 0px 0;
+	/* background: #f5f5f5; */
+	margin-bottom: 0px;
+}
+.our-features-box .container {
+	padding: 0px
+}
+.our-features-box ul {
+    border: medium none;
+    list-style: outside none none;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0 50px;
+}
+.our-features-box li {
+	float: left;
+	margin-bottom: 0px;
+	text-align: center;
+	width: 25.5%;
+	padding: 0;
+	display: inline-block;
+}
+.our-features-box li.last {
+	margin-right: 0;
+	width: 23.5%
+}
+.our-features-box li.last .our-features-box .feature-box {
+	margin-right: 0px!important
+}
+.our-features-box .feature-box {
+	overflow: hidden;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	line-height: 1.4em;
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-radius: 3px;
+	padding: 25px
+}
+.free-shipping {
+	background: #94d7fb;
+	color: #fff;
+}
+.need-help {
+	background: #685c88;
+	color: #fff;
+}
+.money-back {
+	background: #fc9cc4;
+	color: #fff;
+}
+.return-policy {
+	background: #dc4720;
+	color: #fff;
+	margin-right: 0!important;
+}
+.our-features-box .feature-box .content {
+	display: block;
+	text-align: left;
+	margin-left: 50px;
+	border-left: 1px rgba(255,255,255, 0.5) solid;
+	padding-left: 15px;
+}
+.our-features-box .feature-box span {
+	font-size: 12px;
+	display: block;
+	font-weight: 400;
+	text-transform: none;
+	display: block;
+	padding-top: 5px;
+	color: #fff;
+	line-height: 18px;
+	font-style: italic;
+}
+.icon-truck:before {
+	content: "\f0d1";
+}
+.icon-truck, .icon-money, .icon-support, .icon-return {
+	font-family: FontAwesome;
+	display: inline-block !important;
+	font-size: 32px;
+	margin: auto;
+	color: #fff;
+	text-align: center;
+	width: 50px!important;
+	text-align: left;
+	padding-left: 0px;
+	float: left;
+	height: 38px;
+	line-height: 50px;
+}
+.icon-money:before {
+	content: "\f155";
+}
+.icon-support:before {
+	content: "\f095";
+}
+.icon-return:before {
+	content: "\f0b1";
+}
+/* ======================== End Features Box ============================ */

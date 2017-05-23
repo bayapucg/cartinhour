@@ -12,7 +12,7 @@
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1500px;height:450px;overflow:hidden;">
         <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/Bnr_1.jpg" />
           <div class="bnr_title">
-            <h3><a class="blink" href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
+            <h3><a class="" href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
           </div>
         </div>
         <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/Bnr_2.jpg" />
@@ -46,7 +46,38 @@
    <h3 class="text-center"><span class="span_bg_g">CATEGORIES</span></h3>
   <div class="title_lines"></div>
 	<div class="row mar_t10">
-		
+	
+    <div class="container">
+	<div class="our-features-box ">
+      <ul>
+        <li>
+          <div class="feature-box free-shipping">
+            <div class="icon-truck"></div>
+            <div class="content">Lorem Ipsum is simply dummy text   </div>
+          </div>
+        </li>
+        <li>
+          <div class="feature-box need-help">
+            <div class="icon-support"></div>
+            <div class="content">Lorem Ipsum is simply dummy text  </div>
+          </div>
+        </li>
+        <li>
+          <div class="feature-box money-back">
+            <div class="icon-money"></div>
+            <div class="content">Lorem Ipsum is simply dummy text  </div>
+          </div>
+        </li>
+        <li class="last">
+          <div class="feature-box return-policy">
+            <div class="icon-return"></div>
+            <div class="content">Lorem Ipsum is simply dummy text  </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+		<!--
         	<div class="col-lg-3">
     				<div class="cuadro_intro_hover " style="background-color:#cccccc;">
 						<p style="text-align:center;">
@@ -112,7 +143,7 @@
 				
 	    </div>
 		
-	</div>
+	</div>-->
  
   <!--body part start here -->
   <div class="container-fluid gallery-like-area c-h-mb mar_t15" >
