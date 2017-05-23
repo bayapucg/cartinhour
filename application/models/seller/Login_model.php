@@ -18,9 +18,6 @@ class Login_model extends CI_Model
  	        $this->db->where('seller_email',$username);
 			$this->db->where('seller_password',$password);
 			$this->db->or_where('seller_mobile',$username);
-
-			
-
 			 $user=$this->db->get('sellers');
 
        //print_r($user->result()); exit;

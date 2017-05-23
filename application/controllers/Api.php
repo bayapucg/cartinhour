@@ -254,9 +254,7 @@ public function current_location_post()
 {
 
   $id = $this->post('deliveryboy_id');
-  $data = array(
-  'current_location' => $this->post('current_location')
-  );
+  $data = array('current_location' => $this->post('current_location'));
 
   $res=$this->deliveryboy_model->update($id,$data);
             

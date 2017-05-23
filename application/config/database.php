@@ -313,7 +313,7 @@ $db['default'] = array(
 
 
 
-	'database' => 'dev2kate_cartinhour',
+	'database' => 'cartinhour',
 
 
 
