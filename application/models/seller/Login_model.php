@@ -15,7 +15,7 @@ class Login_model extends CI_Model
 
         //$encrypted_password = ($password);
 
- 	        $this->db->where('seller_email',$username);
+ 	        $this->db->where('seller_name',$username);
 			$this->db->where('seller_password',$password);
 			$this->db->or_where('seller_mobile',$username);
 			 $user=$this->db->get('sellers');
@@ -31,6 +31,19 @@ class Login_model extends CI_Model
         }
 
         return FALSE;
+
+    }
+
+    
+    //apis login model
+    public function get_data($username, $password)
+
+    {
+      //  echo $username.$password;exit;
+         $this->db->where('seller_name',$username);
+            $this->db->where('seller_password',$password);
+             $user=$this->db->get('sellers');
+             return $user->result();
 
     }
 
