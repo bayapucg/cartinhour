@@ -148,6 +148,30 @@
 		});
 		</script>
 		
+
+    <script type="text/javascript">
+    $(document).ready(function()
+    {
+    $("#subcategory_id").change(function()
+    {
+    var id=$(this).val();
+    //alert(id);
+    var dataString = 'subcategory_id='+ id;
+    $.ajax
+    ({
+    type: "POST",
+    url: "<?php echo base_url();?>seller/products/getajaxsubitem",
+    data: dataString,
+    cache: false,
+    success: function(data)
+    {
+    $("#subitem_id").html(data);
+    } 
+    });
+    
+    });
+    });
+    </script>   
 		
 <script>
 	
