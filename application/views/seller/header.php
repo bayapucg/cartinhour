@@ -37,7 +37,7 @@
               <input type="submit" data-toggle="modal" data-target="#myModa2" class="btn btn-primary " value="Login">
           </div>
         </div>-->
-    <div class="container-fluid">
+    <div class="">
 		
 		
 	<nav class="navbar ">
