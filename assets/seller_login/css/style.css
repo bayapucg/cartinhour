@@ -1359,3 +1359,19 @@ ul {
         padding-bottom: 10%
     }
 }
+
+
+
+
+
+
+/*loading gif*/
+
+ .loader {
+      position: absolute;
+   margin: 0 auto;
+   z-index: 9999;
+   background: url('../images/loading_cart.gif') no-repeat; 
+      top: 50 px;
+   cursor: wait;
+}

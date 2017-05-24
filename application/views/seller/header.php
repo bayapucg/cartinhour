@@ -14,12 +14,19 @@
 <!--javascript start here -->
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+        $(window).load(function(){
+            $('div.loader').fadeOut(1000);
+        });
+</script>
 <!--javascript end here -->
 
 
 </head>
 
 <body>
+<div class="loader"></div>
 <div class="main_wrapper"> 
   <!--header part start here -->
   <div class="nav-wrapper">
