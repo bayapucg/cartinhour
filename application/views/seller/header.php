@@ -51,7 +51,7 @@
     <div class="">
 	 <div class="navbar-header">
       <a class="navbar-brand" href="#"><div class="">
-            <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:25%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
+            <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:30%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
 			</p>
           </div></a>
     </div>
