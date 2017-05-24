@@ -95,10 +95,10 @@
   <div class="navigation_main">
     <nav class="navbar navbar-inverse hm_nav">
       <div class="">
-        <div class="navbar-header" style="width:30%;">
+        <div class="navbar-header logo_style" >
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 			<a class="navbar-brand" href="#">
-			<img style="width:50%;" src="<?php echo base_url(); ?>assets/seller/images/logo.png" class="img-responsive" /></a>
+			<img  src="<?php echo base_url(); ?>assets/seller/images/logo.png" class="img-responsive" /></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -112,7 +112,7 @@
           </ul>
         </li>-->
             <li><a href="<?php echo base_url();?>seller/aboutus">About Us</a></li>
-            <li><a href="#">FAQ's</a></li>
+           <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
             <li><a href="#">Help</a></li>
             <li><a href="<?php echo base_url();?>seller/contactus">Contact Us</a></li>
           </ul>

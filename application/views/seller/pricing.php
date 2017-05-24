@@ -8,12 +8,15 @@
         <div class="col-md-8">
           <div class="pricing_lft">
             <h1>What are the Fees</h1>
-            <ul class="cih_fee">
+            <ul class="cih_fee text-center">
               <li><img src="<?php echo base_url();?>assets/seller_login/images/cih.png" /><br>
                 <h4 align="center">CIH Fee</h4>
               </li>
 			  <li><span class="plus_fon">+</span></li>
-              <li><img src="<?php echo base_url();?>assets/seller_login/images/closing.png" /><br>
+              <li><img src="<?php echo base_url();?>assets/seller_login/images/service.png" /><br>
+                <h4 align="center">Service Tax</h4>
+              </li>
+			  <!--<li><img src="<?php echo base_url();?>assets/seller_login/images/closing.png" /><br>
                 <h4 align="center">Closing Fee</h4>
               </li>
 			    <li><span class="plus_fon">+</span></li>
@@ -23,7 +26,7 @@
 			    <li><span class="plus_fon">+</span></li>
               <li><img src="<?php echo base_url();?>assets/seller_login/images/delivery.png" /><br>
                 <h4 align="center">Delivery Services Fee</h4>
-              </li>
+              </li>-->
             </ul>
             <h3 align="center">Find CIH Fee for your Product</h3>
             <div class="price_lt">

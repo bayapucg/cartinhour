@@ -265,12 +265,48 @@ body {
 	-ms-transition: all 1s ease;
 	transition: all 1s ease;
 }
+.logo_style  img{
+		width:30%;
+		/* padding:20px; */
+		margin-top:10px;	
+	}
+.pad_abou{
+		padding:0px 10px;
+	}		
+
 @media (max-width: 767px) {
+.pad_abou{
+	padding:20px 10px;
+}
+.navbar-toggle{
+	margin-top:38px;
+}
 .nav-side-menu {
 	position: relative;
 	width: 100%;
 	margin-bottom: 10px;
 }
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+	border:none;
+}
+.logo_style  img{
+		
+		margin-top:0px;	
+	}
+.navbar-brand{
+	height:0px;
+}
+.navbar-inverse .navbar-toggle{
+	top:-11px;
+}
+.navbar{
+	min-height:76px;
+}
+.logo_style  img{
+		width:30%;
+		
+		 margin-top:-60px;	
+	}
 .nav-side-menu .toggle-btn {
 	display: block;
 	cursor: pointer;
