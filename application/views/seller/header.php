@@ -129,7 +129,7 @@
   </div>
   <!--header part end here --> 
   <!--login  Modal -->
-   <div class="modal fade" id="myModa2" role="dialog">
+   <div class="modal animated  zoomIn" id="myModa2" role="dialog">
     <div class="modal-dialog modal-md" >
       <div class="modal-content">
         <div class="modal-header">

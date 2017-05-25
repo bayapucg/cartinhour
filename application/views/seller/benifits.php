@@ -6,9 +6,9 @@
       <div class="row">
         <div class="benifits">
           <div class="col-md-6">
-            <div class="ben_lft">
+            <div class="ben_lft ">
               <h1 align="center">CATALOGUING</h1>
-              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_1.png" class="img-responsive" /></p>
+              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_1.png" class="img-responsive fadeIn " /></p>
             </div>
           </div>
           <div class="col-md-6">
