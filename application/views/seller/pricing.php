@@ -1,6 +1,4 @@
-
-  
-  <!--header part end here --> 
+<!--header part end here --> 
   <!--body start here -->
   <div class="pricing_main">
     <div class="container-fluid">
