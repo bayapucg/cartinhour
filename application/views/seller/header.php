@@ -33,7 +33,7 @@
   <div class="nav-wrapper">
     <div class="">
 	  <!-- <nav class="navbar navbar-default hm_nav" data-spy="affix" data-offset-top="522">-->
-      <div class="header hm_nav" data-spy="affix" data-offset-top="400">
+      <div class="header hm_nav " >
        <!-- <div class="col-md-2 col-xs-6">
           <div class="logo">
             <p><a href="<?php echo base_url(); ?>seller/login"><img src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
@@ -130,13 +130,14 @@
   <!--header part end here --> 
   <!--login  Modal -->
    <div class="modal animated  zoomIn" id="myModa2" role="dialog">
-    <div class="modal-dialog modal-md" >
-      <div class="modal-content">
+    <div class="modal-dialog modal-md "  >
+      <div class="modal-content ">
         <div class="modal-header">
           <ul class="nav nav-tabs final-login">
 						<li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
-						<li><a data-toggle="tab" href="#sectionB">Join us!</a></li>
+						<li><a data-toggle="tab" href="#sectionB">Register</a></li>
 					</ul>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
        <div class="modal-body">
             <!--<form method="post" action="<?php echo base_url();?>seller/login/do_login" name="login_form" onSubmit="return loginvalidateof();">
@@ -152,6 +153,8 @@
 					
 					<div class="tab-content">
 						<div id="sectionA" class="tab-pane fade in active">
+						<div class="row">
+						<div class="col-xs-6">
 						<div class="innter-form">
 							<form method="post" action="<?php echo base_url();?>seller/login/do_login" name="login_form" onSubmit="return loginvalidateof();">
 							<label >Email Address</label>
@@ -159,9 +162,24 @@
 							<label>Password</label>
 							<input  id="seller_password" name="seller_password" class="form-control" type="password" name="password">
 							<button class="btn btn-primary" type="submit">Sign In</button>
-							<a href="">Forgot Password?</a>
+							<a class="col_a"href="">Forgot Password?</a>
 							</form>
-							</div>
+						</div>
+						</div>
+						<div class="col-xs-6 bor_lef">
+						  <p class="lead co_reg">Register now for <span class="text-successs">FREE</span></p>
+						  <ul class="list-unstyled" style="line-height: 2">
+							  <li><span class="fa fa-check text-successs"></span> See all your orders</li>
+							  <li><span class="fa fa-check text-successs"></span> Fast re-order</li>
+							  <li><span class="fa fa-check text-successs"></span> Save your favorites</li>
+							  <li><span class="fa fa-check text-successs"></span> Fast checkout</li>
+							  <li><span class="fa fa-check text-successs"></span> Get a gift <small>(only new customers)</small></li>
+							  <li><a class="col_a" href="/read-more/"><u>Read more</u></a></li>
+						  </ul>
+						  <p><a data-toggle="tab" href="#sectionB" class="btn btn-info btn-block">Yes please, register now!</a></p>
+						</div>
+						</div>
+						<div class="clearfix"></div>
 							<div class="social-login">
 							<p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
 							<ul>
@@ -234,7 +252,7 @@
 								   <label>
                   <input type="checkbox" name="checkbox" value="check" id="terms_condition">
                   If you have read and agree to the <a href="#">Terms and Conditions,</a> please continue</label>
-							<button type="submit">Join now</button>
+							<button type="submit">Register now</button>
 							
 							</form>
 							</div>
@@ -484,5 +502,14 @@
     });
     });
   
-  
+   $(window).scroll(function() {
+if ($(this).scrollTop() > 350) {
+$('.hm_nav').addClass('affix');
+$('.hm_nav').addClass('animated fadeInDown');
+}
+else{
+$('.hm_nav').removeClass('affix');
+$('.hm_nav').removeClass('animated fadeInDown');
+}
+ });
 </script>

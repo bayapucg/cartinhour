@@ -5184,7 +5184,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', end
 	visibility: hidden!important
 }
 .affix {
-	position: fixed
+	position: fixed;
+	
 }
 @-ms-viewport {
 width:device-width

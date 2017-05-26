@@ -5396,6 +5396,10 @@ body.modal-open,
 }
 .affix {
   position: fixed;
+  -webkit-font-smoothing: antialiased;
+cursor: pointer;
+  margin:20px 50px;
+  transition:all 500ms ease;
 }
 @-ms-viewport {
   width: device-width;

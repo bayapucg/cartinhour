@@ -5958,7 +5958,10 @@ button.close {
     cursor: pointer;
     background: 0 0;
     border: 0;
-	color: #fff;
+	color: #006a99;
+	position:absolute;
+	top:12px;
+	right:10px;
 }
 .modal-open {
     overflow: hidden
