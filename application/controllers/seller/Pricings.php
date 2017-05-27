@@ -15,12 +15,7 @@ class Pricings extends CI_Controller {
 
 }
 
- public function index() {
-	 
-	  
-	  
-	 
-	 
+ public function index() {	 
 	$this->load->view('seller/header');
   $this->load->view('seller/pricings');
 $this->load->view('seller/footer');
