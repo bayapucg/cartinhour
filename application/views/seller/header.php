@@ -51,10 +51,10 @@
 	<nav class="navbar ">
     <div class="">
 	 <div class="navbar-header">
-      <a class="navbar-brand" href="#"><div class="">
-            <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:25%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
+      <a class="navbar-brand" href="#">
+            <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:35%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
 			</p>
-          </div></a>
+          </a>
     </div>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -78,6 +78,7 @@
           </li>-->
           <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICINGS</a></li>
           <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
+          <li><a href="<?php echo base_url();?>seller/services">OUR SERVICES</a></li>
           <!--<li><a href="<?php //echo base_url();?>seller/LearningCenter">HELP</a></li>-->
 		  <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HELP <span class="caret"></span></a>
             <ul class="dropdown-menu">
