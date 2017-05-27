@@ -43,6 +43,7 @@
 		<li> <a class="" href="<?php echo base_url(); ?>admin/closingfee"> <i class="fa fa-money"></i> <span>Closing Fee</span> </a> </li>
 	   <li> <a class="" href="<?php echo base_url(); ?>admin/servicefee"> <i class="fa fa-money"></i> <span>Delivery Service Fee</span> </a> </li>
         <li> <a class="" href="<?php echo base_url();?>admin/deliveryboy"> <i class="fa fa-spinner"></i> <span>Delivery Boys</span> </a> </li>
+        <li> <a class="" href="<?php echo base_url();?>admin/contactus"> <i class="fa fa-phone"></i> <span>Contact Requests</span> </a> </li>
 
        <!-- <li class="sub-menu"> <a href="javascript:;" class=""> <i class="fa fa-cutlery" aria-hidden="true"></i> <span>Food</span> <span class="menu-arrow arrow_carrot-right"></span> </a>
           <ul class="sub">

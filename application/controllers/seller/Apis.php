@@ -10,12 +10,13 @@ class Apis extends REST_Controller
         
         parent::__construct();
         $this->load->model('seller/login_model');
+        $this->load->model('seller/Personnel_details_model');
         
       
     }
 
 
-    public function login()
+    public function login_post()
     {
 
       $username   = $this->input->post('seller_name');
@@ -26,6 +27,7 @@ class Apis extends REST_Controller
                 {
                 $this->response(
                   array(
+                    
                         "Message"=>"Login Success",
                         "Status_code"=>"201",
                       )
@@ -43,5 +45,19 @@ class Apis extends REST_Controller
                   
             }
     }
+
+
+
+    public function mystore_get()
+    {
+      $id   = $this->input->post('id');
+      $my= $this->Personnel_details_model->getsellerlocationid();
+
+    $this->response($my);
+
+    }
+    
+
+    
 
 }

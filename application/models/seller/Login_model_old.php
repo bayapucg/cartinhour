@@ -35,6 +35,8 @@ class Login_model extends CI_Model
 
     }
 
+    
+
 public function checkEmailExits($email)
 	{
 	$query = $this->db->query("select * from selleradmin_users where selleradmin_email='$email'");

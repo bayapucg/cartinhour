@@ -16,10 +16,10 @@
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/bootstrap.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-        $(window).load(function(){
-            $('div.loader').fadeOut(1000);
-        });
+<script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
 </script>
 <!--javascript end here -->
 
@@ -78,7 +78,8 @@
           </li>-->
           <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICINGS</a></li>
           <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
-          <li><a href="<?php echo base_url();?>seller/services">OUR SERVICES</a></li>
+          <li><a href="<?php echo base_url();?>seller/ourservices">OUR SERVICES</a></li>
+          <li><a href="<?php echo base_url();?>seller/pricings">PRICINGS2</a></li>
           <!--<li><a href="<?php //echo base_url();?>seller/LearningCenter">HELP</a></li>-->
 		  <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HELP <span class="caret"></span></a>
             <ul class="dropdown-menu">

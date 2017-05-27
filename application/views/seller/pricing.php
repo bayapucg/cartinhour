@@ -10,18 +10,18 @@
               <li><img src="<?php echo base_url();?>assets/seller_login/images/cih.png" /><br>
                 <h4 align="center">CIH Fee</h4>
               </li>
-			  <li><span class="plus_fon">+</span></li>
+        <li><span class="plus_fon">+</span></li>
               <li><img src="<?php echo base_url();?>assets/seller_login/images/service.png" /><br>
                 <h4 align="center">Service Tax</h4>
               </li>
-			  <!--<li><img src="<?php echo base_url();?>assets/seller_login/images/closing.png" /><br>
+        <!--<li><img src="<?php echo base_url();?>assets/seller_login/images/closing.png" /><br>
                 <h4 align="center">Closing Fee</h4>
               </li>
-			    <li><span class="plus_fon">+</span></li>
+          <li><span class="plus_fon">+</span></li>
               <li><img src="<?php echo base_url();?>assets/seller_login/images/shipping.png" /><br>
                 <h4 align="center">Shipping Fee</h4>
               </li>
-			    <li><span class="plus_fon">+</span></li>
+          <li><span class="plus_fon">+</span></li>
               <li><img src="<?php echo base_url();?>assets/seller_login/images/delivery.png" /><br>
                 <h4 align="center">Delivery Services Fee</h4>
               </li>-->
@@ -31,14 +31,17 @@
               <div class="form-group">
                 <select class="form-control" id="cih_id" name="cih_id">
                   <option>--Select Product--</option>
-				  
-				  <?php foreach($cihcatdata as $cih_catdata) {?>   
+          
+          <?php foreach($cihcatdata as $cih_catdata) {?>   
                   <option value="<?php echo $cih_catdata->cih_id;?>"><?php echo $cih_catdata->category_name;?></option>
                   <?php } ?>
                 </select>
               </div>
-			 <div id="cihfee"></div>
+              <div id="cihfee"></div>
+              <div id="cihfee"></div>
+
             </div>
+            
           </div>
         </div>
         <div class="col-md-4">
@@ -53,47 +56,47 @@
                   <option value="<?php echo $cih_catdata->cih_id;?>"><?php echo $cih_catdata->category_name;?></option>
                   <?php } ?>
                 </select>
-							  <span id="CatErr"></span>
+                <span id="CatErr"></span>
               </div>
-			  <div id="cihfee1"></div>
+        <div id="cihfee1"></div>
 
              
-			 <div class="form-group" id="sellingfee" >
+       <div class="form-group" id="sellingfee" >
                 <h4>your Product Selling Price :</h4>
                 <input type="number" class="form-control san_label" id="product_price" name="product_price" placeholder="your Product Selling Price ">
                 <button type="submit" class="click" id="calfee_submit">Calculate</button>
-				 <span id="TermsErr"></span>
+         <span id="TermsErr"></span>
               </div>
-			 
-			 
-			 <div id="refclose"></div>
-			 <div class="line" id="demo2">&nbsp;</div>
-			 <div class="form-group" id="demoki" style="display:none">
-			 
+       
+       
+       <div id="refclose"></div>
+       <div class="line" id="demo2">&nbsp;</div>
+       <div class="form-group" id="demoki" style="display:none">
+       
                   <h4>Enter your product weight in grams:</h4>
                   <input type="number" class="form-control san_label" id="product_weight" name="product_weight" placeholder="Enter your product weightin grams">
                   <button type="submit" class="click" id="weight_submit">Calculate</button>
-				  <span id="TermsErr12"></span>
+          <span id="TermsErr12"></span>
                 </div>
-			 
-			 
-			 <div id="totalfee"></div>
-			 
-			 <div class="line" id="demo3" style="display:none">&nbsp;</div>
+       
+       
+       <div id="totalfee"></div>
+       
+       <div class="line" id="demo3" style="display:none">&nbsp;</div>
                
-			  <div class="form-group" id="demo4" style="display:none">
-			  <h3>Calculate My Profit :</h3>
+        <div class="form-group" id="demo4" style="display:none">
+        <h3>Calculate My Profit :</h3>
                   <h5>Enter your product Price :</h5>
                   <input type="number" class="form-control san_label" id="actual_price" name="actual_price" placeholder="Enter your product Price">
                   <button type="submit" class="click" id="profit_submit">Calculate</button>
-				  <span id="TermsErr15"></span>
+          <span id="TermsErr15"></span>
                 </div>
-			 
-			<div id ="total_cal"></div>
-			 
-			 
-			 
-			 
+       
+      <div id ="total_cal"></div>
+       
+       
+       
+       
             </div>
           </div>
         </div>
@@ -123,7 +126,7 @@ data: dataString,
 cache: false,
 success: function(data)
 {
-	//alert(data);
+  //alert(data);
 $("#cihfee").html(data);
 } 
 });
@@ -151,7 +154,7 @@ data: dataString,
 cache: false,
 success: function(data)
 {
-	//alert(data);
+  //alert(data);
 $("#cihfee1").html(data);
 } 
 });
@@ -162,38 +165,39 @@ $("#cihfee1").html(data);
 
 
 
+
 <script type="text/javascript" language="javascript">
       $(document).ready(function(){
     $('#calfee_submit').click(function(e){
     e.preventDefault();
  
     //if ($('#chkterms2').is(':checked')) {
-	 var cih1_id =	$("#cih1_id").val();
+   var cih1_id =  $("#cih1_id").val();
      var product_price = $("#product_price").val();
-	 var cih_fee1 = $("#cih_fee1").val();
+   var cih_fee1 = $("#cih_fee1").val();
      //var subcatname = $("#subcatname").val();
-	 //alert(cih1_id);
+   //alert(cih1_id);
  //alert(product_price);
   
   
   if (cih1_id == "")
-		{
-		$("#CatErr").html("Please Select Category").css("color", "red").fadeIn().fadeOut(5000);
-		return false;
-		}
-		else{
-			$("#CatErr").html("");
-		}
+    {
+    $("#CatErr").html("Please Select Category").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#CatErr").html("");
+    }
   
   
   if (product_price == "")
-		{
-		$("#TermsErr").html("Please Enter Price").css("color", "red").fadeIn().fadeOut(5000);
-		return false;
-		}
-		else{
-			$("#TermsErr").html("");
-		}
+    {
+    $("#TermsErr").html("Please Enter Price").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#TermsErr").html("");
+    }
  
     $.ajax({
     type: "POST",
@@ -205,7 +209,7 @@ $("#cihfee1").html(data);
   $("#refclose").html(data);
   $('#demo2').show();
     $('#demoki').show();
-	
+  
     }
     });
     });
@@ -224,18 +228,18 @@ $("#cihfee1").html(data);
     //if ($('#chkterms2').is(':checked')) 
    var product_price = $("#product_price").val();
     var productcih_fee = $("#productcih_fee").val();
-	 var closing_fee = $("#closing_fee").val();
-	 //var cih_fee1 = $("#cih_fee1").val();
-	 var product_weight = $("#product_weight").val();
+   var closing_fee = $("#closing_fee").val();
+   //var cih_fee1 = $("#cih_fee1").val();
+   var product_weight = $("#product_weight").val();
   //alert(closing_fee);
   if (product_weight == "")
-		{
-		$("#TermsErr12").html("Please Enter Product Weight in grams").css("color", "red").fadeIn().fadeOut(5000);
-		return false;
-		}
-		else{
-			$("#TermsErr12").html("");
-		}
+    {
+    $("#TermsErr12").html("Please Enter Product Weight in grams").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#TermsErr12").html("");
+    }
  
     $.ajax({
     type: "POST",
@@ -265,25 +269,25 @@ $("#cihfee1").html(data);
     e.preventDefault();
  
     //if ($('#chkterms2').is(':checked')) {
-		
-		
-		
+    
+    
+    
      
     var youmake = $("#youmake").val();
-	
-	var actual_price = $("#actual_price").val();
+  
+  var actual_price = $("#actual_price").val();
    
-  	//var product_price = $("#product_price").val(); TermsErr15
-	
-	if (actual_price == "")
-		{
-		$("#TermsErr15").html("Please Enter Product Price").css("color", "red").fadeIn().fadeOut(5000);
-		return false;
-		}
-		else{
-			$("#TermsErr15").html("");
-		}
-	
+    //var product_price = $("#product_price").val(); TermsErr15
+  
+  if (actual_price == "")
+    {
+    $("#TermsErr15").html("Please Enter Product Price").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#TermsErr15").html("");
+    }
+  
  
     $.ajax({
     type: "POST",

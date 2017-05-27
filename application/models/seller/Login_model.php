@@ -15,7 +15,7 @@ class Login_model extends CI_Model
 
         //$encrypted_password = ($password);
 
- 	        $this->db->where('seller_name',$username);
+ 	        $this->db->where('seller_email',$username);
 			$this->db->where('seller_password',$password);
 			$this->db->or_where('seller_mobile',$username);
 			 $user=$this->db->get('sellers');
@@ -25,8 +25,6 @@ class Login_model extends CI_Model
         if (!is_null($user)) {
 
             return $user->row();
-
-
 
         }
 
@@ -39,7 +37,7 @@ class Login_model extends CI_Model
     public function get_data($username, $password)
 
     {
-      
+    	
          $this->db->where('seller_name',$username);
             $this->db->where('seller_password',$password);
              $user=$this->db->get('sellers');
@@ -129,14 +127,18 @@ public function insertseller($data)
 	$this->db->insert('sellers',$data);
 			//print_r($data); exit;
 
-		return true;
+		return true;	
+}
+
+//contact us details
+public function insertcontact($data)
+{
 	
 	
-	
-	
-	
-	
-	
+	$this->db->insert('contactus',$data);
+			//print_r($data); exit;
+
+		return true;	
 }
 	
 	

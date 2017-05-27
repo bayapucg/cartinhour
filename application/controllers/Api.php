@@ -64,7 +64,7 @@ class Api extends REST_Controller
           
         $res = $this->deliveryboy_model->get_data($username,$password);
        // print_r($res);exit;
-        if($res)
+        if(!$res)
                 {
                   
                 $this->response($res);
@@ -74,10 +74,9 @@ class Api extends REST_Controller
              $this->response(
                             array(
                                 "Message"=>"Invalid Username Password",
-                                "Status_code"=>"401",
+                                "Status_code"=>"40001",
                                 )
                             );
-                        //redirect('/login/resetpassword', 'refresh');
             }
 
   }

@@ -19,7 +19,7 @@ class Pricing_calculator extends CI_Controller {
 	 
 	  
 	  $data['cihcatdata']  = $this->login_model->getcihcatedata();
-	 
+	  $sell = 1000;
 	 
 	$this->load->view('seller/header');
   $this->load->view('seller/pricing',$data);
@@ -31,11 +31,26 @@ $this->load->view('seller/footer');
   
   function getajaxcih(){
 			$cih=$this->input->post('cih_id');
-		   $result=$this->login_model->getcihfeedata($cih);
-			
+		   	$result=$this->login_model->getcihfeedata($cih);
+		   	$sell = 1000;
+		   	$per = 10;
+		   	$show =$result->cih_fee;
+		   	//$ref = str_replace("%", "", $per);
+		   	$we_take = $sell - $show;
 			echo  '<div class="form-group">';
-              echo '<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$result->cih_fee. '"  disabled>';
+              echo '<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$show. '"  disabled>';
               echo '</div>';
+
+              //server tax
+
+              echo  '<div class="form-group">';
+              echo 'WE Take<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$show.' Of RS.1000 +14.5(Service Tax)"  disabled>';
+              echo '</div>';
+
+              echo  '<div class="form-group">';
+              echo 'You Get In BANK<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$we_take. '"  disabled>';
+              echo '</div>';
+
 		 exit;
 			}
   
@@ -110,7 +125,7 @@ $servicedelfee = $delresult->service_fee;
 
 $ref12 = str_replace("%", "", $servicedelfee);
 
-$delivery = ($product_price * $ref12)/100 ;
+$delivery = ($product_price * $ref12)/100;
 $shippingcharge = $delivery + $result2;
 
 $total = $productcih_fee + $closing_fee + $shippingcharge;
@@ -122,10 +137,10 @@ $totalcharges = $total + $servicetax;
 $youmake = $product_price - $totalcharges;
 
           echo '<h5>Shipping Charges: '.$result2.'</h5>';
-          echo  '<h5>Delivery Service Fee: '.$delivery.'             @'.$servicedelfee.' </h5>';
+          echo  '<h5>Delivery Service Fee:'.$delivery.'@'.$servicedelfee.' </h5>';
 		  echo '<div class="line">&nbsp;</div>';
 		  echo  '<h5>CIH+Closing+Shipping: '.$total.' </h5>';
-		  echo  '<h5>Service Tax: '.$servicetax.'           @15%</h5>';
+		  echo  '<h5>Service Tax: '.$servicetax.'@15%</h5>';
 	      echo  '<h5>Total Charges: '.$totalcharges.' </h5>';
 		  echo  '<h5>Total You Make: '.$youmake.' </h5>';
 		  echo '<input type="hidden" id="youmake" name="youmake" value="'.$youmake.'">';

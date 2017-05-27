@@ -39,7 +39,7 @@ class Sellers_model extends MY_Model
 public function getReportFiles($id)
 {
 	
-	$this->db->where('seller_id',$id);
+	$this->db->where('seller_id',$id);	
 	$query = $this->db->get('kyc_reports');
 	return $query->result();
 	
@@ -69,12 +69,6 @@ public function updatestatus($data,$id)
 	$this->db->where('item_id',$id);
 		$query=$this->db->update('products',$data);
 		return $query; 
-	
-	
-	
-	
-	
-	
 	
 }
 

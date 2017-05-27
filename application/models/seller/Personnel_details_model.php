@@ -32,16 +32,29 @@ return $query->result();
 
 public function getsellerlocation()
 {
-$sid= $this->session->userdata('seller_id');	
-	
+$sid= $this->session->userdata('seller_id');
 $this->db->where('seller_id',$sid);	
 $query = $this->db->get('sellers');
-return $query->row();	
-	
-	
-	
+return $query->row();		
 }
 
+//api locations 
+
+public function getsellerlocationid()
+{
+	//$id = $this->db->get('sellers.seller_id');
+	//return $id;	
+		//return $id;
+	$this->db->select('seller_id, seller_name,seller_location,seller_servicetime');
+	$this->db->from('sellers');
+	$this->db->where('sellers.seller_id','8');
+ 	return $query = $this->db->get();
+
+
+
+	// $query = $this->db->query("SELECT sellers.seller_name,seller_location,seller_servicetime FROM sellers WHERE sellers.seller_id=$id");
+	// return $query->row();		
+}
 
 public function updatedd($data)
 {
