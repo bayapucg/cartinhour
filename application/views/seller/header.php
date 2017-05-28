@@ -79,7 +79,7 @@ $(window).load(function() {
           <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICINGS</a></li>
           <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
           <li><a href="<?php echo base_url();?>seller/ourservices">OUR SERVICES</a></li>
-          <li><a href="<?php echo base_url();?>seller/pricings">PRICINGS2</a></li>
+          <li><a href="<?php echo base_url();?>seller/pricings">Contact Us</a></li>
           <!--<li><a href="<?php //echo base_url();?>seller/LearningCenter">HELP</a></li>-->
 		  <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HELP <span class="caret"></span></a>
             <ul class="dropdown-menu">
