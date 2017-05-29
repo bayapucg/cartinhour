@@ -33,23 +33,53 @@ $this->load->view('seller/footer');
 			$cih=$this->input->post('cih_id');
 		   	$result=$this->login_model->getcihfeedata($cih);
 		   	$sell = 1000;
-		   	$per = 10;
 		   	$show =$result->cih_fee;
-		   	//$ref = str_replace("%", "", $per);
-		   	$we_take = $sell - $show;
+		   	$disc = $sell - ($sell * $show / 100);
+		   	
+		   	//$per = 10;		   	
+		   	//$percent = (float)$show . '%';
+		   	//$percent = round((float)$show) . '%';
+		   	//$we_take = $sell - $show;
+		   	$serv_tax = 14.5;		   	
+		   	$you_get = $disc - $serv_tax;
+		   	$tot =  $sell - $disc + $serv_tax;
+		   	//$tot = $you_get - $serv_tax;
 			echo  '<div class="form-group">';
-              echo '<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$show. '"  disabled>';
+              echo '<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$show
+              . '"  disabled>';
               echo '</div>';
 
-              //server tax
 
-              echo  '<div class="form-group">';
-              echo 'WE Take<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$show.' Of RS.1000 +14.5(Service Tax)"  disabled>';
+
+              	echo '<div class="panel-group" id="cihfee">';
+                echo '<div class="panel panel-success">';
+                  echo '<div class="panel-body">
+                  			<p>You Sell At<p>
+                  			'.$sell.'
+                  		</div>';
+                echo '</div>';
+                echo '<div class="panel panel-default">';
+                  echo '<div class="panel-body">
+                  			<p>We Take:<p>
+                  				' .$show.' Of RS.1000 +14.5(Service Tax) = '.$tot.'
+                  		</div>';
+                echo '</div>';
+                echo '<div class="panel panel-default">';
+                  echo '<div class="panel-body">
+                  			<p>You Get In Bank:<p>
+                  				'.$you_get.'
+                  		</div>';
+                echo '</div>';
               echo '</div>';
 
-              echo  '<div class="form-group">';
-              echo 'You Get In BANK<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$we_take. '"  disabled>';
-              echo '</div>';
+
+              // echo  '<div class="form-group">';
+              // echo 'WE Take<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$show.' Of RS.1000 +14.5(Service Tax)"  disabled>';
+              // echo '</div>';
+
+              // echo  '<div class="form-group">';
+              // echo 'You Get In BANK<input class="form-control" type="text" id="cih_fee" name="cih_fee" value="' .$you_get. '"  disabled>';
+              // echo '</div>';
 
 		 exit;
 			}
