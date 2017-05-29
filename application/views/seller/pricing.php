@@ -37,13 +37,27 @@
                   <?php } ?>
                 </select>
               </div>
+			
               <div id="cihfee"></div>
               
 
             </div>
+			  <!--stip html --> 
+		<div >
+			<table style="border:1px solid #5fcbff;border-radius:10px;margin:0 auto;background-color:#f5f5f5;">
+				<tr>
+					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You sell at :</span><br>Rs .1000</td>
+					<td style="padding:20px"><span style="color:#ff0000 ;font-size:18px;">We take:(for 10%)</span> <br>10% of Rs.1000 + 14.5(service tax)= Rs.114.5</td>
+					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You get in bank:</span><br>Rs.885.5</td>
+				</tr>
+			</table>
+		</div>
+		<!--stip end html--> 
             
           </div>
+		  
         </div>
+		
         <div class="col-md-4">
           <div class="price_rgt">
             <h3>Calculate Your Profit :</h3>
@@ -100,6 +114,9 @@
             </div>
           </div>
         </div>
+		
+		
+		
       </div>
     </div>
   </div>
