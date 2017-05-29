@@ -7,6 +7,7 @@ body {
 	margin: 0px 0px;
 	padding: 0px 0px;
 	font-family: 'Montserrat', sans-serif;
+
 }
 .main_wrapper {
 	width: 100%;
@@ -40,9 +41,21 @@ body
 {
     margin-top: 20px;
 }
-.panel
+.panel-heading
 {
     text-align: center;
+}
+.font_si18 {
+	font-size:17px;
+}
+.img_widt{
+	width:50%;
+	margin:0 auto;
+}
+.panel p
+{
+    text-align: left;
+	padding:10px;
 }
 .panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
 .panel-body
@@ -149,6 +162,7 @@ body
     overflow: hidden;
     padding: 30px 0 0;
     width: 100%;
+
 }
 .service_first {
     background: #f2efef none repeat scroll 0 0;
@@ -163,11 +177,23 @@ body
     padding: 20px 10px;
     width: 100%;
 }
+.lin_read {
+	text-align:center;
+}
 .pad_10{
 	padding:6px;
 }
+.pad_l100{
+	padding-left:100px;
+}
+.head_titl{
+	padding:0px 10px;
+}
 .site_col{
 	color:#006a99;
+}
+.mar_t30{
+	margin-top:30px;
 }
 .service_first h1 {
     color: #000;
@@ -194,7 +220,7 @@ body
     font-weight: 400;
     margin: 0;
     padding: 0 15px 15px;
-    text-align: left;
+    /* text-align: left; */
 }
 .service_button {
     padding: 10px 0;

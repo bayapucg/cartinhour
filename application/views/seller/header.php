@@ -27,7 +27,7 @@ $(window).load(function() {
 </head>
 
 <body>
-<div class="loader"></div>
+<!--<div class="loader"></div>-->
 <div class="main_wrapper"> 
   <!--header part start here -->
   <div class="nav-wrapper">
