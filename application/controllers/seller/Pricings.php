@@ -10,9 +10,6 @@ class Pricings extends CI_Controller {
     //$this->load->library('email');
     //$this->load->library('encrypt');
     //$this->load->model('seller/login_model');
-		
-		
-
 }
 
  public function index() {	 

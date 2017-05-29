@@ -49,8 +49,6 @@ $this->load->view('seller/footer');
               . '"  disabled>';
               echo '</div>';
 
-
-
               	echo '<div class="panel-group" id="cihfee">';
                 echo '<div class="panel panel-success">';
                   echo '<div class="panel-body">

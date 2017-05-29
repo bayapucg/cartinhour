@@ -32,7 +32,8 @@
 
 									
 								   </div>
-								    <button class="btn btn-primary btn-sm"onclick="myFunction()">Know more</button>
+								    <!-- <button class="btn btn-primary btn-sm"onclick="myFunction()" >Know more</button> -->
+                                    <a href="<?php echo base_url();?>seller/marketplace_solutions" >Know more</a>
                                    
                             </div>
                             </div>
