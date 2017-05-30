@@ -14,7 +14,10 @@
 <!--style end here -->
 <!--javascript start here -->
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.js"></script>
+<script src="<?php echo base_url();?>assets/seller_login/js/jquery-3.1.1.min.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>assets/seller_login/js/custom.js"></script>
+<script src="<?php echo base_url();?>assets/seller_login/js/jquery.easing.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
@@ -26,29 +29,18 @@ $(window).load(function() {
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!--<div class="loader"></div>-->
 <div class="main_wrapper"> 
   <!--header part start here -->
   <div class="nav-wrapper">
     <div class="">
-	  <!-- <nav class="navbar navbar-default hm_nav" data-spy="affix" data-offset-top="522">-->
       <div class="header hm_nav " >
-       <!-- <div class="col-md-2 col-xs-6">
-          <div class="logo">
-            <p><a href="<?php echo base_url(); ?>seller/login"><img src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
-			</p>
-          </div>
-        </div>
-		<div class="col-md-6 col-xs-6 hidden-lg ">
-          <div class="pull-right">
-              <input type="submit" data-toggle="modal" data-target="#myModa2" class="btn btn-primary " value="Login">
-          </div>
-        </div>-->
+       
     <div class="">
 		
 		
-	<nav class="navbar ">
+	<nav class="navbar  ">
     <div class="">
 	 <div class="navbar-header">
       <a class="navbar-brand" href="#">
@@ -60,18 +52,18 @@ $(window).load(function() {
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <!--<a class="navbar-brand" href="#">Brand</a>--> 
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="<?php echo base_url(); ?>seller/login">HOME <span class="sr-only">(current)</span></a></li>
-          <li><a href="<?php echo base_url(); ?>seller/benifits">BENIFITS</a></li>
-		  <li><a href="<?php echo base_url(); ?>seller/howitworks">HOW IT WORKS</a></li>
+          <li class="active"><a href="#home_scr">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="#benifits_sc">BENIFITS</a></li>
+		  <li><a href="#how_its_w">HOW IT WORKS</a></li>
          
-          <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICING</a></li>
+          <li><a href="#pricing_scr">PRICING</a></li>
          
-          <li><a href="<?php echo base_url();?>seller/ourservices">OUR SERVICES</a></li>
-            <li><a href="<?php echo base_url();?>seller/aboutus">About Us</a></li>
-          <li><a href="<?php echo base_url();?>seller/pricings">Contact Us</a></li>
-		   <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
+          <li><a href="#ourservices_scr">OUR SERVICES</a></li>
+            <li><a href="#about_sc">ABOUT US</a></li>
+          <li><a href="#contact_sc">CONTACT US</a></li>
+		   <li><a href="#faq_sc">FAQ's</a></li>
          
 		 
         </ul>
@@ -86,30 +78,6 @@ $(window).load(function() {
     <div class="underline"></div> -->
   </nav>
 		
-          <!--<div class="loginfields">
-            <form action="<?php echo base_url();?>seller/login/do_login" method="post" onSubmit="return loginvalidateof();">
-              <div class="form-group">
-                <div class="col-md-1"> &nbsp </div>
-                <div class="col-md-4 hdr-form-input_s paddingRightZero">
-                  <label for="usr">Email/Mobile Number :</label>
-                  <input type="text" class="form-control" id="seller_name" name="seller_name">
-				  <span id="errorname" style="color:red; font-size: 13px;"></span>
-                </div>
-                <div class="col-md-4 hdr-form-input_s paddingRightZero">
-                  <label for="pwd">Password :</label>
-                  <input type="password" class="form-control" id="seller_password" name="seller_password">
-				  <span id="errorpassword" style="color:red; font-size: 13px;"></span>
-                </div>
-                <div class="col-md-3 paddingRightZero">
-                  <div class="pswrd text-right"><a href="#" tabindex="5" class="forgot-password" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Unable to Login?</a></div>
-                  <input type="submit" class="btn btn-info san_submit" value="Login">
-				  
-                </div>
-				
-              </div>
-            </form>
-			
-          </div>-->
 		  <?php echo $this->session->flashdata('msg'); ?>
         </div>
       </div>
@@ -128,15 +96,7 @@ $(window).load(function() {
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
        <div class="modal-body">
-            <!--<form method="post" action="<?php echo base_url();?>seller/login/do_login" name="login_form" onSubmit="return loginvalidateof();">
-              <p><input  class="form-control" type="text" class="span3" name="seller_name" id="seller_name" placeholder="Email" autofocus></p>
-              <span id="errorname" style="color:red; font-size: 13px;"></span>
-              <p><input class="form-control" type="password" class="span3" name="seller_password" name="seller_password" placeholder="Password"></p>
-              <span id="errorpassword" style="color:red; font-size: 13px;"></span>
-              <p><button type="submit" class="btn btn-primary">Sign in</button>
-                <a href="#">Forgot Password?</a>
-              </p>
-            </form>-->
+          
 				<div class="form-body">
 					
 					<div class="tab-content">
@@ -382,6 +342,28 @@ $(window).load(function() {
 			
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
+<script>
+//jQuery to collapse the navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $(document).on('click', 'a.page-scroll', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+</script>
 <script type="text/javascript" language="javascript">
  
     $(document).ready(function(){
@@ -506,4 +488,34 @@ $('.hm_nav').removeClass('affix');
 $('.hm_nav').removeClass('animated fadeInDown');
 }
  });
+</script>
+
+<!--script for scrolling pages-->
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+
 </script>

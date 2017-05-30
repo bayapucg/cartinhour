@@ -4,7 +4,10 @@
     padding-top: 10px;
 }
 </style>
+<html>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
   <!--banenr start here -->
+  <section id="home_scr">
   <div class="banner">
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1500px;height:450px;overflow:hidden;visibility:hidden;"> 
       <!-- Loading Screen -->
@@ -77,75 +80,11 @@
       </ul>
     </div>
   </div>
-		<!--
-        	<div class="col-lg-3">
-    				<div class="cuadro_intro_hover " style="background-color:#cccccc;">
-						<p style="text-align:center;">
-							<img src="<?php echo base_url();?>assets/seller_login/images/cat4.png" class="img-responsive thumbnail" alt="">
-						</p>
-						<div class="caption">
-							<div class="blur"></div>
-							<div class="caption-text">
-								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">FOOD</h3>
-								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-								<a class=" btn btn-default" href="#" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
-							</div>
-						</div>
-					</div>
-				
-	    </div>
-        <div class="col-lg-3">
-        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
-						<p style="text-align:center;">
-							<img src="<?php echo base_url();?>assets/seller_login/images/cat3.png" class="img-responsive thumbnail" alt="">
-						</p>
-						<div class="caption">
-							<div class="blur"></div>
-							<div class="caption-text">
-								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">FASHION</h3>
-								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-								<a class=" btn btn-default" href="https://plus.google.com/u/0/100371904807783155711/posts" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
-							</div>
-						</div>
-					</div>
-				
-	    </div>
-        <div class="col-lg-3">
-        			<div class="cuadro_intro_hover" style="background-color:#cccccc;">
-						<p style="text-align:center;">
-							<img src="<?php echo base_url();?>assets/seller_login/images/cat2.png" class="img-responsive thumbnail" alt="">
-						</p>
-						<div class="caption">
-							<div class="blur"></div>
-							<div class="caption-text">
-								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">ELECTRONICS</h3>
-								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-								<a class=" btn btn-default" href="https://plus.google.com/u/0/100371904807783155711/posts" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
-							</div>
-						</div>
-					</div>
-				
-	    </div>
-        <div class="col-lg-3">
-        			<div class="cuadro_intro_hover " style="background-color:#cccccc;">
-						<p style="text-align:center;">
-							<img src="<?php echo base_url();?>assets/seller_login/images/cat1.png" class="img-responsive thumbnail" alt="">
-						</p>
-						<div class="caption">
-							<div class="blur"></div>
-							<div class="caption-text">
-								<h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">GROCERY</h3>
-								<p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-								<a class=" btn btn-default" href="https://plus.google.com/u/0/100371904807783155711/posts" target="_blank"><span class="glyphicon glyphicon-plus"> CART NOW</span></a>
-							</div>
-						</div>
-					</div>
-				
-	    </div>
-		
-	</div>-->
- 
+ <!-- start <scroller>-->
+ <a href="#" class="scrollup" style="display: block;"><i class="fa fa-angle-up active"></i></a>
+ <!-- end<scroller>-->
   <!--body part start here -->
+  
   <div class="container-fluid gallery-like-area c-h-mb mar_t15" >
     <div class="row">
       <div class="col-md-6 col-sm-6 text-center  "><!-- hidden-sm hidden-xs-->
@@ -213,6 +152,1523 @@
       </div>
     </div>
   </div>
+  </section>
+	<div class="clearfix"></div>	
+		<!--benifits section start-->
+<section id="benifits_sc">
+  <div class="">
+	
+
+  <div class="pricing_main">
+    <div class="container">
+	    <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> BENIFITS</span></h3>
+  <div class="title_lines"></div>
+
+      <div class="row">
+        <div class="benifits">
+          <div class="col-md-6">
+            <div class="ben_lft ">
+              <h1 align="center">CATALOGUING</h1>
+              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_1.png" class="img-responsive fadeIn " /></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ben_rgt">
+              <h3>The art of selling smart</h3>
+              <p>Customers always choose to buy products that look the best and have the most accurate descriptions. We help you attract customers with smart cataloguing. Get attractive images and clear description of your products and grab customers’ attention.</p>
+              <h3>Our catalogue partners provide you with:</h3>
+              <ul class="checkmark">
+                <li>Quick design and development of your catalogues</li>
+                <li>Best quality images</li>
+                <li>Clear and complete description of your products</li>
+                <li>Catalogues that prompts quick buying decision</li>
+              </ul>
+              <p>You receive expert cataloguing solutions from professionals who assist you in creating best product catalogues.</p>
+            </div>
+          </div>
+        </div>
+        <div class="benifits">
+          <div class="col-md-6">
+            <div class="ben_lft">
+              <h3>Our inventory management provides you with:</h3>
+              <ul class="checkmark">
+              <li>We provide complete assistance to sellers regarding their inventory management.</li>
+              <li>We have vast network of inventory managers who will take care of your inventory.</li>
+              <li>All you have to do is separate your inventory for offline and online customers.</li>
+              <li>Give your online stock details to our inventory executives.</li>
+              <li>Rest we will take care.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ben_rgt">
+              <h1 align="center">Inventory Management</h1>
+              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_2.png" class="img-responsive" /></p>
+            </div>
+          </div>
+        </div>
+        <div class="benifits">
+          <div class="col-md-6">
+            <div class="ben_lft">
+              <h1 align="center">Easy pick-up and delivery</h1>
+              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_3.png" class="img-responsive" /></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ben_rgt">
+              <h3>Delivering your products to 1000+ customers</h3>
+             <p>Our ever-growing delivery boy network ensures faster delivery of your products across India. Your customers get great service and you get better ratings.</p>
+              <h3>Our delivery boy network:</h3>
+              <ul class="checkmark">
+               <li>Ensures smooth pick-up and delivery of your products</li>
+               <li>Superior experience for your customers</li>
+               <li>Effortless order fulfilment through our vast network of delivery personnel</li>
+              </ul>
+              <p>Our delivery boy network is one of the largest in the industry and growing. Come onboard and sell to lakhs of customers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="benifits">
+          <div class="col-md-6">
+            <div class="ben_lft">
+              <h3>Your earnings don’t keep you waiting</h3>
+              <p>Re-invest profits to generate more business without any delay. At CARTINHOUR, you get your payments within 4-7 business days of dispatching an order. The payment is made directly to your bank account, thus making the whole process fast and easy.</p>
+              <h3>Easy and fast payment process. You get:</h3>
+              <ul class="checkmark">
+              <li>Fastest payment for fulfilled orders</li>
+              <li>Quick re-investing opportunities</li>
+              <li>Detailed information on payment settlement on seller dashboard</li>
+              </ul>
+              <p>Experience smooth cash flow. Start selling on CARTINHOUR and grow your business with the fastest payment cycle in the industry.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ben_rgt">
+              <h1 align="center">FASTER PAYMENTS</h1>
+              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_4.png" class="img-responsive" /></p>
+            </div>
+          </div>
+        </div>
+        <div class="benifits">
+          <div class="col-md-6">
+            <div class="ben_lft">
+              <h1 align="center">TRAINING</h1>
+              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_5.png" class="img-responsive" /></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ben_rgt">
+              <h3>Learn the art of selling online</h3>
+            <p>CARTINHOUR has been driving seller training on key pain areas for the last 6 months. More than 2000 sellers have been trained during this period. We have further improved our training methods to enhance your learning.</p>
+              <h3>Webinars:</h3>
+              <p>We have been conducting majority of our trainings through webinars over the past 6 months. Recently, the webinars are being conducted with subject experts from various domains who can immediately resolve your doubts and provide tips and tricks to improve your business.We have also enabled the unmute function through which sellers can have a two way conversation with the experts.</p>
+              <h3>Smart Learn:</h3>
+              <p>We launched our self-paced learning platform, Smart Learn, with returns module. The response has been fabulous with many sellers getting certified on Returns. They have also found the content helpful and easy to understand. With this in mind, we have launched three new modules - Payments & Settlements, Listings &Cataloging and Trust & Safety. So, go to the Seller Learning Center, get certified and improve your business operations.</p>
+              <p>To help you become skilled at selling online is our job. Register your business today to sell your products online on CARTINHOUR.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="benifits">
+          <div class="col-md-6">
+            <div class="ben_lft">
+              <h3>Get more business with less effort</h3>
+              <p>At CARTINHOUR, we promise you maximum returns with minimum investment. That’s why the CARTINHOUR Fulfilment service offers you the use of our state-of-the-art fulfilment centres at very low costs. You store your products in our fulfilment centres where we take utmost care of your inventory.</p>
+              <h3>What does CARTINHOUR Fulfilment offer?</h3>
+              <ul class="checkmark">
+              <li>Fulfilment centre space</li>
+              <li>Faster delivery of your products</li>
+              <li>Quality check of your products by our experts</li>
+              <li>Packaging that will delight your customers</li>
+              </ul>
+              <p>Take your business to the next level with CARTINHOUR Fulfilment on CARTINHOUR.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ben_rgt">
+              <h1 align="center">CARTINHOUR Fulfilment</h1>
+              <p align="center"><img src="<?php echo base_url();?>assets/seller_login/images/ben_6.png" class="img-responsive" /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ </section>
+<div class="clearfix"></div>
+   <!--end part end here --> 
+
   
-  <!--body part end here --> 
+  <!--howitworks -->
+<section id="how_its_w">
+<div class="pricing_main">
+    <div class="container">
+	 <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> HOW IT WORKS</span></h3>
+  <div class="title_lines"></div>
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+		<div class=" hidden-lg hidden-md">
+		<h1 class="head_title">Four Step Process</h1>
+			<img class="img-responsive"src="<?php echo base_url();?>assets/seller_login/images/fivesteps.jpg">
+		</div>
+		<div class="hidden-xs">
+        <h1 class="head_title">Four Step Process</h1>
+          <ul class="timeline">
+            <li>
+      <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_1.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading"> 
+                  <!--<h4>Step One</h4>-->
+                  <h4 class="subheading">Register your business with us. </h4>
+                </div>
+              </div>
+              <div class="bht"></div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_2.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Get cataloguing done for your products.</h4>
+                </div>
+              </div>
+              <div class="bht"></div>
+            </li>
+            <li>
+              <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_3.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Upload your inventory. </h4>
+                </div>
+              </div>
+              <div class="bht"></div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_4.jpg" alt=""> </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Get orders and start selling.</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+        <div class="get_call">
+        <h1 class="head_title" align="center">One Step Process</h1>
+        <div class="get_img"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/call.jpg" alt=""> </div>
+        <p align="center">Just call to ********** . We will take care of your process. </p>
+        
+        
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>  
+ <div class="clearfix"></div>
+  <!--pricing -->
+ <section id="pricing_scr">
+ 
+  <!--header part end here --> 
+  <!--pricing start here -->
+  <div class="pricing_main">
+    <div class="container-fluid">
+	 <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> PRICING</span></h3>
+  <div class="title_lines"></div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="pricing_lft">
+            <h1>What are the Fees</h1>
+            <ul class="cih_fee text-center">
+              <li><img src="<?php echo base_url();?>assets/seller_login/images/cih.png" /><br>
+                <h4 align="center">CIH Fee</h4>
+              </li>
+        <li><span class="plus_fon">+</span></li>
+              <li><img src="<?php echo base_url();?>assets/seller_login/images/service.png" /><br>
+                <h4 align="center">Service Tax</h4>
+              </li>
+        <!--<li><img src="<?php echo base_url();?>assets/seller_login/images/closing.png" /><br>
+                <h4 align="center">Closing Fee</h4>
+              </li>
+          <li><span class="plus_fon">+</span></li>
+              <li><img src="<?php echo base_url();?>assets/seller_login/images/shipping.png" /><br>
+                <h4 align="center">Shipping Fee</h4>
+              </li>
+          <li><span class="plus_fon">+</span></li>
+              <li><img src="<?php echo base_url();?>assets/seller_login/images/delivery.png" /><br>
+                <h4 align="center">Delivery Services Fee</h4>
+              </li>-->
+            </ul>
+            <h3 align="center">Find CIH Fee for your Product</h3>
+            <div class="price_lt">
+              <div class="form-group">
+                <select class="form-control" id="cih_id" name="cih_id">
+                  <option>--Select Product--</option>
+          
+          <?php foreach($cihcatdata as $cih_catdata) {?>   
+                  <option value="<?php echo $cih_catdata->cih_id;?>"><?php echo $cih_catdata->category_name;?></option>
+                  <?php } ?>
+                </select>
+              </div>
+			
+              <div id="cihfee"></div>
+              
+
+            </div>
+			  <!--stip html --> 
+		<div >
+			<table style="border:1px solid #5fcbff;border-radius:10px;margin:0 auto;background-color:#f5f5f5;">
+				<tr>
+					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You sell at :</span><br>Rs .1000</td>
+					<td style="padding:20px"><span style="color:#ff0000 ;font-size:18px;">We take:(for 10%)</span> <br>10% of Rs.1000 + 14.5(service tax)= Rs.114.5</td>
+					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You get in bank:</span><br>Rs.885.5</td>
+				</tr>
+			</table>
+		</div>
+		<!--stip end html--> 
+            
+          </div>
+		  
+        </div>
+		
+        <div class="col-md-4">
+          <div class="price_rgt">
+            <h3>Calculate Your Profit :</h3>
+            <h4>Find CIH fee for your Product</h4>
+            <div class="calculate">
+              <div class="form-group san_sle">
+                <select class="form-control" id="cih1_id" name="cih1_id">
+                  <option value="">Select Your Category</option>
+                    <?php foreach($cihcatdata as $cih_catdata) {?>   
+                  <option value="<?php echo $cih_catdata->cih_id;?>"><?php echo $cih_catdata->category_name;?></option>
+                  <?php } ?>
+                </select>
+                <span id="CatErr"></span>
+              </div>
+        <div id="cihfee1"></div>
+
+             
+       <div class="form-group" id="sellingfee" >
+                <h4>your Product Selling Price :</h4>
+                <input type="number" class="form-control san_label" id="product_price" name="product_price" placeholder="your Product Selling Price ">
+                <button type="submit" class="click" id="calfee_submit">Calculate</button>
+         <span id="TermsErr"></span>
+              </div>
+       
+       
+       <div id="refclose"></div>
+       <div class="line" id="demo2">&nbsp;</div>
+       <div class="form-group" id="demoki" style="display:none">
+       
+                  <h4>Enter your product weight in grams:</h4>
+                  <input type="number" class="form-control san_label" id="product_weight" name="product_weight" placeholder="Enter your product weightin grams">
+                  <button type="submit" class="click" id="weight_submit">Calculate</button>
+          <span id="TermsErr12"></span>
+                </div>
+       
+       
+       <div id="totalfee"></div>
+       
+       <div class="line" id="demo3" style="display:none">&nbsp;</div>
+               
+        <div class="form-group" id="demo4" style="display:none">
+        <h3>Calculate My Profit :</h3>
+                  <h5>Enter your product Price :</h5>
+                  <input type="number" class="form-control san_label" id="actual_price" name="actual_price" placeholder="Enter your product Price">
+                  <button type="submit" class="click" id="profit_submit">Calculate</button>
+          <span id="TermsErr15"></span>
+                </div>
+       
+      <div id ="total_cal"></div>
+       
+       
+       
+       
+            </div>
+          </div>
+        </div>
+		
+		
+		
+      </div>
+    </div>
+  </div>
+  </section>
+<div class="clearfix"></div>
+  <!--pricing end here --> 
+  <!--our services -->
+<section id="ourservices_scr">
+    <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> OUR SERVICES</span></h3>
+  <div class="title_lines"></div>
+<div class="srvices_main1 ">
+<div class="container">
+	
+
+                           	 <div class="col-lg-4  col-md-4 col-sm-4">
+                                <div class="service_first">
+                                
+                                <!--<img src="images/canon.png" alt=""/>-->
+                                <h1 class="heading">Marketplace Solution</h1>
+                                    <p>We provide complete product listing to inventory update & order process. Start sell on multiple marketplaces we call it ‘One Stop Junction’</p>
+                                  
+								   
+								    <!-- <button class="btn btn-primary btn-sm"onclick="myFunction()" >Know more</button> -->
+                                   <p class="lin_read"> <a href="<?php echo base_url();?>seller/marketplace_solutions" >Know more</a></p>
+                                   
+                            </div>
+                            </div>
+                            
+                           	<!-- <div class="col-lg-4  col-md-4 col-sm-4">
+                                <div class="service_first">
+                                
+                              
+                                <h1 class="heading">Simple 5 Step to Grow Your Sell</h1>
+                                   <ul>
+										<li>Seller account registration</li>
+										<li>Brand & Category approval</li>
+										<li>Catalog seo content creation</li>
+										<li>Listing on Marketplace sites</li>
+										<li>Inventory Management</li>
+										<li>Dispute Management</li>
+                                   </ul>
+                                   <div class="service_button"><a href="dell-printer-support.php">More</a></div>
+                                   
+                            </div>
+                            </div>-->
+							
+                            
+                             <div class="col-lg-4  col-md-4 col-sm-4">
+                                <div class="service_first">
+                                <h1 class="heading">Catalog Management</h1>
+                                <!--<img src="images/canon.png" alt=""/>-->
+                                
+                                    <p>We have expert team to make proper product digital catalog which provide good customer experience increase sales for multiple marketplaces. </p>
+                                  
+								   <p class="lin_read"><a href="<?php echo base_url();?>seller/catalog_management" >Know more</a></p>
+                                   
+                            </div>
+                            </div>
+							<div class="col-lg-4  col-md-4 col-sm-4">
+                                <div class="service_first">
+                                
+                                <!--<img src="images/canon.png" alt=""/>-->
+                                <h1 class="heading">Product Photoshoot</h1>
+                                    <p>We do Model  and Table top Photo Shoot which enhance and enrich your product image help to generate more sale and to grow your business online. </p>
+                                  
+                                  
+                                   <p class="lin_read"><a  href="<?php echo base_url();?>seller/product_photoshoot" >Know more</a></p>
+                            </div>
+                            </div>
+							<div class="clearfix"></div>
+	<div class="panel panel-default pad_10 mar_t10">
+      <h4>Pricing</h4>
+      
+    </div>
+	
+	<div class="clearfix"></div>
+	<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Bronze</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $10<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                1 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                1 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                100K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                100MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
+                    1 month FREE trial</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-success">
+                <div class="cnrflash">
+                    <div class="cnrflash-inner">
+                        <span class="cnrflash-label">MOST
+                            <br>
+                            POPULR</span>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Silver</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $20<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                2 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                5 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                100K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                200MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
+                    1 month FREE trial</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Gold</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $35<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                5 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                20 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                300K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                500MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
+            </div>
+        </div>
+		<div class="col-xs-12 col-md-3">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Gold</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $35<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                5 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                20 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                300K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                500MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
+            </div>
+        </div>
+		
+    </div>
+</div>
+
+       
+ <div class="clearfix">   </div>  
+<p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>
+<div class="container">
+	<div class="row">
+        <div class="span8">
+		<h3 class="text-center">Just fill form to Select plan</h3>
+		<div class="col-md-3">&nbsp;</div>
+		<div class="col-md-6">
+   <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="">Buiness Name:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="" placeholder="Enter Buiness Name" name="" reqired>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="">First Name:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="" placeholder="Enter First Name" name="" reqired>
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="">Mobile/Phone No:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="" placeholder="Enter Mobile/Phone No" name="" reqired>
+      </div>
+    </div> 
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="email">Valid Email Id:</label>
+      <div class="col-sm-8">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="">Business OPeration:</label>
+      <div class="col-sm-8">          
+        <select class="form-control" id="sel1">
+        <option>select your Business OPeration</option>
+        <option>Business OPeration1</option>
+        <option>Business OPeration 2</option>
+        <option>Business OPeration 3</option>
+      </select>
+      </div>
+    </div> 
+	<div class="form-group">
+      <label class="control-label col-sm-4" for="">Select Plan :</label>
+      <div class="col-sm-8">          
+        <select class="form-control" id="sel1">
+        <option>select plan</option>
+        <option>plan1</option>
+        <option>plan 2</option>
+        <option>plan 3</option>
+      </select>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-8">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-8">
+        <button type="submit" class="btn btn-primary">SELECT THIS PLAN</button>
+      </div>
+    </div>
+  </form>
+			</div>
+			<div class="col-md-3">&nbsp;</div>
+    	</div> <!-- .span8 -->
+	</div>
+</div>
+                            
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+<!-- end our services -->
+<section id="about_sc">
+
+  <div class="container">
+  <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g">ABOUT US</span></h3>
+  <div class="title_lines"></div>
+ <div class="faq_main">
+ 
+    <div class="pad_abou">
+	<div class="  " >
+	
+	<div class="panel_cus panel-primary ">
+     
+	
+	<div class="clearfix"></div>
+	<div class="layer"></div>
+	<div id="process">
+		<div id="svgContainer" >
+		  <svg version="1.1" id="tracesvg" viewBox="0 0 400 2348" >
+				
+
+				<path id="foo" fill="none" stroke-width="10" stroke="#002f3f" d="M975.827406,1038.15506 C975.827406,1038.15506 976.64376,1115.68782 975.827406,1200 C975.011053,1284.31218 955.827393,1394.47512 705.764803,1395.81038 C455.702214,1397.14564 437.238872,1523.38302 436.036139,1654.48996 C434.833407,1785.5969 436.036139,1936.68442 436.036139,2037.53097 C436.036139,2138.37751 460.302847,2239.01365 704.226737,2239.01365 C948.150628,2239.01365 976.920663,2405.96209 976.64376,2502.21851 C976.366857,2598.47493 978.390712,2601.72983 976.64376,2739.20493 C974.896808,2876.68002 954.649694,2978.03989 704.226737,2978.03989 C453.803781,2978.03989 436.210077,3161.01843 437.238872,3222.62024 C438.267666,3284.22206 437.238872,3385.78397 437.238872,3385.78397 3222.62024 C438.267666,3284.22206 437.238872,3385.78397 437.238872,3385.78397" transform="translate(-435 -1038)" stroke-dasharray="8 4"/>
+		  </svg>	
+		</div>
+		
+		<div class="row ">
+
+		  <div class="col c1">
+			<h3>Who are we</h3>
+			<ol>
+			  <li>Cartin hour is a platform where customer meets their local stores in online.</li>
+			  <li>Complete new era of shopping begins here</li>
+			</ol> 
+		   
+		  </div>
+		  <div class="col c2">
+			<img class="img-thumbnail" id="img1" src="<?php echo base_url(); ?>assets/seller_login/images/waw.png" alt="" width="200">
+		  </div>
+		</div>
+		<div class="row ">
+		  <div class="col c2">
+			<img class="img-thumbnail" src="<?php echo base_url(); ?>assets/seller_login/images/wwd.png" alt="" width="200">
+		  </div>
+		  <div id="img2" class="col c1">
+			<!-- <h1>2</h1> -->
+			<h3>What we are doing</h3>
+			<ol>
+			  <li>We are bringing new revolution in e commerce industry</li>
+			  <li>We are transforming local stores in to online</li>
+			  <li>We are helping working couple and other busy individuals by making them to spend their valuable time with their dear ones instead of wasting at ques of shopping malls.</li>
+			</ol>
+		  </div>
+
+		</div>
+		<div class="row ">
+
+		  <div class="col c1">
+			<!-- <h1>3</h1> -->
+			<h3>How we are doing</h3>
+			<ol>
+			  <li>We have an excellent network of our delivery boys who are main pillars for us</li>
+			  <li>We have millions of sellers to fulfil customer needs</li>
+			</ol>
+		  </div>
+		  <div class="col c2">
+			<img class="img-thumbnail" id="img3" src="<?php echo base_url(); ?>assets/seller_login/images/hwd.png" alt=""	>
+		  </div>
+		</div>
+		<div class="row ">
+		  <div class="col c2">
+			<img class="img-thumbnail" id="img4" src="<?php echo base_url(); ?>assets/seller_login/images/tmo.png" alt="">
+		  </div>
+		  <div class="col c1">
+			<!-- <h1>4</h1> -->
+			<h3>Our vision</h3>
+			<ol>
+			  <li>we are trying to make complete local stores into online</li>
+			  <li>We act like a weapons for local stores against gigantic ecommerce sites.</li>
+			</ol>
+		  </div>
+		</div>
+	</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+<!--  start contact us-->
+<section id="contact_sc">
+<div class="srvices_main1">
+ <div class="container ">
+ <h3 class="text-center"  id="contact_sc" data-spy="scroll"><span class="span_bg_g">CONTACT US</span></h3>
+  <div class="title_lines"></div>
+	
+			<div class=" col-md-6 ">	  
+				<form  class=""id="ajax-contact"  method="post" action="<?php echo base_url(); ?>seller/contactus/details" role="form">
+					<div class="messages" id="form-messages"></div>
+					<?php echo $this->session->flashdata('msg1'); ?>
+					<div class="controls">
+						<div class="row mar_t10">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_name">Firstname *</label>
+									<input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_lastname">Lastname </label>
+									<input id="form_lastname" type="text" name="lname" class="form-control" placeholder="Please enter your lastname *"  data-error="Lastname is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_email">Email *</label>
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_phone">Phone*</label>
+									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+								onchange="try{setCustomValidity('')}catch(e){}">
+									
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<input type="submit" class="btn btn-primary " value="Send message">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+							   <br>
+								<small class="text-muted"><strong>*</strong> These fields are required.</small>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+					<div class="col-md-6 pad_10">
+					<!-- <div class="thumbnail">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1902.603941571986!2d78.38998466067792!3d17.49758717711942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1494410712406" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+				   </div> -->
+
+				   <div class="thumbnail">
+						<div style="width: 100%"><iframe width="100%" height="300" src="https://www.maps.ie/create-google-map/map.php?width=100%&amp;height=300&amp;hl=en&amp;q=%20Sri%20Vani%20Nilayam%2C%20Sardar%20Patel%20Nagar%2C%20Nizampet%20%E2%80%98X%E2%80%99%20Road%2C%20Hyderabad%2C%20Telangana+(Cartinhour)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/it/misura-distanza-area-google-maps.html">Misurare distanze google maps</a></iframe></div><br />
+				   </div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="pad_10">
+						<div class="row col1">
+							<div class="col-sm-3">
+								 <i class="fa fa-fax"></i> Website  
+							</div>
+							<div class="col-sm-9">
+								 <a href="http://cartinhour.com/"> www.cartinhour.com</a>
+							</div>
+						</div>
+							<div class="row col1">
+						   <div class="col-xs-3">
+							   <i class="fa fa-map-marker" style="font-size:16px;"></i>   Address
+						   </div>
+						   <div class="col-xs-9">
+								Plot No.177,1st floor, Sri Vani Nilayam,
+								Sardar Patel Nagar, Nizampet ‘X’ Road,
+								Hyderabad, Telangana
+						   </div>
+					   </div>
+					   
+						<div class="row col1">
+							<div class="col-sm-3">
+								<i class="fa fa-phone"></i>   Phone
+							</div>
+							<div class="col-sm-9">
+								 +919494422779
+							</div>
+						</div>
+						
+						<div class="row col1">
+							<div class="col-sm-3">
+								<i class="fa fa-envelope"></i>   Email
+							</div>
+							<div class="col-sm-9">
+								 <a href="mailto:info@yourdomain.com">imainacartin@gmail.com</a> <br> <a href="mailto:support@yourdomain.com">xxxxxx@cartinhour.com</a>
+							</div>
+						</div>
+					</div>
+					
+              
+               
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+	<!--  end contact us-->
+	<!--  faq contact us-->
+<section id="faq_sc">
+
+  <!--faq start here -->
+  <div class="faq_main">
+    <div class="container">
+	<h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g">FAQ's</span></h3>
+	<div class="title_lines"></div>
+	<h1 class="head_title">FAQ's</h1>
+      <div class="faq"> 
+        
+        <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
+        <h1 data-toggle="collapse" data-target="#gry">GETTING STARTED</h1>
+        <div class="demo"> 
+          <!--<div id="gry" style="display:none">-->
+          <div id="gry" class="collapse">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="more-less glyphicon glyphicon-plus"></i> Why should I sell on CARTINHOUR? </a> </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body">CARTINHOUR is the new revolution in Indian e-commerce with ability to reach maximum online and highest credibility. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less glyphicon glyphicon-plus"></i> Who can sell on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body"> Anyone selling new and genuine products is welcome. In order to start selling, you need to have the following:
+                    <ul class="checkmark">
+                      <li>PAN Card (Personal PAN for business type “Proprietorship” and Personal + Business PAN for business type as “Company”)</li>
+                      <li>VAT/TIN Number (not mandatory for books)</li>
+                      <li>Bank account and supporting KYC documents (Address Proof, and Cancelled cheque)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i> How do I sell on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body">To sell on CARTINHOUR:
+                    <ul class="checkmark">
+                      <li>Register yourself at seller.CARTINHOUR.com.</li>
+                      <li>List your products under specific product categories.</li>
+                      <li>Once an order is received, pack the product and mark it as ‘Ready to go’. Our delivery boy will pick up the product and deliver it to the customer.</li>
+                      <li>Once an order is successfully dispatched, CARTINHOUR will settle your payment within 7-14 business days. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingfour">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefpor" aria-expanded="false" aria-controls="collapsefpor"> <i class="more-less glyphicon glyphicon-plus"></i> Can I offer both products and services on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collapsefpor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                  <div class="panel-body">Currently, you can sell only products and not services on CARTINHOUR. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingfive">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive"> <i class="more-less glyphicon glyphicon-plus"></i> Do I need to courier my products to CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+                  <div class="panel-body">No, CARTINHOUR will handle shipping of your products. All you need to do is pack the product and keep it ready for dispatch. Our delivery boy will pick up the product from you and deliver it to the customer. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="six">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapsesix"> <i class="more-less glyphicon glyphicon-plus"></i> What are the documents required to register as a seller on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="six">
+                  <div class="panel-body">You are required to have the following documents:
+                    <ul class="checkmark">
+                      <li>PAN Card (Personal PAN for business type “Proprietorship” and Personal + Business PAN for business type as “Company”)</li>
+                      <li>VAT/TIN Number (not mandatory for books)</li>
+                      <li>Bank account and supporting KYC documents (Address Proof, and Cancelled Cheque)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="seven">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> <i class="more-less glyphicon glyphicon-plus"></i> I do not have a TIN/VAT, can I still register as a seller with only PAN?</a> </h4>
+                </div>
+                <div id="collapseseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="seven">
+                  <div class="panel-body">You can register as a seller with only PAN, but you will be eligible to sell only books. If you want to sell any other product, you will mandatorily require a VAT/TIN. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="eight">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeight" aria-expanded="false" aria-controls="collapeight"> <i class="more-less glyphicon glyphicon-plus"></i> Who decides the price of the products?</a> </h4>
+                </div>
+                <div id="collapeight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eight">
+                  <div class="panel-body">As a seller, you will set the price of your products. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="nine">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapnine" aria-expanded="false" aria-controls="collapnine"> <i class="more-less glyphicon glyphicon-plus"></i> Will I get charged for listing products on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collapnine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="nine">
+                  <div class="panel-body">No. Listing of products on CARTINHOUR.com is free. CARTINHOUR does not charge anything for listing your catalogue online. You only pay a small commission for what you sell. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="ten">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapten" aria-expanded="false" aria-controls="collapten"> <i class="more-less glyphicon glyphicon-plus"></i> Who takes care of the delivery of my products?</a> </h4>
+                </div>
+                <div id="collapten" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ten">
+                  <div class="panel-body">Our delivery boy will pick up the product from you and deliver it to the customer. All you need to do is keep it packed and ready for dispatch. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="eleven">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeleven" aria-expanded="false" aria-controls="collapeleven"> <i class="more-less glyphicon glyphicon-plus"></i> How and when will I get paid?</a> </h4>
+                </div>
+                <div id="collapeleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eleven">
+                  <div class="panel-body">The payment will be made directly to your bank account through NEFT transactions within 7-14 business days of dispatching an order. The actual payment period will vary depending on how long you have been selling at CARTINHOUR, your customer ratings and number of orders fulfilled.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="teivel">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapteivel" aria-expanded="false" aria-controls="collapteivel"> <i class="more-less glyphicon glyphicon-plus"></i> When can I start selling?</a> </h4>
+                </div>
+                <div id="collapteivel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="teivel">
+                  <div class="panel-body">After all the required documents have been verified and your seller profile is complete, you can start listing your products and start selling.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- panel-group -->
+          <h1 data-toggle="collapse" data-target="#price">PRICING AND PAYMENTS</h1>
+          <div id="price" class="collapse">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="price1">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice1" aria-expanded="false" aria-controls="collapprice1"> <i class="more-less glyphicon glyphicon-plus"></i> Who decides the price of the product?</a> </h4>
+                </div>
+                <div id="collapprice1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price1">
+                  <div class="panel-body">As a seller, you will set the price of your products. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="price2">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i> What are the fees charged?</a> </h4>
+                </div>
+                <div id="collapprice2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price2">
+                  <div class="panel-body">The following deductions are made from the order item value:
+                    <ul class="checkmark">
+                      <li>CIH fee: A percentage of the order item value vary based on vertical/sub-category. Check your CIH fee for your product here.</li>
+                      <li>Shipping fee (calculated on the basis of the product weight, shipping location and)</li>
+                      <li>Collection fee: This will vary based on order item value and customer payment mode (Prepaid/Cash on Delivery) </li>
+                      <li>selling fee: A slab wise Fixed fee. This vary based on Order item value</li>
+                      <li>Service tax (applicable on all the above components)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="price3">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What is CIH fee and how much commission is charged?</a> </h4>
+                </div>
+                <div id="collapprice3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price3">
+                  <div class="panel-body">Commission fee is a certain percentage of the order item value of your product. It differs across categories and vertical/sub-categories. Check here for your product.
+                    Please give an example to show the cost calculation.
+                    Here’s an easy example, which illustrates a sample the above calculation:
+                    <table class="table table-bordered table-responsive cat">
+                      <thead class="thead-inverse">
+                        <tr>
+                          <th>ITEM</th>
+                          <th>AMOUNT (RS.)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Product Price (decided by you)</td>
+                          <td>1500</td>
+                        </tr>
+                        <tr>
+                          <td>CIH Fee (varies across sub-categories/verticals)</td>
+                          <td>150 (assuming 10%)</td>
+                        </tr>
+                        <tr>
+                          <td>Shipping Fee (Local shipping, weight 500 grams)</td>
+                          <td>30</td>
+                        </tr>
+                        <tr>
+                          <td>Deliveryservice Fee (1.3% on the Order item value)</td>
+                          <td>19.5</td>
+                        </tr>
+                        <tr>
+                          <td>Selling Fee</td>
+                          <td>20</td>
+                        </tr>
+                        <tr>
+                          <td>Total Fee</td>
+                          <td>219.5</td>
+                        </tr>
+                        <tr>
+                          <td>Service Tax (15% of Marketplace Fee including Swachh Bharat &Krishi Kalyan cess)</td>
+                          <td>32.925</td>
+                        </tr>
+                        <tr>
+                          <td>Total deductions</td>
+                          <td>252.425</td>
+                        </tr>
+                        <tr>
+                          <td>Settlement Value (Amount credited to you)</td>
+                          <td>1247.575</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="price4">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How and when do I get paid?</a> </h4>
+                </div>
+                <div id="collapprice4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price4">
+                  <div class="panel-body">All payments are made through NEFT transactions (online banking). The payment is made directly to your bank account within the next 7-15 business days from the date of order dispatch. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 data-toggle="collapse" data-target="#list">LISTINGS AND CATALOG</h1>
+          <div id="list" class="collapse">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="list1">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What is listing?</a> </h4>
+                </div>
+                <div id="collaplist1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list1">
+                  <div class="panel-body">Listing a product refers to filling out all the necessary information and adding images of the product so that a customer can make an informed buying decision. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="list2">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I list my products on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collaplist2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list2">
+                  <div class="panel-body">We give you a step-by-step process of how to list your products on our website. It is important to choose the most suitable category to list your product as it will help customers find your products faster. Based on the category you choose, you'll be asked to include product details such as size, model, colour, etc. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="list3">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Can I get help for development of catalogue (product images, description, etc.)?</a> </h4>
+                </div>
+                <div id="collaplist3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list3">
+                  <div class="panel-body">Yes, we are happy to help you at every stage while doing business with us. We help you connect with industry experts for the development of your catalogues. With the help of our catalogue partners across India, you can have attractive images and crisp content developed at unbeatable prices. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="list4">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How does a catalogue partner help me?</a> </h4>
+                </div>
+                <div id="collaplist4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list4">
+                  <div class="panel-body">Our catalogue partners develop high-quality photographs of your products and crisp product descriptions for your product catalogue. A good catalogue gives your customers a better understanding of your products and helps boost your sales. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="list5">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist5" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I price my products?</a> </h4>
+                </div>
+                <div id="collaplist5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list5">
+                  <div class="panel-body">When pricing products on CARTINHOUR, please account for the applicable Marketplace Fee and include a suitable margin to arrive at the Selling Price. For ease of calculation, you can use our Commission Calculator widget once onboarded. </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="list6">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist6" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Will I get charged for listing products on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collaplist6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list6">
+                  <div class="panel-body">No. Listing of products on CARTINHOUR.com is free. CARTINHOUR does not charge anything to you for listing your catalogue online. You only pay a small commission for what you sell. </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 data-toggle="collapse" data-target="#order">ORDER MANAGEMENT AND SHIPPING</h1>
+          <div id="order" class="collapse">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="order1">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Who takes care of the delivery of my products?</a> </h4>
+                </div>
+                <div id="collaporder1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order1">
+                  <div class="panel-body">Our delivery boy will pick up the product from you and deliver it to the customer. All you need to do is keep it packed and ready for dispatch.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="order2">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What should I do if my area is not serviceable by CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collaporder2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order2">
+                  <div class="panel-body">During registering, save the details of your pin code and click on the Continue button. You will be notified via e-mail when your pin code becomes serviceable.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="order3">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I manage my orders on CARTINHOUR?</a> </h4>
+                </div>
+                <div id="collaporder3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order3">
+                  <div class="panel-body">Through our seller dashboard, we make it easy for you to manage your orders. Whenever a customer places an order, we send you an email or phone message alert. You need to pack the order and keep it ready for dispatch within the time frame provided by you and inform us through the seller portal. This will alert our delivery boy to pick up the product from you.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="order4">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Does CARTINHOUR provide packaging material?</a> </h4>
+                </div>
+                <div id="collaporder4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order4">
+                  <div class="panel-body">We have a strong network of best packaging material providers in the industry. We can connect you with them to get good quality packaging material which impresses the customers and ensures your products remain undamaged.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 data-toggle="collapse" data-target="#return">RETURNS AND SELLER PROTECTION</h1>
+          <div id="return" class="collapse">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="return1">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What protection does CARTINHOUR offer in case of lost/damaged goods and fraudulent customer claims?</a> </h4>
+                </div>
+                <div id="collapreturn1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return1">
+                  <div class="panel-body">CARTINHOUR has set up a Seller safety scheme (SSS) to protect our sellers against fraud. You can request for SSS claim through the seller dashboard. When the buyer or delivery boy is at fault, you will receive due compensation.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="return2">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the customer has returned damaged products?</a> </h4>
+                </div>
+                <div id="collapreturn2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return2">
+                  <div class="panel-body">Yes, you can raise a claim through Seller safety scheme. Depending on the case and category, you will be given a refund provided you have adequate proof that you shipped an authentic/undamaged product. This will help us close the dispute in your favour.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="return3">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the customer has replaced the original product with a different item?</a> </h4>
+                </div>
+                <div id="collapreturn3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return3">
+                  <div class="panel-body">Yes, you can raise a claim through Seller safety scheme. Depending on the case and category, you will be given a refund provided you have adequate proof that you shipped the right product. This will help us close the dispute in your favour.</div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="return4">
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the goods are damaged or lost in transit?</a> </h4>
+                </div>
+                <div id="collapreturn4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return4">
+                  <div class="panel-body">Yes. When your products are damaged in transit, you can raise a claim under the Seller safety scheme. The refund depends on the scenario and product.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container --> 
+        
+      </div>
+    </div>
+  </div>
+  </section>
+  </div>
+  </div>
+  </div>
+ </body>
+  
+  <!--body end here --> 
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+function myFunction1() {
+    var x = document.getElementById('myDIV1');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+function myFunction2() {
+    var x = document.getElementById('myDIV2');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  
+  
+  <script type="text/javascript">
+$(document).ready(function()
+{
+$("#cih_id").change(function()
+{
+var id=$(this).val();
+//alert(id);
+var dataString = 'cih_id='+ id;
+$.ajax
+({
+type: "POST",
+ url: "<?php echo base_url();?>seller/pricing_calculator/getajaxcih",
+data: dataString,
+cache: false,
+success: function(data)
+{
+  //alert(data);
+$("#cihfee").html(data);
+} 
+});
+
+});
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+$("#cih1_id").change(function()
+{
+var id=$(this).val();
+//alert(id);
+var dataString = 'cih1_id='+ id;
+$.ajax
+({
+type: "POST",
+ url: "<?php echo base_url();?>seller/pricing_calculator/getajaxcih1",
+data: dataString,
+cache: false,
+success: function(data)
+{
+  //alert(data);
+$("#cihfee1").html(data);
+} 
+});
+
+});
+});
+</script>
+
+
+
+
+<script type="text/javascript" language="javascript">
+      $(document).ready(function(){
+    $('#calfee_submit').click(function(e){
+    e.preventDefault();
+ 
+    //if ($('#chkterms2').is(':checked')) {
+   var cih1_id =  $("#cih1_id").val();
+     var product_price = $("#product_price").val();
+   var cih_fee1 = $("#cih_fee1").val();
+     //var subcatname = $("#subcatname").val();
+   //alert(cih1_id);
+ //alert(product_price);
+  
+  
+  if (cih1_id == "")
+    {
+    $("#CatErr").html("Please Select Category").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#CatErr").html("");
+    }
+  
+  
+  if (product_price == "")
+    {
+    $("#TermsErr").html("Please Enter Price").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#TermsErr").html("");
+    }
+ 
+    $.ajax({
+    type: "POST",
+    url: '<?php echo base_url() ?>seller/pricing_calculator/getreferalfee',
+    data: {product_price:product_price,cih_fee1:cih_fee1},
+    success:function(data)
+    {
+    
+  $("#refclose").html(data);
+  $('#demo2').show();
+    $('#demoki').show();
+  
+    }
+    });
+    });
+    
+    });
+  
+
+</script>
+
+
+<script type="text/javascript" language="javascript">
+      $(document).ready(function(){
+    $('#weight_submit').click(function(e){
+    e.preventDefault();
+ 
+    //if ($('#chkterms2').is(':checked')) 
+   var product_price = $("#product_price").val();
+    var productcih_fee = $("#productcih_fee").val();
+   var closing_fee = $("#closing_fee").val();
+   //var cih_fee1 = $("#cih_fee1").val();
+   var product_weight = $("#product_weight").val();
+  //alert(closing_fee);
+  if (product_weight == "")
+    {
+    $("#TermsErr12").html("Please Enter Product Weight in grams").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#TermsErr12").html("");
+    }
+ 
+    $.ajax({
+    type: "POST",
+    url: '<?php echo base_url() ?>seller/pricing_calculator/shippingcharge',
+    data: {product_weight:product_weight,product_price:product_price,closing_fee:closing_fee,productcih_fee:productcih_fee},
+    success:function(data)
+    {
+    
+  $("#totalfee").html(data);
+  $('#demo3').show();
+    $('#demo4').show();
+  //$('#tfsubmit').show();
+    
+    }
+    });
+    });
+    
+    });
+  
+
+</script>
+
+
+<script type="text/javascript" language="javascript">
+      $(document).ready(function(){
+    $('#profit_submit').click(function(e){
+    e.preventDefault();
+ 
+    //if ($('#chkterms2').is(':checked')) {
+    
+    
+    
+     
+    var youmake = $("#youmake").val();
+  
+  var actual_price = $("#actual_price").val();
+   
+    //var product_price = $("#product_price").val(); TermsErr15
+  
+  if (actual_price == "")
+    {
+    $("#TermsErr15").html("Please Enter Product Price").css("color", "red").fadeIn().fadeOut(5000);
+    return false;
+    }
+    else{
+      $("#TermsErr15").html("");
+    }
+  
+ 
+    $.ajax({
+    type: "POST",
+    url: '<?php echo base_url() ?>seller/pricing_calculator/getajaxprofit',
+    data: {youmake:youmake,actual_price:actual_price},
+    success:function(data)
+    {
+      
+   $("#total_cal").html(data);
+   
+    
+    }
+    });
+    });
+</html>	
+    
+    });
+  
+
+</script>
+  <!--pricing its work end here --> 
  

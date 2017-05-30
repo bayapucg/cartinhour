@@ -4679,8 +4679,9 @@ fieldset[disabled] .navbar-default .btn-link:hover {
     color: #ccc
 }
 .navbar-inverse {
-    background-color: #eee;
-    border-color: #ddd
+    background-color: #fff;
+    border-color: #ddd;
+	box-shadow: 3px 3px 10px grey;
 }
 .navbar-inverse .navbar-brand {
     color: #9d9d9d

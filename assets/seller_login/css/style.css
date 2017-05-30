@@ -1,8 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
+*{
+	
+}
 body {
 	width: 100%;
 	height: auto;
+	
 	float: left;
 	margin: 0px 0px;
 	padding: 0px 0px;
@@ -794,6 +798,7 @@ a.socialIcon:hover, .socialHoverClass {
 	text-decoration: none;
 	font-weight: 300;
 	color: #000;
+	text-align:left;
 }
 .more-less {
 	float: right;
@@ -803,6 +808,8 @@ a.socialIcon:hover, .socialHoverClass {
 	border-top-color: #EEEEEE;
 	color: #000;
 	font-weight: 300;
+	padding:0px 25px;
+	text-align:left;
 }
 .demo {
 	padding-top: 0px;
@@ -1497,7 +1504,7 @@ ul {
 }
 #svgContainer svg {
     width: 548px;
-    height: 1748px
+    height: 1400px
 }
 
 .layer {
@@ -1786,4 +1793,35 @@ ul {
 .our-features-box ul{
 	padding:0px;
 }
-}	
+}
+
+/* scroll to top */
+.scrollup{
+    position:fixed;
+	width:32px;
+	height:32px;
+    bottom:30px;
+    right:20px;
+	background: #006a99;
+-webkit-border-radius: 2px 2px 0 0;	
+	-moz-border-radius: 2px 2px 0 0;	
+	border-radius:  2px 2px 0 0;	
+}
+
+a.scrollup {
+	outline:0;
+	text-align: center;
+}
+
+a.scrollup:hover,a.scrollup:active,a.scrollup:focus {
+	opacity:1;
+	text-decoration:none;
+}
+a.scrollup i {
+	margin-top: 10px;
+	color: #fff;
+}
+a.scrollup i:hover {
+	text-decoration:none;
+}
+	

@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
-          <div class="nav-side-menu">
+          <div class="nav-side-menu" style="position: fixed;top:100px; left:0;height:600px;">
             <div class="brand">Welcome</div>
             <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
             <div class="menu-list">

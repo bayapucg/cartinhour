@@ -281,7 +281,9 @@ th {
     content: "\002a"
 }
 .glyphicon-plus:before {
-    content: "\002b"
+    content: "\002b";
+	color:#ccc;
+	
 }
 .glyphicon-eur:before,
 .glyphicon-euro:before {
@@ -4081,6 +4083,12 @@ textarea.input-group-sm>.input-group-btn>.btn {
 	border-top:2px solid #006a99;
 	
 }
+.active {
+    text-decoration: none;
+    /* background-color: #eee; */
+	border-top:2px solid #006a99;
+	
+}
 .nav>li.disabled>a {
     color: #777
 }
@@ -4268,7 +4276,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 @media (min-width: 768px) {
     .navbar-header {
         float: left;
-		width:30%;
+		width:28%;
     }
 }
 .navbar-collapse {
@@ -5760,7 +5768,7 @@ button.list-group-item-danger.active:hover {
     margin-bottom: 20px
 }
 .panel-group .panel {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     border-radius: 4px
 }
 .panel-group .panel+.panel {

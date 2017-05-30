@@ -2,98 +2,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<!--<div class="header_main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-xs-6">
-          <div class="logo">
-            <a href="<?php echo base_url();?>seller/dashboard"> <img src="<?php echo base_url(); ?>assets/seller/images/logo.png" class="img-responsive" /></a>
-          </div>
-          </div>
-		   <div class="col-md-3 col-xs-6">
-		  <div class=" md_hide noti_log pull-right">
-			 <ul class="nav navbar-nav navbar-right">
-         
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell" aria-hidden="true"></i> (<b>2</b>)</a>
-              <ul class="dropdown-menu notify-drop">
-                <div class="notify-drop-title">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6">Bildirimler (<b>2</b>)</div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 text-right"><a href="" class="rIcon allRead" data-tooltip="tooltip" data-placement="bottom" title="tümü okundu."><i class="fa fa-dot-circle-o"></i></a></div>
-                  </div>
-                </div>
-                <!-- end notify title --> 
-                <!-- notify content -->
-                <!--<div class="drop-content">
-                  <li>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
-                      <hr>
-                      <p class="time">Şimdi</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
-                      <p>Lorem ipsum sit dolor amet consilium.</p>
-                      <p class="time">1 Saat önce</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
-                      <p>Lorem ipsum sit dolor amet consilium.</p>
-                      <p class="time">29 Dakika önce</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
-                      <p>Lorem ipsum sit dolor amet consilium.</p>
-                      <p class="time">Dün 13:18</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-3 col-sm-3 col-xs-3">
-                      <div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-9 pd-l0"><a href="">Ahmet</a> yorumladı. <a href="">Çicek bahçeleri...</a> <a href="" class="rIcon"><i class="fa fa-dot-circle-o"></i></a>
-                      <p>Lorem ipsum sit dolor amet consilium.</p>
-                      <p class="time">2 Hafta önce</p>
-                    </div>
-                  </li>
-                </div>
-                <div class="notify-drop-footer text-center"> <a href=""><i class="fa fa-eye"></i> Tümünü Göster</a> </div>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <?php echo ucfirst($this->session->userdata('seller_name'));    ?> <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-			<ul class="dropdown-menu extended logout">
-            <div class="log-arrow-up"></div>
-			<li> <a href="<?php echo base_url() ; ?>/seller_admin/dashboard/changepassword"><i class="fa fa-lock" aria-hidden="true"></i> Change Password</a> </li>
-            <li> <a href="<?php echo base_url() ; ?>/seller_admin/login/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a> </li>
-          </ul>
-			
-			</li>
-          </ul>
-		</div>
-        </div>
-		
-        
-      </div>
-    </div>
-  </div>-->
+
   
   <!--navigation start here -->
-  <div class="navigation_main">
-    <nav class="navbar navbar-inverse hm_nav">
+<body data-spy="scroll" data-target=".scrollspy"> 
+ <div class="header  mar_b50" >
+  <div class="navigation_main ">
+    <nav class="navbar navbar-inverse navbar-fixed-top pad_lr10 ">
       <div class="">
         <div class="navbar-header logo_style" >
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -194,4 +109,34 @@
       </div>
     </nav>
   </div>
+  </div>
+  </body>
   <!--navigation end here --> 
+  <script>
+  
+   $(window).scroll(function() {
+if ($(this).scrollTop() > 350) {
+$('.hm_nav').addClass('affix');
+$('.hm_nav').addClass('animated fadeInDown');
+}
+else{
+$('.hm_nav').removeClass('affix');
+$('.hm_nav').removeClass('animated fadeInDown');
+}
+ });
+</script>
+  	<script>
+		$('#nav').affix({
+    offset: {
+        top: $('#nav').offset().top
+    }
+});
+
+$('#nav').affix({
+    offset: {
+        bottom: ($('footer').outerHeight(true) +
+        $('.application').outerHeight(true)) +
+        40
+    }
+});
+		</script>

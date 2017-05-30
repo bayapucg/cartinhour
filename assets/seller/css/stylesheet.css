@@ -21,6 +21,7 @@ body {
 	float: left;
 	margin: 0px;
 	padding: 0px;
+	bottom:0px;
 }
 .header_main {
 	padding: 10px 0px;
@@ -638,6 +639,13 @@ ul {
 	.mar_b50{
 		margin-bottom:50px;
 		
+		
 	}
 	/* logo style at navbar */
+	.mar_b50{
+		margin-bottom:100px
+	}
+	.pad_lr10{
+		padding:0px 15px;
+	}
 	

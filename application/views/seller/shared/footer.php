@@ -1,11 +1,11 @@
 <!--footer part start here -->
-  <footer class="footer">
+  <footer class="footer" style="margin-bottom:0px" >
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="ftr">
+          <!--<div class="ftr">
             <div class="queries">Download our seller apps from here</div>
-            <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/google.png" class="img-responsive" /></a> <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/play.png" class="img-responsive" /></a> </div>
+            <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/google.png" class="img-responsive" /></a> <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/play.png" class="img-responsive" /></a> </div>-->
         </div>
         <div class="col-md-2"> &nbsp;</div>
         <div class="col-md-2">

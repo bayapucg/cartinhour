@@ -1,4 +1,4 @@
-
+<!--our services -->
 <div class="srvices_main1 ">
 <div class="container">
 	<div class="panel panel-primary">
@@ -355,6 +355,7 @@
 </div>
                             
 </div>
+<!-- end our services -->
 <script>
 function myFunction() {
     var x = document.getElementById('myDIV');
