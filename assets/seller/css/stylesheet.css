@@ -173,7 +173,7 @@ body {
 	color: #e1ffff;
 }
 .nav-side-menu .brand {
-	background-color: #a62d2d;
+	background-color: #006a99;
 	line-height: 50px;
 	display: block;
 	text-align: center;
@@ -451,7 +451,7 @@ a.socialIcon:hover, .socialHoverClass {
 .chng h2 {
 	margin: 0 0 20px 0;
 	font-size: 20px;
-	color: #a62d2d;
+	color: #006a99;
 }
 .chang_form {
 	width: 400px;
@@ -543,14 +543,14 @@ ul {
     font-family: Raleway, sans-serif;
     font-size: 72px;
     font-weight: 400;
-    color: #ff3b30;
+    color: #006a99;
     margin: 0
 }
 #process .row .col.c1 h3 {
     margin-top: 15px;
     font-family: Raleway, sans-serif;
     font-size: 24px;
-    color: #ff3b30;
+    color: #006a99;
     font-weight: 600;
 	padding: 0px 14px;
 }
@@ -613,7 +613,7 @@ ul {
     }
 	}
 	.panel_cus{
-		border:1px solid #a62d2d;
+		border:1px solid #006a99;
 		
 	}
 	.panel_head_sty{
@@ -621,7 +621,7 @@ ul {
 	}
 	.panel_head_sty{
 		font-size:20px;
-		background-color:#a62d2d !important;
+		background-color:#006a99!important;
 	}
 	.panel_col{
 		

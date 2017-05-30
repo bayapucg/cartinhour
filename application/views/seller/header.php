@@ -65,28 +65,14 @@ $(window).load(function() {
           <li class="active"><a href="<?php echo base_url(); ?>seller/login">HOME <span class="sr-only">(current)</span></a></li>
           <li><a href="<?php echo base_url(); ?>seller/benifits">BENIFITS</a></li>
 		  <li><a href="<?php echo base_url(); ?>seller/howitworks">HOW IT WORKS</a></li>
-          <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOW IT WORKS <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>-->
-          <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICINGS</a></li>
-          <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
+         
+          <li><a href="<?php echo base_url();?>seller/pricing_calculator">PRICING</a></li>
+         
           <li><a href="<?php echo base_url();?>seller/ourservices">OUR SERVICES</a></li>
+            <li><a href="<?php echo base_url();?>seller/aboutus">About Us</a></li>
           <li><a href="<?php echo base_url();?>seller/pricings">Contact Us</a></li>
-          <!--<li><a href="<?php //echo base_url();?>seller/LearningCenter">HELP</a></li>-->
-		  <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HELP <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="<?php //echo base_url();?>seller/faq">FAQ's</a></li>
-              <li><a href="<?php //echo base_url();?>seller/LearningCenter">Learning Center</a></li>
-            </ul>
-          </li>-->
+		   <li><a href="<?php echo base_url();?>seller/faq">FAQ's</a></li>
+         
 		 
         </ul>
 	<ul class="nav navbar-nav navbar-right">
@@ -234,7 +220,7 @@ $(window).load(function() {
 									  <input class="form-control" id="seller_license" name="seller_license" type="text">
 									  <span id="errorlicense" style="color:red; font-size: 13px;"></span>
 									</div>
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
+									<!--<div class="col-xs-12 col-md-6 nopaddingright reginput">
 									  <label for="ex8">Aadhar Number</label>
 									  <input class="form-control" id="seller_adhar" name="seller_adhar" maxlength="12"  type="text">
 									  <span id="erroradhar" style="color:red; font-size: 13px;"></span>
@@ -243,12 +229,18 @@ $(window).load(function() {
 									  <label for="ex9">Bank Acc Number</label>
 									  <input class="form-control" id="seller_bank" name="seller_bank" type="text">
 									  <span id="errorbank" style="color:red; font-size: 13px;"></span>
-									</div>
+									</div>-->
 								   
-									<div class="col-xs-12 col-md-12 nopaddingright reginput">
+									<div class="col-xs-12 col-md-6 nopaddingright reginput">
 									  <label for="ex12">Address</label>
 									  <textarea class="form-control" id="seller_address" name="seller_address"></textarea>
 									  <span id="erroraddress" style="color:red; font-size: 13px;"></span>
+									</div>
+									<div class="col-xs-12 col-md-6 " style="margin-top:30px">
+									  <label for="ex12"></label><br>
+									  <button class="btn btn-primary">Detect my Location</button>
+									 
+									 
 									</div>
 								  </div>
 								   <label>
