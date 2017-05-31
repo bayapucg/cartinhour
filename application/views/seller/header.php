@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/style.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/animate.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/custom.min.css" />
 <!--style end here -->
 <!--javascript start here -->
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.js"></script>
@@ -18,6 +19,7 @@
 <script src="<?php echo base_url();?>assets/seller_login/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/custom.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.easing.min.js"></script>
+<script src="<?php echo base_url();?>assets/seller_login/js/jquery.smartWizard"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
@@ -44,7 +46,7 @@ $(window).load(function() {
     <div class="">
 	 <div class="navbar-header">
       <a class="navbar-brand" href="#">
-            <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:35%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
+            <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:57%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
 			</p>
           </a>
     </div>
@@ -69,7 +71,7 @@ $(window).load(function() {
         </ul>
 	<ul class="nav navbar-nav navbar-right">
       <!--<li><a data-toggle="modal" data-target="#myModa3"></span> Sign Up</a></li>-->
-      <li><a  data-toggle="modal" data-target="#myModa2"><span class="glyphicon glyphicon-log-in"></span>Sign Up / Login</a></li>
+      <li><a  data-toggle="modal" data-target="#myModa2">SIGN UP / LOGIN</a></li>
     </ul>
       </div>
       <!-- /.navbar-collapse --> 
@@ -508,7 +510,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 1500, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;

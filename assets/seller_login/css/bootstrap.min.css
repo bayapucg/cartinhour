@@ -4081,12 +4081,14 @@ textarea.input-group-sm>.input-group-btn>.btn {
     text-decoration: none;
     /* background-color: #eee; */
 	border-top:2px solid #006a99;
+	background:#f5f5f5;
 	
 }
 .active {
     text-decoration: none;
     /* background-color: #eee; */
 	border-top:2px solid #006a99;
+	background:#f5f5f5;
 	
 }
 .nav>li.disabled>a {
@@ -4276,7 +4278,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 @media (min-width: 768px) {
     .navbar-header {
         float: left;
-		width:22%;
+		width:18%;
     }
 }
 .navbar-collapse {

@@ -81,7 +81,7 @@
     </div>
   </div>
  <!-- start <scroller>-->
- <a href="#" class="scrollup" style="display: block;"><i class="fa fa-angle-up active"></i></a>
+ <a href="#home_scr" class="scrollup" style="display: block; background-color:none;border:none"><i class="fa fa-angle-up "></i></a>
  <!-- end<scroller>-->
   <!--body part start here -->
   
@@ -301,69 +301,92 @@
 
   
   <!--howitworks -->
-<section id="how_its_w">
+<section id="how_its_w" class="home-section bg-gray paddingbot-60">
 <div class="pricing_main">
     <div class="container">
 	 <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> HOW IT WORKS</span></h3>
-  <div class="title_lines"></div>
-      <div class="row">
-        <div class="col-md-8 col-xs-12">
-		<div class=" hidden-lg hidden-md">
-		<h1 class="head_title">Four Step Process</h1>
-			<img class="img-responsive"src="<?php echo base_url();?>assets/seller_login/images/fivesteps.jpg">
-		</div>
-		<div class="hidden-xs">
-        <h1 class="head_title">Four Step Process</h1>
-          <ul class="timeline">
-            <li>
-      <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_1.jpg" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading"> 
-                  <!--<h4>Step One</h4>-->
-                  <h4 class="subheading">Register your business with us. </h4>
-                </div>
-              </div>
-              <div class="bht"></div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_2.jpg" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="subheading">Get cataloguing done for your products.</h4>
-                </div>
-              </div>
-              <div class="bht"></div>
-            </li>
-            <li>
-              <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_3.jpg" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="subheading">Upload your inventory. </h4>
-                </div>
-              </div>
-              <div class="bht"></div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/how_4.jpg" alt=""> </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="subheading">Get orders and start selling.</h4>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-        <div class="get_call">
-        <h1 class="head_title" align="center">One Step Process</h1>
-        <div class="get_img"> <img class="img-circle img-responsive" src="<?php echo base_url();?>assets/seller_login/images/call.jpg" alt=""> </div>
-        <p align="center">Just call to ********** . We will take care of your process. </p>
-        
-        
-        </div>
-        </div>
-      </div>
+		<div class="title_lines "></div>
+		   <div class="container mar_t15 ">
+			
+			<div class="row">
+
+				<div class="col-sm-3 pricing-box">
+					<div class="wow bounceInUp" data-wow-delay="0.1s">
+					
+					<div class="pricing-content general">
+					
+						<div class=" steps_bac bac_h1">Step 1</div>
+						<div class="clearfix"></div>
+						<div class="">
+							<img class="img-responsive thumbnail how_img" src="<?php echo base_url();?>assets/seller_login/images/step1.png" alt="">
+						</div>
+						<div class="pos_ab_st"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+
+						<div class="price-bottom">
+							<a href="#" class="btn btn-skin btn-lg">Register your business with us.</a>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-sm-3 pricing-box">
+					<div class="wow bounceInUp" data-wow-delay="0.1s">
+					
+					<div class="pricing-content general">
+					
+						<div class=" steps_bac bac_h2">Step 2</div>
+						<div class="clearfix"></div>
+						<div class="">
+							<img class="img-responsive thumbnail how_img" src="<?php echo base_url();?>assets/seller_login/images/step2.png" alt="">
+						</div>
+						<div class="pos_ab_st"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+
+						<div class="price-bottom word_wrap">
+							<a href="#" class="btn btn-skin btn-lg">Get cataloguing done </a>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-sm-3 pricing-box">
+					<div class="wow bounceInUp" data-wow-delay="0.1s">
+					
+					<div class="pricing-content general">
+					
+						<div class=" steps_bac bac_h3">Step 3</div>
+						<div class="clearfix"></div>
+						<div class="">
+							<img class="img-responsive thumbnail how_img" src="<?php echo base_url();?>assets/seller_login/images/step1.png" alt="">
+						</div>
+						<div class="pos_ab_st"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+
+						<div class="price-bottom">
+							<a href="#" class="btn btn-skin btn-lg">Upload your inventory.</a>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-sm-3 pricing-box">
+					<div class="wow bounceInUp" data-wow-delay="0.1s">
+					
+					<div class="pricing-content general">
+					
+						<div class=" steps_bac bac_h4">Step 4</div>
+						<div class="clearfix"></div>
+						<div class="">
+							<img class="img-responsive thumbnail how_img" src="<?php echo base_url();?>assets/seller_login/images/step2.png" alt="">
+						</div>
+					
+						<div class="price-bottom">
+							<a href="#" class="btn btn-skin btn-lg">Get orders and start selling.</a>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+
+			</div>				
+				
+            </div>
+		
       </div>
     </div>
   </div>
@@ -375,7 +398,7 @@
   <!--header part end here --> 
   <!--pricing start here -->
   <div class="pricing_main">
-    <div class="container-fluid">
+    <div class="container">
 	 <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> PRICING</span></h3>
   <div class="title_lines"></div>
       <div class="row">
@@ -511,10 +534,11 @@
                                 <div class="service_first">
                                 
                                 <!--<img src="images/canon.png" alt=""/>-->
-                                <h1 class="heading">Marketplace Solution</h1>
-                                    <p>We provide complete product listing to inventory update & order process. Start sell on multiple marketplaces we call it ‘One Stop Junction’</p>
+                                <h1 class="heading">Inventory management</h1>
+                                    <p>We provide complete product listing to inventory update & order process</p>
                                   
-								   
+								   <br>
+								   <br>
 								    <!-- <button class="btn btn-primary btn-sm"onclick="myFunction()" >Know more</button> -->
                                    <p class="lin_read"> <a href="<?php echo base_url();?>seller/marketplace_solutions" >Know more</a></p>
                                    
@@ -545,7 +569,7 @@
                                 <h1 class="heading">Catalog Management</h1>
                                 <!--<img src="images/canon.png" alt=""/>-->
                                 
-                                    <p>We have expert team to make proper product digital catalog which provide good customer experience increase sales for multiple marketplaces. </p>
+                                    <p>We have expert team to make proper product digital catalog which provide good customer experience increase </p><br>
                                   
 								   <p class="lin_read"><a href="<?php echo base_url();?>seller/catalog_management" >Know more</a></p>
                                    
@@ -563,10 +587,12 @@
                             </div>
                             </div>
 							<div class="clearfix"></div>
-	<div class="panel panel-default pad_10 mar_t10">
-      <h4>Pricing</h4>
-      
-    </div>
+						<div class="container">
+							<div class="panel panel-default pad_10 mar_t10">
+							  <h4>Pricing</h4>
+							  
+							</div>
+						</div>
 	
 	<div class="clearfix"></div>
 	<div class="container">
@@ -1435,8 +1461,7 @@
   </div>
   </section>
   </div>
-  </div>
-  </div>
+ 
  </body>
   
   <!--body end here --> 
