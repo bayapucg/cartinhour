@@ -4,85 +4,46 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-body {
-    margin-top:40px;
-}
-.stepwizard-step p {
-    margin-top: 10px;
-}
-.stepwizard-row {
-    display: table-row;
-}
-.stepwizard {
-    display: table;
-    width: 50%;
-    position: relative;
-}
-.stepwizard-step button[disabled] {
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important;
-}
-.stepwizard-row:before {
-    top: 14px;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    z-order: 0;
-}
-.stepwizard-step {
-    display: table-cell;
-    text-align: center;
-    position: relative;
-}
-.btn-circle {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
-    line-height: 1.428571429;
-    border-radius: 15px;
-}
-.btn-primary {
-    color: #fff;
-    background-color: #006a99;
-    border-color: #2e6da4;
-}
-bootstrap.min.css:3150
-.btn-default {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
-}
+.process-step .btn:focus{outline:none}
+.process{display:table;width:100%;position:relative}
+.process-row{display:table-row}
+.process-step button[disabled]{opacity:1 !important;filter: alpha(opacity=100) !important}
+.process-row:before{top:40px;bottom:0;position:absolute;content:" ";width:100%;height:1px;background-color:#ccc;z-order:0}
+.process-step{display:table-cell;text-align:center;position:relative}
+.process-step p{margin-top:4px}
+.btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
+
 </style>
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container" >
-  
-<div class="stepwizard col-md-offset-3">
-    <div class="stepwizard-row setup-panel">
-      <div class="stepwizard-step">
-        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-        <p>Step 1</p>
-      </div>
-      <div class="stepwizard-step">
-        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-        <p>Step 2</p>
-      </div>
-      <div class="stepwizard-step">
-        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-        <p>Step 3</p>
-      </div>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<div class="container">
+ <div class="row">
+  <div class="process">
+   <div class="process-row nav nav-tabs">
+    <div class="process-step">
+     <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-info fa-3x"></i></button>
+     <p><small>Fill<br />information</small></p>
     </div>
+    <div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-file-text-o fa-3x"></i></button>
+     <p><small>Fill<br />description</small></p>
+    </div>
+    <div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
+     <p><small>Upload<br />images</small></p>
+    </div>
+    
+   </div>
   </div>
-  
-  <form role="form" action="" method="post" style="margin-bottom:30px;">
-    <div class="row setup-content" id="step-1">
-      <div class="col-xs-6 col-md-offset-3">
+  <div class="tab-content">
+   <div id="menu1" class="tab-pane fade active in">
+    <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Step 1</h3>
           <div class="form-group">
@@ -97,31 +58,20 @@ bootstrap.min.css:3150
             <label class="control-label">Address</label>
             <textarea required="required" class="form-control" placeholder="Enter your address" ></textarea>
           </div>
-          <button class="btn btn-primary nextBtn btn-sm pull-right" type="button" >Next</button>
+         
         </div>
-      </div>
-    </div>
-    <div class="row setup-content" id="step-2">
-      <div class="col-xs-6 col-md-offset-3">
+		 <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-info btn-sm next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+  </div>
+  
+   
+   </div>
+   <div id="menu2" class="tab-pane fade">
+    <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Step 2</h3>
           <div class="form-group">
-            <label class="control-label">Company Name</label>
-            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
-          </div>
-          <div class="form-group">
-            <label class="control-label">Company Address</label>
-            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address"  />
-          </div>
-          <button class="btn btn-primary nextBtn btn-sm pull-right" type="button" >Next</button>
-        </div>
-      </div>
-    </div>
-    <div class="row setup-content" id="step-3">
-      <div class="col-xs-6 col-md-offset-3">
-        <div class="col-md-12">
-          <h3> Step 3</h3>
-		  <div class="form-group">
             <label class="control-label">First Name</label>
             <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
           </div>
@@ -133,55 +83,71 @@ bootstrap.min.css:3150
             <label class="control-label">Address</label>
             <textarea required="required" class="form-control" placeholder="Enter your address" ></textarea>
           </div>
-          <button class="btn btn-success btn-sm pull-right" type="submit">Submit</button>
+          <div class="form-group">
+            <label class="control-label">Address</label>
+            <textarea required="required" class="form-control" placeholder="Enter your address" ></textarea>
+          </div>
+         
         </div>
-      </div>
-    </div>
-  </form>
+		 <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-info btn-sm next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+  </div>
+   </div>
+   <div id="menu3" class="tab-pane fade">
+    <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+          <h3> Step 3</h3>
+          <div class="form-group">
+            <label class="control-label">First Name</label>
+            <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Last Name</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Address</label>
+            <textarea required="required" class="form-control" placeholder="Enter your address" ></textarea>
+          </div>
+         
+        </div>
+		 <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-info btn-sm next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+  </div>
+   </div>
+   
+  </div>
+ </div>
+</div>
   
 </div>
 </html>
 <script>
-$(document).ready(function () {
-  var navListItems = $('div.setup-panel div a'),
-          allWells = $('.setup-content'),
-          allNextBtn = $('.nextBtn');
+$(function(){
+ $('.btn-circle').on('click',function(){
+   $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
+   $(this).addClass('btn-info').removeClass('btn-default').blur();
+ });
 
-  allWells.hide();
+ $('.next-step, .prev-step').on('click', function (e){
+   var $activeTab = $('.tab-pane.active');
 
-  navListItems.click(function (e) {
-      e.preventDefault();
-      var $target = $($(this).attr('href')),
-              $item = $(this);
+   $('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
 
-      if (!$item.hasClass('disabled')) {
-          navListItems.removeClass('btn-primary').addClass('btn-default');
-          $item.addClass('btn-primary');
-          allWells.hide();
-          $target.show();
-          $target.find('input:eq(0)').focus();
-      }
-  });
-
-  allNextBtn.click(function(){
-      var curStep = $(this).closest(".setup-content"),
-          curStepBtn = curStep.attr("id"),
-          nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-          curInputs = curStep.find("input[type='text'],input[type='url']"),
-          isValid = true;
-
-      $(".form-group").removeClass("has-error");
-      for(var i=0; i<curInputs.length; i++){
-          if (!curInputs[i].validity.valid){
-              isValid = false;
-              $(curInputs[i]).closest(".form-group").addClass("has-error");
-          }
-      }
-
-      if (isValid)
-          nextStepWizard.removeAttr('disabled').trigger('click');
-  });
-
-  $('div.setup-panel div a.btn-primary').trigger('click');
+   if ( $(e.target).hasClass('next-step') )
+   {
+      var nextTab = $activeTab.next('.tab-pane').attr('id');
+      $('[href="#'+ nextTab +'"]').addClass('btn-info').removeClass('btn-default');
+      $('[href="#'+ nextTab +'"]').tab('show');
+   }
+   else
+   {
+      var prevTab = $activeTab.prev('.tab-pane').attr('id');
+      $('[href="#'+ prevTab +'"]').addClass('btn-info').removeClass('btn-default');
+      $('[href="#'+ prevTab +'"]').tab('show');
+   }
+ });
 });
 </script>

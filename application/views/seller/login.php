@@ -815,77 +815,9 @@
        
  <div class="clearfix">   </div>  
 <p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>
-<div class="container">
-	<div class="row">
-        <div class="span8">
-		<h3 class="text-center">Just fill form to Select plan</h3>
-		<div class="col-md-3">&nbsp;</div>
-		<div class="col-md-6">
-   <form class="form-horizontal" action="/action_page.php">
-    <div class="form-group">
-      <label class="control-label col-sm-4" for="">Buiness Name:</label>
-      <div class="col-sm-8">
-        <input type="text" class="form-control" id="" placeholder="Enter Buiness Name" name="" reqired>
-      </div>
-    </div>
-	<div class="form-group">
-      <label class="control-label col-sm-4" for="">First Name:</label>
-      <div class="col-sm-8">
-        <input type="text" class="form-control" id="" placeholder="Enter First Name" name="" reqired>
-      </div>
-    </div>
-	<div class="form-group">
-      <label class="control-label col-sm-4" for="">Mobile/Phone No:</label>
-      <div class="col-sm-8">
-        <input type="text" class="form-control" id="" placeholder="Enter Mobile/Phone No" name="" reqired>
-      </div>
-    </div> 
-	<div class="form-group">
-      <label class="control-label col-sm-4" for="email">Valid Email Id:</label>
-      <div class="col-sm-8">
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="control-label col-sm-4" for="">Business OPeration:</label>
-      <div class="col-sm-8">          
-        <select class="form-control" id="sel1">
-        <option>select your Business OPeration</option>
-        <option>Business OPeration1</option>
-        <option>Business OPeration 2</option>
-        <option>Business OPeration 3</option>
-      </select>
-      </div>
-    </div> 
-	<div class="form-group">
-      <label class="control-label col-sm-4" for="">Select Plan :</label>
-      <div class="col-sm-8">          
-        <select class="form-control" id="sel1">
-        <option>select plan</option>
-        <option>plan1</option>
-        <option>plan 2</option>
-        <option>plan 3</option>
-      </select>
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-4 col-sm-8">
-        <div class="checkbox">
-          <label><input type="checkbox" name="remember"> Remember me</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">        
-      <div class="col-sm-offset-4 col-sm-8">
-        <button type="submit" class="btn btn-primary">SELECT THIS PLAN</button>
-      </div>
-    </div>
-  </form>
-			</div>
-			<div class="col-md-3">&nbsp;</div>
-    	</div> <!-- .span8 -->
-	</div>
-</div>
+
+<button type="button" class="btn btn-warning pull-right">Just fill form to Select plan</button>
+
                             
 </div>
 </div>
