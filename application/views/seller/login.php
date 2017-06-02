@@ -1130,9 +1130,9 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less glyphicon glyphicon-plus"></i> Who can sell on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseTwo1" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="more-less glyphicon glyphicon-plus"></i> Who can sell on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                   <div class="panel-body"> Anyone selling new and genuine products is welcome. In order to start selling, you need to have the following:
                     <ul class="checkmark">
                       <li>PAN Card (Personal PAN for business type “Proprietorship” and Personal + Business PAN for business type as “Company”)</li>
@@ -1144,9 +1144,9 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i> How do I sell on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"  data-target="#collapseThree1" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i> How do I sell on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">To sell on CARTINHOUR:
                     <ul class="checkmark">
                       <li>Register yourself at seller.CARTINHOUR.com.</li>
@@ -1159,25 +1159,25 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingfour">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefpor" aria-expanded="false" aria-controls="collapsefpor"> <i class="more-less glyphicon glyphicon-plus"></i> Can I offer both products and services on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsefpor19"   data-parent="#accordion" href="#collapsefpor" aria-expanded="false" aria-controls="collapsefpor"> <i class="more-less glyphicon glyphicon-plus"></i> Can I offer both products and services on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collapsefpor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                <div id="collapsefpor19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
                   <div class="panel-body">Currently, you can sell only products and not services on CARTINHOUR. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingfive">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive"> <i class="more-less glyphicon glyphicon-plus"></i> Do I need to courier my products to CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsefive15" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive"> <i class="more-less glyphicon glyphicon-plus"></i> Do I need to courier my products to CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+                <div id="collapsefive15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
                   <div class="panel-body">No, CARTINHOUR will handle shipping of your products. All you need to do is pack the product and keep it ready for dispatch. Our delivery boy will pick up the product from you and deliver it to the customer. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="six">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapsesix"> <i class="more-less glyphicon glyphicon-plus"></i> What are the documents required to register as a seller on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsesix16" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapsesix"> <i class="more-less glyphicon glyphicon-plus"></i> What are the documents required to register as a seller on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="six">
+                <div id="collapsesix16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="six">
                   <div class="panel-body">You are required to have the following documents:
                     <ul class="checkmark">
                       <li>PAN Card (Personal PAN for business type “Proprietorship” and Personal + Business PAN for business type as “Company”)</li>
@@ -1189,49 +1189,49 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="seven">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> <i class="more-less glyphicon glyphicon-plus"></i> I do not have a TIN/VAT, can I still register as a seller with only PAN?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapseseven17" data-parent="#accordion" href="#collapseseven" aria-expanded="false" aria-controls="collapseseven"> <i class="more-less glyphicon glyphicon-plus"></i> I do not have a TIN/VAT, can I still register as a seller with only PAN?</a> </h4>
                 </div>
-                <div id="collapseseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="seven">
+                <div id="collapseseven17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="seven">
                   <div class="panel-body">You can register as a seller with only PAN, but you will be eligible to sell only books. If you want to sell any other product, you will mandatorily require a VAT/TIN. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="eight">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeight" aria-expanded="false" aria-controls="collapeight"> <i class="more-less glyphicon glyphicon-plus"></i> Who decides the price of the products?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapeight16" data-parent="#accordion" href="#collapeight" aria-expanded="false" aria-controls="collapeight"> <i class="more-less glyphicon glyphicon-plus"></i> Who decides the price of the products?</a> </h4>
                 </div>
-                <div id="collapeight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eight">
+                <div id="collapeight16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eight">
                   <div class="panel-body">As a seller, you will set the price of your products. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="nine">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapnine" aria-expanded="false" aria-controls="collapnine"> <i class="more-less glyphicon glyphicon-plus"></i> Will I get charged for listing products on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapnine15" data-parent="#accordion" href="#collapnine" aria-expanded="false" aria-controls="collapnine"> <i class="more-less glyphicon glyphicon-plus"></i> Will I get charged for listing products on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collapnine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="nine">
+                <div id="collapnine15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="nine">
                   <div class="panel-body">No. Listing of products on CARTINHOUR.com is free. CARTINHOUR does not charge anything for listing your catalogue online. You only pay a small commission for what you sell. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="ten">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapten" aria-expanded="false" aria-controls="collapten"> <i class="more-less glyphicon glyphicon-plus"></i> Who takes care of the delivery of my products?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapten14" data-parent="#accordion" href="#collapten" aria-expanded="false" aria-controls="collapten"> <i class="more-less glyphicon glyphicon-plus"></i> Who takes care of the delivery of my products?</a> </h4>
                 </div>
-                <div id="collapten" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ten">
+                <div id="collapten14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="ten">
                   <div class="panel-body">Our delivery boy will pick up the product from you and deliver it to the customer. All you need to do is keep it packed and ready for dispatch. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="eleven">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeleven" aria-expanded="false" aria-controls="collapeleven"> <i class="more-less glyphicon glyphicon-plus"></i> How and when will I get paid?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"  data-target="#collapeleven13"data-parent="#accordion" href="#collapeleven" aria-expanded="false" aria-controls="collapeleven"> <i class="more-less glyphicon glyphicon-plus"></i> How and when will I get paid?</a> </h4>
                 </div>
-                <div id="collapeleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eleven">
+                <div id="collapeleven13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eleven">
                   <div class="panel-body">The payment will be made directly to your bank account through NEFT transactions within 7-14 business days of dispatching an order. The actual payment period will vary depending on how long you have been selling at CARTINHOUR, your customer ratings and number of orders fulfilled.</div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="teivel">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapteivel" aria-expanded="false" aria-controls="collapteivel"> <i class="more-less glyphicon glyphicon-plus"></i> When can I start selling?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapteivel1" data-parent="#accordion" href="#collapteivel" aria-expanded="false" aria-controls="collapteivel"> <i class="more-less glyphicon glyphicon-plus"></i> When can I start selling?</a> </h4>
                 </div>
-                <div id="collapteivel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="teivel">
+                <div id="collapteivel1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="teivel">
                   <div class="panel-body">After all the required documents have been verified and your seller profile is complete, you can start listing your products and start selling.</div>
                 </div>
               </div>
