@@ -1973,3 +1973,7 @@ a.scrollup i:hover {
 .word_wrap{
 	word-wrap: break-word;
 }>>>>>>> .r49
+.site_bac_col {
+	background-color:#006a99;
+	color:#fff;
+}

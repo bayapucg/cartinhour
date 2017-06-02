@@ -816,7 +816,7 @@
  <div class="clearfix">   </div>  
 <p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>
 
-<button type="button" class="btn btn-warning pull-right">Just fill form to Select plan</button>
+ <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Just fill form to Select plan</button>
 
                             
 </div>
