@@ -46,7 +46,9 @@
   <!--banenr end here -->
  
   <div class="container mar_t15 ">
-   <h3 class="text-center"><span class="span_bg_g">OUR Salient Features</span></h3>
+  <div class=' animated bounceInLeft slower'   data-id='3'>
+   <h3 class="text-center"><span class="span_bg_g  ">OUR Salient Features</span></h3>
+   </div>
   <div class="title_lines"></div>
 	<div class="row mar_t10">
 	
@@ -54,7 +56,7 @@
 	<div class="our-features-box ">
       <ul>
         <li>
-          <div class="feature-box free-shipping">
+          <div class="feature-box free-shipping animated bounceInLeft slower">
             <div class="icon-truck"></div>
             <div class="content">Lorem Ipsum is simply dummy text   </div>
           </div>
@@ -87,11 +89,11 @@
   
   <div class="container-fluid gallery-like-area c-h-mb mar_t15" >
     <div class="row">
-      <div class="col-md-6 col-sm-6 text-center  "><!-- hidden-sm hidden-xs-->
-        <div class="row"> <img class=" thumbnail img-responsive" src="<?php echo base_url();?>assets/seller_login/images/hyd.jpg" alt=""> </div>
+      <div class="col-md-6 col-sm-6 text-center wow animated zoomIn slower "><!-- hidden-sm hidden-xs-->
+        <div class="row "> <img class=" thumbnail img-responsive " src="<?php echo base_url();?>assets/seller_login/images/hyd.jpg" alt=""> </div>
       </div>
-      <div class=" col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact ">
-        <div class="content ">
+      <div class=" col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact animatedParent">
+        <div class="content  wow animated bounceInRight  ">
           <h4>Who Are We</h4>
           <ul class="checkmark">
             <li>we are a platform for all offline/local sellers.</li>
@@ -104,7 +106,7 @@
       <div class="clearfix"></div>
       <div class="col-md-5 col-md-offset-1 col-sm-6 text-center v-center bubble-contact ">
         <div class="content">
-          <h4>How to do Business with us?</h4>
+          <h4 class="">How to do Business with us?</h4>
           <ul class="checkmark">
             <li>Four step process to get your online store</li>
             <li>Register with us</li>
@@ -112,7 +114,7 @@
 			<li>Upload your inventory</li>
 			<li>Start selling from your online store.</li>
           </ul>
-		    <button type="submit" class="btn btn-primary" onclick="window.location='<?php echo base_url(); ?>seller/login/register';return false;">Register</button>
+		    <button type="submit" class="btn btn-primary wow animated bounceInLeft slower" onclick="window.location='<?php echo base_url(); ?>seller/login/register';return false;">Register</button>
         </div>
 	<br>
       </div>
@@ -131,7 +133,7 @@
             <li>Get all details of pricing here.</li>
             <li>Calculate your profit margin through our virtual pricing calculator before you sell.</li>
           </ul>
-		  <button type="submit" class="btn btn-primary" onclick="window.location='<?php echo base_url(); ?>seller/pricing_calculator';return false;">Pricing Calculator</button>
+		  <button type="submit" class="btn btn-primary wow animated bounceInRight slower" onclick="window.location='<?php echo base_url(); ?>seller/pricing_calculator';return false;">Pricing Calculator</button>
         </div>
       </div>
       <div class="clearfix"></div>
@@ -148,21 +150,24 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6 text-center ">
-        <div class="row"> <img class=" thumbnail img-responsive" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
+        <div class="row"> <img class=" thumbnail img-responsive wow animated zoomIn slower" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
       </div>
     </div>
   </div>
   </section>
 	<div class="clearfix"></div>	
 		<!--benifits section start-->
-<section id="benifits_sc">
+		<div id="benifits_sc">
+<section id="">
   <div class="">
 	
 
   <div class="pricing_main">
     <div class="container">
+	 <div class='buttons-inline wow animated bounceInLeft slower'   data-id='3'>
 	    <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> BENIFITS</span></h3>
   <div class="title_lines"></div>
+  </div>
 
       <div class="row">
         <div class="benifits">
@@ -296,6 +301,7 @@
   </div>
   </div>
  </section>
+ </div>
 <div class="clearfix"></div>
    <!--end part end here --> 
 
@@ -304,7 +310,7 @@
 <section id="how_its_w" class="home-section bg-gray paddingbot-60">
 <div class="pricing_main">
     <div class="container">
-	 <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> HOW IT WORKS</span></h3>
+	 <h3 class="text-center wow bounceInDown"  id="" data-spy="scroll"><span class="span_bg_g"> HOW IT WORKS</span></h3>
 		<div class="title_lines "></div>
 		   <div class="container mar_t15 ">
 			
@@ -1116,9 +1122,9 @@
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="more-less glyphicon glyphicon-plus"></i> Why should I sell on CARTINHOUR? </a> </h4>
+                  <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-target="#collapseOne11" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="more-less glyphicon glyphicon-plus"></i> Why should I sell on CARTINHOUR? </a> </h4>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div id="collapseOne11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">CARTINHOUR is the new revolution in Indian e-commerce with ability to reach maximum online and highest credibility. </div>
                 </div>
               </div>
@@ -1695,5 +1701,8 @@ $("#cihfee1").html(data);
   
 
 </script>
+  <script>
+              new WOW().init();
+              </script>
   <!--pricing its work end here --> 
  

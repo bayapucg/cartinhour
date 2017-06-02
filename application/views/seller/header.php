@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/style.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/animate.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/animate2.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller_login/css/custom.min.css" />
 <!--style end here -->
 <!--javascript start here -->
@@ -18,14 +19,11 @@
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery-3.1.1.min.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/custom.js"></script>
+<script src="<?php echo base_url();?>assets/seller_login/js/animate-it.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.easing.min.js"></script>
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.smartWizard"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-    $(".loader").fadeOut("slow");
-});
-</script>
+
 <!--javascript end here -->
 
 
@@ -56,16 +54,16 @@ $(window).load(function() {
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#home_scr">HOME <span class="sr-only">(current)</span></a></li>
-          <li><a href="#benifits_sc">BENIFITS</a></li>
-		  <li><a href="#how_its_w">HOW IT WORKS</a></li>
+          <li class="active"><a href="<?php echo base_url('seller/login');?>#home_scr">HOME <span class="sr-only">(current)</span></a></li>
+          <li><a href="<?php echo base_url('seller/login');?>#benifits_sc">BENIFITS</a></li>
+		  <li><a href="<?php echo base_url('seller/login');?>#how_its_w">HOW IT WORKS</a></li>
          
-          <li><a href="#pricing_scr">PRICING</a></li>
+          <li><a href="<?php echo base_url('seller/login');?>#pricing_scr">PRICING</a></li>
          
-          <li><a href="#ourservices_scr">OUR SERVICES</a></li>
-            <li><a href="#about_sc">ABOUT US</a></li>
-          <li><a href="#contact_sc">CONTACT US</a></li>
-		   <li><a href="#faq_sc">FAQ's</a></li>
+          <li><a href="<?php echo base_url('seller/login');?>#ourservices_scr">OUR SERVICES</a></li>
+            <li><a href="<?php echo base_url('seller/login');?>#about_sc">ABOUT US</a></li>
+          <li><a href="<?php echo base_url('seller/login');?>#contact_sc">CONTACT US</a></li>
+		   <li><a href="<?php echo site_url('seller/faq');?>">FAQ's</a></li>
          
 		 
         </ul>

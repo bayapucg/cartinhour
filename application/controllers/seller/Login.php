@@ -6,7 +6,7 @@ class Login extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-
+$this->load->helper(array('url', 'html'));
     $this->load->library('email');
     $this->load->library('encrypt');
 		$this->load->model('seller/login_model');
@@ -17,10 +17,11 @@ $this->load->model('seller/subcategory_model');
 }
 
  public function index() {
-	 $data['catdata']=$this->dashboard_model->getcatdata();
+	 //$data['catdata']=$this->dashboard_model->getcatdata();
     //print_r($data['catdata']); exit;
 	 $this->load->view('seller/header');
-  $this->load->view('seller/login',$data);
+  //$this->load->view('seller/login',$data);
+  $this->load->view('seller/login');
    $this->load->view('seller/footer');
 
         //$this->template->render(); 
