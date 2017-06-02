@@ -1838,6 +1838,23 @@ ul {
 .our-features-box ul{
 	padding:0px;
 }
+<<<<<<< .mine
+}	
+
+
+
+
+/*tac*/
+.tac {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin: 0px;
+	padding: 30px 0px;
+	background-color: #555;
+	background-size: cover;
+}||||||| .r33
+}	=======
 }
 
 /* scroll to top */
@@ -1955,4 +1972,4 @@ a.scrollup i:hover {
 }
 .word_wrap{
 	word-wrap: break-word;
-}
+}>>>>>>> .r49
