@@ -19,7 +19,7 @@ class Pricing_calculator extends CI_Controller {
 	 
 	  
 	  $data['cihcatdata']  = $this->login_model->getcihcatedata();
-	  $sell = 1000;
+	  
 	 
 	$this->load->view('seller/header');
   $this->load->view('seller/pricing',$data);
@@ -49,23 +49,33 @@ $this->load->view('seller/footer');
               . '"  disabled>';
               echo '</div>';
 
-              	echo '<div class="panel-group" id="cihfee">';
-                echo '<div class="panel panel-success">';
+		// echo '<div disabled id="lol">';
+		// 	echo '<table style="border:1px solid #5fcbff;border-radius:10px;margin:0 auto;background-color:#f5f5f5;">';
+		// 		echo '<tr>';
+		// 			echo '<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You sell at :</span><br>Rs .1000</td>';
+		// 			echo '<td style="padding:20px"><span style="color:#ff0000 ;font-size:18px;">We take:(for ' .$show.' )</span> <br>' .$show.'  of Rs.1000 + 14.5(service tax)= Rs.'.$tot.'</td>';
+		// 			echo '<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You get in bank:</span><br>Rs.'.$you_get.'</td>';
+		// 		echo '</tr>';
+		// 	echo '</table>';
+		// echo '</div>';
+		
+              	echo '<div class="panel-group" id="lol">';
+                echo '<div class="panel panel-success" style = "border-radius: 4px;">';
                   echo '<div class="panel-body">
-                  			<p>You Sell At<p>
-                  			'.$sell.'
+                  			<p style="color:#006a99 ;font-size:18px;font-weight:600;">YOU SELL AT<p>
+                  			<p style="color:#000 ;font-size:17px;">Rs:'.$sell.'<p>
                   		</div>';
                 echo '</div>';
-                echo '<div class="panel panel-default">';
+                echo '<div class="panel panel-default" style = "border-radius: 4px;">';
                   echo '<div class="panel-body">
-                  			<p>We Take:<p>
-                  				' .$show.' Of RS.1000 +14.5(Service Tax) = '.$tot.'
+                  			<p style="color:#006a99 ;font-size:18px;font-weight:600";">WE TAKE<p>
+                  				<p style="color:#000 ;font-size:17px;">' .$show.' Of RS.1000 +14.5(Service Tax) = '.$tot.'</p>
                   		</div>';
                 echo '</div>';
-                echo '<div class="panel panel-default">';
+                echo '<div class="panel panel-default" style = "border-radius: 4px;">';
                   echo '<div class="panel-body">
-                  			<p>You Get In Bank:<p>
-                  				'.$you_get.'
+                  			<p style="color:#006a99;font-size:18px;font-weight:600;">YOU GET IN BANK<p>
+                  				<p style="color:#000 ;font-size:17px;">Rs '.$you_get.'</p>
                   		</div>';
                 echo '</div>';
               echo '</div>';

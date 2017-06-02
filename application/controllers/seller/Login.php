@@ -9,15 +9,18 @@ class Login extends CI_Controller {
 $this->load->helper(array('url', 'html'));
     $this->load->library('email');
     $this->load->library('encrypt');
+    $this->load->library('session');
 		$this->load->model('seller/login_model');
 		$this->load->model('admin/sellers_model');
 		$this->load->model('seller/dashboard_model');
+		
 		
 $this->load->model('seller/subcategory_model');
 }
 
  public function index() {
 	 //$data['catdata']=$this->dashboard_model->getcatdata();
+	 
     //print_r($data['catdata']); exit;
 	 $this->load->view('seller/header');
   //$this->load->view('seller/login',$data);
@@ -42,23 +45,33 @@ $this->load->view('seller/footer');
     }
 
 
+// Terms and Conditions
+    public function tac() {
+ 
+  $this->load->view('seller/header');
+  $this->load->view('seller/tac');
+$this->load->view('seller/footer');
+    }
+
 public function insert() {
 
 	//echo "hi"; exit;
 	$six_digit_random_number = mt_rand(100000, 999999);
+	$seller = 'SEL';
+	$seller_rand_id = mt_rand(100000, 999999);
 	$phone = $this->input->post('seller_mobile');
-
   $data = array(
+  		'seller_rand_id' => $seller.''.$seller_rand_id,
   	  	'seller_name' => $this->input->post('seller_fullname'),
   	  	'seller_email' => $this->input->post('seller_email'),
   	  	'seller_password' => md5($six_digit_random_number),
   	  	'seller_mobile' => $this->input->post('seller_mobile'),
-  	  	'seller_address' => $this->input->post('seller_address'),
-  	  	'seller_shop' => $this->input->post('seller_shop'),
-		'seller_location' => $this->input->post('location_name'),
-  	  	'seller_license' => $this->input->post('seller_license'),
-  	  	'seller_adhar' => $this->input->post('seller_adhar'),
-  	  	'seller_bank' => $this->input->post('seller_bank'),
+  // 	  	'seller_address' => $this->input->post('seller_address'),
+  // 	  	'seller_shop' => $this->input->post('seller_shop'),
+// 			'seller_location' => $this->input->post('location_name'),
+  // 	  	'seller_license' => $this->input->post('seller_license'),
+  // 	  	'seller_adhar' => $this->input->post('seller_adhar'),
+  // 	  	'seller_bank' => $this->input->post('seller_bank'),
   	    'created_at'  => date('Y-m-d H:i:s'),
 		'updated_at'  => date('Y-m-d H:i:s'),
 
@@ -71,51 +84,35 @@ public function insert() {
 
     	if($res == 1)
 
-			{
-				
-		  
-        
-		 $from_email = 'mails@dev2.kateit.in';
-		$subject = 'Registraion';
-		$message = "Dear User,\nYou are Registered Successfully. \n Your Password is : " .$six_digit_random_number. "\n\n Thanks,\nCart In Hour Team";
+			{						          
+		//  $from_email = 'mails@dev2.kateit.in';
+		// $subject = 'Registraion';
+		// $message = "Dear User,\nYou are Registered Successfully. \n Your Password is : " .$six_digit_random_number. "\n\n Thanks,\nCart In Hour Team";
 		
-		//send mail
-		$this->email->from($from_email, 'CartinHour');
+		// //send mail
+		// $this->email->from($from_email, 'CartinHour');
 		
-				$this->email->to($this->input->post('seller_email'));
-				$this->email->subject($subject);
-				$this->email->message($message);
-				$this->email->send(); 
-				
-				
+		// 		$this->email->to($this->input->post('seller_email'));
+		// 		$this->email->subject($subject);
+		// 		$this->email->message($message);
+		// 		$this->email->send(); 							
 				$user_id="cartin"; 
-        $pwd="9494422779";    
-        $sender_id = "CARTIN";          
-        $mobile_num = $phone;  
-        $message = "Your Temporary Password is : " .$six_digit_random_number;
-        
-        
+        		$pwd="9494422779";    
+        		$sender_id = "CARTIN";          
+        		$mobile_num = $phone;  
+        		$message = "Your Temporary Password is : " .$six_digit_random_number;               
         // Sending with PHP CURL
        $url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
-$ret = file($url); 
-				
-
-     
-
+			$ret = file($url); 
                     $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Registered successfully. please Check Your Email or Mobile for Password.</div>');
 
-                  return redirect(base_url('seller/login/register'));
-
-
-                  
+                  return redirect('seller/adddetails');                  
         	}
-
 			else
-
 			{
 				//redirect(site_url('add_blogs_view'));
 				
-                    $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: red;font-size:13px;">Registration Failed.</div>');
+                    $this->session->set_flashdata('msg2','<div class="alert alert-success text-center" style="color: red;font-size:13px;">Registration Failed.</div>');
 				return redirect('seller/login/register');
 
 			}
@@ -136,56 +133,51 @@ public function do_login()
 
 {
 
-        $this->form_validation->set_rules('seller_name', 'Username', 'trim|required'); 
+        $this->form_validation->set_rules('login_email', 'Username', 'trim|required'); 
 
-        $this->form_validation->set_rules('seller_password', 'Password', 'trim|required'); 
+        $this->form_validation->set_rules('login_password', 'Password', 'trim|required'); 
 
         if ($this->form_validation->run() == TRUE) {
-            $username   = $this->input->post('seller_name');
-
-            $password = md5($this->input->post('seller_password'));
-
+            $username   = $this->input->post('login_email');
+            $password = md5($this->input->post('login_password'));
+            //$remember = $this->input->post('remember_me');
+			// if ($remember) {
+			// // Set remember me value in session
+			// $this->session->set_userdata('remember_me', TRUE);
+			// }
             $result   = $this->login_model->authenticate($username, $password);
-
-
-//print_r($result); exit;
-
-
+			//print_r($result); exit;
             if ($result) {
 
-                $data                   = array(
-
+                $datavalue= array(
                     'seller_id'    => $result->seller_id,
-
+                    'seller_rand_id'    => $result->seller_rand_id,
                     'seller_name'  => $result->seller_name,
-
                     'seller_email' => $result->seller_email,
-
                     'loggedin'   => TRUE,
-
                 );
 
-                $this->session->set_userdata($data);
-            
+                $this->session->set_userdata($datavalue);
+            	//echo "10";
                 return redirect(base_url('seller/dashboard')); 
-
-
 
             } else {
 
-              //$this->data['message'] = alert_message('Invalid Username/Password', 'danger')
+              
+            	echo "1";
+                 // $this->session->set_flashdata('msg','<div style="color: red;font-size:13px;">Invalid username or password.</div>');
 
-                $this->session->set_flashdata('msg','<div style="color: red;font-size:13px; margin-left: 141px;">Invalid username or password.</div>');
-
-                  return redirect(base_url('seller/login'));
+                 //  return redirect(base_url('seller/login'));
 
                 }
+                
 
             }
 
-       $this->load->view('seller/login');
+       
 
 }
+
 
  public function logout() {
 
@@ -197,15 +189,10 @@ public function do_login()
             'loggedin'  => FALSE,
 
         );
-
-
-
         $this->session->set_userdata($data);
         $this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate, no-transform, max-age=0, post-check=0, pre-check=0");
-
         $this->output->set_header("Pragma: no-cache");
         $this->session->sess_regenerate(TRUE);
-
         //flash_message('Successfully Logged Out', 'success');
         return redirect(base_url('seller/login'));
 
@@ -511,16 +498,14 @@ $six_digit_random_number = mt_rand(100000, 999999);
 	
 	
 	//$this->login_model->insertrandom($six_digit_random_number,$phone);
-$user_id="cartin"; 
+		$user_id="cartin"; 
         $pwd="9494422779";    
         $sender_id = "CARTIN";          
         $mobile_num = $phone;  
-        $message = "Your Temporary Password is : " .$six_digit_random_number;
-        
-        
+        $message = "Your Temporary Password is : " .$six_digit_random_number;        
         // Sending with PHP CURL
        $url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
-$ret = file($url); 
+	$ret = file($url); 
          
        if( $ret)
         
@@ -557,16 +542,14 @@ $to_email = $email;
 				$this->email->send();
 
 
-$user_id="cartin"; 
+		$user_id="cartin"; 
         $pwd="9494422779";    
         $sender_id = "CARTIN";          
         $mobile_num = $phone;  
-        $message = "Your Temporary Password is : " .$six_digit_random_number;
-        
-        
+        $message = "Your Temporary Password is : " .$six_digit_random_number;               
         // Sending with PHP CURL
        $url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
-$ret = file($url); 
+		$ret = file($url); 
 
 echo "9";
 }
@@ -584,12 +567,6 @@ echo "0";
 
 }		
   
-  
-  
-
- 
- 
- 
  }
 
 

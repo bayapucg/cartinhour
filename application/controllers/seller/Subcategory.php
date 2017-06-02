@@ -75,37 +75,19 @@ class Subcategory extends Admin_Controller {
 	"seller_id" => $this->session->userdata('seller_id'),
 				
 
-   );
-
-	     
+   );	     
            $res=$this->subcategory_model->insert($data);
-
-				
-
 	      	   if($res)
-
 				{
-
 				 $this->prepare_flashmessage("Successfully Inserted..", 0);
-
 	        // return redirect('admin/accomodation');
-
 	         echo "<script>window.location='".base_url()."seller/subcategory';</script>";
-
-
-
 				}
-
 				else
-
 				{
-
 				$this->prepare_flashmessage("Failed to Insert..", 1);
-
 	         // return redirect(base_url('admin/accomodation'));
-
 				echo "<script>window.location='".base_url()."seller/subcategory';</script>";
-
 				}	 
 
 }

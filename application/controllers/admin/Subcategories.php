@@ -82,9 +82,8 @@ public function insert()
     {
 
       $data = array(
-	  'category_id' => $this->input->post('category_id'),
+	     'category_id' => $this->input->post('category_id'),
         'subcategory_name' => $this->input->post('subcategory_name'),
-       
         );
     //print_r($data); exit;
     $res=$this->subcategories_model->insert($data);
@@ -94,8 +93,7 @@ public function insert()
             {       
                     $this->prepare_flashmessage(" Successfully Inserted..", 0);
                    return redirect('admin/subcategories');
-
-                
+              
             } else
 
             {

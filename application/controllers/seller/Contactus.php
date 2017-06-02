@@ -58,7 +58,6 @@ public function send()
 	echo "<script>window.location='".base_url()."seller/contactus';</script>";
  	}	
 	
-	
 	else{
 	$this->session->set_flashdata('verify_msg',' ');
 	$this->session->set_flashdata('err_code',' ');

@@ -62,14 +62,8 @@ public function updatedd($data)
 $sid= $this->session->userdata('seller_id');	
 	
 $this->db->where('seller_id',$sid);
-		$query=$this->db->update('sellers',$data);
-		return $query; 	
-	
-	
-	
-	
-	
-	
+		$query=$this->db->update('sellers',$sid);
+		return $query; 		
 }
 
 public function updatepd($data)
@@ -79,12 +73,7 @@ $sid= $this->session->userdata('seller_id');
 	
 $this->db->where('seller_id',$sid);
 		$query=$this->db->update('sellers',$data);
-		return $query; 	
-	
-	
-	
-	
-	
+		return $query; 
 	
 }
 public function updatebd($data)
@@ -94,13 +83,7 @@ $sid= $this->session->userdata('seller_id');
 	
 $this->db->where('seller_id',$sid);
 		$query=$this->db->update('sellers',$data);
-		return $query; 	
-	
-	
-	
-	
-	
-	
+		return $query;
 }
 
 public function updatebankd($data)
@@ -110,13 +93,7 @@ $sid= $this->session->userdata('seller_id');
 	
 $this->db->where('seller_id',$sid);
 		$query=$this->db->update('sellers',$data);
-		return $query; 	
-	
-	
-	
-	
-	
-	
+		return $query; 		
 }
 
 public function insertFiles($images){
@@ -128,7 +105,6 @@ public function insertFiles($images){
 	}
 	return true;
 	}
-
 }
 
 

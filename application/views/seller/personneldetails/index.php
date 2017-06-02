@@ -424,14 +424,7 @@ document.getElementById('seller_location').options[i].selected=true
           <!--<span style="color:red" id="erroritemcode"></span>-->
 		  <span><a href="javascript:void(0);" class="add_button" title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span>
            </div>
-
-                <div class="clearfix"></div>
-				
-				
-				
-               
-				
-                
+                <div class="clearfix"></div>     
 				<div style="margin-top: 20px; margin-left: 15px;">
                 <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
                 <button type="submit" class="btn btn-danger" onclick="window.location='<?php echo base_url(); ?>seller/personnel_details';return false;">Cancel</button>
@@ -445,26 +438,6 @@ document.getElementById('seller_location').options[i].selected=true
       <!-- page end--> 
     </section>
   </section>
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
-				  
 				  </div>
                 
              

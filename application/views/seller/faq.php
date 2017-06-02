@@ -45,7 +45,7 @@
                       <li>Register yourself at seller.CARTINHOUR.com.</li>
                       <li>List your products under specific product categories.</li>
                       <li>Once an order is received, pack the product and mark it as ‘Ready to go’. Our delivery boy will pick up the product and deliver it to the customer.</li>
-                      <li>Once an order is successfully dispatched, CARTINHOUR will settle your payment within 7-14 business days. </li>
+                      <li>Once an order is successfully dispatched, CARTINHOUR will settle your payment within 4 -7 business days. </li>
                     </ul>
                   </div>
                 </div>
@@ -117,7 +117,7 @@
                   <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapeleven" aria-expanded="false" aria-controls="collapeleven"> <i class="more-less glyphicon glyphicon-plus"></i> How and when will I get paid?</a> </h4>
                 </div>
                 <div id="collapeleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="eleven">
-                  <div class="panel-body">The payment will be made directly to your bank account through NEFT transactions within 7-14 business days of dispatching an order. The actual payment period will vary depending on how long you have been selling at CARTINHOUR, your customer ratings and number of orders fulfilled.</div>
+                  <div class="panel-body">The payment will be made directly to your bank account through NEFT transactions within 4-7 business days of dispatching an order. The actual payment period will vary depending on how long you have been selling at CARTINHOUR, your customer ratings and number of orders fulfilled.</div>
                 </div>
               </div>
               <div class="panel panel-default">
@@ -150,9 +150,9 @@
                   <div class="panel-body">The following deductions are made from the order item value:
                     <ul class="checkmark">
                       <li>CIH fee: A percentage of the order item value vary based on vertical/sub-category. Check your CIH fee for your product here.</li>
-                      <li>Shipping fee (calculated on the basis of the product weight, shipping location and)</li>
+                      <!-- <li>Shipping fee (calculated on the basis of the product weight, shipping location and)</li>
                       <li>Collection fee: This will vary based on order item value and customer payment mode (Prepaid/Cash on Delivery) </li>
-                      <li>selling fee: A slab wise Fixed fee. This vary based on Order item value</li>
+                      <li>selling fee: A slab wise Fixed fee. This vary based on Order item value</li> -->
                       <li>Service tax (applicable on all the above components)</li>
                     </ul>
                   </div>
@@ -176,13 +176,13 @@
                       <tbody>
                         <tr>
                           <td>Product Price (decided by you)</td>
-                          <td>1500</td>
+                          <td>1000</td>
                         </tr>
                         <tr>
                           <td>CIH Fee (varies across sub-categories/verticals)</td>
-                          <td>150 (assuming 10%)</td>
+                          <td>100 (assuming 10%)</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                           <td>Shipping Fee (Local shipping, weight 500 grams)</td>
                           <td>30</td>
                         </tr>
@@ -193,14 +193,14 @@
                         <tr>
                           <td>Selling Fee</td>
                           <td>20</td>
+                        </tr> -->                        
+                        <tr>
+                          <td>Service Tax (15% of Marketplace Fee including Swachh Bharat &Krishi Kalyan cess)</td>
+                          <td>32.925</td>
                         </tr>
                         <tr>
                           <td>Total Fee</td>
                           <td>219.5</td>
-                        </tr>
-                        <tr>
-                          <td>Service Tax (15% of Marketplace Fee including Swachh Bharat &Krishi Kalyan cess)</td>
-                          <td>32.925</td>
                         </tr>
                         <tr>
                           <td>Total deductions</td>
@@ -220,7 +220,7 @@
                   <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How and when do I get paid?</a> </h4>
                 </div>
                 <div id="collapprice4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price4">
-                  <div class="panel-body">All payments are made through NEFT transactions (online banking). The payment is made directly to your bank account within the next 7-15 business days from the date of order dispatch. </div>
+                  <div class="panel-body">All payments are made through NEFT transactions (online banking). The payment is made directly to your bank account within the next 4-7 business days from the date of order dispatch. </div>
                 </div>
               </div>
             </div>

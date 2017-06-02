@@ -45,8 +45,6 @@ class Dashboard extends Admin_Controller {
 public function change_password()
  
  {
-	 
-	 
 	$this->template->write_view('content', 'seller/dashboard/change_password');
 
 		$this->template->render();  

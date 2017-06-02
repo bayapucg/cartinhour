@@ -58,10 +58,6 @@ class Subcategory_model extends MY_Model
 		$this->db->where('category_id',$result);
 		$data=$this->db->get('subcategories');
 		return $data->result();
-		
-		
-		
-		
 	}
 	
 	

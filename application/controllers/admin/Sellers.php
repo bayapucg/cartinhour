@@ -15,11 +15,7 @@ class Sellers extends Admin_Controller {
 		$this->load->model('admin/sellers_model');
 
    }
-
-
-
 public function index()
-
 	{
        
 		//$this->load->view('welcome_message');

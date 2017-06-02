@@ -42,7 +42,7 @@
               
 
             </div>
-			  <!--stip html --> 
+			  <!--stip html
 		<div >
 			<table style="border:1px solid #5fcbff;border-radius:10px;margin:0 auto;background-color:#f5f5f5;">
 				<tr>
@@ -51,7 +51,7 @@
 					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You get in bank:</span><br>Rs.885.5</td>
 				</tr>
 			</table>
-		</div>
+		</div> --> 
 		<!--stip end html--> 
             
           </div>

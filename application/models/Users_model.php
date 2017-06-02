@@ -18,6 +18,18 @@ class Users_model extends MY_Model
 	parent::__construct();
 
 	}
+//contact us details
+public function insertcontact($data)
+{
+	
+	
+	$this->db->insert('contactus',$data);
+			//print_r($data); exit;
+
+		return true;	
+}
+	
+	
 
 
 }

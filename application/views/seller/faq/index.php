@@ -152,9 +152,9 @@
                   <div class="panel-body">The following deductions are made from the order item value:
                     <ul class="checkmark">
                       <li>CIH fee: A percentage of the order item value vary based on vertical/sub-category. Check your CIH fee for your product here.</li>
-                      <li>Shipping fee (calculated on the basis of the product weight, shipping location and)</li>
+                      <!-- <li>Shipping fee (calculated on the basis of the product weight, shipping location and)</li>
                       <li>Collection fee: This will vary based on order item value and customer payment mode (Prepaid/Cash on Delivery) </li>
-                      <li>selling fee: A slab wise Fixed fee. This vary based on Order item value</li>
+                      <li>selling fee: A slab wise Fixed fee. This vary based on Order item value</li> -->
                       <li>Service tax (applicable on all the above components)</li>
                     </ul>
                   </div>

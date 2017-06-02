@@ -215,8 +215,6 @@ public function updatebankdetails()
 	'seller_pan' => $this->input->post('seller_pan')
 	
 	);
-	
-	
 $res=$this->Personnel_details_model->updatebankd($data);	
 	if($res &&  count($images)>0)
 			{

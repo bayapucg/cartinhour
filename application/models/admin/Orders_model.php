@@ -21,15 +21,15 @@ class Orders_model extends MY_Model
 	parent::__construct();
 	}
 
-public function new_orders()
-{
+	public function new_orders()
+	{
 
-  $this->db->select('*');
-	$this->db->from('orders');
-	$this->db->where('order_status','0');
-	$query = $this->db->get();
-	return $query->result();
-}
+	  $this->db->select('*');
+		$this->db->from('orders');
+		$this->db->where('order_status','0');
+		$query = $this->db->get();
+		return $query->result();
+	}
 
 public function new_search($match)
 {

@@ -75,11 +75,7 @@ public function getsellersubcatdata()
 	$this->db->group_by('category.category_name');
 	$this->db->order_by('subcategory.seller_subcategory_id','asc');
     $query = $this->db->get();
-    
     return $query->result_array();
-	
-	
-	
 }
 
 public function getsellerdata($cat_id)

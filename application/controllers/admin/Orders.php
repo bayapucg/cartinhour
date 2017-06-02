@@ -166,8 +166,6 @@ public function new_orders()
 		   'cur_tag_close'  => '</a></li>',
 
 		  ];
-
-
 		$this->pagination->initialize($config);
 		$result=$this->Orders_model->limit($config['per_page'], $this->uri->segment(4) )->order_by('orders.created_at',$order = 'DESC')->new_orders();
 		$data['ordersdata'] =  $result;
