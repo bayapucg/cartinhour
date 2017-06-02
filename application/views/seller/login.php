@@ -56,25 +56,25 @@
 	<div class="our-features-box ">
       <ul>
         <li>
-          <div class="feature-box free-shipping animated bounceInLeft slower">
+          <div class="feature-box free-shipping wow animated bounceInLeft slower">
             <div class="icon-truck"></div>
             <div class="content">Lorem Ipsum is simply dummy text   </div>
           </div>
         </li>
         <li>
-          <div class="feature-box need-help">
+          <div class="feature-box need-help wow animated bounceInDown slower">
             <div class="icon-support"></div>
             <div class="content">Lorem Ipsum is simply dummy text  </div>
           </div>
         </li>
         <li>
-          <div class="feature-box money-back">
+          <div class="feature-box money-back wow animated bounceInUp slower">
             <div class="icon-money"></div>
             <div class="content">Lorem Ipsum is simply dummy text  </div>
           </div>
         </li>
         <li class="last">
-          <div class="feature-box return-policy">
+          <div class="feature-box return-policy wow animated bounceInRight slower">
             <div class="icon-return"></div>
             <div class="content">Lorem Ipsum is simply dummy text  </div>
           </div>
@@ -93,7 +93,7 @@
         <div class="row "> <img class=" thumbnail img-responsive " src="<?php echo base_url();?>assets/seller_login/images/hyd.jpg" alt=""> </div>
       </div>
       <div class=" col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact animatedParent">
-        <div class="content  wow animated bounceInRight  ">
+        <div class="content  lightSpeedIn wow animated bounceInRight  ">
           <h4>Who Are We</h4>
           <ul class="checkmark">
             <li>we are a platform for all offline/local sellers.</li>
@@ -127,7 +127,7 @@
       </div>
       <div class="col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact ">
         <div class="content">
-          <h4>Pricing</h4>
+          <h4 class="wow animated zoomIn slower">Pricing</h4>
           <ul class="checkmark">
             <li>Transparent pricing.</li>
             <li>Get all details of pricing here.</li>
@@ -150,13 +150,13 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6 text-center ">
-        <div class="row"> <img class=" thumbnail img-responsive wow animated zoomIn slower" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
+        <div class="row "> <img class=" thumbnail img-responsive wow animated zoomIn slower" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
       </div>
     </div>
   </div>
   </section>
 	<div class="clearfix"></div>	
-		<!--benifits section start-->
+		<!--benifits section start
 		<div id="benifits_sc">
 <section id="">
   <div class="">
@@ -302,7 +302,7 @@
   </div>
  </section>
  </div>
-<div class="clearfix"></div>
+<div class="clearfix"></div>-->
    <!--end part end here --> 
 
   
@@ -310,16 +310,16 @@
 <section id="how_its_w" class="home-section bg-gray paddingbot-60">
 <div class="pricing_main">
     <div class="container">
-	 <h3 class="text-center wow bounceInDown"  id="" data-spy="scroll"><span class="span_bg_g"> HOW IT WORKS</span></h3>
+	 <h3 class="text-center wow fadeInDown animated"  data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInDown;"  id="" data-spy="scroll"><span class="span_bg_g"> HOW IT WORKS</span></h3>
 		<div class="title_lines "></div>
-		   <div class="container mar_t15 ">
+		   <div class="container mar_t15  ">
 			
 			<div class="row">
 
 				<div class="col-sm-3 pricing-box">
 					<div class="wow bounceInUp" data-wow-delay="0.1s">
 					
-					<div class="pricing-content general">
+					<div class="pricing-content general wow bounceInLeft animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInLeft;">
 					
 						<div class=" steps_bac bac_h1">Step 1</div>
 						<div class="clearfix"></div>
@@ -334,7 +334,7 @@
 					</div>
 					</div>
 				</div>
-				<div class="col-sm-3 pricing-box">
+				<div class="col-sm-3 pricing-box wow bounceInDown animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInDown;">
 					<div class="wow bounceInUp" data-wow-delay="0.1s">
 					
 					<div class="pricing-content general">
@@ -352,8 +352,8 @@
 					</div>
 					</div>
 				</div>
-				<div class="col-sm-3 pricing-box">
-					<div class="wow bounceInUp" data-wow-delay="0.1s">
+				<div class="col-sm-3 pricing-box wow bounceInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInUp;">
+					
 					
 					<div class="pricing-content general">
 					
@@ -368,10 +368,10 @@
 							<a href="#" class="btn btn-skin btn-lg">Upload your inventory.</a>
 						</div>
 					</div>
-					</div>
+					
 				</div>
-				<div class="col-sm-3 pricing-box">
-					<div class="wow bounceInUp" data-wow-delay="0.1s">
+				<div class="col-sm-3 pricing-box wow bounceInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+					
 					
 					<div class="pricing-content general">
 					
@@ -385,7 +385,7 @@
 							<a href="#" class="btn btn-skin btn-lg">Get orders and start selling.</a>
 						</div>
 					</div>
-					</div>
+					
 				</div>
 				
 
@@ -405,7 +405,7 @@
   <!--pricing start here -->
   <div class="pricing_main">
     <div class="container">
-	 <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> PRICING</span></h3>
+	 <h3 class="text-center  wow tada animated"  id="" data-spy="scroll"><span class="span_bg_g"> PRICING</span></h3>
   <div class="title_lines"></div>
       <div class="row">
         <div class="col-md-8">
@@ -530,14 +530,14 @@
   <!--pricing end here --> 
   <!--our services -->
 <section id="ourservices_scr">
-    <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g"> OUR SERVICES</span></h3>
+    <h3 class="text-center  wow fadeInDown animated"  id="" data-spy="scroll"><span class="span_bg_g"> OUR SERVICES</span></h3>
   <div class="title_lines"></div>
 <div class="srvices_main1 ">
 <div class="container">
 	
 
                            	 <div class="col-lg-4  col-md-4 col-sm-4">
-                                <div class="service_first">
+                                <div class="service_first wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                 
                                 <!--<img src="images/canon.png" alt=""/>-->
                                 <h1 class="heading">Inventory management</h1>
@@ -582,7 +582,7 @@
                             </div>
                             </div>
 							<div class="col-lg-4  col-md-4 col-sm-4">
-                                <div class="service_first">
+                                <div class="service_first wow fadeInRight animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
                                 
                                 <!--<img src="images/canon.png" alt=""/>-->
                                 <h1 class="heading">Product Photoshoot</h1>
@@ -895,7 +895,7 @@
 <section id="about_sc">
 
   <div class="container">
-  <h3 class="text-center"  id="" data-spy="scroll"><span class="span_bg_g">ABOUT US</span></h3>
+  <h3 class="text-center wow fadeInUp animated"  id="" data-spy="scroll"><span class="span_bg_g">ABOUT US</span></h3>
   <div class="title_lines"></div>
  <div class="faq_main">
  
@@ -984,7 +984,7 @@
 <section id="contact_sc">
 <div class="srvices_main1">
  <div class="container ">
- <h3 class="text-center"  id="contact_sc" data-spy="scroll"><span class="span_bg_g">CONTACT US</span></h3>
+ <h3 class="text-center wow bounceInRight animated"  id="contact_sc" data-spy="scroll"><span class="span_bg_g">CONTACT US</span></h3>
   <div class="title_lines"></div>
 	
 			<div class=" col-md-6 ">	  
@@ -1034,7 +1034,7 @@
 								</div>
 							</div>
 							<div class="col-md-12">
-								<input type="submit" class="btn btn-primary " value="Send message">
+								<input class="wow bounceInLeft animated btn btn-primary" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceInRight; " type="submit"  value="Send message">
 							</div>
 						</div>
 						<div class="row">
@@ -1115,7 +1115,7 @@
       <div class="faq"> 
         
         <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
-        <h1 data-toggle="collapse" data-target="#gry">GETTING STARTED</h1>
+        <h1 class="wow animated fadeInLeft"data-toggle="collapse" data-target="#gry">GETTING STARTED</h1>
         <div class="demo"> 
           <!--<div id="gry" style="display:none">-->
           <div id="gry" class="collapse">
@@ -1238,22 +1238,22 @@
             </div>
           </div>
           <!-- panel-group -->
-          <h1 data-toggle="collapse" data-target="#price">PRICING AND PAYMENTS</h1>
+          <h1 class="wow animated fadeInRight" data-toggle="collapse" data-target="#price">PRICING AND PAYMENTS</h1>
           <div id="price" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="price1">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice1" aria-expanded="false" aria-controls="collapprice1"> <i class="more-less glyphicon glyphicon-plus"></i> Who decides the price of the product?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapprice11" data-parent="#accordion" href="#collapprice1" aria-expanded="false" aria-controls="collapprice1"> <i class="more-less glyphicon glyphicon-plus"></i> Who decides the price of the product?</a> </h4>
                 </div>
-                <div id="collapprice1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price1">
+                <div id="collapprice11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price1">
                   <div class="panel-body">As a seller, you will set the price of your products. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="price2">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i> What are the fees charged?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapprice22" data-parent="#accordion" href="#collapprice2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i> What are the fees charged?</a> </h4>
                 </div>
-                <div id="collapprice2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price2">
+                <div id="collapprice22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price2">
                   <div class="panel-body">The following deductions are made from the order item value:
                     <ul class="checkmark">
                       <li>CIH fee: A percentage of the order item value vary based on vertical/sub-category. Check your CIH fee for your product here.</li>
@@ -1267,9 +1267,9 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="price3">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What is CIH fee and how much commission is charged?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapprice33" data-parent="#accordion" href="#collapprice3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What is CIH fee and how much commission is charged?</a> </h4>
                 </div>
-                <div id="collapprice3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price3">
+                <div id="collapprice33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price3">
                   <div class="panel-body">Commission fee is a certain percentage of the order item value of your product. It differs across categories and vertical/sub-categories. Check here for your product.
                     Please give an example to show the cost calculation.
                     Here’s an easy example, which illustrates a sample the above calculation:
@@ -1324,136 +1324,136 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="price4">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapprice4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How and when do I get paid?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapprice44" data-parent="#accordion" href="#collapprice4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How and when do I get paid?</a> </h4>
                 </div>
-                <div id="collapprice4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price4">
+                <div id="collapprice44" class="panel-collapse collapse" role="tabpanel" aria-labelledby="price4">
                   <div class="panel-body">All payments are made through NEFT transactions (online banking). The payment is made directly to your bank account within the next 7-15 business days from the date of order dispatch. </div>
                 </div>
               </div>
             </div>
           </div>
-          <h1 data-toggle="collapse" data-target="#list">LISTINGS AND CATALOG</h1>
+          <h1 class="wow animated fadeInLeft" data-toggle="collapse" data-target="#list">LISTINGS AND CATALOG</h1>
           <div id="list" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="list1">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What is listing?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaplist11" data-parent="#accordion" href="#collaplist1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What is listing?</a> </h4>
                 </div>
-                <div id="collaplist1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list1">
+                <div id="collaplist11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list1">
                   <div class="panel-body">Listing a product refers to filling out all the necessary information and adding images of the product so that a customer can make an informed buying decision. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="list2">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I list my products on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaplist22" data-parent="#accordion" href="#collaplist2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I list my products on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collaplist2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list2">
+                <div id="collaplist22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list2">
                   <div class="panel-body">We give you a step-by-step process of how to list your products on our website. It is important to choose the most suitable category to list your product as it will help customers find your products faster. Based on the category you choose, you'll be asked to include product details such as size, model, colour, etc. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="list3">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Can I get help for development of catalogue (product images, description, etc.)?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaplist33" data-parent="#accordion" href="#collaplist3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Can I get help for development of catalogue (product images, description, etc.)?</a> </h4>
                 </div>
-                <div id="collaplist3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list3">
+                <div id="collaplist33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list3">
                   <div class="panel-body">Yes, we are happy to help you at every stage while doing business with us. We help you connect with industry experts for the development of your catalogues. With the help of our catalogue partners across India, you can have attractive images and crisp content developed at unbeatable prices. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="list4">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How does a catalogue partner help me?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaplist44" data-parent="#accordion" href="#collaplist4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How does a catalogue partner help me?</a> </h4>
                 </div>
-                <div id="collaplist4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list4">
+                <div id="collaplist44" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list4">
                   <div class="panel-body">Our catalogue partners develop high-quality photographs of your products and crisp product descriptions for your product catalogue. A good catalogue gives your customers a better understanding of your products and helps boost your sales. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="list5">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist5" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I price my products?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaplist55" data-parent="#accordion" href="#collaplist5" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I price my products?</a> </h4>
                 </div>
-                <div id="collaplist5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list5">
+                <div id="collaplist55" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list5">
                   <div class="panel-body">When pricing products on CARTINHOUR, please account for the applicable Marketplace Fee and include a suitable margin to arrive at the Selling Price. For ease of calculation, you can use our Commission Calculator widget once onboarded. </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="list6">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaplist6" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Will I get charged for listing products on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaplist66" data-parent="#accordion" href="#collaplist6" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Will I get charged for listing products on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collaplist6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list6">
+                <div id="collaplist66" class="panel-collapse collapse" role="tabpanel" aria-labelledby="list6">
                   <div class="panel-body">No. Listing of products on CARTINHOUR.com is free. CARTINHOUR does not charge anything to you for listing your catalogue online. You only pay a small commission for what you sell. </div>
                 </div>
               </div>
             </div>
           </div>
-          <h1 data-toggle="collapse" data-target="#order">ORDER MANAGEMENT AND SHIPPING</h1>
+          <h1 class="wow animated fadeInRight" data-toggle="collapse" data-target="#order">ORDER MANAGEMENT AND SHIPPING</h1>
           <div id="order" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="order1">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Who takes care of the delivery of my products?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaporder11" data-parent="#accordion" href="#collaporder1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Who takes care of the delivery of my products?</a> </h4>
                 </div>
-                <div id="collaporder1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order1">
+                <div id="collaporder11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order1">
                   <div class="panel-body">Our delivery boy will pick up the product from you and deliver it to the customer. All you need to do is keep it packed and ready for dispatch.</div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="order2">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What should I do if my area is not serviceable by CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaporder22" data-parent="#accordion" href="#collaporder2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What should I do if my area is not serviceable by CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collaporder2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order2">
+                <div id="collaporder22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order2">
                   <div class="panel-body">During registering, save the details of your pin code and click on the Continue button. You will be notified via e-mail when your pin code becomes serviceable.</div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="order3">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I manage my orders on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaporder33" data-parent="#accordion" href="#collaporder3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>How do I manage my orders on CARTINHOUR?</a> </h4>
                 </div>
-                <div id="collaporder3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order3">
+                <div id="collaporder33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order3">
                   <div class="panel-body">Through our seller dashboard, we make it easy for you to manage your orders. Whenever a customer places an order, we send you an email or phone message alert. You need to pack the order and keep it ready for dispatch within the time frame provided by you and inform us through the seller portal. This will alert our delivery boy to pick up the product from you.</div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="order4">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collaporder4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Does CARTINHOUR provide packaging material?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collaporder44" data-parent="#accordion" href="#collaporder4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Does CARTINHOUR provide packaging material?</a> </h4>
                 </div>
-                <div id="collaporder4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order4">
+                <div id="collaporder44" class="panel-collapse collapse" role="tabpanel" aria-labelledby="order4">
                   <div class="panel-body">We have a strong network of best packaging material providers in the industry. We can connect you with them to get good quality packaging material which impresses the customers and ensures your products remain undamaged.</div>
                 </div>
               </div>
             </div>
           </div>
-          <h1 data-toggle="collapse" data-target="#return">RETURNS AND SELLER PROTECTION</h1>
+          <h1 class="wow animated fadeInLeft" data-toggle="collapse" data-target="#return">RETURNS AND SELLER PROTECTION</h1>
           <div id="return" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="return1">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What protection does CARTINHOUR offer in case of lost/damaged goods and fraudulent customer claims?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapreturn11" data-parent="#accordion" href="#collapreturn1" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>What protection does CARTINHOUR offer in case of lost/damaged goods and fraudulent customer claims?</a> </h4>
                 </div>
-                <div id="collapreturn1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return1">
+                <div id="collapreturn11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return1">
                   <div class="panel-body">CARTINHOUR has set up a Seller safety scheme (SSS) to protect our sellers against fraud. You can request for SSS claim through the seller dashboard. When the buyer or delivery boy is at fault, you will receive due compensation.</div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="return2">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the customer has returned damaged products?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapreturn22" data-parent="#accordion" href="#collapreturn2" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the customer has returned damaged products?</a> </h4>
                 </div>
-                <div id="collapreturn2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return2">
+                <div id="collapreturn22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return2">
                   <div class="panel-body">Yes, you can raise a claim through Seller safety scheme. Depending on the case and category, you will be given a refund provided you have adequate proof that you shipped an authentic/undamaged product. This will help us close the dispute in your favour.</div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="return3">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the customer has replaced the original product with a different item?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"  data-target="#collapreturn33" data-parent="#accordion" href="#collapreturn3" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the customer has replaced the original product with a different item?</a> </h4>
                 </div>
-                <div id="collapreturn3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return3">
+                <div id="collapreturn33" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return3">
                   <div class="panel-body">Yes, you can raise a claim through Seller safety scheme. Depending on the case and category, you will be given a refund provided you have adequate proof that you shipped the right product. This will help us close the dispute in your favour.</div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="return4">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapreturn4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the goods are damaged or lost in transit?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapreturn44" data-parent="#accordion" href="#collapreturn4" aria-expanded="false" aria-controls="collapseThree"> <i class="more-less glyphicon glyphicon-plus"></i>Would I get compensation if the goods are damaged or lost in transit?</a> </h4>
                 </div>
-                <div id="collapreturn4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return4">
+                <div id="collapreturn44" class="panel-collapse collapse" role="tabpanel" aria-labelledby="return4">
                   <div class="panel-body">Yes. When your products are damaged in transit, you can raise a claim under the Seller safety scheme. The refund depends on the scenario and product.</div>
                 </div>
               </div>
