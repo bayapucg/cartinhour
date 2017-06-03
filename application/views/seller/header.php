@@ -91,7 +91,7 @@
         <div class="modal-header">
           <ul class="nav nav-tabs final-login">
 						<li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
-						<li><a data-toggle="tab" href="#sectionB">Register</a></li>
+						<li><a data-toggle="tab" href="">Register</a></li>
 					</ul>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
@@ -115,16 +115,14 @@
 						</div>
 						</div>
 						<div class="col-xs-6 bor_lef">
-						  <p class="lead co_reg">Register now for <span class="text-successs">FREE</span></p>
-						  <ul class="list-unstyled" style="line-height: 2">
-							  <li><span class="fa fa-check text-successs"></span> See all your orders</li>
-							  <li><span class="fa fa-check text-successs"></span> Fast re-order</li>
-							  <li><span class="fa fa-check text-successs"></span> Save your favorites</li>
-							  <li><span class="fa fa-check text-successs"></span> Fast checkout</li>
-							  <li><span class="fa fa-check text-successs"></span> Get a gift <small>(only new customers)</small></li>
-							  <li><a class="col_a" href="/read-more/"><u>Read more</u></a></li>
-						  </ul>
-						  <p><a data-toggle="tab" href="#sectionB" class="btn btn-info btn-block">Yes please, register now!</a></p>
+							<div class="innter-form">
+								<form>
+								<label >Enter your Mobile Number</label>
+								<input   class="form-control" type="text" name="username" autofocus>
+								</form>
+							</div>
+							<div class="clearfix"></div>
+							<button class="btn btn-primary btn-sm mar_t10" type="submit">Get OTP</button>
 						</div>
 						</div>
 						<div class="clearfix"></div>
@@ -138,7 +136,7 @@
 							</div>
 							<div class="clearfix"></div>
 						</div>
-						<div id="sectionB" class="tab-pane fade">
+						<!--<div id="" class="tab-pane fade">
 							<div class="innter-form">
 							<form class="sa-innate-form" method="post">
 								<div class="form-group">
@@ -180,16 +178,7 @@
 									  <input class="form-control" id="seller_license" name="seller_license" type="text">
 									  <span id="errorlicense" style="color:red; font-size: 13px;"></span>
 									</div>
-									<!--<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex8">Aadhar Number</label>
-									  <input class="form-control" id="seller_adhar" name="seller_adhar" maxlength="12"  type="text">
-									  <span id="erroradhar" style="color:red; font-size: 13px;"></span>
-									</div>
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex9">Bank Acc Number</label>
-									  <input class="form-control" id="seller_bank" name="seller_bank" type="text">
-									  <span id="errorbank" style="color:red; font-size: 13px;"></span>
-									</div>-->
+									
 								   
 									<div class="col-xs-12 col-md-6 nopaddingright reginput">
 									  <label for="ex12">Address</label>
@@ -212,7 +201,7 @@
 							</div>
 						
 							<div class="clearfix"></div>
-						</div>
+						</div>-->
 					</div>
 				</div>
           </div>
@@ -314,7 +303,7 @@
 	 
         <div class="modal-header " style="background-color:#006a99;color:#fff;padding:10px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"> Select your plan</h4>
+          <h4 class="modal-title"> Enquiry form</h4>
         </div>
         <div class="modal-body">
           <div class="container">
@@ -378,7 +367,7 @@
     </div>
     <div class="form-group">        
       <div class="col-sm-offset-4 col-sm-8">
-        <button type="submit" class="btn btn-primary">SELECT THIS PLAN</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </form>

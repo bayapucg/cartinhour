@@ -816,101 +816,157 @@
  <div class="clearfix">   </div>  
 <p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>
 
- <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Just fill form to Select plan</button>
+ <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Enquiry</button>
 
                             
 </div>
 </div>
 </section>
 <div class="clearfix"></div>
-<!-- end our services -->
 <section id="about_sc">
-
-  <div class="container">
   <h3 class="text-center wow fadeInUp animated"  id="" data-spy="scroll"><span class="span_bg_g">ABOUT US</span></h3>
   <div class="title_lines"></div>
- <div class="faq_main">
  
-    <div class="pad_abou">
-	<div class="  " >
+<div class="container mar_t15">
+ <div class="about_us_container">
+ <div class="row">
+		<div class="col-md-6 abot_tex">
+			<h3>WELCOME</h3>
+			<h3>TO</h3>
+			<h3>CARTINHOUR</h3>
+			
+		</div>
+		<div class="col-md-6">
+			<a href="<?php echo base_url(); ?>seller/login"><img style="width:57%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
+		</div>
+  </div>
+  </div>
+	<div class="row">
 	
-	<div class="panel_cus panel-primary ">
-     
 	
-	<div class="clearfix"></div>
-	<div class="layer"></div>
-	<div id="process">
-		<div id="svgContainer" >
-		  <svg version="1.1" id="tracesvg" viewBox="0 0 400 2348" >
-				
-
-				<path id="foo" fill="none" stroke-width="10" stroke="#002f3f" d="M975.827406,1038.15506 C975.827406,1038.15506 976.64376,1115.68782 975.827406,1200 C975.011053,1284.31218 955.827393,1394.47512 705.764803,1395.81038 C455.702214,1397.14564 437.238872,1523.38302 436.036139,1654.48996 C434.833407,1785.5969 436.036139,1936.68442 436.036139,2037.53097 C436.036139,2138.37751 460.302847,2239.01365 704.226737,2239.01365 C948.150628,2239.01365 976.920663,2405.96209 976.64376,2502.21851 C976.366857,2598.47493 978.390712,2601.72983 976.64376,2739.20493 C974.896808,2876.68002 954.649694,2978.03989 704.226737,2978.03989 C453.803781,2978.03989 436.210077,3161.01843 437.238872,3222.62024 C438.267666,3284.22206 437.238872,3385.78397 437.238872,3385.78397 3222.62024 C438.267666,3284.22206 437.238872,3385.78397 437.238872,3385.78397" transform="translate(-435 -1038)" stroke-dasharray="8 4"/>
-		  </svg>	
-		</div>
-		
-		<div class="row ">
-
-		  <div class="col c1">
-			<h3>Who are we</h3>
-			<ol>
-			  <li>Cartin hour is a platform where customer meets their local stores in online.</li>
-			  <li>Complete new era of shopping begins here</li>
-			</ol> 
-		   
-		  </div>
-		  <div class="col c2">
-			<img class="img-thumbnail" id="img1" src="<?php echo base_url(); ?>assets/seller_login/images/waw.png" alt="" width="200">
-		  </div>
-		</div>
-		<div class="row ">
-		  <div class="col c2">
-			<img class="img-thumbnail" src="<?php echo base_url(); ?>assets/seller_login/images/wwd.png" alt="" width="200">
-		  </div>
-		  <div id="img2" class="col c1">
-			<!-- <h1>2</h1> -->
-			<h3>What we are doing</h3>
-			<ol>
-			  <li>We are bringing new revolution in e commerce industry</li>
-			  <li>We are transforming local stores in to online</li>
-			  <li>We are helping working couple and other busy individuals by making them to spend their valuable time with their dear ones instead of wasting at ques of shopping malls.</li>
-			</ol>
-		  </div>
-
-		</div>
-		<div class="row ">
-
-		  <div class="col c1">
-			<!-- <h1>3</h1> -->
-			<h3>How we are doing</h3>
-			<ol>
-			  <li>We have an excellent network of our delivery boys who are main pillars for us</li>
-			  <li>We have millions of sellers to fulfil customer needs</li>
-			</ol>
-		  </div>
-		  <div class="col c2">
-			<img class="img-thumbnail" id="img3" src="<?php echo base_url(); ?>assets/seller_login/images/hwd.png" alt=""	>
-		  </div>
-		</div>
-		<div class="row ">
-		  <div class="col c2">
-			<img class="img-thumbnail" id="img4" src="<?php echo base_url(); ?>assets/seller_login/images/tmo.png" alt="">
-		  </div>
-		  <div class="col c1">
-			<!-- <h1>4</h1> -->
-			<h3>Our vision</h3>
-			<ol>
-			  <li>we are trying to make complete local stores into online</li>
-			  <li>We act like a weapons for local stores against gigantic ecommerce sites.</li>
-			</ol>
-		  </div>
-		</div>
+	
+<div class="container">
+	<div class="row">
+      <div class="col-md-12">
+        <!--<p class="main_title"><span>INTEREST SKILLS</span></p>-->
+        <p >&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-users"></span> </div>
+          <div class="info">
+            <h4 class="text-center">Who are we</h4>
+				<ul>
+				  <li>Cartin hour is a platform where customer meets their local stores in online.</li>
+				  <li>Complete new era of shopping begins here</li><br>
+				</ul> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-4x fa-magic"></span> </div>
+          <div class="info">
+            <h4 class="text-center">What we are doing</h4>
+				<ul>
+				  <li>We are bringing new revolution in e commerce industry</li>
+				  <li>We are transforming local stores in to online</li>
+				  <li>We are helping working couple and other busy individuals .</li>
+				</ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-4x fa-book"></span> </div>
+          <div class="info">
+            <h4 class="text-center">How we are doing</h4>
+				<ul>
+				  <li>We have an excellent network of our delivery boys who are main pillars for us</li>
+				  <li>We have millions of sellers to fulfil customer needs</li><br>
+				</ul> 
+          </div>
+        </div>
+      </div> 
+	  <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-4x fa-book"></span> </div>
+          <div class="info">
+            <h4 class="text-center">Our vision</h4>
+				<ul>
+				  <li>we are trying to make complete local stores into online</li>
+				  <li>We act like a weapons for local stores against gigantic ecommerce sites.</li><br>
+				</ul> 
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+	
+	
+	<!--
+		<div class=" col-md-3 ">
+			<div class="about_sty_card">
+				<img class="img-thumbnail" id="img1" src="<?php echo base_url(); ?>assets/seller_login/images/waw.png" alt="" >
+				<div class="card-block">
+				   <h4>Who are we</h4>
+					<ol>
+					  <li>Cartin hour is a platform where customer meets their local stores in online.</li>
+					  <li>Complete new era of shopping begins here</li>
+					</ol> 
+				</div>
+			</div>
+        </div>
+		<div class=" col-md-3 ">
+			<div class="about_sty_card">
+				<img class="img-thumbnail"  src="<?php echo base_url(); ?>assets/seller_login/images/wwd.png" alt="" >
+				<div class="card-block">
+				   <h4>What we are doing</h4>
+					<ol>
+					  <li>We are bringing new revolution in e commerce industry</li>
+					  <li>We are transforming local stores in to online</li>
+					  <li>We are helping working couple and other busy individuals by making them to spend their valuable time with their dear ones instead of wasting at ques of shopping malls.</li>
+					</ol> 
+				</div>
+			</div>
+        </div>
+		<div class=" col-md-3 ">
+			<div class="about_sty_card">
+				<img class="img-thumbnail"  src="<?php echo base_url(); ?>assets/seller_login/images/hwd.png" alt="" >
+				<div class="card-block">
+				   <h4>How we are doing</h4>
+					<ol>
+					  <li>We have an excellent network of our delivery boys who are main pillars for us</li>
+					  <li>We have millions of sellers to fulfil customer needs</li>
+					</ol> 
+				</div>
+			</div>
+        </div>
+		<div class=" col-md-3 ">
+			<div class="about_sty_card">
+				<img class="img-thumbnail"  src="<?php echo base_url(); ?>assets/seller_login/images/tmo.png" alt="" >
+				<div class="card-block">
+				   <h4>Our vision</h4>
+					<ol>
+					  <li>we are trying to make complete local stores into online</li>
+					  <li>We act like a weapons for local stores against gigantic ecommerce sites.</li>
+					</ol> 
+				</div>
+			</div>
+        </div>-->
 	</div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+</div>
+
 </section>
+
+
+
+
+
+<!-- end our services -->
+
 <div class="clearfix"></div>
 <!--  start contact us-->
 <section id="contact_sc">
@@ -928,14 +984,14 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_name">Firstname *</label>
-									<input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+									<input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" requi#006a99="requi#006a99" data-error="Firstname is requi#006a99.">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_lastname">Lastname </label>
-									<input id="form_lastname" type="text" name="lname" class="form-control" placeholder="Please enter your lastname *"  data-error="Lastname is required.">
+									<input id="form_lastname" type="text" name="lname" class="form-control" placeholder="Please enter your lastname *"  data-error="Lastname is requi#006a99.">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
@@ -944,14 +1000,14 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_email">Email *</label>
-									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" requi#006a99="requi#006a99" data-error="Valid email is requi#006a99.">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_phone">Phone*</label>
-									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" requi#006a99 oninvalid="setCustomValidity('Plz enter your correct phone number ')"
 								onchange="try{setCustomValidity('')}catch(e){}">
 									
 								</div>
@@ -961,7 +1017,7 @@
 							<div class="col-md-12">
 								<div class="form-group">
 									<label for="form_message">Message *</label>
-									<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" requi#006a99="requi#006a99" data-error="Please,leave us a message."></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
@@ -972,7 +1028,7 @@
 						<div class="row">
 							<div class="col-md-12">
 							   <br>
-								<small class="text-muted"><strong>*</strong> These fields are required.</small>
+								<small class="text-muted"><strong>*</strong> These fields are requi#006a99.</small>
 							</div>
 						</div>
 					</div>
@@ -1057,7 +1113,7 @@
                   <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-target="#collapseOne11" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> <i class="more-less glyphicon glyphicon-plus"></i> Why should I sell on CARTINHOUR? </a> </h4>
                 </div>
                 <div id="collapseOne11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">CARTINHOUR is the new revolution in Indian e-commerce with ability to reach maximum online and highest credibility. </div>
+                  <div class="panel-body">CARTINHOUR is the new revolution in Indian e-commerce with ability to reach maximum online and highest c#006a99ibility. </div>
                 </div>
               </div>
               <div class="panel panel-default">
@@ -1107,10 +1163,10 @@
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="six">
-                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsesix16" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapsesix"> <i class="more-less glyphicon glyphicon-plus"></i> What are the documents required to register as a seller on CARTINHOUR?</a> </h4>
+                  <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapsesix16" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapsesix"> <i class="more-less glyphicon glyphicon-plus"></i> What are the documents requi#006a99 to register as a seller on CARTINHOUR?</a> </h4>
                 </div>
                 <div id="collapsesix16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="six">
-                  <div class="panel-body">You are required to have the following documents:
+                  <div class="panel-body">You are requi#006a99 to have the following documents:
                     <ul class="checkmark">
                       <li>PAN Card (Personal PAN for business type “Proprietorship” and Personal + Business PAN for business type as “Company”)</li>
                       <li>VAT/TIN Number (not mandatory for books)</li>
@@ -1164,7 +1220,7 @@
                   <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-target="#collapteivel1" data-parent="#accordion" href="#collapteivel" aria-expanded="false" aria-controls="collapteivel"> <i class="more-less glyphicon glyphicon-plus"></i> When can I start selling?</a> </h4>
                 </div>
                 <div id="collapteivel1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="teivel">
-                  <div class="panel-body">After all the required documents have been verified and your seller profile is complete, you can start listing your products and start selling.</div>
+                  <div class="panel-body">After all the requi#006a99 documents have been verified and your seller profile is complete, you can start listing your products and start selling.</div>
                 </div>
               </div>
             </div>
@@ -1205,7 +1261,7 @@
                   <div class="panel-body">Commission fee is a certain percentage of the order item value of your product. It differs across categories and vertical/sub-categories. Check here for your product.
                     Please give an example to show the cost calculation.
                     Here’s an easy example, which illustrates a sample the above calculation:
-                    <table class="table table-bordered table-responsive cat">
+                    <table class="table table-borde#006a99 table-responsive cat">
                       <thead class="thead-inverse">
                         <tr>
                           <th>ITEM</th>
@@ -1246,7 +1302,7 @@
                           <td>252.425</td>
                         </tr>
                         <tr>
-                          <td>Settlement Value (Amount credited to you)</td>
+                          <td>Settlement Value (Amount c#006a99ited to you)</td>
                           <td>1247.575</td>
                         </tr>
                       </tbody>
@@ -1507,7 +1563,7 @@ $("#cihfee1").html(data);
   
   if (cih1_id == "")
     {
-    $("#CatErr").html("Please Select Category").css("color", "red").fadeIn().fadeOut(5000);
+    $("#CatErr").html("Please Select Category").css("color", "#006a99").fadeIn().fadeOut(5000);
     return false;
     }
     else{
@@ -1517,7 +1573,7 @@ $("#cihfee1").html(data);
   
   if (product_price == "")
     {
-    $("#TermsErr").html("Please Enter Price").css("color", "red").fadeIn().fadeOut(5000);
+    $("#TermsErr").html("Please Enter Price").css("color", "#006a99").fadeIn().fadeOut(5000);
     return false;
     }
     else{
@@ -1559,7 +1615,7 @@ $("#cihfee1").html(data);
   //alert(closing_fee);
   if (product_weight == "")
     {
-    $("#TermsErr12").html("Please Enter Product Weight in grams").css("color", "red").fadeIn().fadeOut(5000);
+    $("#TermsErr12").html("Please Enter Product Weight in grams").css("color", "#006a99").fadeIn().fadeOut(5000);
     return false;
     }
     else{
@@ -1606,7 +1662,7 @@ $("#cihfee1").html(data);
   
   if (actual_price == "")
     {
-    $("#TermsErr15").html("Please Enter Product Price").css("color", "red").fadeIn().fadeOut(5000);
+    $("#TermsErr15").html("Please Enter Product Price").css("color", "#006a99").fadeIn().fadeOut(5000);
     return false;
     }
     else{
