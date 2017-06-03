@@ -126,7 +126,6 @@ public function insertseller($data)
 	
 	$this->db->insert('sellers',$data);
 			//print_r($data); exit;
-
 		return true;	
 }
 

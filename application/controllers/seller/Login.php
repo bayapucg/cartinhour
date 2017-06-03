@@ -62,8 +62,8 @@ public function insert() {
 	$phone = $this->input->post('seller_mobile');
   $data = array(
   		'seller_rand_id' => $seller.''.$seller_rand_id,
-  	  	'seller_name' => $this->input->post('seller_fullname'),
-  	  	'seller_email' => $this->input->post('seller_email'),
+  	  	// 'seller_name' => $this->input->post('seller_fullname'),
+  	  	// 'seller_email' => $this->input->post('seller_email'),
   	  	'seller_password' => md5($six_digit_random_number),
   	  	'seller_mobile' => $this->input->post('seller_mobile'),
   // 	  	'seller_address' => $this->input->post('seller_address'),
@@ -112,7 +112,7 @@ public function insert() {
 			{
 				//redirect(site_url('add_blogs_view'));
 				
-                    $this->session->set_flashdata('msg2','<div class="alert alert-success text-center" style="color: red;font-size:13px;">Registration Failed.</div>');
+                    $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: red;font-size:13px;">Registration Failed.</div>');
 				return redirect('seller/login/register');
 
 			}

@@ -17,8 +17,7 @@ class Personnel_details extends Admin_Controller {
 
 	public function index()
 	{
-		
-	   
+			   
 	   $data['sellerlocationdata'] = $this->Personnel_details_model->getlocations();
 	   $data['partsellerlocationdata'] = $this->Personnel_details_model->getsellerlocation();
 		
@@ -45,9 +44,6 @@ $res=$this->Personnel_details_model->updatedd($data);
 
 
 if($res)
-
-
-
 			{
 
                  $this->prepare_flashmessage("Display Details are Updated Successfully..", 0);

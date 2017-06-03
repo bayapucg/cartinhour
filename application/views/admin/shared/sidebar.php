@@ -17,6 +17,7 @@
             <li><a class="" href="<?php echo base_url();?>admin/orders/rejected_orders">Rejected Orders</a></li>        
           </ul>
         </li>
+        <li> <a class="" href="<?php echo base_url();?>admin/addcategories"> <i class="fa fa-list"></i> <span>Categories</span> </a> </li>
 		<li> <a class="" href="<?php echo base_url();?>admin/Categories"> <i class="fa fa-list"></i> <span>Categories</span> </a> </li>
 		<li> <a class="" href="<?php echo base_url();?>admin/subcategories"> <i class="fa fa-list"></i> <span>SubCategories</span> </a> </li>
 		<li> <a class="" href="<?php echo base_url();?>admin/Locations"> <i class="fa fa-location-arrow" aria-hidden="true"></i> <span>Locations</span> </a> </li>

@@ -194,14 +194,6 @@ document.getElementById('seller_location').options[i].selected=true
             <div class="panel-body">
 			
               <form action="<?php echo base_url(); ?>seller/personnel_details/updatepersonneldetails" method="post" enctype="multipart/form-data">
-			  
-               
-				
-				
-             
-				
-				
-                
 				 <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Name</label>
                   <input class="form-control" placeholder="Name" type="text" id="seller_name" name="seller_name" value="<?php echo $partsellerlocationdata->seller_name;   ?>" readonly>

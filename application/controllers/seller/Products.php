@@ -60,7 +60,6 @@ class Products extends Admin_Controller {
 
 	public function getajaxsubitem()
 	{
-		
 	$subcat=$this->input->post('subcategory_id');
 	$result=$this->products_model->getsubitemdata($subcat);
 	echo '<option value="">Select Subitem</option>';
@@ -69,103 +68,36 @@ class Products extends Admin_Controller {
 	echo '<option value="'.$alldata->subitem_id.'">'.$alldata->subitem_name.'</option>';
 	}
 	exit;	
-			
-		
 	}	
-	
-	
-	
+		
 	public function insert()
- {
+ 		{
 
-if(isset($_POST)){
-
-
-
+			if(isset($_POST)){
 			if(!empty($_FILES['picture']['name'])){
-
-
-
 				$config['upload_path'] = 'uploads/products/';
-
-
-
 				$config['allowed_types'] = 'jpg|jpeg|png|gif';
-
-
-
 				$config['file_name'] = $_FILES['picture']['name'];
-
-
-
-
-
-
-
                 //Load upload library and initialize configuration
-
-
-
 				$this->load->library('upload',$config);
-
-
-
 				$this->upload->initialize($config);
-
-
-
-
-
-
-
 				if($this->upload->do_upload('picture')){
-
-
-
 					$uploadData = $this->upload->data();
-
-
-
 					$picture = $uploadData['file_name'];
-
-
-
 				}else{
-
-
-
-$this->prepare_flashmessage("Image format Invalid..", 1);
-
-
-
+			$this->prepare_flashmessage("Image format Invalid..", 1);
 				//return redirect('admin/fooditems');
-
 				echo "<script>window.location='".base_url()."seller/products/create';</script>";
-
-
-
 				}
-
-
-
 			}else{
-
-
-
 				$picture = '';
-
-
-
 			}
-
-
-
 		}
- 	
-$data=array(
+		$data=array(
 
             'category_id' => $this->input->post('category_id'),			
 			'subcategory_id' => $this->input->post('subcategory_id'),
+			'subitem_id' => $this->input->post('subitem_id'),
             'seller_id' => $this->session->userdata('seller_id'),             
 			'item_name' => $this->input->post('item_name'),
 			'item_code' => $this->input->post('item_code'),
@@ -190,28 +122,13 @@ $data=array(
 				echo "<script>window.location='".base_url()."seller/products/create';</script>";
 
 			}
-
-
-
 			else
-
-
-
 			{
 
 				$this->prepare_flashmessage("Failed to Insert..", 1);
-
-
-
 				//return redirect(base_url('admin/fooditems'));
-
 echo "<script>window.location='".base_url()."seller/products/".$this->uri->segment(4)."/".$this->uri->segment(5)."';</script>";
-
 			}
-	
-	
-	
-	
 }
 
 

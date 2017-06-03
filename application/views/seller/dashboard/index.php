@@ -112,11 +112,6 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
 
 <div class="col-md-9">
     <!-- <p style="border:2px solid #ddd;color: #006a99;padding:10px;font-size: 18px; " class="pull-right"></p> -->
-    <div class="box ">
-  <div class="content draw">
-    <p>Your Id::<?php echo ucfirst($this->session->userdata('seller_rand_id'));    ?></p> 
-  </div>
-</div>
         <button class="draw pull-right">Your Id::<?php echo ucfirst($this->session->userdata('seller_rand_id'));    ?></button>
           <div class="bdy_ser">
             <ul class="add_lsit">

@@ -20,8 +20,7 @@ class Subcategory_model extends MY_Model
     $this->db->select('*');
 	$this->db->from('subcategory');
 	$this->db->join('category', 'category.category_id =subcategory.category_id');
-	$this->db->join('subcategories', 'subcategories.subcategory_id =subcategory.subcategory_id');
-    
+	$this->db->join('subcategories', 'subcategories.subcategory_id =subcategory.subcategory_id');   
 	$this->db->where('subcategory.seller_id',$sid);
     $query = $this->db->get();
     return $query->result();
