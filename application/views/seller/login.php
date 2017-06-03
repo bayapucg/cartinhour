@@ -87,9 +87,9 @@
  <!-- end<scroller>-->
   <!--body part start here -->
   
-  <div class="container-fluid gallery-like-area c-h-mb mar_t15" >
+ <!-- <div class="container-fluid gallery-like-area c-h-mb mar_t15" >
     <div class="row">
-      <div class="col-md-6 col-sm-6 text-center wow animated zoomIn slower "><!-- hidden-sm hidden-xs-->
+      <div class="col-md-6 col-sm-6 text-center wow animated zoomIn slower ">
         <div class="row "> <img class=" thumbnail img-responsive " src="<?php echo base_url();?>assets/seller_login/images/hyd.jpg" alt=""> </div>
       </div>
       <div class=" col-md-4 col-md-push-1 col-sm-6 text-center v-center bubble-contact animatedParent">
@@ -142,10 +142,7 @@
           <h4>Help</h4>
           <ul class="checkmark">
             <li><a href="<?php echo base_url();?>seller/faq">FAQ’s</a></li>
-            <!--<li><a href="#">Learning Centre</li>-->
-            <!--<li>Getting started guide</li>
-			<li>cartinhour selling policy</li>
-			<li>More...</li>-->
+            
           </ul>
         </div>
       </div>
@@ -153,7 +150,7 @@
         <div class="row "> <img class=" thumbnail img-responsive wow animated zoomIn slower" src="<?php echo base_url();?>assets/seller_login/images/help.jpg" alt=""> </div>
       </div>
     </div>
-  </div>
+  </div>-->
   </section>
 	<div class="clearfix"></div>	
 		<!--benifits section start
@@ -449,13 +446,7 @@
             </div>
 			  <!--stip html --> 
 		<div >
-			<table style="border:1px solid #5fcbff;border-radius:10px;margin:0 auto;background-color:#f5f5f5;">
-				<tr>
-					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You sell at :</span><br>Rs .1000</td>
-					<td style="padding:20px"><span style="color:#ff0000 ;font-size:18px;">We take:(for 10%)</span> <br>10% of Rs.1000 + 14.5(service tax)= Rs.114.5</td>
-					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You get in bank:</span><br>Rs.885.5</td>
-				</tr>
-			</table>
+			
 		</div>
 		<!--stip end html--> 
             
@@ -536,7 +527,7 @@
 <div class="container">
 	
 
-                           	 <div class="col-lg-4  col-md-4 col-sm-4">
+                           	 <div class="col-lg-6  col-md-6 col-sm-4">
                                 <div class="service_first wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                 
                                 <!--<img src="images/canon.png" alt=""/>-->
@@ -551,26 +542,10 @@
                             </div>
                             </div>
                             
-                           	<!-- <div class="col-lg-4  col-md-4 col-sm-4">
-                                <div class="service_first">
-                                
-                              
-                                <h1 class="heading">Simple 5 Step to Grow Your Sell</h1>
-                                   <ul>
-										<li>Seller account registration</li>
-										<li>Brand & Category approval</li>
-										<li>Catalog seo content creation</li>
-										<li>Listing on Marketplace sites</li>
-										<li>Inventory Management</li>
-										<li>Dispute Management</li>
-                                   </ul>
-                                   <div class="service_button"><a href="dell-printer-support.php">More</a></div>
-                                   
-                            </div>
-                            </div>-->
+                           
 							
                             
-                             <div class="col-lg-4  col-md-4 col-sm-4">
+                             <div class="col-lg-6  col-md-6 col-sm-4">
                                 <div class="service_first">
                                 <h1 class="heading">Catalog Management</h1>
                                 <!--<img src="images/canon.png" alt=""/>-->
@@ -581,241 +556,32 @@
                                    
                             </div>
                             </div>
-							<div class="col-lg-4  col-md-4 col-sm-4">
+							<!--<div class="col-lg-4  col-md-4 col-sm-4">
                                 <div class="service_first wow fadeInRight animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
                                 
-                                <!--<img src="images/canon.png" alt=""/>-->
                                 <h1 class="heading">Product Photoshoot</h1>
                                     <p>We do Model  and Table top Photo Shoot which enhance and enrich your product image help to generate more sale and to grow your business online. </p>
                                   
                                   
                                    <p class="lin_read"><a  href="<?php echo base_url();?>seller/product_photoshoot" >Know more</a></p>
                             </div>
-                            </div>
+                            </div>-->
 							<div class="clearfix"></div>
-						<div class="container">
+					<!--	<div class="container">
 							<div class="panel panel-default pad_10 mar_t10">
 							  <h4>Pricing</h4>
 							  
 							</div>
-						</div>
+						</div>--><p>&nbsp;</p>
 	
 	<div class="clearfix"></div>
-	<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-md-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Bronze</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                            $10<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                1 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                1 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                100K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                100MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
-                    1 month FREE trial</div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-3">
-            <div class="panel panel-success">
-                <div class="cnrflash">
-                    <div class="cnrflash-inner">
-                        <span class="cnrflash-label">MOST
-                            <br>
-                            POPULR</span>
-                    </div>
-                </div>
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Silver</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                            $20<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                2 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                5 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                100K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                200MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
-                    1 month FREE trial</div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Gold</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                            $35<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                5 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                20 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                300K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                500MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
-            </div>
-        </div>
-		<div class="col-xs-12 col-md-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Gold</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                            $35<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                5 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                20 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                300K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                500MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
-            </div>
-        </div>
-		
-    </div>
-</div>
+	
 
        
  <div class="clearfix">   </div>  
-<p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>
+<!--<p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>-->
 
+ <button type="button" class="btn btn-warning btn-md pull-left" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
  <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Enquiry</button>
 
                             
@@ -824,11 +590,12 @@
 </section>
 <div class="clearfix"></div>
 <section id="about_sc">
-  <h3 class="text-center wow fadeInUp animated"  id="" data-spy="scroll"><span class="span_bg_g">ABOUT US</span></h3>
-  <div class="title_lines"></div>
+  
  
-<div class="container mar_t15">
- <div class="about_us_container">
+<div class="container ">
+<h3 class="text-center wow tada animated "  id="" data-spy="scroll"><span class="span_bg_g">ABOUT US</span></h3>
+  <div class="title_lines"></div>
+ <div class="about_us_container mar_t15">
  <div class="row">
 		<div class="col-md-6 abot_tex">
 			<h3>WELCOME</h3>
@@ -906,60 +673,117 @@
 </div>
 	
 	
-	<!--
-		<div class=" col-md-3 ">
-			<div class="about_sty_card">
-				<img class="img-thumbnail" id="img1" src="<?php echo base_url(); ?>assets/seller_login/images/waw.png" alt="" >
-				<div class="card-block">
-				   <h4>Who are we</h4>
-					<ol>
-					  <li>Cartin hour is a platform where customer meets their local stores in online.</li>
-					  <li>Complete new era of shopping begins here</li>
-					</ol> 
-				</div>
-			</div>
-        </div>
-		<div class=" col-md-3 ">
-			<div class="about_sty_card">
-				<img class="img-thumbnail"  src="<?php echo base_url(); ?>assets/seller_login/images/wwd.png" alt="" >
-				<div class="card-block">
-				   <h4>What we are doing</h4>
-					<ol>
-					  <li>We are bringing new revolution in e commerce industry</li>
-					  <li>We are transforming local stores in to online</li>
-					  <li>We are helping working couple and other busy individuals by making them to spend their valuable time with their dear ones instead of wasting at ques of shopping malls.</li>
-					</ol> 
-				</div>
-			</div>
-        </div>
-		<div class=" col-md-3 ">
-			<div class="about_sty_card">
-				<img class="img-thumbnail"  src="<?php echo base_url(); ?>assets/seller_login/images/hwd.png" alt="" >
-				<div class="card-block">
-				   <h4>How we are doing</h4>
-					<ol>
-					  <li>We have an excellent network of our delivery boys who are main pillars for us</li>
-					  <li>We have millions of sellers to fulfil customer needs</li>
-					</ol> 
-				</div>
-			</div>
-        </div>
-		<div class=" col-md-3 ">
-			<div class="about_sty_card">
-				<img class="img-thumbnail"  src="<?php echo base_url(); ?>assets/seller_login/images/tmo.png" alt="" >
-				<div class="card-block">
-				   <h4>Our vision</h4>
-					<ol>
-					  <li>we are trying to make complete local stores into online</li>
-					  <li>We act like a weapons for local stores against gigantic ecommerce sites.</li>
-					</ol> 
-				</div>
-			</div>
-        </div>-->
 	</div>
 </div>
 
 </section>
+<div class="clearfix"></div>
+		<!--team members-->
+<section class=" mar_t15">
+<div class="container">
+<div class="web_disigner_contain web_disigner">
+  <center><h1  style=" display:inline;color:#fff;">Our Team</h1></center>
+  
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class="carousel slide media-carousel" id="media1">
+        <div class="carousel-inner">
+          <div class="item  active">
+            <div class="row">
+              <div class="col-md-4 padtop30">
+                <center><div class="parent_circle">
+                  <div class="parent_circle_contain">
+                  <p>R JOSHI </p>
+                  <p>Developer PROFILE</p>
+                  <a href="#">Know More...</a>
+                </div>
+                <div class=" child_round_circle child_round_circle_img1">
+                  
+                </div>
+                </div>
+                </center>
+              </div>          
+              <div class="col-md-4 padtop30">
+               <center><div class="parent_circle">
+               <div class="parent_circle_contain">
+                  <p>ABHISHEK</p>
+                  <p>DESIGNER PROFILE</p>
+                  <a href="#">Know More...</a>
+                </div>
+                <div class="child_round_circle child_round_circle_img2  ">
+                  
+                </div>
+                </div>
+                </center>
+              </div>
+              <div class="col-md-4 padtop30">
+            <center> <div class="parent_circle">
+                  <div class="parent_circle_contain">
+                  <p>DEV</p>
+                  <p>DESIGNER PROFILE</p>
+                  <a href="#">Know More...</a>
+                </div>
+                <div class=" child_round_circle child_round_circle_img3 ">
+                  
+                </div>
+                </div>
+                </center> 
+              </div>        
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4 padtop30">
+                <center><div class="parent_circle">
+                  <div class="parent_circle_contain">
+                  <p>VINITA</p>
+                  <p>DESIGNER PROFILE</p>
+                  <a href="#">Know More...</a>
+                </div>
+                <div class=" child_round_circle child_round_circle_img4 ">
+                  
+                </div>
+                </div>
+                </center>
+              </div>              
+              <div class="col-md-4 padtop30">
+                <center><div class="parent_circle">
+                  <div class="parent_circle_contain">
+                  <p>M . KHAN</p>
+                  <p>Developer PROFILE</p>
+                  <a href="#">Know More...</a>
+                </div>
+                <div class=" child_round_circle child_round_circle_img5">
+                  
+                </div>
+                </div>
+                </center>
+              </div>    
+               <div class="col-md-4 padtop30">
+                <center><div class="parent_circle">
+                  <div class="parent_circle_contain">
+                  <p>BRIJESH</p>
+                  <p>DESIGNER PROFILE</p>
+                  <a href="#">Know More...</a>
+                </div>
+                <div class=" child_round_circle child_round_circle_img6">
+                  
+                </div>
+                </div>
+                </center>
+              </div>            
+            </div>
+          </div>
+          
+        </div>
+        <a data-slide="prev" href="#media1" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media1" class="right carousel-control">›</a>
+      </div>                          
+    </div>
+  </div>
+</div>
+</div>
+</section>		<!--endteam members-->
 
 
 
@@ -968,129 +792,7 @@
 <!-- end our services -->
 
 <div class="clearfix"></div>
-<!--  start contact us-->
-<section id="contact_sc">
-<div class="srvices_main1">
- <div class="container ">
- <h3 class="text-center wow bounceInRight animated"  id="contact_sc" data-spy="scroll"><span class="span_bg_g">CONTACT US</span></h3>
-  <div class="title_lines"></div>
-	
-			<div class=" col-md-6 ">	  
-				<form  class=""id="ajax-contact"  method="post" action="<?php echo base_url(); ?>seller/contactus/details" role="form">
-					<div class="messages" id="form-messages"></div>
-					<?php echo $this->session->flashdata('msg1'); ?>
-					<div class="controls">
-						<div class="row mar_t10">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_name">Firstname *</label>
-									<input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" requi#006a99="requi#006a99" data-error="Firstname is requi#006a99.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_lastname">Lastname </label>
-									<input id="form_lastname" type="text" name="lname" class="form-control" placeholder="Please enter your lastname *"  data-error="Lastname is requi#006a99.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_email">Email *</label>
-									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" requi#006a99="requi#006a99" data-error="Valid email is requi#006a99.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_phone">Phone*</label>
-									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" requi#006a99 oninvalid="setCustomValidity('Plz enter your correct phone number ')"
-								onchange="try{setCustomValidity('')}catch(e){}">
-									
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<label for="form_message">Message *</label>
-									<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" requi#006a99="requi#006a99" data-error="Please,leave us a message."></textarea>
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<input class="wow bounceInLeft animated btn btn-primary" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceInRight; " type="submit"  value="Send message">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-							   <br>
-								<small class="text-muted"><strong>*</strong> These fields are requi#006a99.</small>
-							</div>
-						</div>
-					</div>
 
-				</form>
-			</div>
-					<div class="col-md-6 pad_10">
-					<!-- <div class="thumbnail">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1902.603941571986!2d78.38998466067792!3d17.49758717711942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1494410712406" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
-				   </div> -->
-
-				   <div class="thumbnail">
-						<div style="width: 100%"><iframe width="100%" height="300" src="https://www.maps.ie/create-google-map/map.php?width=100%&amp;height=300&amp;hl=en&amp;q=%20Sri%20Vani%20Nilayam%2C%20Sardar%20Patel%20Nagar%2C%20Nizampet%20%E2%80%98X%E2%80%99%20Road%2C%20Hyderabad%2C%20Telangana+(Cartinhour)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/it/misura-distanza-area-google-maps.html">Misurare distanze google maps</a></iframe></div><br />
-				   </div>
-					</div>
-					<div class="clearfix"></div>
-					<div class="pad_10">
-						<div class="row col1">
-							<div class="col-sm-3">
-								 <i class="fa fa-fax"></i> Website  
-							</div>
-							<div class="col-sm-9">
-								 <a href="http://cartinhour.com/"> www.cartinhour.com</a>
-							</div>
-						</div>
-							<div class="row col1">
-						   <div class="col-xs-3">
-							   <i class="fa fa-map-marker" style="font-size:16px;"></i>   Address
-						   </div>
-						   <div class="col-xs-9">
-								Plot No.177,1st floor, Sri Vani Nilayam,
-								Sardar Patel Nagar, Nizampet ‘X’ Road,
-								Hyderabad, Telangana
-						   </div>
-					   </div>
-					   
-						<div class="row col1">
-							<div class="col-sm-3">
-								<i class="fa fa-phone"></i>   Phone
-							</div>
-							<div class="col-sm-9">
-								 +919494422779
-							</div>
-						</div>
-						
-						<div class="row col1">
-							<div class="col-sm-3">
-								<i class="fa fa-envelope"></i>   Email
-							</div>
-							<div class="col-sm-9">
-								 <a href="mailto:info@yourdomain.com">imainacartin@gmail.com</a> <br> <a href="mailto:support@yourdomain.com">xxxxxx@cartinhour.com</a>
-							</div>
-						</div>
-					</div>
-					
-              
-               
-        </div>
-    </div>
-</section>
-<div class="clearfix"></div>
-	<!--  end contact us-->
 	<!--  faq contact us-->
 <section id="faq_sc">
 
@@ -1454,6 +1156,129 @@
     </div>
   </div>
   </section>
+  <!--  start contact us-->
+<section id="contact_sc">
+<div class="srvices_main1">
+ <div class="container ">
+ <h3 class="text-center wow bounceInRight animated"  id="contact_sc" data-spy="scroll"><span class="span_bg_g">CONTACT US</span></h3>
+  <div class="title_lines"></div>
+	
+			<div class=" col-md-6 ">	  
+				<form  class=""id="ajax-contact"  method="post" action="<?php echo base_url(); ?>seller/contactus/details" role="form">
+					<div class="messages" id="form-messages"></div>
+					<?php echo $this->session->flashdata('msg1'); ?>
+					<div class="controls">
+						<div class="row mar_t10">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_name">Firstname *</label>
+									<input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" requi#006a99="requi#006a99" data-error="Firstname is requi#006a99.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_lastname">Lastname </label>
+									<input id="form_lastname" type="text" name="lname" class="form-control" placeholder="Please enter your lastname *"  data-error="Lastname is requi#006a99.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_email">Email *</label>
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" requi#006a99="requi#006a99" data-error="Valid email is requi#006a99.">
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="form_phone">Phone*</label>
+									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" requi#006a99 oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+								onchange="try{setCustomValidity('')}catch(e){}">
+									
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="form_message">Message *</label>
+									<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" requi#006a99="requi#006a99" data-error="Please,leave us a message."></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<input class="wow bounceInLeft animated btn btn-primary" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceInRight; " type="submit"  value="Send message">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+							   <br>
+								<small class="text-muted"><strong>*</strong> These fields are requi#006a99.</small>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+					<div class="col-md-6 pad_10">
+					<!-- <div class="thumbnail">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1902.603941571986!2d78.38998466067792!3d17.49758717711942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1494410712406" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+				   </div> -->
+
+				   <div class="thumbnail">
+						<div style="width: 100%"><iframe width="100%" height="300" src="https://www.maps.ie/create-google-map/map.php?width=100%&amp;height=300&amp;hl=en&amp;q=%20Sri%20Vani%20Nilayam%2C%20Sardar%20Patel%20Nagar%2C%20Nizampet%20%E2%80%98X%E2%80%99%20Road%2C%20Hyderabad%2C%20Telangana+(Cartinhour)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/it/misura-distanza-area-google-maps.html">Misurare distanze google maps</a></iframe></div><br />
+				   </div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="pad_10">
+						<div class="row col1">
+							<div class="col-sm-3">
+								 <i class="fa fa-fax"></i> Website  
+							</div>
+							<div class="col-sm-9">
+								 <a href="http://cartinhour.com/"> www.cartinhour.com</a>
+							</div>
+						</div>
+							<div class="row col1">
+						   <div class="col-xs-3">
+							   <i class="fa fa-map-marker" style="font-size:16px;"></i>   Address
+						   </div>
+						   <div class="col-xs-9">
+								Plot No.177,1st floor, Sri Vani Nilayam,
+								Sardar Patel Nagar, Nizampet ‘X’ Road,
+								Hyderabad, Telangana
+						   </div>
+					   </div>
+					   
+						<div class="row col1">
+							<div class="col-sm-3">
+								<i class="fa fa-phone"></i>   Phone
+							</div>
+							<div class="col-sm-9">
+								 +919494422779
+							</div>
+						</div>
+						
+						<div class="row col1">
+							<div class="col-sm-3">
+								<i class="fa fa-envelope"></i>   Email
+							</div>
+							<div class="col-sm-9">
+								 <a href="mailto:info@yourdomain.com">imainacartin@gmail.com</a> <br> <a href="mailto:support@yourdomain.com">xxxxxx@cartinhour.com</a>
+							</div>
+						</div>
+					</div>
+					
+              
+               
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+	<!--  end contact us-->
   </div>
  
  </body>
@@ -1692,5 +1517,14 @@ $("#cihfee1").html(data);
   <script>
               new WOW().init();
               </script>
-  <!--pricing its work end here --> 
+  <!--team --> 
+      <script>
+	 $(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+});
+  </script>
+  <!--end team --> 
  

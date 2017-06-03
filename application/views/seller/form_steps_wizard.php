@@ -28,15 +28,19 @@
    <div class="process-row nav nav-tabs">
     <div class="process-step">
      <button type="button" class="btn btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-info fa-3x"></i></button>
-     <p><small>Fill<br />information</small></p>
+     <p><strong>Basic details</strong></p>
     </div>
     <div class="process-step">
      <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-file-text-o fa-3x"></i></button>
-     <p><small>Fill<br />description</small></p>
+     <p><strong>Select your Category</strong></p>
     </div>
     <div class="process-step">
      <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
-     <p><small>Upload<br />images</small></p>
+     <p><strong>Store details</strong></p>
+    </div>
+	<div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-image fa-3x"></i></button>
+     <p><strong>Personal details</strong></p>
     </div>
     
    </div>
@@ -98,6 +102,29 @@
     <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3> Step 3</h3>
+          <div class="form-group">
+            <label class="control-label">First Name</label>
+            <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Last Name</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
+          </div>
+          <div class="form-group">
+            <label class="control-label">Address</label>
+            <textarea required="required" class="form-control" placeholder="Enter your address" ></textarea>
+          </div>
+         
+        </div>
+		 <ul class="list-unstyled list-inline pull-right">
+     <li><button type="button" class="btn btn-info btn-sm next-step">Next <i class="fa fa-chevron-right"></i></button></li>
+    </ul>
+  </div>
+   </div>
+   <div id="menu4" class="tab-pane fade">
+    <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+          <h3> Step 4</h3>
           <div class="form-group">
             <label class="control-label">First Name</label>
             <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />

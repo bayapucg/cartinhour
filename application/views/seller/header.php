@@ -62,8 +62,8 @@
          
           <li><a href="#ourservices_scr">OUR SERVICES</a></li>
             <li><a href="#about_sc">ABOUT US</a></li>
-          <li><a href="#contact_sc">CONTACT US</a></li>
 		   <li><a href="#faq_sc">FAQ's</a></li>
+		    <li><a href="#contact_sc">CONTACT US</a></li>
          
 		 
         </ul>
@@ -384,6 +384,236 @@
       
     </div>
   </div>
+  <!--end Just fill form to Select plan Modal -->
+   <!--Just fill form to Select plan modal -->
+  <div class="modal animated  zoomIn" id="myModal_ser" role="dialog">
+    <div class="modal-dialog modal-lg" style="width: 1200px;">
+    
+      <!-- Modal content-->
+     <div class="modal-content">
+	 
+        <div class="modal-header " style="background-color:#006a99;color:#fff;padding:10px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Enquiry form</h4>
+        </div>
+        <div class="modal-body">
+			<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Bronze</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $10<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                1 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                1 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                100K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                100MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
+                    1 month FREE trial</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-success">
+                <div class="cnrflash">
+                    <div class="cnrflash-inner">
+                        <span class="cnrflash-label">MOST
+                            <br>
+                            POPULR</span>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Silver</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $20<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                2 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                5 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                100K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                200MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
+                    1 month FREE trial</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Gold</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $35<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                5 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                20 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                300K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                500MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
+            </div>
+        </div>
+		<div class="col-xs-12 col-md-3">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Gold</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            $35<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                5 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                20 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                300K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                500MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
+            </div>
+        </div>
+		
+    </div>
+</div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
   <!--end Just fill form to Select plan Modal -->
   <!--Forget Password Modal -->
           <div class="modal fade" id="myModal1" role="dialog">
