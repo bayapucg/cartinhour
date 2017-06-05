@@ -13,6 +13,15 @@
 .btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
 
 </style>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#details").click(function(){
+        $("#error_stepone").addClass("btn-danger");
+        $("#error_p").addClass("text-danger"); 
+        $("#error_stepone").removeClass("btn-info");       
+    });
+});
+</script>
 <div class="navigation_main">
     <nav class="navbar navbar-inverse hm_nav">
       <div class="">
@@ -39,12 +48,12 @@
  
   <div class="process">
    <div class="process-row nav nav-tabs">
-    <div class="process-step">
-     <button type="button" class="btn  btn-success btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-info fa-3x"></i></button>
-     <p><strong>Basic details</strong></p>
+    <div class="process-step" >
+     <button type="button" class="btn  btn-info btn-circle" data-toggle="tab" href="#menu1" id="error_stepone"><i class="fa fa-info fa-3x" ></i></button>
+     <p class="text-default" id="error_p"><strong>Basic details</strong></p>
     </div>
-    <div class="process-step">
-     <button type="button" class="btn  btn-info btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-file-text-o fa-3x"></i></button>
+    <div class="process-step" id="details">
+     <button type="button" class="btn  btn-default btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-file-text-o fa-3x" id="details"></i></button>
      <p><strong>Select your Category</strong></p>
     </div>
     <div class="process-step">
@@ -69,7 +78,7 @@
     <div class="row setup-content">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
-          <h3>Basic Details</h3>
+          <h3>Basic Details</h3><br>
           <div class="form-group">
             <label class="control-label">Name</label>
             <input class="form-control" placeholder="Name" type="text" id="seller_name" name="seller_name" required="required" >

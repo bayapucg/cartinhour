@@ -10,10 +10,12 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/css/style.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/seller/css/timePicker.css" />
 <!--style end here -->
 <!--javascript start here -->
 <script src="<?php echo base_url(); ?>assets/seller/js/jquery.js"></script>
 <script src="<?php echo base_url(); ?>assets/seller/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>assets/seller/js/jquery-timepicker.js"></script>
 <!--javascript end here -->
 </head>
 

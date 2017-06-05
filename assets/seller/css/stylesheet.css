@@ -653,3 +653,14 @@ ul {
 		padding:0px 15px;
 	}
 	
+
+	.pos_r{
+		position: relative;
+
+	}
+
+	.pos_ab{
+		position: absolute;
+		top: 5px;
+		right: -15px;
+	}

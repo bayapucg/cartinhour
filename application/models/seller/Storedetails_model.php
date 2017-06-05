@@ -29,6 +29,17 @@ class Storedetails_model extends MY_Model
 }
 
 
+public function insertFiles($images){
+	$sid= $this->session->userdata('seller_id');
+	for($i=0; $i<count($images); $i++)
+	{
+	$data=array('seller_id'=>$sid,'file_name'=>$images[$i]);
+	$this->db->insert('kyc_reports',$data);
+	}
+	return true;
+	}
+
+
   
 
 }

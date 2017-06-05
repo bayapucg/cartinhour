@@ -24,6 +24,7 @@
 <script src="<?php echo base_url();?>assets/seller_login/js/jquery.smartWizard"></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 
+
 <!--javascript end here -->
 
 

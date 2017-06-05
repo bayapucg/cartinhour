@@ -27,6 +27,16 @@ class Personaldetails_model extends MY_Model
 			//print_r($data); exit;
 		return true;	
 }
+public function insertFiles($images){
+	$sid= $this->session->userdata('seller_id');		
+	for($i=0; $i<count($images); $i++)
+	{
+	$data=array('seller_id'=>$sid,'file_name'=>$images[$i]);
+	$this->db->insert('kyc_reports',$data);
+	}
+	return true;
+	
+	}
 
 
   

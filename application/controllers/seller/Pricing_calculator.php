@@ -15,12 +15,11 @@ class Pricing_calculator extends CI_Controller {
  public function index() {
 	 
 	  
-	  $data['cihcatdata']  = $this->login_model->getcihcatedata();
-	  
-	 
+	$data['cihcatdata']  = $this->login_model->getcihcatedata();
+	 	
 	$this->load->view('seller/header');
-  $this->load->view('seller/pricing',$data);
-$this->load->view('seller/footer');
+  	$this->load->view('seller/pricing',$data);
+	$this->load->view('seller/footer');
         //$this->template->render(); 
   }
   
