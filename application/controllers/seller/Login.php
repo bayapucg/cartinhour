@@ -139,12 +139,7 @@ public function do_login()
 
         if ($this->form_validation->run() == TRUE) {
             $username   = $this->input->post('login_email');
-            $password = md5($this->input->post('login_password'));
-            //$remember = $this->input->post('remember_me');
-			// if ($remember) {
-			// // Set remember me value in session
-			// $this->session->set_userdata('remember_me', TRUE);
-			// }
+            $password = md5($this->input->post('login_password'));           
             $result   = $this->login_model->authenticate($username, $password);
 			//print_r($result); exit;
             if ($result) {

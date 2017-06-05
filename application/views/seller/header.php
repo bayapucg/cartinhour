@@ -38,14 +38,14 @@
       <div class="header hm_nav " >
        
     <div class="">
-		
-		
-	<nav class="navbar  ">
+    
+    
+  <nav class="navbar  ">
     <div class="">
-	 <div class="navbar-header">
+   <div class="navbar-header">
       <a class="navbar-brand" href="#">
             <p><a href="<?php echo base_url(); ?>seller/login"><img style="width:57%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
-			</p>
+      </p>
           </a>
     </div>
       <div class="navbar-header">
@@ -56,18 +56,18 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="<?php echo base_url('seller/login');?>#home_scr">HOME <span class="sr-only">(current)</span></a></li>
          <!-- <li><a href="#benifits_sc">BENIFITS</a></li>-->
-		  <li><a href="#how_its_w">HOW IT WORKS</a></li>
+      <li><a href="#how_its_w">HOW IT WORKS</a></li>
          
           <li><a href="#pricing_scr">PRICING</a></li>
          
           <li><a href="#ourservices_scr">OUR SERVICES</a></li>
             <li><a href="#about_sc">ABOUT US</a></li>
-		   <li><a href="#faq_sc">FAQ's</a></li>
-		    <li><a href="#contact_sc">CONTACT US</a></li>
+       <li><a href="#faq_sc">FAQ's</a></li>
+        <li><a href="#contact_sc">CONTACT US</a></li>
          
-		 
+     
         </ul>
-	<ul class="nav navbar-nav navbar-right">
+  <ul class="nav navbar-nav navbar-right">
       <!--<li><a data-toggle="modal" data-target="#myModa3"></span> Sign Up</a></li>-->
       <li><a  data-toggle="modal" data-target="#myModa2">SIGN UP / LOGIN</a></li>
     </ul>
@@ -77,8 +77,8 @@
     <!-- /.container-fluid
     <div class="underline"></div> -->
   </nav>
-		
-		  <?php echo $this->session->flashdata('msg'); ?>
+    
+      <?php echo $this->session->flashdata('msg'); ?>
         </div>
       </div>
     </div>
@@ -90,120 +90,124 @@
       <div class="modal-content ">
         <div class="modal-header">
           <ul class="nav nav-tabs final-login">
-						<li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
-						<li><a data-toggle="tab" href="">Register</a></li>
-					</ul>
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
+            <li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
+            <li><a data-toggle="tab" href="">Register</a></li>
+          </ul>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
        <div class="modal-body">
           
-				<div class="form-body">
-					
-					<div class="tab-content">
-						<div id="sectionA" class="tab-pane fade in active">
-						<div class="row">
-						<div class="col-xs-6">
-						<div class="innter-form">
-							<form method="post" action="<?php echo base_url();?>seller/login/do_login" name="login_form" onSubmit="return loginvalidateof();">
-							<label >Email Address</label>
-							<input  name="seller_name" id="seller_name" class="form-control" type="text" name="username" autofocus>
-							<label>Password</label>
-							<input  id="seller_password" name="seller_password" class="form-control" type="password" name="password">
-							<button class="btn btn-primary" type="submit">Sign In</button>
-							<a class="col_a"href="">Forgot Password?</a>
-							</form>
-						</div>
-						</div>
-						<div class="col-xs-6 bor_lef">
-							<div class="innter-form">
-								<form>
-								<label >Enter your Mobile Number</label>
-								<input   class="form-control" type="text" name="username" autofocus>
-								</form>
-							</div>
-							<div class="clearfix"></div>
-							<button class="btn btn-primary btn-sm mar_t10" type="submit">Get OTP</button>
-						</div>
-						</div>
-						<div class="clearfix"></div>
-							<div class="social-login">
-							<p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
-							<ul>
-							<li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
-							<li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
-							<li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
-							</ul>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<!--<div id="" class="tab-pane fade">
-							<div class="innter-form">
-							<form class="sa-innate-form" method="post">
-								<div class="form-group">
-								  <?php echo $this->session->flashdata('msg1'); ?>
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex1">Name</label>
-									  <input class="form-control" id="seller_fullname" name="seller_fullname" type="text" autofocus>
-									  <span id="errorname1" style="color:red; font-size: 13px;"></span>
-									</div>
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex2">Email Id</label>
-									  <input class="form-control" id="seller_email" name="seller_email" type="text">
-									  <span id="erroremail" style="color:red; font-size: 13px;"></span>
-									</div>
-									
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex4">Mobile Number</label>
-									  <input class="form-control" id="seller_mobile" name="seller_mobile" maxlength="10" type="text">
-									  <span id="errorphone" style="color:red; font-size: 13px;"></span>
-									</div>
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex5">Shop Name</label>
-									  <input class="form-control" id="seller_shop" name="seller_shop" type="text">
-									  <span id="errorshop" style="color:red; font-size: 13px;"></span>
-									</div>
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex6">Shop Location</label>
-									  <select class="form-control" id="location_name" name="location_name">
-											 <option value="">-Select Location-</option>
-											 <?php foreach($locationdata as $location_data)  { ?>
-											 <option value="<?php echo $location_data->location_name;?>"><?php echo $location_data->location_name;?></option>
-											 
-											 <?php } ?>
-										  </select>
-										  <span id="errorlocation" style="color:red; font-size: 13px;"></span>
-									</div>
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex7">VAT/TIN Number</label>
-									  <input class="form-control" id="seller_license" name="seller_license" type="text">
-									  <span id="errorlicense" style="color:red; font-size: 13px;"></span>
-									</div>
-									
-								   
-									<div class="col-xs-12 col-md-6 nopaddingright reginput">
-									  <label for="ex12">Address</label>
-									  <textarea class="form-control" id="seller_address" name="seller_address"></textarea>
-									  <span id="erroraddress" style="color:red; font-size: 13px;"></span>
-									</div>
-									<div class="col-xs-12 col-md-6 " style="margin-top:30px">
-									  <label for="ex12"></label><br>
-									  <button class="btn btn-primary">Detect my Location</button>
-									 
-									 
-									</div>
-								  </div>
-								   <label>
+        <div class="form-body">
+          
+          <div class="tab-content">
+            <div id="sectionA" class="tab-pane fade in active">
+            <div class="row">
+            <div class="col-xs-6">
+            <div class="innter-form">
+              <form method="post"  name="login_form" id="login_submit">
+              <div id="login-response"></div>
+                <div id="EmptyforError"></div>
+              <label >Email Address</label>
+              <input  name="login_email" id="login_email" class="form-control" type="text" name="username" autofocus>
+              <label>Password</label>
+              <input  id="login_password" name="login_password" class="form-control" type="password" name="password">
+              <button class="btn btn-primary" type="submit" id="login_do">Sign In</button>
+              <div class="col-md-3 paddingRightZero">
+                        <div class="pswrd text-right"><a href="#" tabindex="5" class="forgot-password" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Unable to Login?</a></div>
+                      </div>
+              </form>
+            </div>
+            </div>
+            <div class="col-xs-6 bor_lef">
+              <div class="innter-form">
+                <form>
+                <label >Enter your Mobile Number</label>
+                <input   class="form-control" type="text" name="username" autofocus>
+                </form>
+              </div>
+              <div class="clearfix"></div>
+              <button class="btn btn-primary btn-sm mar_t10" type="submit">Get OTP</button>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+              <div class="social-login">
+              <p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
+              <ul>
+              <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
+              <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+              <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
+              </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <!--<div id="" class="tab-pane fade">
+              <div class="innter-form">
+              <form class="sa-innate-form" method="post">
+                <div class="form-group">
+                  <?php echo $this->session->flashdata('msg1'); ?>
+                  <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                    <label for="ex1">Name</label>
+                    <input class="form-control" id="seller_fullname" name="seller_fullname" type="text" autofocus>
+                    <span id="errorname1" style="color:red; font-size: 13px;"></span>
+                  </div>
+                  <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                    <label for="ex2">Email Id</label>
+                    <input class="form-control" id="seller_email" name="seller_email" type="text">
+                    <span id="erroremail" style="color:red; font-size: 13px;"></span>
+                  </div>
+                  
+                  <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                    <label for="ex4">Mobile Number</label>
+                    <input class="form-control" id="seller_mobile" name="seller_mobile" maxlength="10" type="text">
+                    <span id="errorphone" style="color:red; font-size: 13px;"></span>
+                  </div>
+                  <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                    <label for="ex5">Shop Name</label>
+                    <input class="form-control" id="seller_shop" name="seller_shop" type="text">
+                    <span id="errorshop" style="color:red; font-size: 13px;"></span>
+                  </div>
+                  <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                    <label for="ex6">Shop Location</label>
+                    <select class="form-control" id="location_name" name="location_name">
+                       <option value="">-Select Location-</option>
+                       <?php foreach($locationdata as $location_data)  { ?>
+                       <option value="<?php echo $location_data->location_name;?>"><?php echo $location_data->location_name;?></option>
+                       
+                       <?php } ?>
+                      </select>
+                      <span id="errorlocation" style="color:red; font-size: 13px;"></span>
+                  </div>
+                  <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                    <label for="ex7">VAT/TIN Number</label>
+                    <input class="form-control" id="seller_license" name="seller_license" type="text">
+                    <span id="errorlicense" style="color:red; font-size: 13px;"></span>
+                  </div>
+                  
+                   
+                  <div class="col-xs-12 col-md-6 nopaddingright reginput">
+                    <label for="ex12">Address</label>
+                    <textarea class="form-control" id="seller_address" name="seller_address"></textarea>
+                    <span id="erroraddress" style="color:red; font-size: 13px;"></span>
+                  </div>
+                  <div class="col-xs-12 col-md-6 " style="margin-top:30px">
+                    <label for="ex12"></label><br>
+                    <button class="btn btn-primary">Detect my Location</button>
+                   
+                   
+                  </div>
+                  </div>
+                   <label>
                   <input type="checkbox" name="checkbox" value="check" id="terms_condition">
                   If you have read and agree to the <a href="#">Terms and Conditions,</a> please continue</label>
-							<button type="submit">Register now</button>
-							
-							</form>
-							</div>
-						
-							<div class="clearfix"></div>
-						</div>-->
-					</div>
-				</div>
+              <button type="submit">Register now</button>
+              
+              </form>
+              </div>
+            
+              <div class="clearfix"></div>
+            </div>-->
+          </div>
+        </div>
           </div>
          
       </div>
@@ -222,59 +226,59 @@
        <div class="modal-body">
             <form action="<?php echo base_url(); ?>seller/login/insert" method="post" enctype="multipart/form-data" onSubmit="return sellerinfvalidateof();">
               <div class="form-group">
-			  <?php echo $this->session->flashdata('msg1'); ?>
+        <?php echo $this->session->flashdata('msg1'); ?>
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex1">Name</label>
                   <input class="form-control" id="seller_fullname" name="seller_fullname" type="text" autofocus>
-				  <span id="errorname1" style="color:red; font-size: 13px;"></span>
+          <span id="errorname1" style="color:red; font-size: 13px;"></span>
                 </div>
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex2">Email Id</label>
                   <input class="form-control" id="seller_email" name="seller_email" type="text">
-				  <span id="erroremail" style="color:red; font-size: 13px;"></span>
+          <span id="erroremail" style="color:red; font-size: 13px;"></span>
                 </div>
                 
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex4">Mobile Number</label>
                   <input class="form-control" id="seller_mobile" name="seller_mobile" maxlength="10" type="text">
-				  <span id="errorphone" style="color:red; font-size: 13px;"></span>
+          <span id="errorphone" style="color:red; font-size: 13px;"></span>
                 </div>
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex5">Shop Name</label>
                   <input class="form-control" id="seller_shop" name="seller_shop" type="text">
-				  <span id="errorshop" style="color:red; font-size: 13px;"></span>
+          <span id="errorshop" style="color:red; font-size: 13px;"></span>
                 </div>
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex6">Shop Location</label>
                   <select class="form-control" id="location_name" name="location_name">
                          <option value="">-Select Location-</option>
-						 <?php foreach($locationdata as $location_data)  { ?>
+             <?php foreach($locationdata as $location_data)  { ?>
                          <option value="<?php echo $location_data->location_name;?>"><?php echo $location_data->location_name;?></option>
                          
-						 <?php } ?>
+             <?php } ?>
                       </select>
-					  <span id="errorlocation" style="color:red; font-size: 13px;"></span>
+            <span id="errorlocation" style="color:red; font-size: 13px;"></span>
                 </div>
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex7">VAT/TIN Number</label>
                   <input class="form-control" id="seller_license" name="seller_license" type="text">
-				  <span id="errorlicense" style="color:red; font-size: 13px;"></span>
+          <span id="errorlicense" style="color:red; font-size: 13px;"></span>
                 </div>
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex8">Aadhar Number</label>
                   <input class="form-control" id="seller_adhar" name="seller_adhar" maxlength="12"  type="text">
-				  <span id="erroradhar" style="color:red; font-size: 13px;"></span>
+          <span id="erroradhar" style="color:red; font-size: 13px;"></span>
                 </div>
                 <div class="col-xs-12 col-md-6 nopaddingright reginput">
                   <label for="ex9">Bank Acc Number</label>
                   <input class="form-control" id="seller_bank" name="seller_bank" type="text">
-				  <span id="errorbank" style="color:red; font-size: 13px;"></span>
+          <span id="errorbank" style="color:red; font-size: 13px;"></span>
                 </div>
                
                 <div class="col-xs-12 col-md-12 nopaddingright reginput">
                   <label for="ex12">Address</label>
                   <textarea class="form-control" id="seller_address" name="seller_address"></textarea>
-				  <span id="erroraddress" style="color:red; font-size: 13px;"></span>
+          <span id="erroraddress" style="color:red; font-size: 13px;"></span>
                 </div>
               </div>
               <div class="clearfix"></div>
@@ -282,9 +286,9 @@
                 <label>
                   <input type="checkbox" name="checkbox" value="check" id="terms_condition">
                   If you have read and agree to the <a href="#">Terms and Conditions,</a> please continue</label>
-				 <div id="errorterms" style="color:red; font-size: 13px;"></div> 
+         <div id="errorterms" style="color:red; font-size: 13px;"></div> 
               </div>
-			  
+        
               <input type="submit" class="btn btn-primary" value="Submit" onclick="if(!this.form.checkbox.checked){alert('You must agree to the Terms and Conditions first.');return false}">
             </form>
           </div>
@@ -300,17 +304,17 @@
     
       <!-- Modal content-->
      <div class="modal-content">
-	 
+   
         <div class="modal-header " style="background-color:#006a99;color:#fff;padding:10px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title"> Enquiry form</h4>
         </div>
         <div class="modal-body">
           <div class="container">
-	<div class="row">
+  <div class="row">
        
-	
-		<div class="col-md-6">
+  
+    <div class="col-md-6">
    <form class="form-horizontal" action="/action_page.php">
     <div class="form-group">
       <label class="control-label col-sm-4" for="">Buiness Name:</label>
@@ -318,19 +322,19 @@
         <input type="text" class="form-control" id="" placeholder="Enter Buiness Name" name="" reqired>
       </div>
     </div>
-	<div class="form-group">
+  <div class="form-group">
       <label class="control-label col-sm-4" for="">First Name:</label>
       <div class="col-sm-8">
         <input type="text" class="form-control" id="" placeholder="Enter First Name" name="" reqired>
       </div>
     </div>
-	<div class="form-group">
+  <div class="form-group">
       <label class="control-label col-sm-4" for="">Mobile/Phone No:</label>
       <div class="col-sm-8">
         <input type="text" class="form-control" id="" placeholder="Enter Mobile/Phone No" name="" reqired>
       </div>
     </div> 
-	<div class="form-group">
+  <div class="form-group">
       <label class="control-label col-sm-4" for="email">Valid Email Id:</label>
       <div class="col-sm-8">
         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
@@ -347,7 +351,7 @@
       </select>
       </div>
     </div> 
-	<div class="form-group">
+  <div class="form-group">
       <label class="control-label col-sm-4" for="">Select Plan :</label>
       <div class="col-sm-8">          
         <select class="form-control" id="sel1">
@@ -371,10 +375,10 @@
       </div>
     </div>
   </form>
-			</div>
-			<div class="col-md-3">&nbsp;</div>
-    	
-	</div>
+      </div>
+      <div class="col-md-3">&nbsp;</div>
+      
+  </div>
 </div>
         </div>
         <div class="modal-footer">
@@ -391,13 +395,13 @@
     
       <!-- Modal content-->
      <div class="modal-content">
-	 
+   
         <div class="modal-header " style="background-color:#006a99;color:#fff;padding:10px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title"> Enquiry form</h4>
         </div>
         <div class="modal-body">
-			<div class="container">
+      <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-3">
             <div class="panel panel-primary">
@@ -555,7 +559,7 @@
                     <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
             </div>
         </div>
-		<div class="col-xs-12 col-md-3">
+    <div class="col-xs-12 col-md-3">
             <div class="panel panel-info">
                 <div class="panel-heading">
                     <h3 class="panel-title">
@@ -604,7 +608,7 @@
                     <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
             </div>
         </div>
-		
+    
     </div>
 </div>
         </div>
@@ -622,8 +626,8 @@
                   <div class="modal-body pass_list">
                     <form method="post" id="forgot_submit">
                       <h4>How do you want temporary password to be send:</h4>
-					  <div id="forgot-response"></div>
-					  <div id="EmptyforErr"></div>
+                       <div id="forgot-response"></div>
+                       <div id="EmptyforErr"></div>
                       <label class="radio-inline mki">
                         <input type="radio" name="optradio" data-toggle="collapse" data-target="#demo">
                         E-Mail </label>
@@ -647,9 +651,9 @@
                 </div>
               </div>
             </div>
-			
-			
-			
+      
+      
+      
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
 <script>
@@ -679,36 +683,29 @@ $(function() {
     $(document).ready(function(){
     $("#forgot_password").click(function(e){
     e.preventDefault();
-    
-    
     var forgot_email = $("#forgot_email").val();
-	
-	 var forgot_mobile = $("#forgot_mobile").val();
-	 
-	 
-	  //alert(forgot_mobile);
+   var forgot_mobile = $("#forgot_mobile").val();
+    //alert(forgot_mobile);
    //alert(forgot_email);
-  
       var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      
      var phone =  /^(?=.*?[1-9])[0-9()-+]+$/;
-	 
-	 
-	 if(forgot_email == "" && forgot_mobile == "" )
-	 {
-		 
-		$("#EmptyforErr").html("Please Enter email or phone number").css("color", "red");
+   
+   
+   if(forgot_email == "" && forgot_mobile == "" )
+   {
+     
+    $("#EmptyforErr").html("Please Enter email or phone number").css("color", "red");
         $("#forgot_email").focus();
         return false;
-		 
-	 }
-	 else{
-		 
-		$("#EmptyforErr").html(""); 
-		 
-	 }
-	 
-	 
+     
+   }
+   else{
+     
+    $("#EmptyforErr").html(""); 
+     
+   }
+   
+   
       
       if(forgot_email !="" && forgot_email .match(mailformat)) 
       {
@@ -745,37 +742,37 @@ $(function() {
      //alert(data);
     if(data == 0)
     {
-		 $("#forgot-response").html("Failed to send").css("color", "red");
+     $("#forgot-response").html("Failed to send").css("color", "red");
     $('#forgot_submit')[0].reset();
       
     }
-	else if(data == 4)
+  else if(data == 4)
     {
-		 $("#forgot-response").html("The Email id You Entered Not Found").css("color", "red");
+     $("#forgot-response").html("The Email id You Entered Not Found").css("color", "red");
     $('#forgot_submit')[0].reset();
       
     }
-	else if(data == 5)
+  else if(data == 5)
     {
-		 $("#forgot-response").html("The Phone Number You Entered Not Found").css("color", "red");
+     $("#forgot-response").html("The Phone Number You Entered Not Found").css("color", "red");
     $('#forgot_submit')[0].reset();
       
     }
-	else if(data == 6)
+  else if(data == 6)
     {
-		 $("#forgot-response").html("The Details You Entered Not Found").css("color", "red");
+     $("#forgot-response").html("The Details You Entered Not Found").css("color", "red");
     $('#forgot_submit')[0].reset();
       
     }
-	else if(data == 7)
+  else if(data == 7)
     {
-		 $("#forgot-response").html("Temporary Password Successfully Sent to Your Email").css("color", "red");
+     $("#forgot-response").html("Temporary Password Successfully Sent to Your Email").css("color", "red");
     $('#forgot_submit')[0].reset();
       
     }
     else{
      $("#forgot-response").html("Temporary Password Successfully Sent").css("color", "Green");
-	   $('#forgot_submit')[0].reset();
+     $('#forgot_submit')[0].reset();
    
     }
     },
@@ -801,7 +798,7 @@ $('.hm_nav').removeClass('animated fadeInDown');
 </script>
 
 <!--script for scrolling pages-->
-	<script>
+  <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -828,4 +825,78 @@ $(document).ready(function(){
 });
 
 
+</script>
+
+<!-- login script -->
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+    $("#login_do").click(function(e){
+    e.preventDefault();
+    
+    
+    var login_email = $("#login_email").val();
+ 
+  var login_password = $("#login_password").val();
+  
+   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+   if(login_email == "" && login_password == "" )
+  {
+   
+  $("#EmptyforError").html("Please Enter email and password").css("color", "red");
+        $("#login_email").focus();
+        return false;
+   
+  }
+  else{
+   
+  $("#EmptyforError").html(""); 
+   
+  }
+  
+  
+      
+      if(login_email !="" && login_email .match(mailformat)) 
+      {
+        $("#EmptyforError").html("");
+      }
+      else if(login_email !="" && !login_email .match(mailformat)){
+        
+        $("#EmptyforError").html("Invalid Email Format").css("color", "red");
+        $("#login_email").focus();
+        return false;
+        }
+        
+  
+
+    $.ajax({
+    type: "POST",
+    url: '<?php echo base_url(); ?>seller/login/do_login',
+    data: {login_email:login_email,login_password:login_password},
+    success:function(data)
+   
+    {
+     
+    if(data == 0)
+    {
+   $("#login-response").html("Invalid username or password.").css("color", "red");
+     $('#login_submit')[0].reset();
+      
+    }
+ else if(data == 1)
+ {
+  
+ window.location='<?php echo base_url(); ?>seller/dashboard'; 
+  
+  
+ }
+    },
+    error:function()
+    {
+    $("#login-response").html("Oops! Error.  Please try again later!!");
+    }
+    });
+    
+    });
+    });
 </script>

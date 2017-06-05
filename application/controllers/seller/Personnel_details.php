@@ -166,11 +166,6 @@ return redirect('seller/Personnel_details');
 
 			}	
 	
-	
-	
-	
-	
-	
 }
 
 
@@ -181,8 +176,6 @@ public function updatebankdetails()
     unset($data['submit']);
 	// echo "<pre>";
 	//print_r($_FILES); exit;
-
-
 		$filename="report_".rand(1000,time());//time();
 		$config['upload_path'] ='uploads/reports/';
 		$config['allowed_types'] = '*';
@@ -219,10 +212,7 @@ $res=$this->Personnel_details_model->updatebankd($data);
 			
 			
 if($res)
-
-
-
-			{
+	{
 
                  $this->prepare_flashmessage("Bank Details are Updated Successfully..", 0);
 				return redirect('seller/Personnel_details');

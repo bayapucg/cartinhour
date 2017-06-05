@@ -1473,12 +1473,7 @@ $("#cihfee1").html(data);
       $(document).ready(function(){
     $('#profit_submit').click(function(e){
     e.preventDefault();
- 
-    //if ($('#chkterms2').is(':checked')) {
-    
-    
-    
-     
+    //if ($('#chkterms2').is(':checked')) {  
     var youmake = $("#youmake").val();
   
   var actual_price = $("#actual_price").val();
