@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
 </head>
+<style>
+.process-step .btn:focus{outline:none}
+.process{display:table;width:100%;position:relative}
+.process-row{display:table-row}
+.process-step button[disabled]{opacity:1 !important;filter: alpha(opacity=100) !important}
+.process-row:before{top:40px;bottom:0;position:absolute;content:" ";width:100%;height:1px;background-color:#ccc;z-order:0}
+.process-step{display:table-cell;text-align:center;position:relative}
+.process-step p{margin-top:4px}
+.btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
 
+</style>
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
-<div class="container" >
+
+<div class="container">
+ <div class="row">
+ <div class="panel panel-primary">
+  <div class="panel-heading">Product Catalog Management Service</div>
+  <div class="clearfix"></div>		
+	<div class="mar_t30" style="margin-top:50px;" >
+	  <div class="process">
+	   <div class="process-row nav nav-tabs">
+		<div class="process-step">
+		 <button type="button" class="btn  btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-info fa-3x"></i></button>
+		 <p><strong>Basic details</strong></p>
+		</div>
+		<div class="process-step">
+		 <button type="button" class="btn  btn-default  btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-file-text-o fa-3x"></i></button>
+		 <p><strong>Select your Category</strong></p>
+		</div>
+		<div class="process-step">
+		 <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
+		 <p><strong>Store details</strong></p>
+		</div>
+		<div class="process-step">
+		 <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-image fa-3x"></i></button>
+		 <p><strong>Personal details</strong></p>
+		</div>
+		
+	   </div>
+	  </div>
+	</div>
+  
+
+  
+<div class="" style="margin-bottom:50px;">&nbsp;</div>
+<div class="container " >
   <?php echo $this->session->flashdata('msg2'); ?>
   <form  action="<?php echo base_url(); ?>seller/adddetails/updatebasicdetails" method="post" >
     <div class="row setup-content">
@@ -20,10 +63,14 @@
             <input maxlength="100" type="text" required="required" name="seller_address" class="form-control" placeholder="Enter Resident address" />
           </div>
 
-             <input type="submit" class="btn btn-primary " value="Next">
+             <input type="submit" class="btn btn-primary pull-right" value="Next">
               </form>
         </div>
       </div>
     </div>
 </div>
+ </div>
+</div>
+</div>
+
 </html>
