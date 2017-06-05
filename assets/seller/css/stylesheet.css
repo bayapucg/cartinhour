@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+.mar_t100{
+	margin-top:100px
+}
 body {
 	width: 100%;
 	height: auto;
@@ -346,7 +349,7 @@ body {
 	margin-right: 15px;
 }
 .fter {
-	background: #333333 none repeat scroll 0 0;
+	background: #2e353d none repeat scroll 0 0;
 	color: #adadad;
 	float: left;
 	font-size: 14px;

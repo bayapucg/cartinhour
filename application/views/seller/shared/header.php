@@ -3,8 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   <!--navigation start here -->
-  <div class="navigation_main">
-    <nav class="navbar navbar-inverse hm_nav">
+  <div class="navigation_main" >
+    <nav class="navbar navbar-inverse hm_nav" style="position: fixed;top:0px;z-index:1024;width:100%; ">
       <div class="">
         <div class="navbar-header logo_style" >
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>

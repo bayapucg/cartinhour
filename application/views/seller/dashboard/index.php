@@ -110,7 +110,7 @@ url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICR
 }
 </style>
 
-<div class="col-md-9">
+<div class="col-md-9 mar_t100">
     <!-- <p style="border:2px solid #ddd;color: #006a99;padding:10px;font-size: 18px; " class="pull-right"></p> -->
         <button class="draw pull-right">Your Id::<?php echo ucfirst($this->session->userdata('seller_rand_id'));    ?></button>
           <div class="bdy_ser">
