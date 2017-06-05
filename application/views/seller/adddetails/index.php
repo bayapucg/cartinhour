@@ -13,38 +13,54 @@
 .btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
 
 </style>
+<div class="navigation_main">
+    <nav class="navbar navbar-inverse hm_nav">
+      <div class="">
+        <div class="navbar-header logo_style" >
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">
+      <img  src="<?php echo base_url(); ?>assets/seller/images/logo.png" class="img-responsive" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+				<h4> Dummy content</h4>
+          
+          </ul>
+         
+          
+        </div>
+      </div>
+    </nav>
+  </div>
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 
 <div class="container">
  <div class="row">
- <div class="panel panel-primary">
-  <div class="panel-heading">Product Catalog Management Service</div>
-  <div class="clearfix"></div>		
-	<div class="mar_t30" style="margin-top:50px;" >
-	  <div class="process">
-	   <div class="process-row nav nav-tabs">
-		<div class="process-step">
-		 <button type="button" class="btn  btn-info btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-info fa-3x"></i></button>
-		 <p><strong>Basic details</strong></p>
-		</div>
-		<div class="process-step">
-		 <button type="button" class="btn  btn-default  btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-file-text-o fa-3x"></i></button>
-		 <p><strong>Select your Category</strong></p>
-		</div>
-		<div class="process-step">
-		 <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
-		 <p><strong>Store details</strong></p>
-		</div>
-		<div class="process-step">
-		 <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-image fa-3x"></i></button>
-		 <p><strong>Personal details</strong></p>
-		</div>
-		
-	   </div>
-	  </div>
-	</div>
+ 
+  <div class="process">
+   <div class="process-row nav nav-tabs">
+    <div class="process-step">
+     <button type="button" class="btn  btn-success btn-circle" data-toggle="tab" href="#menu1"><i class="fa fa-info fa-3x"></i></button>
+     <p><strong>Basic details</strong></p>
+    </div>
+    <div class="process-step">
+     <button type="button" class="btn  btn-info btn-circle" data-toggle="tab" href="#menu2"><i class="fa fa-file-text-o fa-3x"></i></button>
+     <p><strong>Select your Category</strong></p>
+    </div>
+    <div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
+     <p><strong>Store details</strong></p>
+    </div>
+	<div class="process-step">
+     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-image fa-3x"></i></button>
+     <p><strong>Personal details</strong></p>
+    </div>
+    
+   </div>
+  </div>
   
-
+ </div>
+</div>
   
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container " >
@@ -69,8 +85,5 @@
       </div>
     </div>
 </div>
- </div>
-</div>
-</div>
-
+<div class="clear-fix mar_t10" ></div>
 </html>
