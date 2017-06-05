@@ -13,18 +13,16 @@ $this->load->helper(array('url', 'html'));
 		$this->load->model('seller/login_model');
 		$this->load->model('admin/sellers_model');
 		$this->load->model('seller/dashboard_model');
+		$this->load->model('seller/login_model');
 		
 		
 $this->load->model('seller/subcategory_model');
 }
 
  public function index() {
-	 //$data['catdata']=$this->dashboard_model->getcatdata();
-	 
-    //print_r($data['catdata']); exit;
+	 $data['cihcatdata']  = $this->login_model->getcihcatedata();
 	 $this->load->view('seller/header');
-  //$this->load->view('seller/login',$data);
-  $this->load->view('seller/login');
+  $this->load->view('seller/login',$data);
    $this->load->view('seller/footer');
 
         //$this->template->render(); 
@@ -39,9 +37,9 @@ $this->load->model('seller/subcategory_model');
   
   $data['locationdata']=$this->login_model->getlocation();
  
-  $this->load->view('seller/header');
-  $this->load->view('seller/register',$data);
-$this->load->view('seller/footer');
+  	$this->load->view('seller/header');
+  	$this->load->view('seller/register',$data);
+	$this->load->view('seller/footer');
     }
 
 

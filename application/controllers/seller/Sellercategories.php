@@ -21,11 +21,11 @@ class Sellercategories extends Seller_adddetails{
 
 
   //store 
-    public function updatesellercat()
+    public function updatesellercat() 
   {  
    $data = array(
     'seller_id' => $this->session->userdata('seller_id'),
-    'seller_category_id'=> implode(',',$this->input->post('seller_cat')),    
+    'seller_category_id'=> $this->input->post('seller_cat'),    
     'created_at'  => date('Y-m-d H:i:s'),
     'updated_at'  => date('Y-m-d H:i:s')
   

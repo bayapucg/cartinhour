@@ -432,9 +432,8 @@
             <div class="price_lt">
               <div class="form-group">
                 <select class="form-control" id="cih_id" name="cih_id">
-                  <option>--Select Product--</option>
-          
-          <?php foreach($cihcatdata as $cih_catdata) {?>   
+                  <option>--Select Product--</option>          
+                <?php foreach($cihcatdata as $cih_catdata) {?>   
                   <option value="<?php echo $cih_catdata->cih_id;?>"><?php echo $cih_catdata->category_name;?></option>
                   <?php } ?>
                 </select>
@@ -1210,13 +1209,13 @@
 								</div>
 							</div>
 							<div class="col-md-12">
-								<input class="wow bounceInLeft animated btn btn-primary" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceInRight; " type="submit"  value="Send message">
-							</div>
+								<input type="submit" class="btn btn-primary " value="Send message">
+							</div>-
 						</div>
 						<div class="row">
 							<div class="col-md-12">
 							   <br>
-								<small class="text-muted"><strong>*</strong> These fields are requi#006a99.</small>
+								<small class="text-muted"><strong>*</strong> These fields are requied.</small>
 							</div>
 						</div>
 					</div>
