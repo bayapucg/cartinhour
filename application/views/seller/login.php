@@ -13,12 +13,12 @@
       <!-- Loading Screen -->
       <div data-u="loading" class="jssorl-oval" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);"> <img style="margin-top:-19.0px;position:relative;top:50%;width:38px;height:38px;" src="<?php echo base_url();?>assets/seller_login/images/oval.svg" /> </div>
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1500px;height:450px;overflow:hidden;">
-        <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/Bnr_1.jpg" />
+        <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />
           <div class="bnr_title">
             <h3><a class="" href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
           </div>
         </div>
-        <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png" />
+        <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/Bnr_1.jpg" />
           <div class="bnr_title">
             <h3><a href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
           </div>
