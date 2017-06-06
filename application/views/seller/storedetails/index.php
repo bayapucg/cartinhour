@@ -14,6 +14,18 @@
 .btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
 #Hunter_clean_btn{display: none;}
 </style>
+<script>
+  $().ready(function(e) {
+
+    $('#timePicker').hunterTimePicker({
+      callback: function(e){
+        alert(e.val());
+      }
+    });
+    
+    $(".time-picker").hunterTimePicker();
+  });
+</script>
 
 <script>
 	$().ready(function(e) {
@@ -86,7 +98,7 @@
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container" >
   <?php echo $this->session->flashdata('msg2'); ?>
-  <form  action="<?php echo base_url(); ?>seller/storedetails/updatestoredetails" method="post" >
+  <form  action="<?php echo base_url(); ?>seller/storedetails/updatestoredetails" enctype="multipart/form-data" method="post" >
     <div class="row setup-content">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
@@ -140,10 +152,10 @@
           </div>
           <div class="form-group">
             <label class="control-label">KYC documents of store</label>
-            <input  type="file"  name="kyc_doc" class="form-control" name="report_file" />
+            <input  type="file" class="form-control" name="report_file" />
           </div>
 
-             <input type="submit" class="btn btn-primary " value="Next">
+             <input type="submit" class="btn btn-primary pull-right " value="Next">
               </form>
         </div>
       </div>

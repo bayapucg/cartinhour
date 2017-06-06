@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
 .btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
 
 </style>
-<div class="navigation_main">
+<div class="navigation_main ">
     <nav class="navbar navbar-inverse hm_nav">
       <div class="">
         <div class="navbar-header logo_style" >

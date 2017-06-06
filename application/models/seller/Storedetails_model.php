@@ -24,8 +24,8 @@ class Storedetails_model extends MY_Model
 	
 	
 	$this->db->insert('seller_store_details',$data);
-			//print_r($data); exit;
-		return true;	
+  return $insert_id = $this->db->insert_id();
+ 
 }
 
 

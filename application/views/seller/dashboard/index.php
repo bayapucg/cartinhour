@@ -66,38 +66,9 @@ h1 {
   font-size: 2.5em;
 }
 
-.box
-{
-  width: 300px;
-  margin: 0 auto;
-  padding: 2px;
-  background-color: #60daaa; 
-  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),  
-  url('data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='),
-url('data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==');
-  background-repeat: no-repeat;
-  background-size: 0 2px, 0 100%, 0% 2px;
-  background-position: top center, top center, bottom center;
-  -webkit-animation: drawBorderFromCenter 4s;
-}
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes drawBorderFromCenter {
-    0% {
-      background-size: 0 2px, 0 0, 100% 100%;
-    }
-    20% {
-      background-size: 100% 2px, 100% 0, 100% 100%;
-    }
-    66%
-    {
-      background-size: 100% 2px, 100% 98%, 100% 100%;
-    }
-    99%
-    {
-      background-size: 100% 2px, 100% 98%, 0 2px;
-    }
-}
+
+
 
 
 

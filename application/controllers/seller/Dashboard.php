@@ -17,9 +17,13 @@ class Dashboard extends Admin_Controller {
 	public function index()
 	{
 		
+		$data['sellersubcatdata'] = $this->dashboard_model->getsellersubcatdata();
+		//  $this->load->view('seller/header');
+		// $this->load->view('seller/dashboard/index',$data);
+		// $this->load->view('seller/footer');
 		//$this->load->view('welcome_message');
 		//echo "ddg"; exit;
-		$data['sellersubcatdata'] = $this->dashboard_model->getsellersubcatdata();
+		
 		
 		//print_r($data['sellersubcatdata']); exit;
 		$this->template->write_view('content', 'seller/dashboard/index', $data);

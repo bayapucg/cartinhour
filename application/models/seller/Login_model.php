@@ -31,6 +31,13 @@ class Login_model extends CI_Model
         return FALSE;
 
     }
+		// function authenticate($username, $password) 
+		// {
+		// $this->db->select('*')->from('sellers');
+		// $this->db->where('seller_email', $username);
+		// $this->db->where('seller_password', $password);
+		// return $this->db->get()->row_array();
+		// }
 
 
     //apis login model

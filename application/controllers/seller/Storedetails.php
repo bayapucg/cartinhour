@@ -33,19 +33,9 @@ class Storedetails extends Seller_adddetails{
     $this->load->library('upload', $config);
     $this->upload->initialize($config);
     $imageDetailArray = array();
-    $images=array(); 
-    for($i=0; $i<count($_FILES['report_file']['name']); $i++)
-    {
-    $_FILES['userfile']['name']= $_FILES['report_file']['name'][$i];
-    $_FILES['userfile']['type']= $_FILES['report_file']['type'][$i];
-    $_FILES['userfile']['tmp_name']= $_FILES['report_file']['tmp_name'][$i];
-    $_FILES['userfile']['error']= $_FILES['report_file']['error'][$i];
-    $_FILES['userfile']['size']= $_FILES['report_file']['size'][$i];
-       $this->upload->do_upload(); 
-    $imageDetailArray=$this->upload->data();
-    $images[]=$imageDetailArray['raw_name'].$imageDetailArray['file_ext']; // images names we need to inert into images table 
-    }
-
+    $images=array();
+//echo '<pre>';print_r($_FILES);exit;	
+    
 
     $shop_open = $this->input->post('seller_open_time');
     $shop_close= $this->input->post('seller_close_time');
@@ -66,9 +56,22 @@ class Storedetails extends Seller_adddetails{
   
   );
     $res=$this->storedetails_model->insertseller_store($data);
-    if($res &&  count($images)>0)
+	  
+
+    if((count($res)>0))
       {
-      $img_result=$this->storedetails_model->insertFiles($images);
+		  		  //echo '<pre>';print_r($_FILES['report_file']['name']);exit;
+
+		for($i=0; $i<count($_FILES['report_file']['name']); $i++)
+    {
+    $_FILES['userfile']['name']= $_FILES['report_file']['name'][$i];
+    $_FILES['userfile']['type']= $_FILES['report_file']['type'][$i];
+    $_FILES['userfile']['tmp_name']= $_FILES['report_file']['tmp_name'][$i];
+    $_FILES['userfile']['error']= $_FILES['report_file']['error'][$i];
+    $_FILES['userfile']['size']= $_FILES['report_file']['size'][$i];
+      $img_result=$this->storedetails_model->insertFiles( $_FILES['report_file']['name'],$res);
+
+    }
       }
     if($res == 1)
 

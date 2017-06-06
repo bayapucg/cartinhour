@@ -19,13 +19,11 @@ class Sellercat_model extends MY_Model
 
 	}
 
-  public function insertseller_cat($data)
+  public function save_sub_cat_id($data)
 {
-	
-	
-	$this->db->insert('seller_categories',$data);
-			//print_r($data); exit;
-		return true;	
+		 $this->db->insert('seller_categories', $data);
+  return $insert_id = $this->db->insert_id();
+ 
 }
 
 

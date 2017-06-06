@@ -19,8 +19,7 @@ class Personnel_details extends Admin_Controller {
 	{
 			   
 	   $data['sellerlocationdata'] = $this->Personnel_details_model->getlocations();
-	   $data['partsellerlocationdata'] = $this->Personnel_details_model->getsellerlocation();
-		
+	   $data['partsellerlocationdata'] = $this->Personnel_details_model->getsellerlocation();		
 		$this->template->write_view('content', 'seller/personneldetails/index', $data);
 		$this->template->render();
 
@@ -86,8 +85,6 @@ public function updatepersonneldetails()
 
 
 $res=$this->Personnel_details_model->updatepd($data);
-
-
 if($res)
 
 

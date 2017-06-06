@@ -127,19 +127,42 @@ public function insert() {
     }
 
 
-public function do_login()
+// public function do_login()
+
+// {
+
+//         $this->form_validation->set_rules('login_email', 'Username', 'trim|required'); 
+//         $this->form_validation->set_rules('login_password', 'Password', 'trim|required'); 
+
+//         if ($this->form_validation->run() == TRUE) {
+//             $username   = $this->input->post('login_email');
+//             $password = md5($this->input->post('login_password'));           
+//             $result   = $this->login_model->authenticate($username, $password);
+// 			if(count($result)>0){
+			
+//                 $userdteilas=$this->session->set_userdata($result);
+// 				return redirect ('seller/dashboard');
+				
+				
+// 			}
+// 		}
+		
+
+       
+
+// }
+
+
+    public function do_login()
 
 {
 
         $this->form_validation->set_rules('login_email', 'Username', 'trim|required'); 
-
         $this->form_validation->set_rules('login_password', 'Password', 'trim|required'); 
-
         if ($this->form_validation->run() == TRUE) {
             $username   = $this->input->post('login_email');
             $password = md5($this->input->post('login_password'));           
             $result   = $this->login_model->authenticate($username, $password);
-			//print_r($result); exit;
             if ($result) {
 
                 $datavalue= array(
@@ -149,15 +172,10 @@ public function do_login()
                     'seller_email' => $result->seller_email,
                     'loggedin'   => TRUE,
                 );
-
                 $this->session->set_userdata($datavalue);
-            	//echo "10";
-                return redirect(base_url('seller/dashboard')); 
-
-            } else {
-
-              
-            	echo "1";
+                //return redirect(base_url('seller/dashboard')); 
+            } else {              
+             echo "1";
                  // $this->session->set_flashdata('msg','<div style="color: red;font-size:13px;">Invalid username or password.</div>');
 
                  //  return redirect(base_url('seller/login'));

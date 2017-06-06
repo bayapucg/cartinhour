@@ -171,10 +171,10 @@
                     <label for="ex6">Shop Location</label>
                     <select class="form-control" id="location_name" name="location_name">
                        <option value="">-Select Location-</option>
-                       <?php foreach($locationdata as $location_data)  { ?>
-                       <option value="<?php echo $location_data->location_name;?>"><?php echo $location_data->location_name;?></option>
+                       <?php //foreach($locationdata as $location_data)  { ?>
+                       <option value="<?php //echo $location_data->location_name;?>"><?php //echo $location_data->location_name;?></option>
                        
-                       <?php } ?>
+                       <?php //} ?>
                       </select>
                       <span id="errorlocation" style="color:red; font-size: 13px;"></span>
                   </div>
@@ -828,7 +828,9 @@ $(document).ready(function(){
 
 </script>
 
-<!-- login script -->
+
+
+
 <script type="text/javascript">
  
 $(document).ready(function(){

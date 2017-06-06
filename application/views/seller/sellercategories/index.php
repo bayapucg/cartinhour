@@ -4,21 +4,21 @@
 </head>
 <script type="text/javascript">
 $(document).ready(function(){
-  var maxField = 10; 
-  var addButton = $('.add_button'); 
-  var wrapper = $('.field_wrapper'); 
-  var fieldHTML = '<div class="field_wrapper nopaddingRight col-md-13 san-lg pos_r" ><select class="form-control" id="category_id" name="seller_cat[]"><option value="">Select Category</option><?php foreach($getcat as $cat_data){ ?><option value="<?php echo $cat_data->category_id; ?>"><?php echo $cat_data->category_name; ?></option><?php }?></select><a href="javascript:void(0);" class="remove_button" title="Remove field"><img src="<?php echo site_url(); ?>assets/seller/images/remove-icon.png"/></a></div>'; 
-  var x = 1; 
-  $(addButton).click(function(){ 
-    if(x < maxField){ 
-      x++; 
-      $(wrapper).append(fieldHTML); 
+  var maxField = 10; //Input fields increment limitation
+  var addButton = $('.add_button'); //Add button selector
+  var wrapper = $('.field_wrapper'); //Input field wrapper
+  var fieldHTML = '<div class="field_wrapper nopaddingRight col-md-13 san-lg" ><select class="form-control" onchange="savecat(this.value);"  id="category_id" name="seller_cat[]"><option value="">Select Category</option><?php foreach($getcat as $cat_data){ ?><option value="<?php echo $cat_data->category_id; ?>"><?php echo $cat_data->category_name; ?></option><?php }?></select><a href="javascript:void(0);" class="remove_button" title="Remove field"><img src="<?php echo site_url(); ?>assets/seller/images/remove-icon.png"/></a></div>'; //New input field html 
+  var x = 1; //Initial field counter is 1
+  $(addButton).click(function(){ //Once add button is clicked
+    if(x < maxField){ //Check maximum number of input fields
+      x++; //Increment field counter
+      $(wrapper).append(fieldHTML); // Add field html
     }
   });
-  $(wrapper).on('click', '.remove_button', function(e){
+  $(wrapper).on('click', '.remove_button', function(e){ //Once remove button is clicked
     e.preventDefault();
-    $(this).parent('div').remove(); 
-    x--; 
+    $(this).parent('div').remove(); //Remove field html
+    x--; //Decrement field counter
   });
 });
 </script>
@@ -97,7 +97,7 @@ $(document).ready(function(){
         <div class="col-md-12">
           <h3>Select Your Category</h3>
           <div class="field_wrapper nopaddingRight col-md-6 san-lg pos_r" >
-                 <select class="form-control" id="category_id" name="seller_cat[]" required="required">
+                 <select class="form-control"  id="category_id" name="seller_cat[]" required="required">
                     <option value="">Select Category</option>
                     <?php foreach($getcat as $cat_data){ ?>
                     <option value="<?php echo $cat_data->category_id; ?>"><?php echo $cat_data->category_name; ?></option>                  
@@ -106,7 +106,6 @@ $(document).ready(function(){
                   <span class="pos_ab"><a href="javascript:void(0);" class="add_button " title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span>
            </div>
 
-          <!--<span style="color:red" id="erroritemcode"></span>-->
       
            </div>
 
@@ -117,3 +116,25 @@ $(document).ready(function(){
     </div>
 </div>
 </html>
+<script>
+function savecat(val){
+	
+	
+	if(val!=''){
+		$.ajax({
+			type: "POST",
+			url: '<?php echo base_url(); ?>seller/sellercategories/savesubcat',
+			data: {
+			sub_cat_id:val
+			},
+			success:function(data)
+			{
+			
+
+			}
+
+		});
+		
+	}
+}
+</script>

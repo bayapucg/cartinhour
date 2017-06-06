@@ -664,3 +664,7 @@ ul {
 		top: 5px;
 		right: -15px;
 	}
+
+	.extraPersonTemplate {
+    display:none;
+}

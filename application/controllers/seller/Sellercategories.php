@@ -18,6 +18,21 @@ class Sellercategories extends Seller_adddetails{
     $this->template->render();
         //$this->template->render(); 
   }
+  public function savesubcat(){
+	  $post=$this->input->post();
+	  $data=array(
+	      'seller_id' => $this->session->userdata('seller_id'),
+	      'seller_category_id' => $post['sub_cat_id'],
+			'created_at'  => date('Y-m-d H:i:s'),
+			'updated_at'  => date('Y-m-d H:i:s')
+
+	  );
+	      $res=$this->sellercat_model->save_sub_cat_id($data);
+
+	  echo '<pre>';print_r($res);exit;
+	  
+	  
+  }
 
 
   //store 
@@ -26,8 +41,7 @@ class Sellercategories extends Seller_adddetails{
    $data = array(
     'seller_id' => $this->session->userdata('seller_id'),
     'seller_category_id'=> $this->input->post('seller_cat'),    
-    'created_at'  => date('Y-m-d H:i:s'),
-    'updated_at'  => date('Y-m-d H:i:s')
+    
   
   );
     $res=$this->sellercat_model->insertseller_cat($data);
