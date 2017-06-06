@@ -18,7 +18,7 @@
             <h3><a class="" href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
           </div>
         </div>
-        <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/Bnr_2.jpg" />
+        <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png" />
           <div class="bnr_title">
             <h3><a href="<?php echo base_url(); ?>seller/login/register">Register Now</a></h3>
           </div>
