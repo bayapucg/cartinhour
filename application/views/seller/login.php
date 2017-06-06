@@ -8,9 +8,10 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
   <!--banenr start here -->
   <section id="home_scr">
+  <!--
   <div class="banner">
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1500px;height:450px;overflow:hidden;visibility:hidden;"> 
-      <!-- Loading Screen -->
+     
       <div data-u="loading" class="jssorl-oval" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);"> <img style="margin-top:-19.0px;position:relative;top:50%;width:38px;height:38px;" src="<?php echo base_url();?>assets/seller_login/images/oval.svg" /> </div>
       <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1500px;height:450px;overflow:hidden;">
         <div> <img data-u="image" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />
@@ -34,18 +35,21 @@
           </div>
         </div>
         <a data-u="any" href="#" style="display:none">Full Width Slider</a> </div>
-      <!-- Bullet Navigator -->
+    
       <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1"> 
-        <!-- bullet navigator item prototype -->
+      
         <div data-u="prototype" style="width:16px;height:16px;"></div>
       </div>
-      <!-- Arrow Navigator --> 
+    
       <span data-u="arrowleft" class="jssora22l" style="top:0px;left:8px;width:40px;height:58px;" data-autocenter="2"></span> <span data-u="arrowright" class="jssora22r" style="top:0px;right:8px;width:40px;height:58px;" data-autocenter="2"></span> </div>
   </div>
   <div class="clearfix"></div>
   <!--banenr end here -->
- 
-  <div class="container mar_t15 ">
+<div class="row" style="position:absolute;top:0">
+	<img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />
+</div>
+<div class="clearfix"></div>
+  <div class="container mar_t15 " style="margin-top:450px;">
   <div class=' animated bounceInLeft slower'   data-id='3'>
    <h3 class="text-center"><span class="span_bg_g  ">OUR Salient Features</span></h3>
    </div>

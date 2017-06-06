@@ -41,7 +41,7 @@
     <div class="">
     
     
-  <nav class="navbar  ">
+  <nav class="navbar  " style="z-index:1024;width:100%; ">
     <div class="">
    <div class="navbar-header">
       <a class="navbar-brand" href="#">
