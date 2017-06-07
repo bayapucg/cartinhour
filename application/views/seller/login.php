@@ -46,10 +46,28 @@
   <div class="clearfix"></div>
   <!--banenr end here -->
 <div class="row" style="position:absolute;top:0">
-	<img class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />
+	<img class="img-responsive blur_img" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />
+</div>
+<div class=" " style="position: absolute;bottom: 12%; right:28%;left:25%">
+ <h1 class="rw-sentence">
+ <span class="font_si_ban">Build your hyperlocal store <br>where you can sell</span> 
+	 <div class="rw-words rw-words-1"> 
+		 <a href="#">Food !!</a> 
+		 <a href="#">Mobiles,Computers & Accessories !! </a>
+		 <a href="#">Grocery !!</a> 
+		 <a href="#">Fashion !!</a> 
+		 <a href="#">Kitchen Ware !!</a> 
+		 <a href="#">Baby Products !!</a> 
+		 <a href="#">Stationery & Books !!</a> 
+		 <a href="#">Bags !!</a> 
+		 <a href="#">Furniture !!</a> 
+		 <a href="#">Electricals !!</a> 
+		 <a href="#">Automobiles & Accessories!!</a> 
+	 </div> 
+ </h1>
 </div>
 <div class="clearfix"></div>
-  <div class="container mar_t15 " style="margin-top:450px;">
+  <div class="container mar_t15 " style="margin-top:500px;">
   <div class=' animated bounceInLeft slower'   data-id='3'>
    <h3 class="text-center"><span class="span_bg_g  ">OUR Salient Features</span></h3>
    </div>
