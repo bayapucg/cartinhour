@@ -1,8 +1,6 @@
 
-  <div class="col-md-9">
-  <!--header part end here --> 
-  <!--body start here -->
-   
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <div class="faq_main">
    <?php if(!empty($catitemdata))  { ?>
     <div class="container" style="width:100%">
@@ -119,13 +117,11 @@
   </div>
   
      
+  </section>
   </div>
   
   </div>
-  
-  </div>
-  
-  </div>
+ 
   
   <!--body end here --> 
   <script language="JavaScript" type="text/javascript">

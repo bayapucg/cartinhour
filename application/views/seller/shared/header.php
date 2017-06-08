@@ -69,12 +69,25 @@
     </nav>
   </div>
  navigation end here -->  
+<style>
+.navbar-nav>li>a{
+	padding:0px;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    padding-top: 12px;
+}
+.main-header .logo .logo-lg img {
+    height: 42px;
+    margin-right: 70px;
+}
+</style>
 
-
-  <body class="hold-transition sidebar-mini">
+  <body class="hold-transition sidebar-mini " >
         <!-- Site wrapper -->
         
-            <header class="main-header">
+            <header class="main-header hm_nav" style="position: fixed;top:0px;width:100%; ">
                 <a href="http://localhost/cartinhour/trunk/seller/dashboard" class="logo"> <!-- Logo -->
                     <span class="logo-mini">
                         <!--<b>A</b>H-admin-->
@@ -92,7 +105,18 @@
                     </a>
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">                            
-                            <!-- order notifications -->
+												<!-- order notifications -->
+								<li class="pad_l50">
+								<ul class="nav navbar-nav pad_li"> 
+								<li class="active"><a href="<?php echo base_url();?>seller/dashboard">Home</a></li>
+								
+								<li><a href="<?php echo base_url();?>seller/aboutus">About Us</a></li>
+							   <li><a href="<?php echo base_url();?>seller/faqs">FAQ's</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="<?php echo base_url();?>seller/contactus">Contact Us</a></li>
+								</ul>
+								<li>
+							
                             <li class="dropdown messages-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="pe-7s-mail"></i>

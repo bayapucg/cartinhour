@@ -19,9 +19,10 @@
     </div>
   </div>
 body end here --> 
-<!-- <div class="content-wrapper"> -->
-  <section class="content">
-                     <div class="row">
+
+<div class="content-wrapper mar_t_con">
+  <section class="content ">
+                     <div class="row ">
                          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
                              <div class="panel panel-bd cardbox">
                                  <div class="panel-body">
@@ -137,4 +138,4 @@ body end here -->
                      </div>
                  
                  </section> <!-- /.content -->
-                  <!-- </div> -->
+             </div>

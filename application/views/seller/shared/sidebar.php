@@ -40,17 +40,15 @@
 
         <!-- =============================================== -->
             <!-- Left side column. contains the sidebar -->
-          <aside class="main-sidebar">
+          <aside class="main-sidebar" >
                 <!-- sidebar -->
                 <div class="sidebar">
                     <!-- Sidebar user panel -->
-                    <div class="user-panel">
-                        <div class="image pull-left">
-                            <img src="assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
-                        </div>
+               <div class="user-panel">
+                        
                         <div class="info">
-                            <h4>Welcome</h4>
-                            <p>Mr. Alrazy</p>
+                            <span class="wel_tit" >Welcome:</span>&nbsp;&nbsp;&nbsp;<span class="wel_tit_name">Raghava</span>
+                            
                         </div>
                     </div>
                    

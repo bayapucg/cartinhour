@@ -430,6 +430,7 @@ hr {
     line-height: 26px;
     cursor: pointer;
     margin-top: 7px;
+	margin-right:10px;
     cursor: pointer;
     -moz-transition: all .2s ease-out 0;
     -webkit-transition: all .2s ease-out 0;
@@ -488,8 +489,8 @@ hr {
     font-size: 20px;
     line-height: 60px;
     text-align: center;
-    width: 250px;
-    padding: 0 15px;
+    width: 210px;
+    padding:  10px;
     font-weight: 300;
     overflow: hidden;
     color: #fff;
@@ -667,11 +668,31 @@ hr {
         right: 40px
     }
 }
+.wel_tit{
+	color:#fff;
+	font-weight:600;
+	font-size:16px;
+}
+.wel_tit_name{
+	color:#fff;
+}
+.mar_t_con{
+	margin-top:63px;
+	padding:10px;
+}
+.pad_li li{
+	padding: 0px 20px;
+	
+}
+.pad_l50 {
+	padding-right:50px;
+	
+}
 .main-sidebar {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 63px;
     left: 0;
-    padding-top: 60px;
+    padding-top: 0px;
     min-height: 100%;
     width: 250px;
     z-index: 810;
