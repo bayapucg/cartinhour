@@ -86,5 +86,8 @@ class Storedetails extends Seller_adddetails{
     }
 
 
+    
+
+
 
 }

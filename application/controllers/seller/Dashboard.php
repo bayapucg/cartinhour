@@ -18,18 +18,10 @@ class Dashboard extends Admin_Controller {
 	{
 		
 		$data['sellersubcatdata'] = $this->dashboard_model->getsellersubcatdata();
-		//  $this->load->view('seller/header');
-		// $this->load->view('seller/dashboard/index',$data);
-		// $this->load->view('seller/footer');
-		//$this->load->view('welcome_message');
-		//echo "ddg"; exit;
-		
-		
-		//print_r($data['sellersubcatdata']); exit;
-		$this->template->write_view('content', 'seller/dashboard/index', $data);
+		$some['sellerscats'] = $this->dashboard_model->seller_cats();
+		//echo '<pre>';print_r($data);exit;
+		$this->template->write_view('content', 'seller/dashboard/index', $data,$some);
 		$this->template->render();
-
-
 	}
 	public function subcategoryview()
 	{

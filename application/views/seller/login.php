@@ -1193,7 +1193,7 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_name">Firstname *</label>
-									<input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" requi#006a99="requi#006a99" data-error="Firstname is requi#006a99.">
+									<input id="form_name" type="text" name="fname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is requi#006a99.">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
@@ -1209,14 +1209,14 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_email">Email *</label>
-									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" requi#006a99="requi#006a99" data-error="Valid email is requi#006a99.">
+									<input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is requi#006a99.">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_phone">Phone*</label>
-									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" requi#006a99 oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required="required" oninvalid="setCustomValidity('Plz enter your correct phone number ')"
 								onchange="try{setCustomValidity('')}catch(e){}">
 									
 								</div>
@@ -1231,8 +1231,8 @@
 								</div>
 							</div>
 							<div class="col-md-12">
-								<input type="submit" class="btn btn-primary " value="Send message">
-							</div>-
+								<input type="submit" class="btn btn-primary ">
+							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">

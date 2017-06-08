@@ -58,24 +58,16 @@ public function insert() {
 	$seller = 'SEL';
 	$seller_rand_id = mt_rand(100000, 999999);
 	$phone = $this->input->post('seller_mobile');
+	$password_status = 0;
   $data = array(
   		'seller_rand_id' => $seller.''.$seller_rand_id,
-  	  	// 'seller_name' => $this->input->post('seller_fullname'),
-  	  	// 'seller_email' => $this->input->post('seller_email'),
+  		'password_status' => $password_status,
   	  	'seller_password' => md5($six_digit_random_number),
   	  	'seller_mobile' => $this->input->post('seller_mobile'),
-  // 	  	'seller_address' => $this->input->post('seller_address'),
-  // 	  	'seller_shop' => $this->input->post('seller_shop'),
-// 			'seller_location' => $this->input->post('location_name'),
-  // 	  	'seller_license' => $this->input->post('seller_license'),
-  // 	  	'seller_adhar' => $this->input->post('seller_adhar'),
-  // 	  	'seller_bank' => $this->input->post('seller_bank'),
-  	    'created_at'  => date('Y-m-d H:i:s'),
-		'updated_at'  => date('Y-m-d H:i:s'),
+   	    'created_at'  => date('Y-m-d H:i:s'),
+		'updated_at'  => date('Y-m-d H:i:s')
 
   	  	);
-  	 // print_r($data);
-  	  //exit;
    if(($this->login_model->checksellerEmail($this->input->post('seller_email'),$this->input->post('seller_mobile')))==0)
    {
 	$res=$this->login_model->insertseller($data);
@@ -102,23 +94,21 @@ public function insert() {
         // Sending with PHP CURL
        $url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
 			$ret = file($url); 
-                    $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Registered successfully. please Check Your Email or Mobile for Password.</div>');
+                    $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Registered successfully. please Check Your Mobile for Password.</div>');
 
-                  return redirect('seller/adddetails');                  
+                  return redirect('seller/adddetails');               
         	}
 			else
 			{
-				//redirect(site_url('add_blogs_view'));
-				
+			
                     $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: red;font-size:13px;">Registration Failed.</div>');
-				return redirect('seller/login/register');
+				
 
 			}
    }
    
    else{
-	   
-	   
+	   	   
 	   $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: red;font-size:13px;">The email/phone number you entered already exist.</div>');
 				return redirect('seller/login/register');
 	   
@@ -163,13 +153,14 @@ public function insert() {
             $username   = $this->input->post('login_email');
             $password = md5($this->input->post('login_password'));           
             $result   = $this->login_model->authenticate($username, $password);
-            if ($result) {
-
+            //print_r($result); exit;            
+            // if($result->password_status == 0){            	
+            //  	return redirect(base_url('seller/dashboard/change_password'));
+            //  }            
+             if($result) {
                 $datavalue= array(
                     'seller_id'    => $result->seller_id,
-                    'seller_rand_id'    => $result->seller_rand_id,
-                    'seller_name'  => $result->seller_name,
-                    'seller_email' => $result->seller_email,
+                    'seller_rand_id'    => $result->seller_rand_id,                    
                     'loggedin'   => TRUE,
                 );
                 $this->session->set_userdata($datavalue);
@@ -179,7 +170,6 @@ public function insert() {
                  // $this->session->set_flashdata('msg','<div style="color: red;font-size:13px;">Invalid username or password.</div>');
 
                  //  return redirect(base_url('seller/login'));
-
                 }
                 
 
@@ -458,8 +448,6 @@ public function forgot()
  
 $email = $this->input->post('forgot_email');
   $phone = $this->input->post('forgot_mobile');
-  
-    
   $this->load->model('login_model');
   if($email != "" && $phone == "" )
   {

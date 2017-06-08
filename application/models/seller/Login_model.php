@@ -13,8 +13,7 @@ class Login_model extends CI_Model
 
  public function authenticate($username, $password) {
 
-        //$encrypted_password = ($password);
-
+        	//$encrypted_password = ($password);
  	        $this->db->where('seller_email',$username);
 			$this->db->where('seller_password',$password);
 			$this->db->or_where('seller_mobile',$username);

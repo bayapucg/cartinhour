@@ -96,6 +96,24 @@ public function getsellerdata($cat_id)
 }
 
 
+public function seller_cats()
+{
+	$sid = $this->session->userdata('seller_id');
+	$this->db->select('category.category_name')->from('category');
+   $this->db->join('seller_categories', 'seller_categories.seller_category_id = category.category_id','left');
+	$this->db->where('seller_categories.seller_id', $sid);
+    $query = $this->db->get()->result_array();
+
+     // $query = $this->db->query('SELECT category.category_name FROM category JOIN seller_categories ON seller_categories.seller_category_id = category.category_id WHERE seller_categories.seller_id =8');
+     //  	return $query->result();
+
+    
+
+    	
+
+}
+
+
 
 
 

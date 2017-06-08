@@ -4,16 +4,6 @@ class Personnel_details_model extends MY_Model
 
 {
 
-	protected $_table="sellers";
-
-	protected $primary_key="seller_id";
-
-	protected $soft_delete = FALSE;
-
-    public $before_create = array( 'created_at', 'updated_at' );
-
-    public $before_update = array( 'updated_at' );
-
 	public function __construct()
 
 	{
@@ -23,66 +13,70 @@ class Personnel_details_model extends MY_Model
 
 public function getlocations()
 {
-
 $query = $this->db->get('locations');
 return $query->result();
-
-
 }	
 
-public function getsellerlocation()
+
+public function getsellersd()
 {
 $sid= $this->session->userdata('seller_id');
 $this->db->where('seller_id',$sid);	
-$query = $this->db->get('sellers');
+$query = $this->db->get('seller_store_details');
 return $query->row();		
 }
 
-//api locations 
 
-public function getsellerlocationid()
+public function getsellerpd()
 {
-	//$id = $this->db->get('sellers.seller_id');
-	//return $id;	
-		//return $id;
-	$this->db->select('seller_id, seller_name,seller_location,seller_servicetime');
-	$this->db->from('sellers');
-	$this->db->where('sellers.seller_id','8');
- 	return $query = $this->db->get();
-
-
-
-	// $query = $this->db->query("SELECT sellers.seller_name,seller_location,seller_servicetime FROM sellers WHERE sellers.seller_id=$id");
-	// return $query->row();		
+$sid= $this->session->userdata('seller_id');
+$this->db->where('seller_id',$sid);	
+$query = $this->db->get('seller_personal_details');
+return $query->row();		
 }
 
-public function updatedd($data)
+
+public function getsellerbd()
+{
+$sid= $this->session->userdata('seller_id');
+$this->db->where('seller_id',$sid);	
+$query = $this->db->get('seller_basic_details');
+return $query->row();		
+}
+
+ 
+// store details update
+public function updatesd($data)
 {
 	
 $sid= $this->session->userdata('seller_id');	
 	
-$this->db->where('seller_id',$sid);
-		$query=$this->db->update('sellers',$sid);
+		$this->db->where('seller_id',$sid);
+		$query=$this->db->update('seller_store_details',$data);
 		return $query; 		
 }
 
+
+// personal details update
 public function updatepd($data)
 {
 	
-$sid= $this->session->userdata('seller_id');	
-	
-$this->db->where('seller_id',$sid);
-		$query=$this->db->update('sellers',$data);
-		return $query; 
+	$sid= $this->session->userdata('seller_id');		
+	$this->db->where('seller_id',$sid);
+	$query=$this->db->update('seller_personal_details',$data);
+	return $query; 
 	
 }
+
+
+
 public function updatebd($data)
 {
 	
 $sid= $this->session->userdata('seller_id');	
 	
 $this->db->where('seller_id',$sid);
-		$query=$this->db->update('sellers',$data);
+		$query=$this->db->update('seller_basic_details',$data);
 		return $query;
 }
 

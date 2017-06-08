@@ -121,13 +121,16 @@
             </div>
             <div class="col-xs-6 bor_lef">
               <div class="innter-form">
-                <form>
-                <label >Enter your Mobile Number</label>
-                <input   class="form-control" type="text" name="username" autofocus>
-                </form>
+              <div id="register-response"></div>
+                <div id="Emptyforregister"></div>
+                <form  name="register_form" id="register_submit" method="POST">
+                <label>Enter your Mobile Number</label>
+                <input   class="form-control" type="text" id="seller_mobile" name="seller_mobile" autofocus>
               </div>
               <div class="clearfix"></div>
-              <button class="btn btn-primary btn-sm mar_t10" type="submit">Get OTP</button>
+              <input type="submit" class="btn btn-primary btn-sm mar_t10" name="register_do" id="register_do" value="Get OTP">
+              <!-- <button class="btn btn-primary btn-sm mar_t10" type="submit">Get OTP</button> -->
+              </form>
             </div>
             </div>
             <div class="clearfix"></div>
@@ -217,7 +220,7 @@
   
   <!--register  Modal -->
 
-   <div class="modal fade" id="myModa3" role="dialog">
+   <!-- <div class="modal fade" id="myModa3" role="dialog">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header" style="background-color:#39b9f9;color:#fff; border-radius: 5px 5px 0px 0px;">
@@ -296,7 +299,7 @@
           
       </div>
     </div>
-  </div>
+  </div> -->
   
   
   <!--Just fill form to Select plan modal -->
@@ -705,8 +708,6 @@ $(function() {
     $("#EmptyforErr").html(""); 
      
    }
-   
-   
       
       if(forgot_email !="" && forgot_email .match(mailformat)) 
       {
@@ -832,66 +833,44 @@ $(document).ready(function(){
 
 
 <script type="text/javascript">
- 
 $(document).ready(function(){
     $("#login_do").click(function(e){
     e.preventDefault();
-    
-    
     var login_email = $("#login_email").val();
- 
   var login_password = $("#login_password").val();
-  
    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
    if(login_email == "" && login_password == "" )
   {
-   
   $("#EmptyforError").html("Please Enter email and password").css("color", "red");
         $("#login_email").focus();
         return false;
-   
   }
   else{
-   
   $("#EmptyforError").html(""); 
-   
   }
-  
-  
-      
-      if(login_email !="" && login_email .match(mailformat)) 
-      {
-        $("#EmptyforError").html("");
-      }
-      else if(login_email !="" && !login_email .match(mailformat)){
-        
-        $("#EmptyforError").html("Invalid Email Format").css("color", "red");
-        $("#login_email").focus();
-        return false;
-        }
-        
-  
-
+    // if(login_email !="" && login_email .match(mailformat)) 
+    //   {
+    //     $("#EmptyforError").html("");
+    //   }
+    //   else if(login_email !="" && !login_email .match(mailformat)){  
+    //     $("#EmptyforError").html("Invalid Email Format").css("color", "red");
+    //     $("#login_email").focus();
+    //     return false;
+    //     }
     $.ajax({
     type: "POST",
     url: '<?php echo base_url(); ?>seller/login/do_login',
     data: {login_email:login_email,login_password:login_password},
     success:function(data)
-   
     {
-     
-    if(data == 0)
+    if(data == 1)
     {
    $("#login-response").html("Invalid username or password.").css("color", "red");
-     $('#login_submit')[0].reset();
-      
+     $('#login_submit')[0].reset(); 
     }
- else if(data == 1)
- {
-  
- window.location='<?php echo base_url(); ?>seller/dashboard'; 
-  
-  
+    else if(data == 0)
+    {
+    window.location='<?php echo base_url(); ?>seller/dashboard'; 
  }
     },
     error:function()
@@ -899,7 +878,67 @@ $(document).ready(function(){
     $("#login-response").html("Oops! Error.  Please try again later!!");
     }
     });
-    
+    });
+    });
+</script>
+
+
+
+<!-- register script -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+function register(){
+
+}
+
+
+$(document).ready(function(){
+    $("#register_do").click(function(e){
+    e.preventDefault();
+
+    var register;
+    register = $("#seller_mobile").val();
+    //alert(register);
+    var phone =  /^(?=.*?[1-9])[0-9()-+]+$/;
+   
+   if(register=="")
+  {
+  $("#Emptyforregister").html("Please Enter Mobile Number").css("color", "red");
+    $("#seller_mobile").focus();
+        return false;
+  }
+  else{
+  $("#Emptyforregister").html(""); 
+  }
+    if(register !="" && register .match(phone)) 
+      {
+        $("#Emptyforregister").html("");
+      }
+      else if(register !="" && !register .match(phone)){  
+        $("#Emptyforregister").html("Invalid Mobile Number Format").css("color", "red");
+        $("#login_email").focus();
+        return false;
+        }
+    $.ajax({
+    type: "POST",
+    url: '<?php echo base_url(); ?>seller/login/insert',
+    data: {seller_mobile:register},
+    success:function(data)
+    {
+      //alert(data);
+    if(data == 0)
+    {
+   $("#Emptyforregister").html("The Phone Number you entered already exist..").css("color", "red");
+     $('#login_submit')[0].reset(); 
+    }
+    else if(data == 1)
+    {
+    document.location.href='<?php echo base_url('seller/adddetails'); ?>'; 
+ }
+    },
+    });
     });
     });
 </script>

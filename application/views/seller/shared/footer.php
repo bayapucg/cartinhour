@@ -1,11 +1,11 @@
 <!--footer part start here -->
-  <footer class="footer" style="margin-bottom:0px" >
+  <footer class="main-footer">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <!--<div class="ftr">
+          <div class="ftr">
             <div class="queries">Download our seller apps from here</div>
-            <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/google.png" class="img-responsive" /></a> <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/play.png" class="img-responsive" /></a> </div>-->
+            <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/google.png" class="img-responsive" /></a> <a href="#" class="googleApp" target="_blank"><img src="<?php echo base_url();  ?>assets/seller/images/play.png" class="img-responsive" /></a> </div>
         </div>
         <div class="col-md-2"> &nbsp;</div>
         <div class="col-md-2">
@@ -30,7 +30,7 @@
               <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
               <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
             </ul>
-            <!-- <a class="social" href="#" target="_blank"><img src="images/fb.png"></a> <a class="social" href="#" target="_blank"><img src="images/twit.png"></a> <a class="social" href="" target="_blank"><img src="images/lin.png"></a> <a class="social" href="" target="_blank"><img src="images/googlePlus.png"></a> <a class="social" href="" target="_blank"><img src="images/youtube.png"></a> --></div>
+            </div>
         </div>
       </div>
     </div>
@@ -40,7 +40,8 @@
   <div class="fter">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">&copy; <span class="year">2017</span> Cart In Hour. All rights reserved.</div>
+        <div class="pull-right hidden-xs"> <b>Version</b> 1.0</div>
+                <strong>Copyright &copy; 2016-2017 <a href="#">Cartinhour</a>.</strong> All rights reserved.
       </div>
     </div>
   </div>
@@ -48,5 +49,5 @@
   <script>
     $(function () {
   $('[data-tooltip="tooltip"]').tooltip()
-	});
+  });
 </script> 

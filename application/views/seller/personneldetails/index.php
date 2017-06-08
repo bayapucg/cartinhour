@@ -43,10 +43,63 @@ $(document).ready(function(){
    <!--body start here -->
   <div class="faq_main">
     <div class="container" style="width:100%">
-      <h1 class="head_title">Personnel Details</h1>
+      <h1 class="head_title">Update Your Details</h1>
     <div><?php echo $this->session->flashdata('message');?></div>
       <div class="faq"> 
-        <h1 data-toggle="collapse" data-target="#displaydetails">Display details</h1>
+
+      <h1 data-toggle="collapse" data-target="#businessdetails">Basic details</h1>
+          <div id="businessdetails" class="collapse">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel-body">
+                  <section id="main-content">
+    <section class="wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <section class="panel">
+            <!--<header class="panel-heading"> Basic Forms </header>-->
+            <div class="panel-body">
+              <form action="<?php echo base_url(); ?>seller/personnel_details/updatebd" method="post" enctype="multipart/form-data">  
+         <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Seller Name</label>
+                  <input class="form-control" placeholder="Name" type="text" id="seller_name" name="seller_name" value="<?php echo $partsellerbd->seller_name;   ?>">
+           </div>
+           <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Seller Address</label>
+                  <input class="form-control" placeholder="Type of Category" type="text" id="seller_address" name="seller_address" value="<?php echo $partsellerbd->seller_address;   ?>">
+           </div>
+        <!-- <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">TIN/VAT</label>
+                  <input class="form-control" placeholder="TIN/VAT" type="text" id="seller_license" name="seller_license" value="<?php echo $partsellerlocationdata->seller_license;   ?>">
+           </div>
+         <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">TAN</label>
+                  <input class="form-control" placeholder="TAN" type="text" name="seller_tan" id="seller_tan" value="<?php echo $partsellerlocationdata->seller_tan; ?>">
+                </div>
+        <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">GSTIN</label>
+                  <input class="form-control" placeholder="GSTIN" type="text" name="seller_gstin" id="seller_gstin" value="<?php echo $partsellerlocationdata->seller_gstin; ?>">
+                </div> -->
+                <div class="clearfix"></div>
+
+                <div style="margin-top: 20px; margin-left: 15px;">
+                <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
+                <button type="submit" class="btn btn-danger" onclick="window.location='<?php echo base_url(); ?>seller_admin/personnel_details';return false;">Cancel</button>
+        </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- page start--> 
+      <!-- page end--> 
+    </section>
+  </section>
+          </div>
+            </div>
+          </div>
+
+
+        <h1 data-toggle="collapse" data-target="#displaydetails">Store details</h1>
         <div class="demo"> 
           <!--<div id="gry" style="display:none">-->
           <div id="displaydetails" class="collapse">
@@ -58,15 +111,27 @@ $(document).ready(function(){
         <div class="col-lg-12">
           <section class="panel">      
             <div class="panel-body">
-              <form action="<?php echo base_url(); ?>seller_admin/personnel_details/updatedisplaydetails" method="post" enctype="multipart/form-data" onSubmit="return scvalidateof();">
+              <form action="<?php echo base_url(); ?>seller/personnel_details/updatestore" method="post" enctype="multipart/form-data" onSubmit="return scvalidateof();">
          <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Business Name</label>
                   <input class="form-control" placeholder="Business Name" type="text" id="seller_business_name" name="seller_business_name" 
-                  value="<?php echo $partsellerlocationdata->seller_business_name;?>">
+                  value="<?php echo $partsellersd->seller_business_name;?>">
+          <!--<span style="color:red" id="erroritemname"></span>-->
+           </div>
+           <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Number Of Outlets</label>
+                  <input class="form-control" placeholder="Business Name" type="text" id="out_lets" name="out_lets" 
+                  value="<?php echo $partsellersd->number_oulets;?>">
+          <!--<span style="color:red" id="erroritemname"></span>-->
+           </div>
+           <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Delivery Own Or Us</label>
+                  <input class="form-control" placeholder="Business Name" type="text" id="own_us" name="own_us" 
+                  value="<?php echo $partsellersd->delivery_own_us;?>">
           <!--<span style="color:red" id="erroritemname"></span>-->
            </div>
 
-           <div class="form-group nopaddingRight col-md-6 san-lg">
+           <!-- <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Business Display Name</label>
                   <input class="form-control" placeholder="Business Display Name" type="text" id="seller_business_displayname" name="seller_business_displayname" value="<?php echo $partsellerlocationdata->seller_business_displayname;?>">
           <!--<span style="color:red" id="erroritemcode"></span>-->
@@ -103,7 +168,17 @@ document.getElementById('seller_location').options[i].selected=true
 </script>
          <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Service time</label>
-                  <input class="form-control" placeholder="Service time" type="text" name="seller_servicetime" id="seller_servicetime" value="<?php echo $partsellerlocationdata->seller_servicetime; ?>">
+                  <input class="form-control" placeholder="Service time" type="text" name="seller_servicetime" id="seller_servicetime" value="<?php echo $partsellersd->seller_servicetime; ?>">
+          <!--<span style="color:red" id="errorcost"></span>-->
+                </div>
+                <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Other Shop Location</label>
+                  <input class="form-control" placeholder="Service time" type="text" name="other_shop" id="other_shop" value="<?php echo $partsellersd->orther_shop_location; ?>">
+          <!--<span style="color:red" id="errorcost"></span>-->
+                </div>
+                <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Any Web Link</label>
+                  <input class="form-control" placeholder="Service time" type="text" name="web_link" id="web_link" value="<?php echo $partsellersd->any_web_link ; ?>">
           <!--<span style="color:red" id="errorcost"></span>-->
                 </div>
                 <div class="clearfix"></div>
@@ -141,234 +216,36 @@ document.getElementById('seller_location').options[i].selected=true
       
             <div class="panel-body">
       
-              <form action="<?php echo base_url(); ?>seller_admin/personnel_details/updatepersonneldetails" method="post" enctype="multipart/form-data">                
+              <form action="<?php echo base_url(); ?>seller/personnel_details/updatepd" method="post" enctype="multipart/form-data">                
          <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">Name</label>
-                  <input class="form-control" placeholder="Name" type="text" id="seller_name" name="seller_name" value="<?php echo $partsellerlocationdata->seller_name;   ?>" readonly>
+                  <label for="exampleInputEmail1">Bank account</label>
+                  <input class="form-control" placeholder="Name" type="text" id="bank_account" name="bank_account" value="<?php echo $partsellerpd->seller_bank_account;?>" >
            </div>
 
-           <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">Mobile Number</label>
-                  <input class="form-control" placeholder="Mobile Number" type="text" id="seller_mobile" name="seller_mobile" value="<?php echo $partsellerlocationdata->seller_mobile;   ?>" readonly>
-           </div>
+           <!-- <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Adhar Card</label>
+                  <input class="form-control" placeholder="Mobile Number" type="text" id="adhar_card" name="adhar_card" value="<?php echo $partsellerpd->seller_adhar;?>" >
+           </div> -->
        
         <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">Email</label>
-                  <input class="form-control" placeholder="Email" type="text" id="seller_email" name="seller_email" value="<?php echo $partsellerlocationdata->seller_email;   ?>" readonly> 
+                  <label for="exampleInputEmail1">Pan Card</label>
+                  <input class="form-control" placeholder="Email" type="text" id="pan_card" name="pan_card" value="<?php echo $partsellerpd->seller_pan_card;   ?>" > 
 
            </div>
 
         
          <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Adhar Number</label>
-                  <input class="form-control" placeholder="Adhar Number" type="text" name="seller_adhar" id="seller_adhar" value="<?php echo $partsellerlocationdata->seller_adhar; ?>" >
-          <!--<span style="color:red" id="errorcost"></span>-->
+                  <input class="form-control" placeholder="Adhar Number" type="text" name="seller_adhar" id="seller_adhar" value="<?php echo $partsellerpd->seller_adhar; ?>" >
                 </div>
-                
-                <div class="clearfix"></div>
-        
-        
-        
-               
-        
-                
-        <div style="margin-top: 20px; margin-left: 15px;">
-                <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
-                <button type="submit" class="btn btn-danger" onclick="window.location='<?php echo base_url(); ?>seller_admin/personnel_details';return false;">Cancel</button>
-        </div>
-              </form>
-            </div>
-          </section>
-        </div>
-      </div>
-      <!-- page start--> 
-      <!-- page end--> 
-    </section>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </div>
-            </div>
-          </div>
-          <h1 data-toggle="collapse" data-target="#businessdetails">Business details</h1>
-          <div id="businessdetails" class="collapse">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              
-               
-                
-                  <div class="panel-body">
-
-
-                  <section id="main-content">
-    <section class="wrapper">
-      <!--<div class="row">
-        <div class="col-lg-12">
-          <h3 class="page-header"><i class="fa fa-cutlery" aria-hidden="true"></i>Add <?php //echo $catname->category_name;?> Item Details</h3>
-          <ol class="breadcrumb">
-            <li><i class="fa fa-home"></i><a href="<?php //echo base_url();?>seller_admin/dashboard">Home</a></li>
-            <li><i class="fa fa-cutlery" aria-hidden="true"></i><?php //echo $catname->category_name;?></li>
-            <li><i class="fa fa-square-o"></i><?php //echo $subcatname->subcategory_name;?></li>
-          </ol>
-        </div>
-      </div>-->
-      <div class="row">
-        <div class="col-lg-12">
-          <section class="panel">
-            <!--<header class="panel-heading"> Basic Forms </header>-->
-      
-            <div class="panel-body">
-      
-              <form action="<?php echo base_url(); ?>seller_admin/personnel_details/updatebusinessdetails" method="post" enctype="multipart/form-data">
-        
-               
-        
-        
-             
-        
-        
-                
-         <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">Business Name</label>
-                  <input class="form-control" placeholder="Name" type="text" id="seller_business_name" name="seller_business_name" value="<?php echo $partsellerlocationdata->seller_business_name;   ?>">
-          <!--<span style="color:red" id="erroritemname"></span>-->
-           </div>
-
-           <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">Type of Category</label>
-                  <input class="form-control" placeholder="Type of Category" type="text" id="seller_type_category" name="seller_type_category" value="<?php echo $partsellerlocationdata->seller_type_category;   ?>">
-          <!--<span style="color:red" id="erroritemcode"></span>-->
-           </div>
-       
-        <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">TIN/VAT</label>
-                  <input class="form-control" placeholder="TIN/VAT" type="text" id="seller_license" name="seller_license" value="<?php echo $partsellerlocationdata->seller_license;   ?>">
-          <!--<span style="color:red" id="erroritemcode"></span>-->
-           </div>
-
-        
-         <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">TAN</label>
-                  <input class="form-control" placeholder="TAN" type="text" name="seller_tan" id="seller_tan" value="<?php echo $partsellerlocationdata->seller_tan; ?>">
-          <!--<span style="color:red" id="errorcost"></span>-->
-                </div>
-        
-        <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">GSTIN</label>
-                  <input class="form-control" placeholder="GSTIN" type="text" name="seller_gstin" id="seller_gstin" value="<?php echo $partsellerlocationdata->seller_gstin; ?>">
-          <!--<span style="color:red" id="errorcost"></span>-->
-                </div>
-                
-                <div class="clearfix"></div>
-        
-        
-        
-               
-        
-                
-        <div style="margin-top: 20px; margin-left: 15px;">
-                <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
-                <button type="submit" class="btn btn-danger" onclick="window.location='<?php echo base_url(); ?>seller_admin/personnel_details';return false;">Cancel</button>
-        </div>
-              </form>
-            </div>
-          </section>
-        </div>
-      </div>
-      <!-- page start--> 
-      <!-- page end--> 
-    </section>
-  </section>
-
-
-
-
-
-
-
-
-          </div>
-           
-          
-              
-    
-            </div>
-          </div>
-          <h1 data-toggle="collapse" data-target="#bankdetails">Bank details</h1>
-          <div id="bankdetails" class="collapse">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            
-                
-                  <div class="panel-body">
-          
-            <section id="main-content">
-    <section class="wrapper">
-      <!--<div class="row">
-        <div class="col-lg-12">
-          <h3 class="page-header"><i class="fa fa-cutlery" aria-hidden="true"></i>Add <?php //echo $catname->category_name;?> Item Details</h3>
-          <ol class="breadcrumb">
-            <li><i class="fa fa-home"></i><a href="<?php //echo base_url();?>seller_admin/dashboard">Home</a></li>
-            <li><i class="fa fa-cutlery" aria-hidden="true"></i><?php //echo $catname->category_name;?></li>
-            <li><i class="fa fa-square-o"></i><?php //echo $subcatname->subcategory_name;?></li>
-          </ol>
-        </div>
-      </div>-->
-      <div class="row">
-        <div class="col-lg-12">
-          <section class="panel">
-            <!--<header class="panel-heading"> Basic Forms </header>-->
-      
-            <div class="panel-body">
-      
-              <form action="<?php echo base_url(); ?>seller_admin/personnel_details/updatebankdetails" method="post" enctype="multipart/form-data">
-        
-               
-        
-        
-             
-        
-        
-                
-         <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">Bank Account Number</label>
-                  <input class="form-control" placeholder="Bank Account Number" type="text" id="seller_bank" name="seller_bank" value="<?php echo $partsellerlocationdata->seller_bank;   ?>">
-          <!--<span style="color:red" id="erroritemname"></span>-->
-           </div>
-
-           <div class="form-group nopaddingRight col-md-6 san-lg">
-                  <label for="exampleInputEmail1">Personnel PAN</label>
-                  <input class="form-control" placeholder="Personnel PAN" type="text" id="seller_pan" name="seller_pan" value="<?php echo $partsellerlocationdata->seller_pan;   ?>">
-          <!--<span style="color:red" id="erroritemcode"></span>-->
-           </div>
-       
-        <div class="field_wrapper nopaddingRight col-md-6 san-lg" >
+                <div class="field_wrapper nopaddingRight col-md-6 san-lg" >
                   <label for="exampleInputEmail1">KYC Documents</label>
                   <input class="form-control" type="file" name="report_file[]">
           <!--<span style="color:red" id="erroritemcode"></span>-->
-      <span><a href="javascript:void(0);" class="add_button" title="Add field"> <img src="<?php echo site_url(); ?>assets/seller_admin/images/add-icon.png"> </a></span>
+      <!-- <span><a href="javascript:void(0);" class="add_button" title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span> -->
            </div>
-
+                
                 <div class="clearfix"></div>
-        
-        
-        
-               
-        
                 
         <div style="margin-top: 20px; margin-left: 15px;">
                 <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
@@ -383,42 +260,17 @@ document.getElementById('seller_location').options[i].selected=true
       <!-- page end--> 
     </section>
   </section>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          </div>
-                
-             
-  
-              
+
+      </div>
             </div>
           </div>
           
-         
+          <!--  -->
         </div>
         <!-- container --> 
-        
       </div>
     </div>
   </div>
-  
   </div>
   </div>
    </div>

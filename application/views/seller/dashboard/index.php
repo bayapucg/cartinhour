@@ -1,89 +1,12 @@
-<style type="text/css">
-  
-button {
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  margin: 1em;
-  padding: 1em 2em;
-  box-shadow: inset 0 0 0 2px #f45e61;
-  color: #f45e61;
-  font-size: inherit;
-  font-weight: 700;
-  position: relative;
-  vertical-align: middle;
-}
-button::before, button::after {
-  box-sizing: inherit;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.draw {
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
-}
-.draw::before, .draw::after {
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
-}
-.draw::before {
-  top: 0;
-  left: 0;
-}
-.draw::after {
-  bottom: 0;
-  right: 0;
-}
-.draw:hover {
-  color: #60daaa;
-}
-.draw:hover::before, .draw:hover::after {
-  width: 100%;
-  height: 100%;
-}
-.draw:hover::before {
-  border-top-color: #60daaa;
-  border-right-color: #60daaa;
-  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-}
-.draw:hover::after {
-  border-bottom-color: #60daaa;
-  border-left-color: #60daaa;
-  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-}
-.buttons {
-  isolation: isolate;
-}
-
-h1 {
-  font-weight: 300;
-  font-size: 2.5em;
-}
-
-
-
-
-
-
-
-.content
-{
-  background: white;
-  padding: 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
-</style>
-
-<div class="col-md-9 mar_t100">
-    <!-- <p style="border:2px solid #ddd;color: #006a99;padding:10px;font-size: 18px; " class="pull-right"></p> -->
-        <button class="draw pull-right">Your Id::<?php echo ucfirst($this->session->userdata('seller_rand_id'));    ?></button>
+ <!--<div class="col-md-9 mar_t100">
+        <button class="draw pull-right">Your Id::<?php echo ucfirst($this->session->userdata('seller_rand_id'));?></button>
+        <select class="form-control m-bot15" id="category_id" name="category_id">
+                    <option value="">Select Category</option>
+           <?php foreach($sellerscats as $cat_data){ ?>
+                    <option value="<?php echo $cat_data->category_id ;?>"><?php  echo $cat_data->category_name; ?></option>
+           <?php } ?>
+                  </select>
+         
           <div class="bdy_ser">
             <ul class="add_lsit">
               <li><a href="<?php echo base_url();?>seller/mystore"><img src="<?php echo base_url(); ?>assets/seller/images/sto_1.png" /></a> </li>
@@ -95,4 +18,123 @@ h1 {
       </div>
     </div>
   </div>
-  <!--body end here --> 
+body end here --> 
+<!-- <div class="content-wrapper"> -->
+  <section class="content">
+                     <div class="row">
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">15</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                         <i class="fa fa-users fa-2x"></i>
+                                         <h4>Active Doctors </h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">19</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                         <i class="fa fa-users fa-2x"></i>
+                                         <h4>Active Patients</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">05</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                         <i class="fa fa-user-circle fa-2x"></i>
+                                         <h4>Representative</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">9</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                         <i class="fa fa-users fa-2x"></i>
+                                         <h4>Active Nurses</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">6</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                         <i class="fa fa-user-circle fa-2x"></i>
+                                         <h4> Pharmachist</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">3</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                     <i class="fa fa-users fa-2x"></i>
+                                     <h4>Labratorist</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">4</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                     <i class="fa fa-users fa-2x"></i>
+                                     <h4>Accountant</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                             <div class="panel panel-bd cardbox">
+                                 <div class="panel-body">
+                                     <div class="statistic-box">
+                                         <h2><span class="count-number">7</span>
+                                         </h2>
+                                     </div>
+                                     <div class="items pull-left">
+                                     <i class="fa fa-users fa-2x"></i>
+                                     <h4>Receptionist</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 
+                 </section> <!-- /.content -->
+                  <!-- </div> -->

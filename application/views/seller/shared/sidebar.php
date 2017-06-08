@@ -1,4 +1,4 @@
-<div class="ser_mian">
+<!-- <div class="ser_mian">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
@@ -7,7 +7,7 @@
             <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
             <div class="menu-list">
               <ul id="menu-content" class="menu-content collapse out">
-                <!--<li> <a href="<?php //echo base_url(); ?>seller/subcategory"> <i class="fa fa-dashboard fa-lg"></i> Subcategories </a> </li>-->
+
                 <li  data-toggle="collapse" data-target="#listings" class="collapsed active"> <a href="#"><i class="fa fa-list" aria-hidden="true"></i> Listings <span class="arrow"></span></a> </li>
                 <ul class="sub-menu collapse" id="listings">
                   <li class="active"><a href="<?php echo base_url();?>seller/products">My Listing</a></li>
@@ -28,17 +28,112 @@
                 </ul>
                 <li> <a href="<?php echo base_url();?>seller/payments"><i class="fa fa-credit-card" aria-hidden="true"></i> Payments Overview </a> </li>
                  <li> <a href="<?php echo base_url();?>seller/performance"><i class="fa fa-credit-card" aria-hidden="true"></i> Performance </a> </li>
-                <!--<li data-toggle="collapse" data-target="#performance" class="collapsed"> <a href="#"><i class="fa fa-bolt" aria-hidden="true"></i> Performance <span class="arrow"></span></a> </li>-->
-                <!--<ul class="sub-menu collapse" id="performance">
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="#">Growth Opportunities</a></li>
-                  <li><a href="#">Reports</a></li>
-                </ul>-->
+
                 <li> <a href="<?php echo base_url();?>seller/promotions"><i class="fa fa-upload" aria-hidden="true"></i> Promotions </a> </li>
                 
-                <!--<li> <a href="#"> <i class="fa fa-user fa-lg"></i> Profile </a> </li>
-          <li> <a href="#"> <i class="fa fa-users fa-lg"></i> Users </a> </li>-->
+
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
+
+
+        <!-- =============================================== -->
+            <!-- Left side column. contains the sidebar -->
+          <aside class="main-sidebar">
+                <!-- sidebar -->
+                <div class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="image pull-left">
+                            <img src="assets/dist/img/avatar5.png" class="img-circle" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <h4>Welcome</h4>
+                            <p>Mr. Alrazy</p>
+                        </div>
+                    </div>
+                   
+                    <!-- sidebar menu -->
+                    <ul class="sidebar-menu">
+                        <li class="active">
+                            <a href="index.html"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-user-md"></i><span>Listings</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="<?php echo base_url();?>seller/products">My Listing</a></li>
+                                <li><a href="Track Approval Requests">Track Approval Requests</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-user"></i><span>Orders</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="<?php echo base_url();?>seller/orders/new_orders">New Orders</a></li>
+                                <li><a href="<?php echo base_url();?>seller/orders/assigned_orders">Assigned Orders</a></li>
+                                <li><a href="<?php echo base_url();?>seller/orders/inprogress_orders">In-progress Orders</a></li>
+                                <li><a href="<?php echo base_url();?>seller/orders/delivered_orders">Delivered Orders</a></li>
+                                <li><a href="<?php echo base_url();?>seller/orders/rejected_orders">Cancelled Orders</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-sitemap"></i><span>Returns</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="<?php echo base_url();?>seller/products/returns">Returns</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-list-alt"></i> <span>Payments Overview</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="<?php echo base_url();?>seller/payments">Payments Overview</a></li>
+                            </ul>
+                        </li>
+                       
+                    <li class="treeview">
+                        <a href="widgets.html">
+                            <i class="fa fa-user-circle-o"></i><span>Performance</span>
+                            <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo base_url();?>seller/performance">Performance</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-bed"></i><span>Promotions</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?php echo base_url();?>seller/promotions">Promotions</a></li>                            
+                        </ul>
+                    </li>       
+            </ul>
+        </div> <!-- /.sidebar -->
+    </aside>
