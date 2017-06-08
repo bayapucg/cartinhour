@@ -48,11 +48,9 @@ class Products_model extends MY_Model
 	
 public function getsubcatdata($cat_id)
 	{
-		$sid = $this->session->userdata('seller_id');
-		$this->db->select('*');
+	$sid = $this->session->userdata('seller_id');
+	$this->db->select('*');
 	$this->db->from('subcategories');
-	
-	
 	$this->db->where('subcategories.category_id', $cat_id);
 		$query=$this->db->get();
 		return $query->result();
@@ -61,8 +59,6 @@ public function getsubcatdata($cat_id)
 	
 	
 	// item data
-
-
 	public function getsubitemdata($subcat_id)
  {
   

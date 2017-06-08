@@ -1,7 +1,5 @@
- 
- 
- <div class="col-md-9">
-   <!--body start here -->
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <div class="faq_main">
     <div class="container" style="width:100%">
 	<div class="panel panel-primary">
@@ -82,23 +80,12 @@
       <!-- page end--> 
     </section>
   </section>
-
-
-
-
-
-
-
-
-
-				  </div>
-             
-            </div>
-          </div>
-          <!-- panel-group -->
-         
-		 
-		 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>          
 		<h1 class="btn btn-primary" data-toggle="collapse" data-target="#inventorydetails">My Inventory <span class="caret"></span></h1> 
 		 
 		 

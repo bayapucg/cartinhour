@@ -1,5 +1,5 @@
- <!--main content start-->
- <div class="col-md-9">
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <section id="main-content">
     <section class="wrapper">
       <!--<div class="row">
@@ -115,9 +115,7 @@
       <!-- page end--> 
     </section>
   </section>
-  </div>
-  </div>
-  </div>
+  </section>
   </div>
   <!--main content end--> 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>

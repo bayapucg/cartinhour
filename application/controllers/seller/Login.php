@@ -94,9 +94,10 @@ public function insert() {
         // Sending with PHP CURL
        $url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
 			$ret = file($url); 
-                    $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Registered successfully. please Check Your Mobile for Password.</div>');
+                  //   $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Registered successfully. please Check Your Mobile for Password.</div>');
 
-                  return redirect('seller/adddetails');               
+                  // return redirect('seller/adddetails'); 
+                  echo "1";              
         	}
 			else
 			{
@@ -108,9 +109,9 @@ public function insert() {
    }
    
    else{
-	   	   
-	   $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: red;font-size:13px;">The email/phone number you entered already exist.</div>');
-				return redirect('seller/login/register');
+	   	   echo "0";
+	   // $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: red;font-size:13px;">The email/phone number you entered already exist.</div>');
+				// //return redirect('seller/login/register');
 	   
 	   
    }
@@ -164,6 +165,7 @@ public function insert() {
                     'loggedin'   => TRUE,
                 );
                 $this->session->set_userdata($datavalue);
+                echo "0";
                 //return redirect(base_url('seller/dashboard')); 
             } else {              
              echo "1";

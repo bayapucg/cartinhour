@@ -24,6 +24,7 @@ class Adddetails extends Seller_adddetails{
    $data = array(
     'seller_id' => $this->session->userdata('seller_id'),
     'seller_name' => $this->input->post('seller_name'),
+    'seller_email' => $this->input->post('seller_email'),
     'seller_address' => $this->input->post('seller_address'),
     'created_at'  => date('Y-m-d H:i:s'),
     'updated_at'  => date('Y-m-d H:i:s')

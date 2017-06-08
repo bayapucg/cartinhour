@@ -1,5 +1,5 @@
-  <!--main content start-->
-  <div class="col-md-9">
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <section id="main-content">
     <section class="wrapper">
       <!--<div class="row">
@@ -36,9 +36,7 @@
                     <tr>
                  <th>S.No</th>
                 <th>Order Id</th>
-                <th>Seller Name</th>
-                <th>Product Id</th>
-                <th>Product Name</th>
+                <th>Order Price</th>                
                 <th>Delivery Date</th>
                 <th>Delivery Time</th>
                 <th>Customer Details</th>
@@ -56,9 +54,7 @@
                 <tr>
                   <td><?= ++$count ?></td>
                   <td><?php  echo $orders_data->order_id; ?></td>
-                  <td><?php  echo $orders_data->seller_name; ?></td>
-                  <td><?php  echo $orders_data->item_id; ?></td>
-                  <td><?php  echo $orders_data->product_name; ?></td>
+                  <td><?php  echo $orders_data->order_price; ?></td>
                  <td><?php  echo $orders_data->delivery_date; ?></td>
                   <td><?php  echo $orders_data->delivery_time; ?></td>
 
@@ -111,11 +107,10 @@
       <!-- page end--> 
     </section>
   </section>
+  </section>
+  </div>
   <!--main content end--> 
-</div>
-    </div>
-  </div>
-  </div>
+
 <script language="JavaScript" type="text/javascript">
 
 function checkDelete(id)

@@ -1,5 +1,5 @@
-   <div class="col-md-9">
-  <!--main content start-->
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <section id="main-content">
     <section class="wrapper">
         <!--<div class="row">
@@ -37,8 +37,9 @@
                <!--  <th>Seller Id</th>-->
                 <th>Order Id</th>
                 <th>CIH Comission</th>
-                <th>Net Profit</th>
+                <!-- <th>Net Profit</th> -->
                 <th>Amount</th>
+                <th>Status</th>
 				<th>Invoice</th>
                <!-- <th>Date & Time</th>
                 <th>Status</th>
@@ -64,7 +65,8 @@
                 <!--  <td><a href="<?php //echo base_url(); ?>seller/payments/seller_details/<?php  //echo $payments_data->seller_id; ?>"><?php  //echo $payments_data->seller_id; ?></a></td>-->
                   <td><?php  echo $payments_data->order_id; ?></td>
                   <td><?php  echo $payments_data->cih_comission; ?></td>
-                   <td><?php  echo $payments_data->net_profit; ?></td>
+                   <!-- <td><?php  echo $payments_data->net_profit; ?></td> -->
+                   <td><?php  echo $payments_data->order_amount; ?></td>
                     <td><?php if($payments_data->amount_status == 0) {echo "Pending"; } else { echo "Deposited";}?></td>
                     <td><a href="<?php echo site_url(); ?>uploads/invoice/<?php echo $payments_data->invoice;  ?>" download ><?php  echo $payments_data->invoice; ?></a></td>
                <!--  <td><?php  //echo $payments_data->date_time; ?></td>
@@ -99,11 +101,9 @@
       <!-- page end--> 
     </section>
   </section>
+  </section>
+  </div>
   <!--main content end--> 
-  </div>
-  </div>
-  </div>
-  </div>
 
 <script language="JavaScript" type="text/javascript">
 

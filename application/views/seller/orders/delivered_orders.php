@@ -1,5 +1,5 @@
-  <!--main content start-->
-   <div class="col-md-9">
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <section id="main-content">
     <section class="wrapper">
       
@@ -123,8 +123,6 @@
       <!-- page end--> 
     </section>
   </section>
+  </section>
+  </div>
   <!--main content end--> 
-  </div>
-  </div>
-  </div>
-  </div>

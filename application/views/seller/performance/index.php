@@ -27,7 +27,8 @@ window.onload = function () {
 }
 </script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/seller/js/canvasjs.min.js"></script>
-<div class="col-md-9">
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
 <section id="main-content">
     <section class="wrapper">
       <!--<div class="row">
@@ -40,6 +41,7 @@ window.onload = function () {
           </ol>
         </div>
       </div>-->
+
       <div class="row">
         <div class="col-lg-12">
           <section class="panel">
@@ -100,6 +102,7 @@ window.onload = function () {
       <!-- page end--> 
     </section>
   </section>
+
   <?php if(!empty($dailywise)) {?>
             <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 			<?php } else {?>
@@ -112,6 +115,9 @@ window.onload = function () {
 			
 			<?php } ?>
   </div>
+
+  </div>
+  </section>
   </div>
   </div>
   </div>

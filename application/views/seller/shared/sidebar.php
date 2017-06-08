@@ -55,7 +55,7 @@
                     <!-- sidebar menu -->
                     <ul class="sidebar-menu">
                         <li class="active">
-                            <a href="index.html"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
+                            <a href="<?php echo base_url(); ?>seller/dashboard"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
                             </a>
                         </li>
                         <li class="treeview">

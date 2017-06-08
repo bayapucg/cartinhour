@@ -146,8 +146,6 @@
                                     </li>
                                 </ul>
                             </li>
-
-
                             <!-- Admin Notifications -->
                             <li class="dropdown notifications-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">

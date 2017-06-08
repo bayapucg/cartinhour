@@ -1,5 +1,5 @@
-
-  <div class="col-md-9">
+<div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <!--header part end here --> 
   <!--body start here -->
    
@@ -135,16 +135,9 @@
     </div>
   
   </div>
-  
-     
+  </section>
   </div>
-  
-  </div>
-  
-  </div>
-  
-  </div>
-  
+
   <!--body end here --> 
   <script language="JavaScript" type="text/javascript">
 function checkDelete(id)

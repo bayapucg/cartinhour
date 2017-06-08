@@ -1,4 +1,5 @@
-  <!--main content start-->
+ <div class="content-wrapper mar_t_con" >
+  <section class="content ">
   <section id="main-content">
     <section class="wrapper">
       <div class="row">
@@ -124,6 +125,8 @@
       <!-- page end--> 
     </section>
   </section>
+  </section>
+  </div>
   <!--main content end--> 
 
 <script language="JavaScript" type="text/javascript">
