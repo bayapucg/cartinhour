@@ -257,6 +257,7 @@ box-shadow: -2px 3px 26px -8px rgba(0,0,0,0.75);
     padding: 5px 0 15px;
     text-align: center;
     text-transform: uppercase;
+	height: 470px;
 }
 .heading {
     border-bottom: 1px solid #006a99;
