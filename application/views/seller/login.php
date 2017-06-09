@@ -431,11 +431,12 @@
           <div class="pricing_lft">
             <h1>What are the Fees</h1>
             <ul class="cih_fee text-center">
-              <li><img src="<?php echo base_url();?>assets/seller_login/images/cih.png" /><br>
+			
+              <li class=" wow rubberBand animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: rubberBand;"><img src="<?php echo base_url();?>assets/seller_login/images/cih.png" /><br>
                 <h4 align="center">CIH Fee</h4>
               </li>
         <li><span class="plus_fon">+</span></li>
-              <li><img src="<?php echo base_url();?>assets/seller_login/images/service.png" /><br>
+              <li class="wow shake animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: rubberBand;"><img src="<?php echo base_url();?>assets/seller_login/images/service.png" /><br>
                 <h4 align="center">Service Tax</h4>
               </li>
         <!--<li><img src="<?php echo base_url();?>assets/seller_login/images/closing.png" /><br>
@@ -450,7 +451,7 @@
                 <h4 align="center">Delivery Services Fee</h4>
               </li>-->
             </ul>
-            <h3 align="center">Find CIH Fee for your Product</h3>
+            <h4 align="center" style="font-size:24px;">Find CIH Fee for your Product</h4>
             <div class="price_lt">
               <div class="form-group">
                 <select class="form-control" id="cih_id" name="cih_id">
@@ -495,7 +496,10 @@
        <div class="form-group" id="sellingfee" >
                 <h4>your Product Selling Price :</h4>
                 <input type="number" class="form-control san_label" id="product_price" name="product_price" placeholder="your Product Selling Price ">
+				<div class="clearfix"></div>
+				<div class="mar_t10">
                 <button type="submit" class="click" id="calfee_submit">Calculate</button>
+				</div>
          <span id="TermsErr"></span>
               </div>
        
@@ -546,37 +550,31 @@
   <div class="title_lines"></div>
 <div class="srvices_main1 ">
 <div class="container">
-	
-
-                           	 <div class="col-lg-6  col-md-6 col-sm-4">
-                                <div class="service_first wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                
-                                <!--<img src="images/canon.png" alt=""/>-->
-                                <h1 class="heading">Inventory management</h1>
-                                    <p>We provide complete product listing to inventory update & order process</p>
-                                  
-								   <br>
-								   <br>
-								    <!-- <button class="btn btn-primary btn-sm"onclick="myFunction()" >Know more</button> -->
-                                   <p class="lin_read"> <a href="<?php echo base_url();?>seller/marketplace_solutions" >Know more</a></p>
-                                   
-                            </div>
-                            </div>
+		<div class="col-lg-6  col-md-6 col-sm-4">
+			<div class="service_first wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+			<img  class="img-responsive thumbnail" src="<?php echo base_url();?>assets/seller_login/images/inv_m.png" />
+					<h1 class="heading">Inventory management</h1>
+					<p>We provide complete product listing to inventory update & order process</p>
+				  
+			
+				   <br>
+					<!-- <button class="btn btn-primary btn-sm"onclick="myFunction()" >Know more</button> -->
+				   <p class="lin_read"> <a href="<?php echo base_url();?>seller/marketplace_solutions" >Know more</a></p>
+			</div>
+		</div>
                             
-                           
-							
-                            
-                             <div class="col-lg-6  col-md-6 col-sm-4">
-                                <div class="service_first wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
-                                <h1 class="heading">Catalog Management</h1>
-                                <!--<img src="images/canon.png" alt=""/>-->
-                                
-                                    <p>We have expert team to make proper product digital catalog which provide good customer experience increase </p><br>
-                                  
-								   <p class="lin_read"><a href="<?php echo base_url();?>seller/catalog_management" >Know more</a></p>
-                                   
-                            </div>
-                            </div>
+		 <div class="col-lg-6  col-md-6 col-sm-4">
+			<div class="service_first wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+				<img  class="img-responsive thumbnail" src="<?php echo base_url();?>assets/seller_login/images/cat_m.png" />
+			<h1 class="heading">Catalog Management</h1>
+			<!--<img src="images/canon.png" alt=""/>-->
+			
+				<p>We have expert team to make proper product digital catalog which provide good customer experience increase </p><br>
+			  
+			   <p class="lin_read"><a href="<?php echo base_url();?>seller/catalog_management" >Know more</a></p>
+			   
+		</div>
+		</div>
 							<!--<div class="col-lg-4  col-md-4 col-sm-4">
                                 <div class="service_first wow fadeInRight animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
                                 
@@ -707,7 +705,7 @@
   
   <div class='row'>
     <div class='col-md-12'>
-      <div class="carousel slide media-carousel" id="media1">
+      <div class="carousel slide media-carousel" id="media1" data-ride="carousel" data-interval="3000">
         <div class="carousel-inner">
           <div class="item  active">
             <div class="row">
@@ -797,8 +795,8 @@
           </div>
           
         </div>
-        <a data-slide="prev" href="#media1" class="left carousel-control">‹</a>
-        <a data-slide="next" href="#media1" class="right carousel-control">›</a>
+        <!--<a data-slide="prev" href="#media1" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media1" class="right carousel-control">›</a>-->
       </div>                          
     </div>
   </div>
@@ -1534,13 +1532,6 @@ $("#cihfee1").html(data);
               new WOW().init();
               </script>
   <!--team --> 
-      <script>
-	 $(document).ready(function() {
-  $('#media').carousel({
-    pause: true,
-    interval: false,
-  });
-});
-  </script>
+ 
   <!--end team --> 
  
