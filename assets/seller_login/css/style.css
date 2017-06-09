@@ -2220,7 +2220,7 @@ h5 {
       
       }
     .web_disigner .parent_circle .child_round_circle_img3 {
-      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/8.jpg");
+      background: url("https://lh3.googleusercontent.com/-8n81FbzWspo/AAAAAAAAAAI/AAAAAAAAWYs/UdI_hiatCk0/s60-p-rw-no/photo.jpg");
       background-size: 100%; }
     .web_disigner .parent_circle .child_round_circle_img4 {
       background: url("http://imensosoftware.com/wp-content/uploads/2016/01/9.jpg");
@@ -2371,3 +2371,14 @@ background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 /* end modal overlay */
+ /* contact us btn start */
+ .cont_btm{
+	 position: fixed;
+    
+    z-index: 9999999;
+	right:20px;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+	bottom:0px;
+ }
+ /* contact us btn end */
