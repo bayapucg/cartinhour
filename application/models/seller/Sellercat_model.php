@@ -18,11 +18,16 @@ class Sellercat_model extends MY_Model
 	parent::__construct();
 
 	}
+	public function insertseller_cat($data)
+	{
+		 $this->db->insert('seller_categories', $data);
+  		return $insert_id = $this->db->insert_id();
+	}
 
   public function save_sub_cat_id($data)
 {
-		 $this->db->insert('seller_categories', $data);
-  return $insert_id = $this->db->insert_id();
+		$this->db->insert('seller_categories', $data);
+  		return $insert_id = $this->db->insert_id();
  
 }
 

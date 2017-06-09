@@ -11,7 +11,7 @@
 	  
         <?php  foreach($catitemdata as $catitem_data )  {    ?>
         <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
-        <h1 data-toggle="collapse" data-target="#gry<?php echo $catitem_data->category_name;   ?>"><?php echo $catitem_data->category_name;   ?></h1>
+        <h1 data-toggle="collapse" data-target="#gry<?php echo $catitem_data->category_name;?>"><?php echo $catitem_data->category_name;   ?></h1>
         <div class="demo"> 
           <!--<div id="gry" style="display:none">-->
           <div id="gry<?php echo $catitem_data->category_name;   ?>" class="collapse">
@@ -29,22 +29,12 @@
                 </div>
                 <div id="collapseOne<?php echo $nospace;  ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne<?php echo $nospace;  ?>">
                   <div class="panel-body">
-
-
-
-
-
-    
           <section class="panel">
-            
-			 
-            
               <div class="table-responsive">
                 <table class="table table-bordered table-striped">
                   <thead>
                     <tr>
                       <th>S.No</th>
-					  
                       <th>Item Name</th>
                       <th>Item Code</th>
                       <th>Description</th>
@@ -67,7 +57,6 @@
                       <td><?php echo $item_data->item_quantity;?></td>
                       <td><?php echo $item_data->item_cost;?></td>
 					  <?php if($item_data->item_image == "") {  ?>
-					  
 					  <td><img src="<?php echo base_url(); ?>assets/seller/img/avatar1.jpg" class="img-responsive"></td>
 					  <?php } else {?>
                       <td><img src="<?php echo base_url();?>uploads/products/<?php  echo $item_data->item_image; ?>" width="80" height="50" /></td>
@@ -75,8 +64,7 @@
 					 <!--<td><img src="img/avatar1.jpg" class="img-responsive"></td>-->
 					 <?php if($item_data->item_status == 1) {  ?>
                       <td>Available</td>
-					 <?php } else {?>
-					 
+					 <?php } else {?>					 
 					 <td>Unavailable</td>
 					 <?php } ?>
                       <td><a href="<?php echo site_url(); ?>seller/products/edit/<?php  echo $item_data->item_id; ?>/<?php  echo $item_data->category_id; ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
@@ -86,11 +74,7 @@
                   </tbody>
                 </table>
               </div>
-       
           </section>
-	
-
-
 				  </div>
                 </div>
               </div>
@@ -117,10 +101,8 @@
   </div>
   
      
-  </section>
-  </div>
   
-  </div>
+
  
   
   <!--body end here --> 
@@ -131,3 +113,6 @@ function checkDelete(id)
 return confirm('Are you sure want to delete "'+id +'" product?');
 }
 </script>
+</section>
+  </div> 
+  </div>

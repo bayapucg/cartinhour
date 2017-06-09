@@ -45,10 +45,8 @@
                 <div class="sidebar">
                     <!-- Sidebar user panel -->
                <div class="user-panel">
-                        
                         <div class="info">
-                            <span class="wel_tit" >Welcome:</span>&nbsp;&nbsp;&nbsp;<span class="wel_tit_name">Raghava</span>
-                            
+                            <span class="wel_tit" >Welcome:</span>&nbsp;&nbsp;&nbsp;<span class="wel_tit_name"><?php echo ucfirst($this->session->userdata('seller_name'));    ?></span>                            
                         </div>
                     </div>
                    
@@ -87,50 +85,35 @@
                             </ul>
                         </li>
                         <li class="treeview">
-                            <a href="#">
+                            <a href="<?php echo base_url();?>seller/products/returns">
                                 <i class="fa fa-sitemap"></i><span>Returns</span>
-                                <span class="pull-right-container">
+                                <!-- <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
-                                </span>
+                                </span> -->
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href="<?php echo base_url();?>seller/products/returns">Returns</a></li>
-                                
-                            </ul>
+                            
                         </li>
                         <li class="treeview">
-                            <a href="#">
+                            <a href="<?php echo base_url();?>seller/payments">
                                 <i class="fa fa-list-alt"></i> <span>Payments Overview</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
+                                
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href="<?php echo base_url();?>seller/payments">Payments Overview</a></li>
-                            </ul>
+                            
                         </li>
                        
                     <li class="treeview">
-                        <a href="widgets.html">
+                        <a href="<?php echo base_url();?>seller/performance">
                             <i class="fa fa-user-circle-o"></i><span>Performance</span>
-                            <span class="pull-right-container">
-                            <i class="fa fa-angle-left pull-right"></i>
-                            </span>
+                            
                         </a>
-                        <ul class="treeview-menu">
-                            <li><a href="<?php echo base_url();?>seller/performance">Performance</a></li>
-                        </ul>
+                        
                     </li>
                     <li class="treeview">
-                        <a href="#">
+                        <a href="<?php echo base_url();?>seller/promotions">
                             <i class="fa fa-bed"></i><span>Promotions</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
+                            
                         </a>
-                        <ul class="treeview-menu">
-                            <li><a href="<?php echo base_url();?>seller/promotions">Promotions</a></li>                            
-                        </ul>
+                        
                     </li>       
             </ul>
         </div> <!-- /.sidebar -->

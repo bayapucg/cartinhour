@@ -1,17 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Adddetails_model extends MY_Model 
 {
-	protected $_table="seller_basic_details";
-
-	protected $primary_key="seller_basic_id";
-
-	protected $soft_delete = FALSE;
-
-    public $before_create = array( 'created_at', 'updated_at' );
-
-    public $before_update = array( 'updated_at' );
-	
-		
+			
 	public function __construct()
 
 	{
@@ -29,10 +19,19 @@ public function getcatdata()
   public function insertseller_basic($data)
 {
 	
-	
-	$this->db->insert('seller_basic_details',$data);
-			//print_r($data); exit;
-		return true;	
+	// $sid= $this->session->userdata('seller_id');
+	// $this->db->where('seller_id',$sid);	
+	// $query = $this->db->get('sellers');
+	// return $query->row();
+
+	$sid= $this->session->userdata('seller_id');	
+$this->db->where('seller_id',$sid);
+		$query=$this->db->update('sellers',$data);
+		return $query;
+
+	// $this->db->update('sellers',$data);
+	// 		//print_r($data); exit;
+	// 	return true;	
 }
 
 

@@ -40,7 +40,7 @@ public function getsellerbd()
 {
 $sid= $this->session->userdata('seller_id');
 $this->db->where('seller_id',$sid);	
-$query = $this->db->get('seller_basic_details');
+$query = $this->db->get('sellers');
 return $query->row();		
 }
 
@@ -76,7 +76,7 @@ public function updatebd($data)
 $sid= $this->session->userdata('seller_id');	
 	
 $this->db->where('seller_id',$sid);
-		$query=$this->db->update('seller_basic_details',$data);
+		$query=$this->db->update('sellers',$data);
 		return $query;
 }
 

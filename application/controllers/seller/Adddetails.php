@@ -22,7 +22,7 @@ class Adddetails extends Seller_adddetails{
     public function updatebasicdetails()
   {  
    $data = array(
-    'seller_id' => $this->session->userdata('seller_id'),
+    
     'seller_name' => $this->input->post('seller_name'),
     'seller_email' => $this->input->post('seller_email'),
     'seller_address' => $this->input->post('seller_address'),
@@ -30,14 +30,12 @@ class Adddetails extends Seller_adddetails{
     'updated_at'  => date('Y-m-d H:i:s')
   
   );
+   //echo '<pre>';print_r($data);exit;
     $res=$this->adddetails_model->insertseller_basic($data);
     if($res == 1)
-
       {
-
         $this->session->set_flashdata('msg2','<div class="alert alert-success text-center" style="color: green;font-size:13px;">successfully. </div>');
         return redirect('seller/storedetails');
-
       }
 
 

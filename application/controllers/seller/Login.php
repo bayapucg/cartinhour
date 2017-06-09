@@ -161,9 +161,12 @@ public function insert() {
              if($result) {
                 $datavalue= array(
                     'seller_id'    => $result->seller_id,
+                    'seller_name'    => $result->seller_name,
+                    'seller_address'    => $result->seller_address,
                     'seller_rand_id'    => $result->seller_rand_id,                    
                     'loggedin'   => TRUE,
                 );
+                //echo '<pre>';print_r($datavalue);exit;
                 $this->session->set_userdata($datavalue);
                 echo "0";
                 //return redirect(base_url('seller/dashboard')); 

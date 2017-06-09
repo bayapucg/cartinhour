@@ -39,7 +39,9 @@ $(document).ready(function(){
   });
 });
 </script>
- <div class="col-md-9 mar_t100">
+ <div class="content-wrapper mar_t_con" >
+
+
    <!--body start here -->
   <div class="faq_main">
     <div class="container" style="width:100%">
@@ -52,7 +54,7 @@ $(document).ready(function(){
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                   <div class="panel-body">
                   <section id="main-content">
-    <section class="wrapper">
+    <section class="content">
       <div class="row">
         <div class="col-lg-12">
           <section class="panel">
@@ -62,6 +64,10 @@ $(document).ready(function(){
          <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Seller Name</label>
                   <input class="form-control" placeholder="Name" type="text" id="seller_name" name="seller_name" value="<?php echo $partsellerbd->seller_name;   ?>">
+           </div>
+           <div class="form-group nopaddingRight col-md-6 san-lg">
+                  <label for="exampleInputEmail1">Seller Email</label>
+                  <input class="form-control" placeholder="Email" type="text" id="seller_email" name="seller_email" value="<?php echo $partsellerbd->seller_email;   ?>">
            </div>
            <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Seller Address</label>
@@ -106,7 +112,7 @@ $(document).ready(function(){
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">             
                   <div class="panel-body">
     <section id="main-content">
-    <section class="wrapper">
+    <section class="content">
       <div class="row">
         <div class="col-lg-12">
           <section class="panel">      
@@ -204,16 +210,12 @@ document.getElementById('seller_location').options[i].selected=true
           <div id="personneldetails" class="collapse">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                   <div class="panel-body">
-
-
                   <section id="main-content">
-    <section class="wrapper">
+    <section class="content">
       
       <div class="row">
         <div class="col-lg-12">
           <section class="panel">
-            <!--<header class="panel-heading"> Basic Forms </header>-->
-      
             <div class="panel-body">
       
               <form action="<?php echo base_url(); ?>seller/personnel_details/updatepd" method="post" enctype="multipart/form-data">                

@@ -115,37 +115,7 @@
 								<li><a href="#">Help</a></li>
 								<li><a href="<?php echo base_url();?>seller/contactus">Contact Us</a></li>
 								</ul>
-								<li>
-							
-                            <li class="dropdown messages-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="pe-7s-mail"></i>
-                                    <span class="label label-success"></span>
-                                </a>
-                                
-                                <ul class="dropdown-menu">
-                                    <li class="header"><i class="fa fa-envelope-o"></i>
-                                    New Orders</li>
-                                    <li>
-                                        <ul class="menu">
-                                        <?php foreach($ordersdata as $order_data){ ?>
-                                            <li>
-                                               <a href="#" class="border-gray">
-                                                    <div class="pull-left">
-                                                    <!-- <img src="assets/dist/img/avatar2.png" class="img-thumbnail" alt="User Image"> --></div>
-                                                    <h4>Customer Name:<?php  echo $order_data->customer_name; ?></h4>
-                                                    <p>Product:<?php  echo $order_data->product_name; ?> 
-                                                    </p>
-                                                    <span class="label label-success pull-right"><?php  echo $order_data->created_at; ?></span>
-                                                </a>       
-                                            </li>
-                                            <?php } ?>
-                                        </ul>
-                                    </li>
-                                    <li class="footer"><a href="#">See all messages <i class=" fa fa-arrow-right"></i></a>
-                                    </li>
-                                </ul>
-                            </li>
+								
                             <!-- Admin Notifications -->
                             <li class="dropdown notifications-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -176,8 +146,8 @@
                                 </div>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url();?>seller/personnel_details"><i class="fa fa-users"></i> User Profile</a></li>
-                                    <!-- <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li> -->
+                                    <li><a href="<?php echo base_url();?>seller/personnel_details"><i class="fa fa-users"></i> Update Profile</a></li>
+                                    <li><a href="<?php echo base_url();?>seller/user_profile"><i class="fa fa-gear"></i> User Profile</a></li> 
                                     <li><a href="<?php echo base_url() ; ?>seller/login/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 </ul>
                             </li>

@@ -31,8 +31,6 @@ class Personnel_details extends Admin_Controller {
 public function updatestore()
 {
     $data = array(
-	
-	
 	'seller_business_name' => $this->input->post('seller_business_name'),
 	'number_oulets' => $this->input->post('out_lets'),
 	'number_oulets' => $this->input->post('out_lets'),
@@ -43,11 +41,7 @@ public function updatestore()
 	'any_web_link' => $this->input->post('web_link')
 	
 	);
-
-
 $res=$this->Personnel_details_model->updatesd($data);
-
-
 if($res)
 			{
 
@@ -127,6 +121,7 @@ public function updatebd()
 	
 	
 	'seller_name' => $this->input->post('seller_name'),
+	'seller_email' => $this->input->post('seller_email'),
 	'seller_address' => $this->input->post('seller_address'),
 	
 	);

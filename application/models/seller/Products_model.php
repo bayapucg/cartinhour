@@ -40,8 +40,16 @@ class Products_model extends MY_Model
 	public function getcatdata()
 	{
 		
-		$query=$this->db->get('category');
-		return $query->result();
+		// $sid = $this->session->userdata('seller_id');
+		// $this->db->select('category.category_name')->from('category');
+  //  		$this->db->join('seller_categories', 'seller_categories.seller_category_id = category.category_id');
+		// $this->db->where('seller_categories.seller_id', $sid);
+		// $query = $this->db->get();
+  //   	return $query->result();
+
+
+		 $query=$this->db->get('category');
+		 return $query->result();
 		
 	}
 	

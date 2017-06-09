@@ -38,6 +38,7 @@ class Products extends Admin_Controller {
 		//$data['subcatname'] = $this->products_model->getsubcatname($subcat_id);
        //$data['subcatdata'] = $this->products_model->getsubcatdata($cat_id);
 		$data['getcat'] = $this->products_model->getcatdata();
+		//echo '<pre>';print_r($data);exit;
 		$this->template->write_view('content', 'seller/products/add', $data);
 		$this->template->render();
 
