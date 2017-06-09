@@ -86,13 +86,13 @@
   </div>
   <!--header part end here --> 
   <!--login  Modal -->
-   <div class="modal animated  zoomIn" id="myModa2" role="dialog">
+   <div class="modal animated  zoomIn" id="myModa2" role="dialog"style="top:80px;">
     <div class="modal-dialog modal-md "  >
       <div class="modal-content ">
-        <div class="modal-header">
-          <ul class="nav nav-tabs final-login">
-            <li class="active"><a data-toggle="tab" href="#sectionA">Sign In</a></li>
-            <li><a data-toggle="tab" href="">Register</a></li>
+        <div class="modal-header modal-header_ad">
+          <ul class="nav-tabs final-login">
+            <li class=""><a data-toggle="tab" >Sign In</a></li>
+            <li><a data-toggle="tab" >Register</a></li>
           </ul>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
@@ -103,7 +103,7 @@
           <div class="tab-content">
             <div id="sectionA" class="tab-pane fade in active">
             <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-6 bor_lef">
             <div class="innter-form">
               <form method="post"  name="login_form" id="login_submit">
               <div id="login-response"></div>
@@ -112,14 +112,17 @@
               <input  name="login_email" id="login_email" class="form-control" type="text" name="username" autofocus>
               <label>Password</label>
               <input  id="login_password" name="login_password" class="form-control" type="password" name="password">
-              <button class="btn btn-primary" type="submit" id="login_do">Sign In</button>
-              <div class="col-md-3 paddingRightZero">
-                        <div class="pswrd text-right"><a href="#" tabindex="5" class="forgot-password" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Unable to Login?</a></div>
-                      </div>
+			  <div class="col-md-6 paddingRightZero">
+				<div class="pswrd ">
+					<a href="#" tabindex="5" class="forgot-password" class="btn btn-info " data-toggle="modal" data-target="#myModal1">Unable to Login?</a>
+				</div>
+              </div>
+              <button class="btn btn-primary pull-right  btn-block " type="submit" id="login_do">Sign In</button>
+					
               </form>
             </div>
             </div>
-            <div class="col-xs-6 bor_lef">
+            <div class="col-xs-6 ">
               <div class="innter-form">
               <div id="register-response"></div>
                 <div id="Emptyforregister"></div>
@@ -128,20 +131,20 @@
                 <input   class="form-control" type="text" id="seller_mobile" name="seller_mobile" autofocus>
               </div>
               <div class="clearfix"></div>
-              <input type="submit" class="btn btn-primary btn-sm mar_t10" name="register_do" id="register_do" value="Get OTP">
+              <input type="submit" class="btn btn-primary  btn-block btn-sm mar_t10" name="register_do" id="register_do" value="Get OTP">
               <!-- <button class="btn btn-primary btn-sm mar_t10" type="submit">Get OTP</button> -->
               </form>
             </div>
             </div>
             <div class="clearfix"></div>
-              <div class="social-login">
+            <!--  <div class="social-login">
               <p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
               <ul>
               <li><a href=""><i class="fa fa-facebook"></i> Facebook</a></li>
               <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
               <li><a href=""><i class="fa fa-twitter"></i> Twitter</a></li>
               </ul>
-              </div>
+              </div>-->
               <div class="clearfix"></div>
             </div>
             <!--<div id="" class="tab-pane fade">
@@ -395,10 +398,10 @@
   <!--end Just fill form to Select plan Modal -->
    <!--Just fill form to Select plan modal -->
   <div class="modal animated  zoomIn" id="myModal_ser" role="dialog">
-    <div class="modal-dialog modal-lg" style="width: 1200px;">
+    <div class="modal-dialog modal-lg " style="width: 1200px;">
     
       <!-- Modal content-->
-     <div class="modal-content">
+     <div class="modal-content"  >
    
         <div class="modal-header " style="background-color:#006a99;color:#fff;padding:10px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>

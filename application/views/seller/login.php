@@ -48,7 +48,7 @@
 <div class="row" style="position:absolute;top:0">
 	<img class="img-responsive blur_img" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />
 </div>
-<div class=" " style="position: absolute;bottom: 12%; right:28%;left:25%">
+<div class=" " style="position: absolute;bottom:80px; right:28%;left:25%">
  <h1 class="rw-sentence">
  <span class="font_si_ban">Build your hyperlocal store <br>where you can sell</span> 
 	 <div class="rw-words rw-words-1"> 
@@ -67,7 +67,7 @@
  </h1>
 </div>
 <div class="clearfix"></div>
-  <div class="container mar_t15 " style="margin-top:40%;">
+  <div class="container mar_t15 " style="margin-top:41%;">
   <div class=' animated bounceInLeft slower'   data-id='3'>
    <h3 class="text-center"><span class="span_bg_g  ">OUR Salient Features</span></h3>
    </div>
@@ -80,25 +80,25 @@
         <li>
           <div class="feature-box free-shipping wow animated bounceInLeft slower">
             <div class="icon-truck"></div>
-            <div class="content">Lorem Ipsum is simply dummy text   </div>
+            <div class="content">Make your offline business into online</div>
           </div>
         </li>
         <li>
           <div class="feature-box need-help wow animated bounceInDown slower">
             <div class="icon-support"></div>
-            <div class="content">Lorem Ipsum is simply dummy text  </div>
+            <div class="content">Access to thousands of customers  </div>
           </div>
         </li>
         <li>
           <div class="feature-box money-back wow animated bounceInUp slower">
             <div class="icon-money"></div>
-            <div class="content">Lorem Ipsum is simply dummy text  </div>
+            <div class="content">Hassle free payments</div>
           </div>
         </li>
         <li class="last">
           <div class="feature-box return-policy wow animated bounceInRight slower">
-            <div class="icon-return"></div>
-            <div class="content">Lorem Ipsum is simply dummy text  </div>
+            <div class=" icon-return"></div>
+            <div class="content">Complete assistance from us</div>
           </div>
         </li>
       </ul>
@@ -326,7 +326,7 @@
 
   
   <!--howitworks -->
-<section id="how_its_w" class="home-section bg-gray paddingbot-60">
+<section id="how_its_w" class="home-section bg-gray ">
 <div class="pricing_main">
     <div class="container">
 	 <h3 class="text-center wow fadeInDown animated"  data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInDown;"  id="" data-spy="scroll"><span class="span_bg_g"> HOW IT WORKS</span></h3>
@@ -353,8 +353,8 @@
 					</div>
 					</div>
 				</div>
-				<div class="col-sm-3 pricing-box wow bounceInDown animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInDown;">
-					<div class="wow bounceInUp" data-wow-delay="0.1s">
+				<div class="col-sm-3 pricing-box " data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInDown;">
+					<div class="wow bounceInUp" data-wow-delay="0.5s">
 					
 					<div class="pricing-content general">
 					
@@ -371,7 +371,7 @@
 					</div>
 					</div>
 				</div>
-				<div class="col-sm-3 pricing-box wow bounceInUp animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInUp;">
+				<div class="col-sm-3 pricing-box wow bounceInUp animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: bounceInUp;">
 					
 					
 					<div class="pricing-content general">
@@ -389,7 +389,7 @@
 					</div>
 					
 				</div>
-				<div class="col-sm-3 pricing-box wow bounceInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+				<div class="col-sm-3 pricing-box wow bounceInRight animated" data-wow-delay="0.9s" style="visibility: visible; animation-delay: 0.9s; animation-name: bounceInRight;">
 					
 					
 					<div class="pricing-content general">
@@ -619,13 +619,13 @@
  <div class="about_us_container mar_t15">
  <div class="row">
 		<div class="col-md-6 abot_tex">
-			<h3>WELCOME</h3>
-			<h3>TO</h3>
-			<h3>CARTINHOUR</h3>
+			<h3>WELCOME TO</h3>
+			<!--<h3></h3>
+			<h3>CARTINHOUR</h3>-->
 			
 		</div>
 		<div class="col-md-6">
-			<a href="<?php echo base_url(); ?>seller/login"><img style="width:57%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
+			<a href="<?php echo base_url(); ?>seller/login"><img style="width:57%;margin-top:5px;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/logo.png" /></a>
 		</div>
   </div>
   </div>
