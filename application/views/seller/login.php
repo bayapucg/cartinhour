@@ -567,7 +567,7 @@
 							
                             
                              <div class="col-lg-6  col-md-6 col-sm-4">
-                                <div class="service_first">
+                                <div class="service_first wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
                                 <h1 class="heading">Catalog Management</h1>
                                 <!--<img src="images/canon.png" alt=""/>-->
                                 
@@ -602,7 +602,7 @@
  <div class="clearfix">   </div>  
 <!--<p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>-->
 
- <button type="button" class="btn btn-warning btn-md pull-left" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
+ <button type="button" class="btn btn-primary btn-md pull-left" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
  <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Enquiry</button>
 
                             
@@ -1256,18 +1256,18 @@
 					<div class="clearfix"></div>
 					<div class="pad_10">
 						<div class="row col1">
-							<div class="col-sm-3">
+							<div class="col-sm-2 widt_col_2" >
 								 <i class="fa fa-fax"></i> Website  
 							</div>
-							<div class="col-sm-9">
+							<div class="col-sm-10">
 								 <a href="http://cartinhour.com/"> www.cartinhour.com</a>
 							</div>
 						</div>
 							<div class="row col1">
-						   <div class="col-xs-3">
+						   <div class="col-xs-2 widt_col_2">
 							   <i class="fa fa-map-marker" style="font-size:16px;"></i>   Address
 						   </div>
-						   <div class="col-xs-9">
+						   <div class="col-xs-10">
 								Plot No.177,1st floor, Sri Vani Nilayam,
 								Sardar Patel Nagar, Nizampet ‘X’ Road,
 								Hyderabad, Telangana
@@ -1275,19 +1275,19 @@
 					   </div>
 					   
 						<div class="row col1">
-							<div class="col-sm-3">
+							<div class="col-sm-2 widt_col_2">
 								<i class="fa fa-phone"></i>   Phone
 							</div>
-							<div class="col-sm-9">
+							<div class="col-sm-10">
 								 +919494422779
 							</div>
 						</div>
 						
 						<div class="row col1">
-							<div class="col-sm-3">
+							<div class="col-sm-2 widt_col_2">
 								<i class="fa fa-envelope"></i>   Email
 							</div>
-							<div class="col-sm-9">
+							<div class="col-sm-10">
 								 <a href="mailto:info@yourdomain.com">imainacartin@gmail.com</a> <br> <a href="mailto:support@yourdomain.com">xxxxxx@cartinhour.com</a>
 							</div>
 						</div>

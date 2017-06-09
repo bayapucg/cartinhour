@@ -24,6 +24,12 @@
     opacity: 1;
   }
 }
+.widt_col_2 {
+	width:110px !important; 
+}
+.col1 {
+	padding: 4px;
+}
 .hvr-ripple-in {
   display: inline-block;
   vertical-align: middle;
