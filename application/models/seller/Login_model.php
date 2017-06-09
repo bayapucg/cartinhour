@@ -145,6 +145,13 @@ public function insertcontact($data)
 
 		return true;	
 }
+//promotions details
+public function insertpromotion($data)
+{
+	$this->db->insert('promotions',$data);
+			//echo print_r($data); exit;
+		return true;	
+}
 	
 	
 public function checksellerEmail($email,$phone)

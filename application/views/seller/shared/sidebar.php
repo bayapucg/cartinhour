@@ -118,3 +118,15 @@
             </ul>
         </div> <!-- /.sidebar -->
     </aside>
+
+
+    <script type="text/javascript">
+        $("ul li a").removeClass('active');
+var urlType = document.URL.split("/");
+$("a[href*='/" + urlType + "']").addClass("active");
+
+
+
+
+
+    </script>

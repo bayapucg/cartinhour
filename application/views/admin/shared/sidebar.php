@@ -46,6 +46,7 @@
         <li> <a class="" href="<?php echo base_url();?>admin/deliveryboy"> <i class="fa fa-spinner"></i> <span>Delivery Boys</span> </a> </li>
         <li> <a class="" href="<?php echo base_url();?>admin/contactus"> <i class="fa fa-phone"></i> <span>Contact Requests</span> </a> </li>
         <li> <a class="" href="<?php echo base_url();?>admin/request"> <i class="fa fa-bell-o"></i> <span>Seller Notification</span> </a> </li>
+        <li> <a class="" href="<?php echo base_url();?>admin/promotions"> <i class="fa fa-bell-o"></i> <span>Promotion Requests</span> </a> </li>
 
        <!-- <li class="sub-menu"> <a href="javascript:;" class=""> <i class="fa fa-cutlery" aria-hidden="true"></i> <span>Food</span> <span class="menu-arrow arrow_carrot-right"></span> </a>
           <ul class="sub">
