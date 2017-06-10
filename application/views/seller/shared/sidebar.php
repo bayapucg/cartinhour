@@ -95,38 +95,29 @@
                         </li>
                         <li class="treeview">
                             <a href="<?php echo base_url();?>seller/payments">
-                                <i class="fa fa-list-alt"></i> <span>Payments Overview</span>
-                                
-                            </a>
-                            
-                        </li>
-                       
+                                <i class="fa fa-list-alt"></i> <span>Payments Overview</span>    
+                            </a>   
+                        </li> 
                     <li class="treeview">
                         <a href="<?php echo base_url();?>seller/performance">
-                            <i class="fa fa-user-circle-o"></i><span>Performance</span>
-                            
+                            <i class="fa fa-user-circle-o"></i><span>Performance</span>    
                         </a>
-                        
                     </li>
                     <li class="treeview">
                         <a href="<?php echo base_url();?>seller/promotions">
                             <i class="fa fa-bed"></i><span>Promotions</span>
-                            
-                        </a>
-                        
+                        </a>                        
+                    </li>
+                    <li class="treeview">
+                        <a href="<?php echo base_url();?>seller/services">
+                            <i class="fa fa-bed"></i><span>Request For Services</span>
+                        </a>                        
                     </li>       
             </ul>
         </div> <!-- /.sidebar -->
     </aside>
-
-
     <script type="text/javascript">
         $("ul li a").removeClass('active');
 var urlType = document.URL.split("/");
 $("a[href*='/" + urlType + "']").addClass("active");
-
-
-
-
-
     </script>

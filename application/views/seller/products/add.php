@@ -1,3 +1,5 @@
+
+ <?php //echo '<pre>';print_r($sub_cat_data);exit; ?>
 <div class="content-wrapper mar_t_con" >
   <section class="content ">
   <section id="main-content">
@@ -25,8 +27,10 @@
                   <label for="exampleInputEmail1">Select Category</label>
                  <select class="form-control" id="category_id" name="category_id">
                     <option value="">Select Category</option>
-					 <?php foreach($getcat as $cat_data){ ?>
-                    <option value="<?php echo $cat_data->category_id; ?>"><?php echo $cat_data->category_name; ?></option>
+					
+					 <?php foreach($sub_cat_data as $single_cat_data){ ?>
+					
+                    <option value="<?php echo $single_cat_data['seller_category_id']; ?>"><?php echo $single_cat_data['category_name']; ?></option>
                    
 					 <?php }?>
                   </select>

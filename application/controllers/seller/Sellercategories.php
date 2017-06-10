@@ -36,22 +36,19 @@ class Sellercategories extends Seller_adddetails{
       }
     }
     public function savesubcat(){
+		
     $post=$this->input->post();
+	//echo '<pre>';print_r($post);exit;
     $data=array(
         'seller_id' => $this->session->userdata('seller_id'),
-        'seller_category_id' => $post['seller_cat'],
+        'seller_category_id' => $post['sub_cat_id'],
       'created_at'  => date('Y-m-d H:i:s'),
       'updated_at'  => date('Y-m-d H:i:s')
 
     );
-    //echo '<pre>';print_r($data);exit();
+   // echo '<pre>';print_r($data);exit();
         $res=$this->sellercat_model->save_sub_cat_id($data);
 
-    if($res == 1)
-      {
-        $this->session->set_flashdata('msg2','<div class="alert alert-success text-center" style="color: green;font-size:13px;">successfully. </div>');
-        return redirect('seller/personaldetails');
-      }
     
     
   }

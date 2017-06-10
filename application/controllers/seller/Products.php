@@ -37,7 +37,9 @@ class Products extends Admin_Controller {
 		//$data['catname'] = $this->products_model->getcatname($cat_id);
 		//$data['subcatname'] = $this->products_model->getsubcatname($subcat_id);
        //$data['subcatdata'] = $this->products_model->getsubcatdata($cat_id);
-		$data['getcat'] = $this->products_model->getcatdata();
+	   $sid = $this->session->userdata('seller_id'); 
+		$data['sub_cat_data'] = $this->products_model->getcatdata($sid);
+		//echo $this->db->last-query();exit;
 		//echo '<pre>';print_r($data);exit;
 		$this->template->write_view('content', 'seller/products/add', $data);
 		$this->template->render();

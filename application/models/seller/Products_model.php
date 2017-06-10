@@ -37,13 +37,13 @@ class Products_model extends MY_Model
 		
 	}
 	
-	public function getcatdata()
+	public function getcatdata($sid)
 	{
 		
-		// $sid = $this->session->userdata('seller_id');
-		// $this->db->select('category.category_name')->from('category');
-  //  		$this->db->join('seller_categories', 'seller_categories.seller_category_id = category.category_id');
-		// $this->db->where('seller_categories.seller_id', $sid);
+	 $this->db->select('category.category_name,seller_categories.*')->from('seller_categories');
+	$this->db->join('category', 'seller_categories.seller_id = category.category_id','left');
+	$this->db->where('seller_categories.seller_id', $sid);
+	return $this->db->get()->result_array();
 		// $query = $this->db->get();
   //   	return $query->result();
 
