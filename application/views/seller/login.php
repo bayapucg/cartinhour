@@ -70,7 +70,7 @@
 </div>
 </div>
 <div class="clearfix"></div>
-  <div class="container mar_t15 " style="margin-top:41%;">
+  <div class="container mar_t15 " style="margin-top:45%;">
   <div class=' animated bounceInLeft slower'   data-id='3'>
    <h3 class="text-center"><span class="span_bg_g  ">OUR Salient Features</span></h3>
    </div>
