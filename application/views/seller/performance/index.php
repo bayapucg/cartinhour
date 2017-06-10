@@ -41,6 +41,7 @@ window.onload = function () {
           </ol>
         </div>
       </div>-->
+	
 
       <div class="row">
         <div class="col-lg-12">
@@ -98,6 +99,20 @@ window.onload = function () {
           </section>
         </div>
       </div>
+	    <div class="row">
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 ">  
+		<div class="panel panel-bd lobidrag">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<h4>Line chart</h4>
+				</div>
+			</div>
+			<div class="panel-body">
+				<canvas id="lineChart" height="150"></canvas>
+			</div>
+		</div>
+	</div>
+  </div>
       <!-- page start--> 
       <!-- page end--> 
     </section>
@@ -115,9 +130,12 @@ window.onload = function () {
 			
 			<?php } ?>
   </div>
+  
 
   </div>
+  
   </section>
+  
   </div>
   </div>
   </div>
@@ -169,3 +187,45 @@ else{
 
 }
 </script>
+<script>
+
+             //line chart
+                var ctx = document.getElementById("lineChart");
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                        datasets: [
+                            {
+                                label: "My First dataset",
+                                borderColor: "rgba(0,0,0,.09)",
+                                borderWidth: "1",
+                                backgroundColor: "rgba(0,0,0,.07)",
+                                data: [22, 44, 67, 43, 76, 45, 12, 45, 65, 55, 42, 61, 73]
+                            },
+                            {
+                                label: "My Second dataset",
+                                borderColor: "#009688",
+                                borderWidth: "1",
+                                backgroundColor: "#009688",
+                                pointHighlightStroke: "#009688",
+                                data: [16, 32, 18, 26, 42, 33, 44, 24, 19, 16, 67, 71, 65]
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        tooltips: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        hover: {
+                            mode: 'nearest',
+                            intersect: true
+                        }
+
+                    }
+                });
+
+
+        </script>

@@ -164,7 +164,7 @@ button.toast-close-button {
     background-color: #030303;
 }
 .toast-success {
-    background-color: #009688;
+    background-color: #ef5d30;
 }
 .toast-error {
     background-color: #E5343D;
@@ -180,7 +180,7 @@ button.toast-close-button {
     left: 0;
     bottom: 0;
     height: 4px;
-    background-color: #000000;
+    background-color: #fff;
     opacity: 0.4;
     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
     filter: alpha(opacity=40);
