@@ -45,7 +45,7 @@
 
 		<!--style start here -->
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/css/bootstrap.min.css" />
-		<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/css/style.css" /> -->
+ <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/css/style.css" /> 
 
 		<!--style end here -->
 		<!--javascript start here -->

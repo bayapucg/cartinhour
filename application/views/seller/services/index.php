@@ -4,12 +4,15 @@
   <div class="faq_main">
    
 <section id="ourservices_scr">
-    <h3 class="text-center  wow fadeInDown animated"  id="" data-spy="scroll"><span class="span_bg_g"> OUR SERVICES</span></h3>
-  <div class="title_lines"></div>
+<div class="panel panel-default">
+  <div class="panel-heading text-center"><h4> OUR SERVICES</h4></div>
+ 
+</div>
+ 
 <div class="srvices_main1 ">
-<div class="container">
+<div class="row">
     <div class="col-lg-6  col-md-6 col-sm-4">
-      <div class="service_first wow fadeInLeft animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+      <div class="service_first ">
       <img  class="img-responsive thumbnail" src="<?php echo base_url();?>assets/seller_login/images/inv_m.png" />
           <h1 class="heading">Inventory management</h1>
           <p>We provide complete product listing to inventory update & order process</p>
@@ -58,8 +61,8 @@
  <div class="clearfix">   </div>  
 <!--<p class="note_st"> Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>-->
 
- <button type="button" class="btn btn-primary btn-md pull-left" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
- <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Enquiry</button>
+ <button type="button" class="btn btn-primary btn-md pull-right" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
+
 
                             
 </div>

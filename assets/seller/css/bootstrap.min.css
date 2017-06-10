@@ -6859,3 +6859,68 @@ button.close {
 .font_25{
 	font-size:20px;
 }
+/* our services */
+	.service_first {
+    background: #f2efef none repeat scroll 0 0;
+    /* border: 1px dotted #c0c0c0; */
+    border-radius: 0;
+    /* padding: 20px 10px; */
+    width: 100%;
+	-webkit-box-shadow: -2px 3px 16px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 3px 16px -8px rgba(0,0,0,0.75);
+box-shadow: -2px 3px 16px -8px rgba(0,0,0,0.75);
+
+}
+.service_first p {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 15px 15px;
+    /* text-align: left; */
+}
+.service_first h1 {
+   
+    padding: 0 15px 15px;
+    /* text-align: left; */
+}
+.service_first h1 {
+    color: #000;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    padding: 5px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+	
+}
+.heading {
+    border-bottom: 1px solid #006a99;
+    padding-bottom: 9px;
+    position: relative;
+}
+.service_button a {
+    
+   
+    border: 2px solid solid #006a99;
+    border-radius: 0;
+    color: #006a99;
+    font-family: roboto;
+    font-size: 16px;
+    
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+}
+.service_button a:hover {
+    background: #006a99 none repeat scroll 0 0;
+}
+.service_first:hover {
+    background: #fff none repeat scroll 0 0;
+    /* border: 1px dashed #aaa; */
+    cursor: auto;
+    display: block;
+}
+/* end our services */

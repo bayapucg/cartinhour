@@ -156,3 +156,302 @@
                 </nav>
             </header>
     </body>
+	<div class="modal animated  zoomIn" id="myModal_ser" role="dialog">
+    <div class="modal-dialog modal-lg " style="width: 1200px;">
+    
+      <!-- Modal content-->
+     <div class="modal-content"  >
+   
+        <!--<div class="modal-header " style="background-color:#006a99;color:#fff;padding:10px;">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> Enquiry form</h4>
+        </div>-->
+        <div class="modal-body" style="padding:0px;margin-top:-22px;">
+		<span type="button" class="close " data-dismiss="modal" style="position:absolute;top:12px;right:12px">&times;</span>
+		<img style="width:100%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/price_hide.png" />
+		<div style="position: absolute;top:50%;color:#ddd;right:42%;">
+			<p style="font-size:20px;"><b>Limited period offer</b></p>		
+			<p style="font-size:20px;margin-left: 25px;">Free for 1 month</p>		<br>
+			<span style="background:#006a99;padding:5px 10px ;border-radius:5px;font-size:18px;margin-left: 50px;cursor: pointer;" class="" data-dismiss="modal"  data-toggle="modal"
+			data-target="#myModal_sel_mod_en">Enquiry form</span>
+		</div>
+      <!--<div class="container">
+	  
+    <div class="row">
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Bronze</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                            <i class="fa fa-inr" aria-hidden="true"></i>10<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                1 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                1 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                100K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                100MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
+                    1 month FREE trial</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-success">
+                <div class="cnrflash">
+                    <div class="cnrflash-inner">
+                        <span class="cnrflash-label">MOST
+                            <br>
+                            POPULR</span>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Silver</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                           <i class="fa fa-inr" aria-hidden="true"></i>20<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                2 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                5 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                100K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                200MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
+                    1 month FREE trial</div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-3">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Gold</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                           <i class="fa fa-inr" aria-hidden="true"></i>35<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                5 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                20 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                300K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                500MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
+            </div>
+        </div>
+    <div class="col-xs-12 col-md-3">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Gold</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="the-price">
+                        <h1>
+                           <i class="fa fa-inr" aria-hidden="true"></i>35<span class="subscript">/mo</span></h1>
+                        <small>1 month FREE trial</small>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                5 Account
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                20 Project
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                300K API Access
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                500MB Storage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Custom Cloud Services
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>
+                                Weekly Reports
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer">
+                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
+            </div>
+        </div>
+    
+    </div>-->
+</div>
+        </div>
+        
+      </div>
+      
+    </div>
+	<!--Just fill form to Select plan modal -->
+  <div class="modal fade" id="myModal_sel_mod_en" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+     <div class="modal-content">
+   
+        <div class="modal-header " style="background-color:#006a99;color:#fff;padding:10px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Enquiry form</h4>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+  <div class="row">
+       
+  
+    <div class="col-md-6">
+   <form class="form-horizontal" action="/action_page.php">
+    
+ 
+  <div class="form-group">
+      <label class="control-label col-sm-4" for="">Mobile/Phone No:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" id="" placeholder="Enter Mobile/Phone No" name="" reqired>
+      </div>
+    </div> 
+  <div class="form-group">
+      <label class="control-label col-sm-4" for="">Select Plan :</label>
+      <div class="col-sm-8">          
+        <select class="form-control" id="sel1">
+        <option>select plan</option>
+        <option>plan1</option>
+        <option>plan 2</option>
+        <option>plan 3</option>
+      </select>
+      </div>
+   </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-8">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-8">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+      </div>
+      <div class="col-md-3">&nbsp;</div>
+      
+  </div>
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--end Just fill form to Select plan Modal -->
