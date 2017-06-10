@@ -48,6 +48,13 @@ public function change_password()
 	 
 	 
  }
+ public function success()
+ 
+ {
+  $this->template->write_view('content', 'seller/dashboard/success');
+
+    $this->template->render();  
+ }
 
  
 	

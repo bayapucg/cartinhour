@@ -69,7 +69,7 @@ class Personaldetails extends Seller_adddetails{
 
         $this->session->set_flashdata('msg2','<div class="alert alert-success text-center" style="color: green;font-size:13px;">successfully. </div>');
 
-        return redirect('seller/dashboard/change_password');
+        return redirect('seller/success');
 
       }
 

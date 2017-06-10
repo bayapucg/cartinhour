@@ -24,7 +24,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-        <h4> Dummy content</h4>
+        <h4>Building Your Hyper-Local Store</h4>
           
           </ul>
          

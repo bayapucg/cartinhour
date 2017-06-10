@@ -40,7 +40,6 @@ $(document).ready(function(){
 .process-step{display:table-cell;text-align:center;position:relative}
 .process-step p{margin-top:4px}
 .btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
-
 </style>
 <div class="navigation_main">
     <nav class="navbar navbar-inverse hm_nav">
@@ -52,7 +51,7 @@ $(document).ready(function(){
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <h4> Dummy content</h4>          
+            <h4>Building Your Hyper-Local Store</h4>
           </ul>
         </div>
       </div>

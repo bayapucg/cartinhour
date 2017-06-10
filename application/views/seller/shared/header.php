@@ -421,6 +421,7 @@
       <div id="register-response"></div>
                 <div id="Emptyforregister"></div>       
         <select class="form-control" id="plan" name="plan" required="required">
+        <option>Select Plan</option>
         <option value="Both">Both</option>
         <option value="Inventory management">Inventory management</option>
         <option value="Catalog Management">Catalog Management</option>
