@@ -105,7 +105,7 @@
         <li class="last">
           <div class="feature-box return-policy wow animated bounceInRight slower">
             <div class=" icon-return"></div>
-            <div class="content">We Provide Inventory & Catalog for sellers</div>
+            <div class="content">We Provide Inventory & Catalogue Services </div>
           </div>
         </li>
       </ul>
