@@ -45,11 +45,12 @@
   </div>
   <div class="clearfix"></div>
   <!--banenr end here -->
-<div class="row " style="position:absolute;top:0">
-	<img class="img-responsive " style="width: 100%;height: 100%;
-	" src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />
+<div class="  bac_img" style="position:absolute;top:0">
 
-<div class=" " style="position: absolute;bottom:80px; right:28%;left:25%">
+
+	<!--<img class="img-responsive "  src="<?php echo base_url();?>assets/seller_login/images/pacban1.png " />-->
+
+<div class=" " style="position: absolute;bottom:10%; right:28%;left:25%">
  <h1 class="rw-sentence">
  <span class="font_si_ban">Build your hyperlocal store <br>where you can sell</span> 
 	 <div class="rw-words rw-words-1"> 
