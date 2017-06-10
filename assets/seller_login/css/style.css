@@ -3,7 +3,11 @@
 *{
 	
 }
-
+::-webkit-scrollbar { 
+  width: 0px!important;
+} 
+html { overflow-y: scroll;
+ overflow-x: hidden;}
 /* Ripple In */
 @-webkit-keyframes hvr-ripple-in {
   100% {
