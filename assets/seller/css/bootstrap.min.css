@@ -6859,6 +6859,7 @@ button.close {
 .font_25{
 	font-size:20px;
 }
+/* customise css */
 /* our services */
 	.service_first {
     background: #f2efef none repeat scroll 0 0;
@@ -6924,3 +6925,17 @@ box-shadow: -2px 3px 16px -8px rgba(0,0,0,0.75);
     display: block;
 }
 /* end our services */
+.mar_t15{
+	margin-top:15px;
+}
+.mar_t10{
+	margin-top:10px;
+}
+.foot_add_d{
+	width:100%; 
+	background-color:#f8f4f4;
+	padding: 15px;
+	color: #444;
+	border-top: 1px solid #d2d6de;
+	text-align: center;
+}

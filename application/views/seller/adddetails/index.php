@@ -189,4 +189,13 @@ $('.window').hide();
   </div>
   <div id="mask"></div>
 </div>
+
+<footer class="foot_add_d">
+    <div class="container">
+      <div class="row">
+                <strong>Copyright &copy; 2016-2017 <a href="#">Cartinhour</a>.</strong> All rights reserved.
+      </div>
+    </div>
+  </footer>
 </html>
+

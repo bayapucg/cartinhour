@@ -1,15 +1,14 @@
 <div class="content-wrapper mar_t_con" >
   <section class="content ">
   
-  <div class="faq_main">
+  <div class="faq_main mar_t15">
    
+		<div class="panel panel-default">
+		  <div class="panel-heading text-center"><h4>  Promotions</h4></div>
+		 
+		</div>
    
-   
-   <!-- <div class="container" style="margin-top:30px; width:100%;">
-	
-      <h1 class="head_title">Call us : 9494422779</h1>
-   
-   </div> -->
+  
 
 
    <form  class=""  method="post" action="<?php echo base_url(); ?>seller/promotions/storepromotions" role="form">
