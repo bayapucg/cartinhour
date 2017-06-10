@@ -69,8 +69,12 @@
  </h1>
 </div>
 </div>
+</section>
+
 <div class="clearfix"></div>
-  <div class="container mar_t15 " style="margin-top:45%;">
+<div style=" height:90vh;"></div>
+<section>
+  <div class="container" >
   <div class=' animated bounceInLeft slower'   data-id='3'>
    <h3 class="text-center"><span class="span_bg_g  ">OUR Salient Features</span></h3>
    </div>
@@ -95,13 +99,13 @@
         <li>
           <div class="feature-box money-back wow animated bounceInUp slower">
             <div class="icon-money"></div>
-            <div class="content">Hassle free payments</div>
+            <div class="content">Hassle free <br>payments</div>
           </div>
         </li>
         <li class="last">
           <div class="feature-box return-policy wow animated bounceInRight slower">
             <div class=" icon-return"></div>
-            <div class="content">Complete assistance from us</div>
+            <div class="content">We Provide Inventory & Catalog for sellers</div>
           </div>
         </li>
       </ul>
@@ -1529,9 +1533,9 @@ $("#cihfee1").html(data);
   
 
 </script>
-  <script>
-              new WOW().init();
-              </script>
+<script>
+	new WOW().init();
+</script>
   <!--team --> 
  
   <!--end team --> 

@@ -1459,11 +1459,11 @@ body{font-family: 'Raleway', sans-serif;}
 	margin-right: 0!important;
 }
 .our-features-box .feature-box .content {
-	display: block;
-	text-align: left;
-	margin-left: 50px;
-	border-left: 1px rgba(255,255,255, 0.5) solid;
-	padding-left: 15px;
+	    display: block;
+    text-align: left;
+    margin-left: 41px;
+    border-left: 1px rgba(255,255,255, 0.5) solid;
+    padding-left: 10px;
 }
 .our-features-box .feature-box span {
 	font-size: 12px;
