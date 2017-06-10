@@ -9,7 +9,6 @@ class Services extends Admin_Controller {
 	public function __construct() {
 		parent::__construct();
 		
-       // $this->load->library('pagination');
 		$this->load->library('email');
 		$this->load->model('seller/login_model');
 	}
@@ -18,9 +17,6 @@ class Services extends Admin_Controller {
 	{
 		
 	   
-	   //$data['sellerlocationdata'] = $this->Personnel_details_model->getlocations();
-	  
-		
 		$this->template->write_view('content', 'seller/services/index');
 		$this->template->render();
 
@@ -30,13 +26,14 @@ class Services extends Admin_Controller {
 
 //contact detalis store 
 public function details(){
+	$sid = $this->session->userdata('seller_id');
+	$sname = $this->session->userdata('seller_name');  
 		
   		$data = array(
-  	  	'first_name' => $this->input->post('fname'),
-  	  	'last_name' => $this->input->post('lname'),
-  	  	'email' => $this->input->post('email'),
-  	  	'phone_number' => $this->input->post('phone'),
-  	  	'message' => $this->input->post('message'),
+  		'seller_id' => $sid,
+  		'seller_name'=>$sname,
+  	  	'phone_number' => $this->input->post('phone_number'),
+  	  	'select_plan' => $this->input->post('plan'),
   	    'created_at'  => date('Y-m-d H:i:s'),
 		'updated_at'  => date('Y-m-d H:i:s'),
 
@@ -44,18 +41,16 @@ public function details(){
 
 
   	  	$contact = $this->login_model->insertservices($data);
-
   	  	if($contact == 1)
-
 			{
+				// $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Thank You! Our team will contact you shortly..</div>');
 
-				$this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Thank You! Our team will contact you shortly..</div>');
-
-                  return redirect(base_url('seller/services'));
-
+    //               return redirect(base_url('seller/services'));
+				echo "1";
 			}
 			else{
-				$this->session->set_flashdata('msg1','<div class="alert alert-danger text-center" style="color: green;font-size:13px;">Whoops!</div>');
+				// $this->session->set_flashdata('msg1','<div class="alert alert-danger text-center" style="color: green;font-size:13px;">Whoops!</div>');
+				echo "0";
 
 			}
 	}
@@ -64,7 +59,4 @@ public function details(){
 	
 	
 }
-	
-	
-	
 	?>

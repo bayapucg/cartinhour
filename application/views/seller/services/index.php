@@ -36,30 +36,14 @@
          
     </div>
     </div>
-              <!--<div class="col-lg-4  col-md-4 col-sm-4">
-                                <div class="service_first wow fadeInRight animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
-                                
-                                <h1 class="heading">Product Photoshoot</h1>
-                                    <p>We do Model  and Table top Photo Shoot which enhance and enrich your product image help to generate more sale and to grow your business online. </p>
-                                  
-                                  
-                                   <p class="lin_read"><a  href="<?php echo base_url();?>seller/product_photoshoot" >Know more</a></p>
-                            </div>
-                            </div>-->
-              <div class="clearfix"></div>
-          <!--  <div class="container">
-              <div class="panel panel-default pad_10 mar_t10">
-                <h4>Pricing</h4>
-                
-              </div>
-            </div>--><p>&nbsp;</p>
+              <div class="clearfix"></div><p>&nbsp;</p>
   
   <div class="clearfix"></div>
   
 
        
  <div class="clearfix">   </div>  
-<!--<p class="note_st"> Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>-->
+
 
  <button type="button" class="btn btn-primary btn-md pull-right" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
 
@@ -122,7 +106,7 @@
   </div>
      </section>
   </div>
-
+  
   
   <!--body end here --> 
   

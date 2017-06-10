@@ -60,7 +60,7 @@ public function change_password()
 
     {
         $this->load->model('home_model');
-           $old_password =  md5($this->input->post('old_password'));
+           //$old_password =  md5($this->input->post('old_password'));
            $new_password =  md5($this->input->post('new_password'));
            $repeat_password =  $this->input->post('repeat_password');      
            $seller_id = current_seller()->seller_id;
@@ -78,7 +78,7 @@ public function change_password()
              echo $old_password;
             exit; */
 
-          if($password == $old_password){
+          if($password == $new_password){
 
           $data = array(
 

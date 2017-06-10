@@ -152,7 +152,14 @@ public function insertpromotion($data)
 			//echo print_r($data); exit;
 		return true;	
 }
-	
+
+//service details
+public function insertservices($data)
+{
+	$this->db->insert('request_for_services',$data);
+			//echo print_r($data); exit;
+		return true;	
+}	
 	
 public function checksellerEmail($email,$phone)
     {

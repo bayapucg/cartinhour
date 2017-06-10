@@ -81,10 +81,10 @@
             <label class="control-label">Personal Pan card</label>
             <input maxlength="100" type="text" required="required" name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label class="control-label">KYC documents of store</label>
             <input  type="file"   class="form-control" name="report_file" />
-          </div>
+          </div> -->
              <input type="submit" class="btn btn-primary " value="Next">
               </form>
         </div>

@@ -163,7 +163,8 @@ public function insert() {
                     'seller_id'    => $result->seller_id,
                     'seller_name'    => $result->seller_name,
                     'seller_address'    => $result->seller_address,
-                    'seller_rand_id'    => $result->seller_rand_id,                    
+                    'seller_rand_id'    => $result->seller_rand_id,
+                    'password_status'    => $result->password_status,                     
                     'loggedin'   => TRUE,
                 );
                 //echo '<pre>';print_r($datavalue);exit;
