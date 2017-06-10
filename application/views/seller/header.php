@@ -54,24 +54,22 @@
         <!--<a class="navbar-brand" href="#">Brand</a>--> 
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 myNavbar">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="<?php echo base_url('seller/login');?>#home_scr">HOME <span class="sr-only">(current)</span></a></li>
          <!-- <li><a href="#benifits_sc">BENIFITS</a></li>-->
       <li><a href="#how_its_w">HOW IT WORKS</a></li>
          
           <li><a href="#pricing_scr">PRICING</a></li>
          
-          <li><a href="#ourservices_scr">OUR SERVICES</a></li>
+          <!--<li><a href="#ourservices_scr">OUR SERVICES</a></li>-->
             <li><a href="#about_sc">ABOUT US</a></li>
        <li><a href="#faq_sc">FAQ's</a></li>
         <li><a href="#contact_sc">CONTACT US</a></li>
+		 <li><a  data-toggle="modal" data-target="#myModa2">SIGN UP / LOGIN</a></li>
          
      
         </ul>
-  <ul class="nav navbar-nav navbar-right">
-      <!--<li><a data-toggle="modal" data-target="#myModa3"></span> Sign Up</a></li>-->
-      <li><a  data-toggle="modal" data-target="#myModa2">SIGN UP / LOGIN</a></li>
-    </ul>
+ 
       </div>
       <!-- /.navbar-collapse --> 
     </div>

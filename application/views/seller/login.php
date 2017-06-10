@@ -545,7 +545,7 @@
 <div class="clearfix"></div>
   <!--pricing end here --> 
   <!--our services -->
-<section id="ourservices_scr">
+ <!--<section id="ourservices_scr">
     <h3 class="text-center  wow fadeInDown animated"  id="" data-spy="scroll"><span class="span_bg_g"> OUR SERVICES</span></h3>
   <div class="title_lines"></div>
 <div class="srvices_main1 ">
@@ -558,7 +558,6 @@
 				  
 			
 				   <br>
-					<!-- <button class="btn btn-primary btn-sm"onclick="myFunction()" >Know more</button> -->
 				   <p class="lin_read"> <a href="<?php echo base_url();?>seller/marketplace_solutions" >Know more</a></p>
 			</div>
 		</div>
@@ -567,14 +566,13 @@
 			<div class="service_first wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
 				<img  class="img-responsive thumbnail" src="<?php echo base_url();?>assets/seller_login/images/cat_m.png" />
 			<h1 class="heading">Catalog Management</h1>
-			<!--<img src="images/canon.png" alt=""/>-->
 			
 				<p>We have expert team to make proper product digital catalog which provide good customer experience increase </p><br>
 			  
 			   <p class="lin_read"><a href="<?php echo base_url();?>seller/catalog_management" >Know more</a></p>
 			   
 		</div>
-		</div>
+		</div>-->
 							<!--<div class="col-lg-4  col-md-4 col-sm-4">
                                 <div class="service_first wow fadeInRight animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
                                 
@@ -600,8 +598,8 @@
  <div class="clearfix">   </div>  
 <!--<p class="note_st">	Note: Photoshoot Charges will applicable extra depend on your product abd quanity Services Tax applicable</p>-->
 
- <button type="button" class="btn btn-primary btn-md pull-left" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
- <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Enquiry</button>
+ <!--<button type="button" class="btn btn-primary btn-md pull-left" data-toggle="modal" data-target="#myModal_ser">Pricing details</button>
+ <button type="button" class="btn btn-warning btn-md pull-right" data-toggle="modal" data-target="#myModal_sel_mod">Enquiry</button>-->
 
                             
 </div>
@@ -712,8 +710,8 @@
               <div class="col-md-4 padtop30">
                 <center><div class="parent_circle">
                   <div class="parent_circle_contain">
-                  <p>R JOSHI </p>
-                  <p>Developer PROFILE</p>
+                  <p>Bayapureddy </p>
+                  <p> DESIGNER PROFILE</p>
                   <a href="#">Know More...</a>
                 </div>
                 <div class=" child_round_circle child_round_circle_img1">
@@ -725,8 +723,8 @@
               <div class="col-md-4 padtop30">
                <center><div class="parent_circle">
                <div class="parent_circle_contain">
-                  <p>ABHISHEK</p>
-                  <p>DESIGNER PROFILE</p>
+                  <p>Raghava</p>
+                  <p>Developer PROFILE</p>
                   <a href="#">Know More...</a>
                 </div>
                 <div class="child_round_circle child_round_circle_img2  ">
@@ -738,8 +736,8 @@
               <div class="col-md-4 padtop30">
             <center> <div class="parent_circle">
                   <div class="parent_circle_contain">
-                  <p>DEV</p>
-                  <p>DESIGNER PROFILE</p>
+                  <p>Pushkar</p>
+                  <p>CEO</p>
                   <a href="#">Know More...</a>
                 </div>
                 <div class=" child_round_circle child_round_circle_img3 ">
