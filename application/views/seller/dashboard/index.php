@@ -14,8 +14,8 @@
 	<div class="col-xs-12 col-sm-12 col-md-8 m-b-20">
 		<!-- Nav tabs -->
 		<ul class="nav nav-tabs">
-			<li class="active"><a href="#tab1" data-toggle="tab">my First Tab</a></li>
-			<li><a href="#tab2" data-toggle="tab">My Second Tab</a></li>
+			<li class="active"><a href="#tab1" data-toggle="tab">New Orders</a></li>
+			<li><a href="#tab2" data-toggle="tab">Return Orders</a></li>
 		</ul>
 		<!-- Tab panels -->
 		<div class="tab-content">
@@ -26,115 +26,21 @@
                                     <thead>
                                         <tr>
                                             <th>Serial No</th>
-                                            <th>Appionment Id</th>
-                                            <th>Patient Id</th>
-                                            <th>Department</th>
-                                            <th>Doctor</th>
-                                            <th>serial</th>
-                                            <th>problem</th>
-                                            <th>Appionment date</th>
-                                            <th>status</th>
-                                            <th>action</th>
+                                            <th>Customer Name</th>
+                                            <th>Product Name</th>
+                                            <th>Deliveryboy Id</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    <?php $SNO=1;
+                                    foreach($ordersdata as $order_data){ ?>
                                         <tr >
-                                            <td>
-                                                <input type="radio" name="radioGroup">
-                                                <label>1</label>   
-                                            </td>
-                                            <td>abc12</td>
-                                            <td>15c</td>
-                                            <td>Neurology</td>
-                                            <td>Alrazy</td>
-                                            <td>14</td>
-                                            <td>Heart problem</td>
-                                            <td>12/05//2017</td>
-                                            <td><span class="label-success label label-default">Active</span></td>
-                                            <td>
-                                                <button class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                <button class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                            </td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td>
-                                                <input type="radio" name="radioGroup">
-                                                <label>2</label>   
-                                            </td>
-                                            <td>abc12</td>
-                                            <td>15c</td>
-                                            <td>Neurology</td>
-                                            <td>Alrazy</td>
-                                            <td>14</td>
-                                            <td>Heart problem</td>
-                                            <td>12/05//2017</td>
-                                            <td><span class="label-success label label-default">Active</span></td>
-
-                                            <td>
-                                                <button class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                                <button class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr >
-                                         <td>
-                                            <input type="radio" name="radioGroup">
-                                            <label>3</label>   
-                                        </td>
-                                        <td>abc12</td>
-                                        <td>15c</td>
-                                        <td>Neurology</td>
-                                        <td>Alrazy</td>
-                                        <td>14</td>
-                                        <td>Heart problem</td>
-                                        <td>12/05//2017</td>
-                                        <td>
-                                            <span class="label-default label label-danger">Inactive</span>
-                                        </td>
-
-                                        <td>
-                                            <button class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr >
-                                     <td>
-                                        <input type="radio" name="radioGroup">
-                                        <label>4</label>   
-                                    </td>
-                                    <td>abc12</td>
-                                    <td>15c</td>
-                                    <td>Neurology</td>
-                                    <td>Alrazy</td>
-                                    <td>14</td>
-                                    <td>Heart problem</td>
-                                    <td>12/05//2017</td>
-                                    <td><span class="label-success label label-default">Active</span></td>
-
-                                    <td>
-                                        <button class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                        <button class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr >
-                                 <td>
-                                    <input type="radio" name="radioGroup">
-                                    <label>5</label>   
-                                </td>
-                                <td>abc12</td>
-                                <td>15c</td>
-                                <td>Neurology</td>
-                                <td>Alrazy</td>
-                                <td>14</td>
-                                <td>Heart problem</td>
-                                <td>12/05//2017</td>
-                                <td><span class="label-default label label-danger">Inactive</span></td>
-
-                                <td>
-                                    <button class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="Update"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                                    <button class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="right" title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                </td>
-                            </tr>
+                                            
+                                            <td><?= $SNO; ?></td>
+                                            <td><?php  echo $order_data->customer_name; ?></td>
+                                            <td><?php  echo $order_data->product_name; ?></td>
+                                            <td></td>                                              </tr>
+                                        <?php $SNO++; } ?>
                         </tbody>
                     </table>
                 </div>
@@ -143,10 +49,7 @@
 			<div class="tab-pane fade" id="tab2">
 				<div class="panel-body">
 					<p><strong>Lorem Ipsum is simply dummy text of the printing and. </strong></p>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-						The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
-						here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use
-						Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+					
 				</div>
 			</div>
 		</div>
@@ -154,21 +57,6 @@
 	 <div class="col-sm-6 col-md-4 mar_t40">
 		<!-- Default Panel -->
 		<div class="panel panel-bd lobidisable">
-			<div class="panel-heading">
-				<div class="panel-title">
-					<h4>Default Panel</h4>
-				</div>
-			</div>
-			<div class="panel-body">
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
-					at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-					as opposed to using 'Content here, content here', making it look like readable English.</p>
-				</div>
-				<div class="panel-footer">
-					This is standard panel footer
-				</div>
-			</div>
-			<div class="panel panel-bd lobidisable">
 			<div class="panel-heading">
 				<div class="panel-title">
 					<h4>Default Panel</h4>

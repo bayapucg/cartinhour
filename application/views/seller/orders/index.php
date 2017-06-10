@@ -40,7 +40,7 @@
                 <th>Delivery Time</th>
                 <th>Customer Details</th>
                 <th>Order Status</th>
-                <th>Delete</th>
+                <!-- <th>Delete</th> -->
                     </tr>
                   </thead>
                   <?php if(!empty($ordersdata)): ?>
@@ -96,7 +96,7 @@
 
         </td>         
 
-                   <td>  <a href="<?php echo base_url(); ?>seller/orders/delete/<?php  echo $orders_data->order_id; ?>" onclick="return checkDelete('<?php  echo $orders_data->order_id; ?>')"><i class="fa fa-trash-o" style="font-size:18px"></i></a></td>
+                   <!-- <td>  <a href="<?php echo base_url(); ?>seller/orders/delete/<?php  echo $orders_data->order_id; ?>" onclick="return checkDelete('<?php  echo $orders_data->order_id; ?>')"><i class="fa fa-trash-o" style="font-size:18px"></i></a></td> -->
 
                 
                 </tr>

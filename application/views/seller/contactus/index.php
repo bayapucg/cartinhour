@@ -1,4 +1,5 @@
- 
+<div class="content-wrapper mar_t_con">
+  <section class="content "> 
   <div class="">
     <div class="col-md-9 mar_b50" > 
 	<div class="panel_cus panel-primary ">
@@ -73,46 +74,11 @@
 				   </div>
 					</div>
 					<div class="clearfix"></div>
-					<div class="pad_10">b
-						<div class="row col1">
-							<div class="col-sm-3">
-								 <i class="fa fa-fax"></i> Website  
-							</div>
-							<div class="col-sm-9">
-								 <a href="http://cartinhour.com/"> www.cartinhour.com</a>
-							</div>
-						</div>
-							<div class="row col1">
-						   <div class="col-xs-3">
-							   <i class="fa fa-map-marker" style="font-size:16px;"></i>   Address
-						   </div>
-						   <div class="col-xs-9">
-								Plot No.177,1st floor, Sri Vani Nilayam,
-								Sardar Patel Nagar, Nizampet ‘X’ Road,
-								Hyderabad, Telangana
-						   </div>
-					   </div>
-					   
-						<div class="row col1">
-							<div class="col-sm-3">
-								<i class="fa fa-phone"></i>   Phone
-							</div>
-							<div class="col-sm-9">
-								 +919494422779
-							</div>
-						</div>
-						
-						<div class="row col1">
-							<div class="col-sm-3">
-								<i class="fa fa-envelope"></i>   Email
-							</div>
-							<div class="col-sm-9">
-								 <a href="mailto:info@yourdomain.com">imainacartin@gmail.com</a> <br> <a href="mailto:support@yourdomain.com">xxxxxx@cartinhour.com</a>
-							</div>
-						</div>
-					</div>
+					
         </div>
     </div>
+           </div>
+           </section>
            </div>
            
     

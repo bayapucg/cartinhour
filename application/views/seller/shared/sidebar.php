@@ -77,6 +77,7 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
+                            <li><a href="<?php echo base_url();?>seller/orders">Total Orders</a></li>
                                 <li><a href="<?php echo base_url();?>seller/orders/new_orders">New Orders</a></li>
                                 <li><a href="<?php echo base_url();?>seller/orders/assigned_orders">Assigned Orders</a></li>
                                 <li><a href="<?php echo base_url();?>seller/orders/inprogress_orders">In-progress Orders</a></li>

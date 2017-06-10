@@ -1,4 +1,5 @@
-
+<div class="content-wrapper mar_t_con">
+  <section class="content ">
   <div class="col-md-9">
   <!--header part end here --> 
   <!--body start here -->
@@ -360,15 +361,14 @@
       </div>
     </div>
   </div>
-  
   <!--body end here --> 
-  
-     
   </div>
   
   </div>
   
   </div>
   
+  </div>
+  </section>
   </div>
  
