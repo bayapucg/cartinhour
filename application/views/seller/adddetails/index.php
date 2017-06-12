@@ -28,18 +28,19 @@
   height: 200px;
   display: none;
   z-index: 9999;
-  padding: 20px;
   border-radius: 15px;
-  text-align: center;
+
 }
 
 #boxes #dialog {
   width: 750px;
   height: 300px;
-  padding: 10px;
-  background-color: #ffffff;
+   background-color: #fff;
   font-family: 'Segoe UI Light', sans-serif;
   font-size: 15pt;
+  padding:0px 15px;
+  margin:0 auto;
+  color:#000;
 }
 
 #popupfoot {
@@ -184,8 +185,53 @@ $('.window').hide();
 
 <div id="boxes">
   <div id="dialog" class="window">
-    Your Content Goes Here
-    <div id="popupfoot"> <a href="#" class="close agree">I agree</a> | <a class="agree"style="color:red;" href="#">I do not agree</a> </div>
+  	<div class="row">
+			<h2 class="text-center border_head">Checklist Documents </h2>
+			</div>
+		<!--<div class="">
+		<div class="row">
+			<h2 class="text-center border_head">Checklist Documents </h2>
+			</div>
+			<div class="row mar_t30 text-center">
+				<div class="col-md-12 ">
+					
+					<div class="clearfix "></div>
+					<div class="col-md-4">Adhar Card</div>
+					<div class="col-md-4">Personal PAN Card</div>
+					<div class="col-md-4">Company PAN Card</div>
+					
+				</div>
+			</div>
+			<div class="row mar_t10 text-center">
+			
+				<div class="col-md-12">
+					<div class="col-md-4">TIN / TAN / VAT</div>
+					<div class="col-md-4">GSTIN</div>
+					<div class="col-md-4">Bank Account Details</div>
+					
+				</div>
+			</div>
+			<div class="row mar_t10 text-center">
+			
+				<div class="col-md-12">
+					<div class="col-md-4">Shop licence number</div>
+					<div class="col-md-4">Business Details</div>
+					<div class="col-md-4">Adhar Card</div>
+					
+				</div>
+			</div>
+		</div>-->
+
+		<ul>
+			<li>Adhar Card</li>
+			<li>Adhar Card</li>
+			<li>Adhar Card</li>
+			<li>Adhar Card</li>
+			<li>Adhar Card</li>
+			<li>Adhar Card</li>
+			<li>Adhar Card</li>
+			<li>Adhar Card</li>
+		</ul>
   </div>
   <div id="mask"></div>
 </div>

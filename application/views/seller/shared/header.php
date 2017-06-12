@@ -107,11 +107,13 @@
                         <ul class="nav navbar-nav">                            
 												<!-- order notifications -->
 								<li class="pad_l50">
-								<ul class="nav navbar-nav pad_li"> 
+								<ul class="nav navbar-nav pad_li">  
+								
 								<li class="active"><a href="<?php echo base_url();?>seller/dashboard">Home</a></li>
 								
 								<!--<li><a href="<?php echo base_url();?>seller/aboutus">About Us</a></li>-->
 							   <li><a href="<?php echo base_url();?>seller/faqs">FAQ's</a></li>
+							    <li><a href="<?php echo base_url();?>seller/products/create" class="pull-right">Add Listing</a>  </li>
 								<li><a href="#">Help</a></li>
 								<li><a href="<?php echo base_url();?>seller/contactus">Contact Us</a></li>
 								</ul>

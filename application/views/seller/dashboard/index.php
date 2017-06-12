@@ -26,9 +26,9 @@
           -->
           <div class="bdy_ser">
               <!-- <li><a href="<?php echo base_url();?>seller/mystore"><img src="<?php echo base_url(); ?>assets/seller/images/sto_1.png" /></a> </li>
-              <li class="add_sto"><a href="<?php echo base_url();?>seller/personnel_details"><img src="<?php echo base_url(); ?>assets/seller/images/sto_2.png" /></a> </li> -->
+              <li class="add_sto"><a href="<?php echo base_url();?>seller/personnel_details"><img src="<?php echo base_url(); ?>assets/seller/images/sto_2.png" /></a> </li>
               <a href="<?php echo base_url();?>seller/products/create" class="btn btn-primary pull-right" style="background: #006a99;">Add Listing</a>  
-          </div>
+          </div> -->
 						<!--tabs start-->
       
 <div class="row">
@@ -75,7 +75,7 @@
 			</div>
 		</div>
 	</div>
-	 <div class="col-sm-6 col-md-4 mar_t40">
+	 <div class="col-sm-6 col-md-4 mar_t40 unpin_hide">
 		<!-- Default Panel -->
 		<div class="panel panel-bd lobidisable">
 			<div class="panel-heading">
