@@ -53,12 +53,12 @@
                     <!-- sidebar menu -->
                     <ul class="sidebar-menu">
                         <li class="active">
-                            <a href="<?php echo base_url(); ?>seller/dashboard"><i class="fa fa-hospital-o"></i><span>Dashboard</span>
+                            <a href="<?php echo base_url(); ?>seller/dashboard"><i class="fa fa-tachometer"></i><span>Dashboard</span>
                             </a>
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-user-md"></i><span>Listings</span>
+                                <i class="fa fa-list"></i><span>Listings</span>
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
@@ -71,7 +71,7 @@
                         </li>
                         <li class="treeview">
                             <a href="#">
-                                <i class="fa fa-user"></i><span>Orders</span>
+                                <i class="fa fa-pencil-square-o"></i><span>Orders</span>
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
@@ -87,7 +87,7 @@
                         </li>
                         <!-- <li class="treeview">
                             <a href="<?php echo base_url();?>seller/products/returns">
-                                <i class="fa fa-sitemap"></i><span>Returns</span>
+                                <i class="fa fa-retweet"></i><span>Returns</span>
                                 <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </span>
@@ -96,22 +96,22 @@
                         </li> -->
                         <li class="treeview">
                             <a href="<?php echo base_url();?>seller/payments">
-                                <i class="fa fa-list-alt"></i> <span>Payments Overview</span>    
+                                <i class="fa fa-credit-card"></i> <span>Payments Overview</span>    
                             </a>   
                         </li> 
                     <li class="treeview">
                         <a href="<?php echo base_url();?>seller/performance">
-                            <i class="fa fa-user-circle-o"></i><span>Performance</span>    
+                            <i class="fa fa-line-chart"></i><span>Performance</span>    
                         </a>
                     </li>
                     <li class="treeview">
                         <a href="<?php echo base_url();?>seller/promotions">
-                            <i class="fa fa-bed"></i><span>Promotions</span>
+                            <i class="fa fa-upload"></i><span>Promotions</span>
                         </a>                        
                     </li>
                     <li class="treeview">
                         <a href="<?php echo base_url();?>seller/services">
-                            <i class="fa fa-bed"></i><span>Request For Services</span>
+                            <i class="fa fa-envelope-open-o"></i><span>Request For Services</span>
                         </a>                        
                     </li>       
             </ul>

@@ -171,10 +171,10 @@
         <div class="modal-body" style="padding:0px;margin-top:-22px;">
 		<span type="button" class="close " data-dismiss="modal" style="position:absolute;top:12px;right:12px">&times;</span>
 		<img style="width:100%;" class="img-responsive" src="<?php echo base_url();?>assets/seller_login/images/price_hide.png" />
-		<div style="position: absolute;top:50%;color:#ddd;right:42%;">
-			<p style="font-size:20px;"><b>Limited period offer</b></p>		
-			<p style="font-size:20px;margin-left: 25px;">Free for 1 month</p>		<br>
-			<span style="background:#006a99;padding:5px 10px ;border-radius:5px;font-size:18px;margin-left: 50px;cursor: pointer;" class="" data-dismiss="modal"  data-toggle="modal"
+		<div style="position: absolute;top:50%;color:#ddd;right:36%; background:#ed4916;border-radius:5px;padding:15px;">
+			<p style="font-size:30px;"><b>Limited period offer</b></p>		
+			<p style="font-size:20px;margin-left:72px;">Free for 1 month</p>		<br>
+			<span style="background:#006a99;padding:5px 10px ;border-radius:5px;font-size:18px;margin-left: 85px;cursor: pointer;" class="" data-dismiss="modal"  data-toggle="modal"
 			data-target="#myModal_sel_mod_en">Enquiry form</span>
 		</div>
       <!--<div class="container">

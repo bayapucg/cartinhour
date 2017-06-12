@@ -28,7 +28,7 @@
 
     <div class="container" style="width:100%">
 	
-      <h1 class="head_title">My Returns</h1>
+    
 	 <div><?php echo $this->session->flashdata('message');?></div>
       <div class="faq"> 
 	  

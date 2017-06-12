@@ -41,11 +41,30 @@ $(document).ready(function(){
 </script>
  <div class="content-wrapper mar_t_con" >
 
-
+<section class="content-header">
+		<div class="header-icon">
+			<i class="pe-7s-note2"></i>
+		</div>
+		<div class="header-title">
+			<form action="#" method="get" class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
+				<div class="input-group">
+					<input type="text" name="q" class="form-control" placeholder="Search...">
+					<span class="input-group-btn">
+						<button type="submit" name="search" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+					</span>
+				</div>
+			</form>  
+			<h1>Update</h1>
+			<small>Update Your Details</small>
+			<ol class="breadcrumb hidden-xs">
+				<li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
+				<li class="active">Dashboard</li>
+			</ol>
+		</div>
+	</section>
    <!--body start here -->
   <div class="faq_main">
     <div class="container" style="width:100%">
-      <h1 class="head_title">Update Your Details</h1>
     <div><?php echo $this->session->flashdata('message');?></div>
       <div class="faq"> 
 
