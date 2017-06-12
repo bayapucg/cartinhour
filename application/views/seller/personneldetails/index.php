@@ -64,7 +64,7 @@
     </section>
     <!--body start here -->
     <div class="faq_main">
-        <div class="container" style="width:100%">
+        <div class="" style="width:100%">
 
             <div>
                 <?php echo $this->session->flashdata('message');?></div>
