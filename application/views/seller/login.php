@@ -513,25 +513,14 @@
        
        <div id="refclose"></div>
        <div class="line" id="demo2">&nbsp;</div>
-       <div class="form-group" id="demoki" style="display:none">
-       
-                  <h4>Enter your product weight in grams:</h4>
-                  <input type="number" class="form-control san_label" id="product_weight" name="product_weight" placeholder="Enter your product weightin grams">
-                  <button type="submit" class="click" id="weight_submit">Calculate</button>
-          <span id="TermsErr12"></span>
-                </div>
-       
-       
        <div id="totalfee"></div>
-       
-       <div class="line" id="demo3" style="display:none">&nbsp;</div>
-               
-        <div class="form-group" id="demo4" style="display:none">
+             <div class="line" id="demo3" style="display:none">&nbsp;</div>  
+        <div class="form-group" id="demoki" style="display:none">
         <h3>Calculate My Profit :</h3>
                   <h5>Enter your product Price :</h5>
                   <input type="number" class="form-control san_label" id="actual_price" name="actual_price" placeholder="Enter your product Price">
                   <button type="submit" class="click" id="profit_submit">Calculate</button>
-          <span id="TermsErr15"></span>
+				  <span id="TermsErr15"></span>
                 </div>
        
       <div id ="total_cal"></div>
@@ -1020,7 +1009,7 @@
                           <td>219.5</td>
                         </tr>
                         <tr>
-                          <td>Service Tax (15% of Marketplace Fee including Swachh Bharat &Krishi Kalyan cess)</td>
+                          <td>Service Tax (15% of Marketplace Fee including Swachh Bharat&Krishi Kalyan cess)</td>
                           <td>32.925</td>
                         </tr>
                         <tr>
@@ -1437,7 +1426,7 @@ $("#cihfee1").html(data);
     {
     
   $("#refclose").html(data);
-  $('#demo2').show();
+  $('#demo3').show();
     $('#demoki').show();
   
     }
@@ -1450,47 +1439,7 @@ $("#cihfee1").html(data);
 </script>
 
 
-<script type="text/javascript" language="javascript">
-      $(document).ready(function(){
-    $('#weight_submit').click(function(e){
-    e.preventDefault();
- 
-    //if ($('#chkterms2').is(':checked')) 
-   var product_price = $("#product_price").val();
-    var productcih_fee = $("#productcih_fee").val();
-   var closing_fee = $("#closing_fee").val();
-   //var cih_fee1 = $("#cih_fee1").val();
-   var product_weight = $("#product_weight").val();
-  //alert(closing_fee);
-  if (product_weight == "")
-    {
-    $("#TermsErr12").html("Please Enter Product Weight in grams").css("color", "#006a99").fadeIn().fadeOut(5000);
-    return false;
-    }
-    else{
-      $("#TermsErr12").html("");
-    }
- 
-    $.ajax({
-    type: "POST",
-    url: '<?php echo base_url() ?>seller/pricing_calculator/shippingcharge',
-    data: {product_weight:product_weight,product_price:product_price,closing_fee:closing_fee,productcih_fee:productcih_fee},
-    success:function(data)
-    {
-    
-  $("#totalfee").html(data);
-  $('#demo3').show();
-    $('#demo4').show();
-  //$('#tfsubmit').show();
-    
-    }
-    });
-    });
-    
-    });
-  
 
-</script>
 
 
 <script type="text/javascript" language="javascript">
@@ -1498,7 +1447,8 @@ $("#cihfee1").html(data);
     $('#profit_submit').click(function(e){
     e.preventDefault();
     //if ($('#chkterms2').is(':checked')) {  
-    var youmake = $("#youmake").val();
+    var youmake = $("#you_make").val();
+    //alert(youmake);
   
   var actual_price = $("#actual_price").val();
    
@@ -1517,7 +1467,7 @@ $("#cihfee1").html(data);
     $.ajax({
     type: "POST",
     url: '<?php echo base_url() ?>seller/pricing_calculator/getajaxprofit',
-    data: {youmake:youmake,actual_price:actual_price},
+    data: {you_make:youmake,actual_price:actual_price},
     success:function(data)
     {
       
@@ -1527,8 +1477,6 @@ $("#cihfee1").html(data);
     }
     });
     });
-</html>	
-    
     });
   
 

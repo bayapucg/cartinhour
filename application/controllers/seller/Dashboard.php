@@ -10,6 +10,7 @@ class Dashboard extends Admin_Controller {
 		parent::__construct();
 		$this->load->model('seller/dashboard_model');
 		$this->load->model('admin/sellers_model');
+    $this->load->model('seller/products_model');
 		
 		
 	}
@@ -17,8 +18,10 @@ class Dashboard extends Admin_Controller {
 	public function index()
 	{
 		
-		$data['sellersubcatdata'] = $this->dashboard_model->getsellersubcatdata();
-		$some['sellerscats'] = $this->dashboard_model->seller_cats();
+		$data['sellersubcatdata'] = $this->dashboard_model->getsellersubcatdata();		
+    $data['returnitemdata'] = $this->products_model->returns();
+    $data['seller_ad'] = $this->dashboard_model->seller_ads();
+    $some['sellerscats'] = $this->dashboard_model->seller_cats();
 		//echo '<pre>';print_r($data);exit;
 		$this->template->write_view('content', 'seller/dashboard/index', $data,$some);
 		$this->template->render();

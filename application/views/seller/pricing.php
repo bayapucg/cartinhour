@@ -31,33 +31,15 @@
               <div class="form-group">
                 <select class="form-control" id="cih_id" name="cih_id">
                   <option>--Select Product--</option>
-          
-          <?php foreach($cihcatdata as $cih_catdata) {?>   
+                    <?php foreach($cihcatdata as $cih_catdata) {?>   
                   <option value="<?php echo $cih_catdata->cih_id;?>"><?php echo $cih_catdata->category_name;?></option>
                   <?php } ?>
                 </select>
               </div>
-			
               <div id="cihfee"></div>
-              
-
-            </div>
-			  <!--stip html
-		<div >
-			<table style="border:1px solid #5fcbff;border-radius:10px;margin:0 auto;background-color:#f5f5f5;">
-				<tr>
-					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You sell at :</span><br>Rs .1000</td>
-					<td style="padding:20px"><span style="color:#ff0000 ;font-size:18px;">We take:(for 10%)</span> <br>10% of Rs.1000 + 14.5(service tax)= Rs.114.5</td>
-					<td style="padding:20px"><span style="color:#ff0000;font-size:18px;">You get in bank:</span><br>Rs.885.5</td>
-				</tr>
-			</table>
-		</div> --> 
-		<!--stip end html--> 
-            
+            </div> 
           </div>
-		  
         </div>
-		
         <div class="col-md-4">
           <div class="price_rgt">
             <h3>Calculate Your Profit :</h3>
@@ -73,50 +55,24 @@
                 <span id="CatErr"></span>
               </div>
         <div id="cihfee1"></div>
-
-             
        <div class="form-group" id="sellingfee" >
                 <h4>your Product Selling Price :</h4>
                 <input type="number" class="form-control san_label" id="product_price" name="product_price" placeholder="your Product Selling Price ">
                 <button type="submit" class="click" id="calfee_submit">Calculate</button>
          <span id="TermsErr"></span>
               </div>
-       
-       
-       <div id="refclose"></div>
-       <div class="line" id="demo2">&nbsp;</div>
-       <div class="form-group" id="demoki" style="display:none">
-       
-                  <h4>Enter your product weight in grams:</h4>
-                  <input type="number" class="form-control san_label" id="product_weight" name="product_weight" placeholder="Enter your product weightin grams">
-                  <button type="submit" class="click" id="weight_submit">Calculate</button>
-          <span id="TermsErr12"></span>
-                </div>
-       
-       
-       <div id="totalfee"></div>
-       
-       <div class="line" id="demo3" style="display:none">&nbsp;</div>
                
-        <div class="form-group" id="demo4" style="display:none">
+        <div class="form-group"  style="display:none">
         <h3>Calculate My Profit :</h3>
                   <h5>Enter your product Price :</h5>
                   <input type="number" class="form-control san_label" id="actual_price" name="actual_price" placeholder="Enter your product Price">
                   <button type="submit" class="click" id="profit_submit">Calculate</button>
           <span id="TermsErr15"></span>
                 </div>
-       
       <div id ="total_cal"></div>
-       
-       
-       
-       
             </div>
           </div>
         </div>
-		
-		
-		
       </div>
     </div>
   </div>
@@ -166,7 +122,7 @@ var dataString = 'cih1_id='+ id;
 $.ajax
 ({
 type: "POST",
- url: "<?php echo base_url();?>seller/pricing_calculator/getajaxcih1",
+ url: "<?php echo base_url();?>seller/pricing_calculator/getreferalfee",
 data: dataString,
 cache: false,
 success: function(data)
@@ -179,107 +135,6 @@ $("#cihfee1").html(data);
 });
 });
 </script>
-
-
-
-
-<script type="text/javascript" language="javascript">
-      $(document).ready(function(){
-    $('#calfee_submit').click(function(e){
-    e.preventDefault();
- 
-    //if ($('#chkterms2').is(':checked')) {
-   var cih1_id =  $("#cih1_id").val();
-     var product_price = $("#product_price").val();
-   var cih_fee1 = $("#cih_fee1").val();
-     //var subcatname = $("#subcatname").val();
-   //alert(cih1_id);
- //alert(product_price);
-  
-  
-  if (cih1_id == "")
-    {
-    $("#CatErr").html("Please Select Category").css("color", "red").fadeIn().fadeOut(5000);
-    return false;
-    }
-    else{
-      $("#CatErr").html("");
-    }
-  
-  
-  if (product_price == "")
-    {
-    $("#TermsErr").html("Please Enter Price").css("color", "red").fadeIn().fadeOut(5000);
-    return false;
-    }
-    else{
-      $("#TermsErr").html("");
-    }
- 
-    $.ajax({
-    type: "POST",
-    url: '<?php echo base_url() ?>seller/pricing_calculator/getreferalfee',
-    data: {product_price:product_price,cih_fee1:cih_fee1},
-    success:function(data)
-    {
-    
-  $("#refclose").html(data);
-  $('#demo2').show();
-    $('#demoki').show();
-  
-    }
-    });
-    });
-    
-    });
-  
-
-</script>
-
-
-<script type="text/javascript" language="javascript">
-      $(document).ready(function(){
-    $('#weight_submit').click(function(e){
-    e.preventDefault();
- 
-    //if ($('#chkterms2').is(':checked')) 
-   var product_price = $("#product_price").val();
-    var productcih_fee = $("#productcih_fee").val();
-   var closing_fee = $("#closing_fee").val();
-   //var cih_fee1 = $("#cih_fee1").val();
-   var product_weight = $("#product_weight").val();
-  //alert(closing_fee);
-  if (product_weight == "")
-    {
-    $("#TermsErr12").html("Please Enter Product Weight in grams").css("color", "red").fadeIn().fadeOut(5000);
-    return false;
-    }
-    else{
-      $("#TermsErr12").html("");
-    }
- 
-    $.ajax({
-    type: "POST",
-    url: '<?php echo base_url() ?>seller/pricing_calculator/shippingcharge',
-    data: {product_weight:product_weight,product_price:product_price,closing_fee:closing_fee,productcih_fee:productcih_fee},
-    success:function(data)
-    {
-    
-  $("#totalfee").html(data);
-  $('#demo3').show();
-    $('#demo4').show();
-  //$('#tfsubmit').show();
-    
-    }
-    });
-    });
-    
-    });
-  
-
-</script>
-
-
 <script type="text/javascript" language="javascript">
       $(document).ready(function(){
     $('#profit_submit').click(function(e){

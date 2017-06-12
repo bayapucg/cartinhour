@@ -8,8 +8,8 @@ class Seller_adddetails extends MY_Controller {
 			parent::__construct();
 	   	$this->template->set_template('seller');        
         //$this->template->write_view('footer', 'seller/shared/footer');
-  //       if (!current_admin()) {
-  //            return redirect(base_url('seller/login'));
-		// }
+         if (!current_admin()) {
+              return redirect(base_url('seller/login'));
+		 }
 	}
 }

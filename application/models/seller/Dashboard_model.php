@@ -106,16 +106,15 @@ public function seller_cats()
 
      // $query = $this->db->query('SELECT category.category_name FROM category JOIN seller_categories ON seller_categories.seller_category_id = category.category_id WHERE seller_categories.seller_id =8');
      //  	return $query->result();
-
-    
-
-    	
-
 }
 
 
-
-
-
+public function seller_ads()
+{
+		
+		$query=$this->db->get('seller_all_notifications');
+		return $query->result();
+		
+	}
 	
 }

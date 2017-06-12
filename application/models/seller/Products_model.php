@@ -18,13 +18,28 @@ class Products_model extends MY_Model
 	parent::__construct();
 
 	}
+
+	public function getcatdata()
+	{
+		
+		$query=$this->db->get('category');
+		return $query->result_array();
+		
+	}
+	public function getcateditdata()
+	{
+		
+		$query=$this->db->get('category');
+		return $query->result();
+		
+	}
 	
 	
 	public function getitems($cat_id,$subcat_id)
 	{
 		$sid = $this->session->userdata('seller_id');  
 		
-		$this->db->select('*');
+	$this->db->select('*');
 	$this->db->from('products');
     $this->db->where('category_id', $cat_id);
 	$this->db->where('subcategory_id', $subcat_id);
@@ -37,21 +52,22 @@ class Products_model extends MY_Model
 		
 	}
 	
-	public function getcatdata($sid)
-	{
+	// public function getcatadddata()
+	// {
+	// 	$sid = $this->session->userdata('seller_id');
 		
-	 $this->db->select('category.category_name,seller_categories.*')->from('seller_categories');
-	$this->db->join('category', 'seller_categories.seller_id = category.category_id','left');
-	$this->db->where('seller_categories.seller_id', $sid);
-	return $this->db->get()->result_array();
-		// $query = $this->db->get();
-  //   	return $query->result();
+	//  $this->db->select('category.category_name,seller_categories.*')->from('seller_categories');
+	// $this->db->join('category', 'seller_categories.seller_id = category.category_id','left');
+	// $this->db->where('seller_categories.seller_id', $sid);
+	// return $this->db->get()->result_array();
+	// 	// $query = $this->db->get();
+ //  //   	return $query->result();
 
 
-		 $query=$this->db->get('category');
-		 return $query->result();
+	// // 	 $query=$this->db->get('category');
+	// // 	 return $query->result();
 		
-	}
+	// // }
 	
 	
 public function getsubcatdata($cat_id)

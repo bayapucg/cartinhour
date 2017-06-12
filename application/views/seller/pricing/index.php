@@ -61,12 +61,6 @@
                   <input class="form-control" placeholder="Food Item Charges" type="text" id="ref_id" name="ref_id">
 				  <span style="color:red" id="erroritemname"></span>
                 </div>-->
-				
-             
-				
-               
-               
-				
                 <div class="clearfix"></div>
 				<div id="psubmit" style="display:none">
 				<button type="submit" class="btn btn-primary profitbutton" name="submit" id="product_submit">Submit</button>

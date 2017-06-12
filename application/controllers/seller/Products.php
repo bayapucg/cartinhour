@@ -23,8 +23,6 @@ class Products extends Admin_Controller {
 		
 		$this->template->write_view('content', 'seller/products/index', $data);
 		$this->template->render();
-
-
 	}
 	
 	public function create()
@@ -142,13 +140,12 @@ public function edit()
 	//$subcat_id = $this->uri->segment(6);
 	
 	//$data['catname'] = $this->products_model->getcatname($cat_id);
-		//$data['subcatname'] = $this->products_model->getsubcatname($subcat_id);
+	//$data['subcatname'] = $this->products_model->getsubcatname($subcat_id);
 	
-	 $data['subcatdata'] = $this->products_model->getsubcatdata($cat_id);
-		$data['getcat'] = $this->products_model->getcatdata();
-	$data['productdata']=$this->products_model->getproductdata($id);
-	
-	$this->template->write_view('content', 'seller/products/edit', $data);
+	 	$data['subcatdata'] = $this->products_model->getsubcatdata($cat_id);
+		$data['getcat'] = $this->products_model->getcateditdata();
+		$data['productdata']=$this->products_model->getproductdata($id);
+		$this->template->write_view('content', 'seller/products/edit', $data);
 		$this->template->render();
 	
 }

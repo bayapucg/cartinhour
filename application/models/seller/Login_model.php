@@ -201,9 +201,6 @@ $this->db->where('cih_id',$cih);
 
 $query = $this->db->get('cih');
 return $query->row();
-
-
-
 }	
 	
 public function getshippingcharge($product_weight)

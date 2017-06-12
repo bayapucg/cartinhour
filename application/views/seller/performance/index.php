@@ -218,20 +218,12 @@ else{
                         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
                         datasets: [
                             {
-                                label: "My First dataset",
-                                borderColor: "rgba(0,0,0,.09)",
-                                borderWidth: "1",
-                                backgroundColor: "rgba(0,0,0,.07)",
-                                data: [22, 44, 67, 43, 76, 45, 12, 45, 65, 55, 42, 61, 73]
+                                <?php foreach($dailywise as $daily_wise) {   ?>
+        { label: "<?php echo $daily_wise ->created_at; ?>", y: <?php echo $daily_wise ->orders; ?> },
+        
+      <?php } ?>
                             },
-                            {
-                                label: "My Second dataset",
-                                borderColor: "#009688",
-                                borderWidth: "1",
-                                backgroundColor: "#009688",
-                                pointHighlightStroke: "#009688",
-                                data: [16, 32, 18, 26, 42, 33, 44, 24, 19, 16, 67, 71, 65]
-                            }
+                            
                         ]
                     },
                     options: {

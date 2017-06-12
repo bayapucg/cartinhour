@@ -85,15 +85,15 @@
                                 <li><a href="<?php echo base_url();?>seller/orders/rejected_orders">Cancelled Orders</a></li>
                             </ul>
                         </li>
-                        <li class="treeview">
+                        <!-- <li class="treeview">
                             <a href="<?php echo base_url();?>seller/products/returns">
                                 <i class="fa fa-sitemap"></i><span>Returns</span>
-                                <!-- <span class="pull-right-container">
+                                <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
-                                </span> -->
+                                </span>
                             </a>
                             
-                        </li>
+                        </li> -->
                         <li class="treeview">
                             <a href="<?php echo base_url();?>seller/payments">
                                 <i class="fa fa-list-alt"></i> <span>Payments Overview</span>    

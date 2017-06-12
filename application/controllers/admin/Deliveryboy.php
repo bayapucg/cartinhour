@@ -79,7 +79,6 @@ public function insert()
     
     if( $this->form_validation->run('deliveryboy_rules'))
     {
-
 	 if(!empty($_FILES['deliveryboy_photo']['name'])){
 
                 $config['upload_path'] = 'uploads/deliveryboys/';

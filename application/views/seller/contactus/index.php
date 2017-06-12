@@ -20,7 +20,7 @@
 			</ol>
 		</div>
 	</section>
-  <section class="content "> 
+  <section class="content ">
   <div class="">
     <div class="col-md-12 mar_b50" > 
 	<div class="panel_cus panel-primary ">

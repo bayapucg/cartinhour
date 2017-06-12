@@ -51,40 +51,27 @@
                   <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne<?php echo $nospace;  ?>" aria-expanded="true" aria-controls="collapseOne<?php echo $nospace;  ?>"> <i class="more-less glyphicon glyphicon-plus"></i> <?php echo $subcategory->subcategory_name; ?> </a> </h4>
                 </div>
                 <div id="collapseOne<?php echo $nospace;  ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne<?php echo $nospace;  ?>">
-                  <div class="panel-body">
-
-
-
-
-
-    
+                  <div class="panel-body">    
           <section class="panel">
-            
-			 
-            
                       <div class="table-responsive">
                 <table class="table table-bordered table-striped">
                   <thead>
                     <tr>
-                 <th>S.No</th>
-                <th>Order Id</th>
-                <th>Seller Name</th>
-                <th>Product Id</th>
-                <th>Product Name</th>
-                <th>Delivery Date</th>
-                <th>Delivery Time</th>
-                <th>Customer Details</th>
-                <th>Delete</th>
+                      <th>S.No</th>
+                      <th>Order Id</th>
+                      <th>Seller Name</th>
+                      <th>Product Id</th>
+                      <th>Product Name</th>
+                      <th>Delivery Date</th>
+                      <th>Delivery Time</th>
+                      <th>Customer Details</th>
+                      <th>Delete</th>
                     </tr>
                   </thead>
                   <?php if(!empty($subcategory->returndocs12)): ?>
-
               <tbody>
                 <?php $count = $this->uri->segment(4, 0);
-
    foreach($subcategory->returndocs12 as $orders_data){?>
-    
-
                 <tr>
                   <td><?= ++$count ?></td>
                   <td><?php  echo $orders_data->order_id; ?></td>

@@ -1,5 +1,4 @@
 
- <?php //echo '<pre>';print_r($sub_cat_data);exit; ?>
 <div class="content-wrapper mar_t_con" >
 <section class="content-header">
 		<div class="header-icon">
@@ -41,9 +40,7 @@
             <!--<header class="panel-heading"> Basic Forms </header>-->
 			<div><?php echo $this->session->flashdata('message');?></div>
             <div class="panel-body">
-			
               <form action="<?php echo base_url(); ?>seller/products/insert/<?php echo $this->uri->segment(4); ?>/<?php echo $this->uri->segment(5); ?>" method="post" enctype="multipart/form-data" onSubmit="return scvalidateof();this.js_enabled.value=1;return true;">
-			  
                 <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Select Category</label>
                  <select class="form-control" id="category_id" name="category_id">
