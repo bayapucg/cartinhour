@@ -4651,3 +4651,13 @@ input[type=radio]:checked ~ label {
     margin-bottom: 15px;
     text-align: center
 }
+.faq h1{
+	cursor:pointer;
+	color:#006a99;
+	
+}
+.faq h1:hover{
+	
+	color:#ccc;
+	
+}
