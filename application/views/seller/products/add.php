@@ -56,7 +56,7 @@
 					 <?php }?>
                   </select>
 				 
-				 <span style="color:red" id="errorcategory"></span>
+				 <span style="color: 	;position: absolute;top: 0;right: 20px;" id="errorcategory"></span>
                 </div>
 				
 				
@@ -68,7 +68,7 @@
                     <option value="<?php echo $subcat_data->subcategory_id; ?>"><?php echo $subcat_data->subcategory_name; ?></option>
                     <?php } ?>
                   </select>
-				   <span style="color:red" id="errorsubcategory"></span>
+				   <span style="color:red; position: absolute;top: 0;right: 20px;" id="errorsubcategory"></span>
                 </div>
 				<div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputPassword1">Select subitem</label>
@@ -76,31 +76,31 @@
                     <option value="">Select Subitem</option>
           
                   </select>
-           <span style="color:red" id="errorsubitem"></span>
+           <span style="color:red; position: absolute;top: 0;right: 20px;" id="errorsubitem"></span>
                 </div>
 				
                 
 				 <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Item Name</label>
                   <input class="form-control" placeholder="Item Name" type="text" id="item_name" name="item_name">
-				  <span style="color:red" id="erroritemname"></span>
+				  <span style="color:red ;position: absolute;top: 0;right: 20px;" id="erroritemname"></span>
            </div>
 
            <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Item Code</label>
                   <input class="form-control" placeholder="Item Code" type="text" id="item_code" name="item_code">
-          <span style="color:red" id="erroritemcode"></span>
+          <span style="color:red;position: absolute;top: 0;right: 20px;" id="erroritemcode"></span>
            </div>
 
 				 <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Item Quantity</label>
                   <input class="form-control" placeholder="Item Quantity" type="text" id="item_quantity" name="item_quantity">
-				  <span style="color:red" id="errorquantity"></span>
+				  <span style="color:red;position: absolute;top: 0;right: 20px;" id="errorquantity"></span>
                 </div>
 				 <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Item Charges</label>
                   <input class="form-control" placeholder="Item Charges" type="text" name="item_cost" id="item_cost">
-				  <span style="color:red" id="errorcost"></span>
+				  <span style="color:red;position: absolute;top: 0;right: 20px;" id="errorcost"></span>
                 </div>
                 
                 <div class="clearfix"></div>
@@ -111,13 +111,13 @@
                     <option value="1">Available</option>
                     <option value="2">Unavailable</option>
                   </select>
-				  <span style="color:red" id="errorstatus"></span>
+				  <span style="color:red;position: absolute;top: 0;right: 20px;" id="errorstatus"></span>
                 </div>
 				<div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputFile">Image</label>
                   <input type="file" name="picture" id="picture">
 				  
-				   <span style="color:red" id="errorpicture"></span>
+				   <span style="color:red;position: absolute;top: 0;right: 20px;" id="errorpicture"></span>
                 </div>
 				<div class="clearfix"></div>
                 <div class="form-group nopaddingRight col-md-6 san-lg">
@@ -143,7 +143,7 @@
   </section>
   </div>
   <!--main content end--> 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
        
 		
   

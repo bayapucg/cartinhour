@@ -109,7 +109,7 @@
                         showMethod: 'slideDown',
                         timeOut: 2000
                     };
-                    toastr.success('Thank you for vist', 'Welcome to Seller Portal');
+                    toastr.success('Thank you for visit', 'Welcome to Seller Portal');
 
                 }, 1300);
 

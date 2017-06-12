@@ -221,17 +221,19 @@ $('.window').hide();
 				</div>
 			</div>
 		</div>-->
-
-		<ul>
+		<div style="margin-left:35%;">
+		<ul >
 			<li>Adhar Card</li>
-			<li>Adhar Card</li>
-			<li>Adhar Card</li>
-			<li>Adhar Card</li>
-			<li>Adhar Card</li>
-			<li>Adhar Card</li>
-			<li>Adhar Card</li>
-			<li>Adhar Card</li>
+			<li>Personal PAN Card</li>
+			<li>Company PAN Card</li>
+			<li>TIN / TAN / VAT</li>
+			<li>GSTIN</li>
+			<li>Bank Account Details</li>
+			<li>Shop licence number</li>
+			<li>Business Details</li>
+			
 		</ul>
+  </div>
   </div>
   <div id="mask"></div>
 </div>
