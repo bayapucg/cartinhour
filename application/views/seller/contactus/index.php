@@ -22,7 +22,7 @@
 	</section>
   <section class="content "> 
   <div class="">
-    <div class="col-md-9 mar_b50" > 
+    <div class="col-md-12 mar_b50" > 
 	<div class="panel_cus panel-primary ">
       <div class="panel-heading panel_head_sty">Contact us</div>
 			<div class=" col-md-6 pad_10">	  
