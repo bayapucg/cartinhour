@@ -4661,6 +4661,17 @@ input[type=radio]:checked ~ label {
 	color:#ccc;
 	
 }
+.head_ad,.faq_main h1{
+	cursor:pointer;
+	color:#006a99 !important;
+	padding-left:25px !important;
+	
+}
+.head_ad,.faq_main h1:hover{
+	
+	color:#ccc;
+	
+}
 .unpin_hide .ti-move:before {
     content: "\e656";
 	display:none !important;
