@@ -1531,9 +1531,9 @@ small,
     margin-bottom: 20px
 }
 .panel-bd > .panel-heading {
-    color: #374767;
-    background-color: #cce8f5;
-    border-color: #bce1f1;
+    color: #fff;
+    background-color: #ddd;
+    border-color: #eee;
     position: relative;
     padding: 10px
 }
@@ -4660,4 +4660,21 @@ input[type=radio]:checked ~ label {
 	
 	color:#ccc;
 	
+}
+.unpin_hide .ti-move:before {
+    content: "\e656";
+	display:none !important;
+}
+.mar_t30{
+	margin-top:30px;
+}
+.border_head{
+	border-bottom:1px solid #ddd;
+	padding:10px;
+	background:#006a99;
+	margin-top:0px;
+	border-radius:10px 10px 0px  0px;
+	color:#fff;
+	font-size:25px;
+	font-weight:600;
 }
