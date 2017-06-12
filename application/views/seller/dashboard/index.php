@@ -1,12 +1,33 @@
  
 <div class="content-wrapper mar_t_con">
+<section class="content-header">
+                     <form action="#" method="get" class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
+                            <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button type="submit" name="search" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+                                </span>
+                            </div>
+                        </form>   
+                    <div class="header-icon">
+                        <i class="fa fa-tachometer"></i>
+                    </div>
+                    <div class="header-title">
+                        <h1> Dashboard</h1>
+                        <small> Dashboard features</small>
+                        <ol class="breadcrumb hidden-xs">
+                            <li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
+                            <li class="active">Dashboard</li>
+                        </ol>
+                    </div>
+                </section>
   <section class="content ">
         <!--  <button class="draw pull-right">Your Id::<?php echo ucfirst($this->session->userdata('seller_rand_id'));?></button>
           -->
           <div class="bdy_ser">
               <!-- <li><a href="<?php echo base_url();?>seller/mystore"><img src="<?php echo base_url(); ?>assets/seller/images/sto_1.png" /></a> </li>
               <li class="add_sto"><a href="<?php echo base_url();?>seller/personnel_details"><img src="<?php echo base_url(); ?>assets/seller/images/sto_2.png" /></a> </li> -->
-              <a href="<?php echo base_url();?>seller/products/create" class="btn btn-success pull-right" style="background: #bce1f1;">Add Listing</a>  
+              <a href="<?php echo base_url();?>seller/products/create" class="btn btn-primary pull-right" style="background: #006a99;">Add Listing</a>  
           </div>
 						<!--tabs start-->
       
