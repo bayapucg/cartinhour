@@ -48,7 +48,7 @@
 					
 					 <?php foreach($sub_cat_data as $single_cat_data){ ?>
 					
-                    <option value="<?php echo $single_cat_data['seller_category_id']; ?>"><?php echo $single_cat_data['category_name']; ?></option>
+                    <option value="<?php echo $single_cat_data['category_id']; ?>"><?php echo $single_cat_data['category_name']; ?></option>
                    
 					 <?php }?>
                   </select>
