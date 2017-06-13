@@ -92,24 +92,29 @@ $(document).ready(function(){
   <?php echo $this->session->flashdata('msg2'); ?>
   <form  action="<?php echo base_url(); ?>seller/sellercategories/updatesellercat" method="post" >
     <div class="row setup-content">
-      <div class="col-xs-6 col-md-offset-3">
+      <div class="col-xs-12 ">
         <div class="col-md-12">
           <h3>Select Your Category</h3>
-          <div class="field_wrapper nopaddingRight col-md-6 san-lg pos_r" >
+          <div class="field_wrapper nopaddingRight col-md-5 san-lg pos_r" >
+		
                  <select class="form-control"  id="category_id" name="seller_cat[]" required="required">
                     <option value="">Select Category</option>
                     <?php foreach($getcat as $cat_data){ ?>
                     <option value="<?php echo $cat_data->category_id; ?>"><?php echo $cat_data->category_name; ?></option>                  
                     <?php }?>
-                  </select>       
-
-
-                             
-                  <span class="pos_ab"><a href="javascript:void(0);" class="add_button " title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span>  
+                  </select>
+				  <span style="position: absolute;top:2px;right:-20px"><a href="javascript:void(0);" class="add_button " title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span>
            </div>
-           <span>(OR)</span>
-                  <input type="text" name="chose_own" onclick="chose_own">
+				 
+          <div class=" col-md-1 text-center" >
+			(OR)
+		  </div>
+          <div class=" col-md-5" >
+				
+							<input class="form-control"type="text" name="chose_own" onclick="chose_own">
 
+					
+           </div>
       
            </div>
 
