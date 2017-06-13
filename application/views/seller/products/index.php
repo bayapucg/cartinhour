@@ -33,15 +33,8 @@
 	  <?php //echo '<pre>';print_r($catitemdata1);exit;  ?>
 
 	   <?php  foreach($catitemdata1 as $catitem_data1 )  {  ?> 
-			<script>
-	
-				$(document).ready(function(){
-    $('#btn_chang').click(function(){
-       $(this).removeClass('btn-info').addClass('btn-primary');
-    });
-});
-			</script>
-		 <a id="btn_chang" onclick="addtabactive(<?php echo $catitem_data1->category_id;?>);" href="#gry<?php echo $catitem_data1->category_id;   ?>" class="btn btn-large btn-info" data-toggle="tab"><?php echo $catitem_data1->category_name;   ?></a>
+		
+		 <a id="btn_chang<?php echo $catitem_data1->category_id;?>" onclick="addtabactive(<?php echo $catitem_data1->category_id;?>);addtabactives(<?php echo $catitem_data1->category_id;?>);" href="#gry<?php echo $catitem_data1->category_id;   ?>" class="btn btn-large btn-info" data-toggle="tab"><?php echo $catitem_data1->category_name;   ?></a>
 
 	<?php } ?>
         <?php  foreach($catitemdata as $catitem_data )  {    ?>
@@ -132,12 +125,25 @@
   </div>
   
      
-  
 
- 
-  
   <!--body end here --> 
   <script language="JavaScript" type="text/javascript">
+  function addtabactives(val)
+{
+	$("#btn_chang"+val).removeClass("btn-info");
+	$("#btn_chang"+val).addClass("btn-primary");
+	var cnt;
+    var count =<?php echo $cnt;?>;
+	//var cnt='';
+	for(cnt = 1; cnt <= count; cnt++){
+		if(cnt!=val){
+			$("#btn_chang"+cnt).removeClass("btn-primary");
+			$("#btn_chang"+cnt).addClass("btn-info");
+		}             
+	}
+			
+
+}
 function addtabactive(id)
 {
 	$("#gry"+id).addClass("active");
@@ -152,6 +158,7 @@ function addtabactive(id)
 			
 
 }
+
 function checkDelete(id)
 {
   
