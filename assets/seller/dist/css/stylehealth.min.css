@@ -4686,6 +4686,10 @@ input[type=radio]:checked ~ label {
 	margin-top:0px;
 	border-radius:10px 10px 0px  0px;
 	color:#fff;
-	font-size:25px;
+	font-size:22px;
 	font-weight:600;
+}
+.doc_list{
+	font-size:18px;
+	
 }

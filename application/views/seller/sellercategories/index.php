@@ -51,7 +51,7 @@ $(document).ready(function(){
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <h4>Building Your Hyper-Local Store</h4>
+            <h3>Building Your Hyper-Local Store</h3>
           </ul>
         </div>
       </div>

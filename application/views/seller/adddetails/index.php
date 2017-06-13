@@ -73,7 +73,7 @@ $('#mask').css({'width':maskWidth,'height':maskHeight});
 
 //transition effect
 $('#mask').fadeIn(500); 
-$('#mask').fadeTo("slow",0.9);  
+$('#mask').fadeTo("slow",0.6);  
   
 //Get the window height and width
 var winH = $(window).height();
@@ -221,18 +221,22 @@ $('.window').hide();
 				</div>
 			</div>
 		</div>-->
-		<div style="margin-left:35%;">
-		<ul >
-			<li>Adhar Card</li>
-			<li>Personal PAN Card</li>
-			<li>Company PAN Card</li>
-			<li>TIN / TAN / VAT</li>
-			<li>GSTIN</li>
-			<li>Bank Account Details</li>
-			<li>Shop licence number</li>
-			<li>Business Details</li>
-			
-		</ul>
+		<div class="row">
+		<div class="col-md-6" style="border-right:1px solid #ddd;">
+			<ul class="doc_list" >
+				<li>Adhar Card</li>
+				<li>Personal PAN Card</li>
+				<li>Company PAN Card</li>
+				<li>TIN / TAN / VAT</li>
+				<li>GSTIN</li>
+				<li>Bank Account Details</li>
+				<li>Shop licence number</li>
+				<li>Business Details</li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<img   class="img-responsive thumbnail" src="<?php echo base_url();?>assets/seller_login/images/inv_m.png" />
+		</div>
   </div>
   </div>
   <div id="mask"></div>
