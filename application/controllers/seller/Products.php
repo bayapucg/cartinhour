@@ -20,6 +20,8 @@ class Products extends Admin_Controller {
 		
 	   
 	   $data['catitemdata'] = $this->products_model->getcatsubcatpro();
+	   $data['catitemdata1'] = $this->products_model->getcatsubcatpro();
+		$data['cnt']= count($data['catitemdata1']);
 		
 		$this->template->write_view('content', 'seller/products/index', $data);
 		$this->template->render();
