@@ -102,6 +102,8 @@ $(document).ready(function(){
                     <option value="<?php echo $cat_data->category_id; ?>"><?php echo $cat_data->category_name; ?></option>                  
                     <?php }?>
                   </select>
+
+                  <input type="text" name="chose_own" onclick="function chose_own(">
                   <span class="pos_ab"><a href="javascript:void(0);" class="add_button " title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span>
            </div>
 
@@ -135,5 +137,10 @@ function savecat(val){
 		});
 		
 	}
+}
+
+
+function chose_own(){
+  alert('hai');
 }
 </script>

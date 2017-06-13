@@ -35,7 +35,7 @@ class Adddetails extends Seller_adddetails{
     if($res == 1)
       {
         $this->session->set_flashdata('msg2','<div class="alert alert-success text-center" style="color: green;font-size:13px;">successfully. </div>');
-        return redirect('seller/storedetails');
+        return redirect('seller/sellercategories');
       }
 
 

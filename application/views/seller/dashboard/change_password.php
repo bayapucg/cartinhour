@@ -1,7 +1,7 @@
 <div class="content-wrapper mar_t_con">
   <section class="content ">
           <div class="bdy_ser chng">
-            <h2>Change Password</h2>
+            <h2>Set Your Password</h2>
     	<form  role="form" action="<?php echo base_url(); ?>seller/dashboard/updatepassword" method="post" class="chang_form">
 
   <div><?php echo $this->session->flashdata('message');?></div>
@@ -21,7 +21,7 @@
                 <!-- Button -->
                 
                 <div class="col-sm-12 controls">
-                        	<input name="submit" class="btn btn-success" type="submit" value="Change Password" />   
+                        	<input name="submit" class="btn btn-success" type="submit" value="Set Password" />   
                           <input class="btn btn-primary" type="button" onclick="javascript:window.location.href='<?php echo base_url().'seller/dashboard'; ?>'" value="Cancel" /></td>
                        </div>
               </div>

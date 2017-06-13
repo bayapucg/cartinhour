@@ -285,30 +285,6 @@ public function getforgotstatus($email)
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 	
 }
 	
