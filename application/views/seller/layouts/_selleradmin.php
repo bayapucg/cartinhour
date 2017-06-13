@@ -16,6 +16,8 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/dist/css/seller_dashboard.css" />
+<script src="<?php echo base_url();?>assets/examples/css/forms/validation.css"></script>
+
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/seller/plugins/bootstrap-toggle/bootstrap-toggle.min.css" />
 
