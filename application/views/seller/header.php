@@ -62,7 +62,7 @@
           <li><a href="#pricing_scr">PRICING</a></li>
          
           <!--<li><a href="#ourservices_scr">OUR SERVICES</a></li>-->
-            <li><a href="<?php echo base_url('seller/aboutus');?>">ABOUT US</a></li>
+            <li><a href="#about_sc">ABOUT US</a></li>
        <li><a href="#faq_sc">FAQ's</a></li>
         <li><a href="#contact_sc">CONTACT US</a></li>
 		 <li><a  data-toggle="modal" data-target="#myModa2">SIGN UP / LOGIN</a></li>
