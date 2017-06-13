@@ -101,8 +101,11 @@ $(document).ready(function(){
                     <?php foreach($getcat as $cat_data){ ?>
                     <option value="<?php echo $cat_data->category_id; ?>"><?php echo $cat_data->category_name; ?></option>                  
                     <?php }?>
-                  </select>                  
-                  <span class="pos_ab"><a href="javascript:void(0);" class="add_button " title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span>
+                  </select>       
+
+
+                             
+                  <span class="pos_ab"><a href="javascript:void(0);" class="add_button " title="Add field"> <img src="<?php echo site_url(); ?>assets/seller/images/add-icon.png"> </a></span>  
            </div>
            <span>(OR)</span>
                   <input type="text" name="chose_own" onclick="chose_own">
