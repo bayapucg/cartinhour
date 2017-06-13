@@ -33,8 +33,16 @@
 	  <?php //echo '<pre>';print_r($catitemdata1);exit;  ?>
 
 	   <?php  foreach($catitemdata1 as $catitem_data1 )  {  ?> 
-
-		 <a onclick="addtabactive(<?php echo $catitem_data1->category_id;?>);" href="#gry<?php echo $catitem_data1->category_id;   ?>" class="btn btn-large btn-info" data-toggle="tab"><?php echo $catitem_data1->category_name;   ?></a>
+			<script>
+	
+				$(document).ready(function(){
+					
+    $("#gry"+<?php echo $catitem_data1->category_id;?>).click(function(){
+       $(this).removeClass('btn-info').addClass('btn-primary');
+    });
+});
+			</script>
+		 <a id="btn_chang" onclick="addtabactive(<?php echo $catitem_data1->category_id;?>);" href="#gry<?php echo $catitem_data1->category_id;   ?>" class="btn btn-large btn-info" data-toggle="tab"><?php echo $catitem_data1->category_name;   ?></a>
 
 	<?php } ?>
         <?php  foreach($catitemdata as $catitem_data )  {    ?>
@@ -48,7 +56,7 @@
 			$nospace = str_replace(' ','',$space);
 			
 			?>
-              <div class="panel panel-default">
+              <div class="panel panel-default mar_t10">
                 <div class="panel-heading" role="tab" id="headingOne<?php echo $nospace;  ?>">
                   <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne<?php echo $nospace;  ?>" aria-expanded="true" aria-controls="collapseOne<?php echo $nospace;  ?>"> <i class="more-less glyphicon glyphicon-plus"></i> <?php echo $subcategory->subcategory_name; ?> </a> </h4>
                 </div>
