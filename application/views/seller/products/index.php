@@ -27,17 +27,21 @@
     <div class="container" style="width:100%">
 	
       <!--<h1 class="head_title">My Listings</h1>-->
+	  <?php //echo '<pre>';print_r($catitemdata1);exit;  ?>
 	 <div><?php echo $this->session->flashdata('message');?></div>
-      <div class="faq"> 
-	  
+      <div class="faq">
+	  <?php //echo '<pre>';print_r($catitemdata1);exit;  ?>
+
+	   <?php  foreach($catitemdata1 as $catitem_data1 )  {  ?> 
+
+		 <a onclick="addtabactive(<?php echo $catitem_data1->category_id;?>);" href="#gry<?php echo $catitem_data1->category_id;   ?>" class="btn btn-large btn-info" data-toggle="tab"><?php echo $catitem_data1->category_name;   ?></a>
+
+	<?php } ?>
         <?php  foreach($catitemdata as $catitem_data )  {    ?>
         <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
-        <h1 data-toggle="collapse" data-target="#gry<?php echo $catitem_data->category_name;?>"><?php echo $catitem_data->category_name;   ?></h1>
-        <div class="demo"> 
-          <!--<div id="gry" style="display:none">-->
-          <div id="gry<?php echo $catitem_data->category_name;   ?>" class="collapse">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			<?php 
+        <div class="tab-content">
+              <div class="tab-pane" id="gry<?php echo $catitem_data->category_id; ?>">
+              <?php 
 			foreach($catitem_data->docs as $subcategory){?>
 			<?php $space =  $subcategory->subcategory_name; 
 			
@@ -100,12 +104,11 @@
                 </div>
               </div>
 			<?php }?>
+              </div>
+             
+             
+              
             </div>
-          </div>
-          <!-- panel-group -->
-          
-         
-        </div>
         <!-- container --> 
 	   <?php }?>
       </div>
@@ -128,6 +131,20 @@
   
   <!--body end here --> 
   <script language="JavaScript" type="text/javascript">
+function addtabactive(id)
+{
+	$("#gry"+id).addClass("active");
+	var cnt;
+    var nt =<?php echo $cnt;?>;
+	//var cnt='';
+	for(cnt = 1; cnt <= nt; cnt++){
+		if(cnt!=id){
+			$("#gry"+cnt).removeClass("active");
+		}             
+	}
+			
+
+}
 function checkDelete(id)
 {
   
