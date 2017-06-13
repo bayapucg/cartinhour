@@ -36,8 +36,7 @@
 			<script>
 	
 				$(document).ready(function(){
-					
-    $("#gry"+<?php echo $catitem_data1->category_id;?>).click(function(){
+    $('#btn_chang').click(function(){
        $(this).removeClass('btn-info').addClass('btn-primary');
     });
 });
