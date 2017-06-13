@@ -572,7 +572,7 @@ hr {
     border-radius: 0;
     border: 1px solid #e1e6ef;
     font-weight: 600;
-    max-width: 155px
+    /* max-width: 155px */
 }
 .header-title .breadcrumb > li > a {
     color: #222;
