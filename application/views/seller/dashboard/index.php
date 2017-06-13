@@ -1,5 +1,27 @@
 <div class="content-wrapper mar_t_con">
+<section class="content-header">
+    <div class="header-icon">
+      <i class="pe-7s-note2"></i>
+    </div>
+    <div class="header-title">
+      <form action="#" method="get" class="sidebar-form search-box pull-right hidden-md hidden-lg hidden-sm">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+            <button type="submit" name="search" id="search-btn" class="btn"><i class="fa fa-search"></i></button>
+          </span>
+        </div>
+      </form>  
+      <h1>DASHBOARD</h1>
+      <small></small>
+      <ol class="breadcrumb hidden-xs">
+        <li><a href="<?php echo base_url('seller/dashboard');?>"><i class="pe-7s-home"></i> Home</a></li>
+        <li class="active">&nbsp</li>
+      </ol>
+    </div>
+  </section>
   <section class="content ">
+
         <!--  <button class="draw pull-right">Your Id::<?php echo ucfirst($this->session->userdata('seller_rand_id'));?></button>
           -->
           <div class="bdy_ser">

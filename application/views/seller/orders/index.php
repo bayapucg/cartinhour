@@ -15,17 +15,17 @@
 			<h1>Orders</h1>
 			<small>Total Orders</small>
 			<ol class="breadcrumb hidden-xs">
-				<li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
-				<li class="active">Dashboard</li>
+				<li><a href="<?php echo base_url('seller/dashboard');?>"><i class="pe-7s-home"></i> Home</a></li>
+				<li class="active">Total Orders</li>
 			</ol>
 		</div>
 	</section>
   <section class="content ">
   <section id="main-content">
     <section class="wrapper">
-      <div class="row">
+      <!--<div class="row">
         <div class="col-lg-12">
-      <div class="row">
+       <div class="row">
        <div class="col-md-7">
            <h3 class="page-header"><i class="fa fa-list-ol" aria-hidden="true"></i>Orders</h3></div>
           <div class="col-md-5 pull-right">
@@ -33,13 +33,13 @@
           <input class="form-control" placeholder="Search" name="search" type="text">
          <button class="btn btn-default" type="submit">Go!</button>
           </form>
-            </div></div>
+            </div></div> 
           <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="<?php echo base_url();?>seller/dashboard">Home</a></li>
             <li><i class="fa fa-list-ol" aria-hidden="true"></i>Orders</li>
           </ol>
         </div>
-      </div>
+      </div>-->
       <div class="row">
         <div class="col-md-12">
           <section class="panel">

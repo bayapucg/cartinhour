@@ -65,7 +65,7 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="<?php echo base_url();?>seller/products">My Listing</a></li>
-                                <li><a href="Track Approval Requests">Track Approval Requests</a></li>
+                                <li><a href="<?php echo base_url();?>seller/products/track_requests">Track Approval Requests</a></li>
                                 
                             </ul>
                         </li>

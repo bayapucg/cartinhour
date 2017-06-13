@@ -16,7 +16,7 @@
 			<small>New Orders</small>
 			<ol class="breadcrumb hidden-xs">
 				<li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
-				<li class="active">Dashboard</li>
+				<li class="active">New Orders</li>
 			</ol>
 		</div>
 	</section>

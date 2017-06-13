@@ -44,8 +44,8 @@ window.onload = function () {
 			<h1>Performance</h1>
 			<small>Select</small>
 			<ol class="breadcrumb hidden-xs">
-				<li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
-				<li class="active">Dashboard</li>
+				<li><a href="<?php echo base_url('seller/dashboard');?>"><i class="pe-7s-home"></i> Home</a></li>
+				<li class="active">Performance</li>
 			</ol>
 		</div>
 	</section>

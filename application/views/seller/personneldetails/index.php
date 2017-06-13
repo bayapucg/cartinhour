@@ -56,9 +56,9 @@
             <h1>Update</h1>
             <small>Update Your Details</small>
             <ol class="breadcrumb hidden-xs">
-                <li><a href="index.html"><i class="pe-7s-home"></i> Home</a>
+                <li><a href="<?php echo base_url('seller/dashboard');?>"><i class="pe-7s-home"></i> Home</a>
                 </li>
-                <li class="active">Dashboard</li>
+                <li class="active">Update Your Details</li>
             </ol>
         </div>
     </section>

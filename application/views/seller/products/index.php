@@ -16,8 +16,8 @@
 			<h1>Listings</h1>
 			<small>My Listings</small>
 			<ol class="breadcrumb hidden-xs">
-				<li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
-				<li class="active">Dashboard</li>
+				<li><a href="<?php echo base_url('seller/dashboard');?>"><i class="pe-7s-home"></i> Home</a></li>
+				<li class="active">Listings</li>
 			</ol>
 		</div>
 	</section>

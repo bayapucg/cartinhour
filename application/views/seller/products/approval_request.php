@@ -1,8 +1,7 @@
-  <!--main content start-->
-  <div class="col-md-9">
+ <div class="content-wrapper mar_t_con" >
+  <section class="content-header">
   <section id="main-content">
     <section class="wrapper">
-     
       <div class="row">
         <div class="col-md-12">
           <section class="panel">
@@ -87,10 +86,7 @@
       <!-- page end--> 
     </section>
   </section>
-  <!--main content end--> 
-</div>
-</div>
-</div>
+  </section>
 </div>
 <script language="JavaScript" type="text/javascript">
 

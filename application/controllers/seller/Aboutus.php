@@ -1,9 +1,8 @@
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-@include_once( APPPATH . 'controllers/seller/Admin_Controller.php');
 
-class Aboutus extends Admin_Controller {
+class Aboutus extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
@@ -12,8 +11,12 @@ class Aboutus extends Admin_Controller {
 }
 
  public function index() {
-	$this->template->write_view('content', 'seller/aboutus/index');
-		$this->template->render();
+
+ 	$this->load->view('seller/header');
+  $this->load->view('seller/aboutus');
+$this->load->view('seller/footer');
+	// $this->template->write_view('content', 'seller/aboutus/index');
+	// 	$this->template->render();
         //$this->template->render(); 
   }
   }
