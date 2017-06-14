@@ -126,7 +126,7 @@
                 <div id="Emptyforregister"></div>
                 <form  name="register_form" id="register_submit" method="POST">
                 <label>Enter your Mobile Number</label>
-                <input   class="form-control" type="text" id="seller_mobile" name="seller_mobile" autofocus>
+                <input   class="form-control" type="text" maxlength="10" id="seller_mobile" name="seller_mobile" autofocus>
               </div>
               <div class="clearfix"></div>
               <input type="submit" class="btn btn-primary  btn-block btn-sm mar_t10" name="register_do" id="register_do" value="Get OTP">
@@ -904,7 +904,10 @@ function register(){
 
 }
 
-
+function IsLcemail(reasontype) {
+        var regex = /^[0-9]{10}$/;
+        return regex.test(reasontype);
+		}
 $(document).ready(function(){
     $("#register_do").click(function(e){
     e.preventDefault();
@@ -923,33 +926,33 @@ $(document).ready(function(){
   else{
   $("#Emptyforregister").html(""); 
   }
-    if(register !="" && register .match(phone)) 
-      {
-        $("#Emptyforregister").html("");
-      }
-      else if(register !="" && !register .match(phone)){  
-        $("#Emptyforregister").html("Invalid Mobile Number Format").css("color", "red");
-        $("#login_email").focus();
-        return false;
-        }
-    $.ajax({
-    type: "POST",
-    url: '<?php echo base_url(); ?>seller/login/insert',
-    data: {seller_mobile:register},
-    success:function(data)
-    {
-      //alert(data);
-    if(data == 0)
-    {
-   $("#Emptyforregister").html("The Phone Number you entered already exist..").css("color", "red");
-     $('#login_submit')[0].reset(); 
-    }
-    else if(data == 1)
-    {
-    document.location.href='<?php echo base_url('seller/adddetails'); ?>'; 
- }
-    },
-    });
+    if(register!=''){
+		var lcemail = document.getElementById('seller_mobile').value;
+			if (!IsLcemail(lcemail)) {
+			$("#Emptyforregister").html("Please Enter Correct Mobile Number").css("color", "red");
+			jQuery('#seller_mobile').focus();
+			return;
+			}else{
+					$.ajax({
+						type: "POST",
+						   url: '<?php echo base_url(); ?>seller/login/insert',
+							data: {seller_mobile:register},
+						success:function(data)
+						{
+						  //alert(data);
+						if(data == 0)
+						{
+					   $("#Emptyforregister").html("The Phone Number you entered already exist..").css("color", "red");
+						 $('#login_submit')[0].reset(); 
+						}
+						else if(data == 1)
+								{
+								document.location.href='<?php echo base_url('seller/adddetails'); ?>'; 
+							 }
+						},
+						});
+				}
+			}
     });
     });
 </script>
