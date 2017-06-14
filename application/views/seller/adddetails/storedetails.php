@@ -51,7 +51,7 @@
     </div>
     <div class="process-step">
      <button type="button" class="btn btn-success btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
-     <p><strong>Store details</strong></p>
+     <p class="text-default" id="error_p"><strong>Store details</strong></p>
     </div>
   <div class="process-step">
      <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-image fa-3x"></i></button>
@@ -69,17 +69,70 @@
     <div class="row setup-content">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
-          <h3>Personal Details</h3>
+          <h3>Store Details</h3>
           <div class="form-group">
-            <label class="control-label">Bank Account</label>
+            <label class="control-label">Business Name</label>
             <input class="form-control" placeholder="Enter your Bank Account" type="text" id="bank_account" name="bank_account"  >
           </div>         
           <div class="form-group">
-            <label class="control-label">Aadhaar Card</label>
+            <label class="control-label">Hyperlocal Store Name </label>
             <input maxlength="100" type="text" maxlength="12" name="aadhaar_card" class="form-control" placeholder="Enter Your Aadhaar Card" />
           </div>
           <div class="form-group">
-            <label class="control-label">Personal Pan card</label>
+            <label class="control-label">Store Location</label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Business card </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Other Shops (if any): </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Other Shop Locations</label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Delivery service on your Own ?</label>
+            <input  type="radio" name="deliveryes"  id="deliveryes" value="1" />YES
+            <input  type="radio" name="deliveryes"  id="deliveryes" value="1" />No
+          </div>
+		   <div class="form-group">
+            <label class="control-label">Any web link </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Business Kyc Documents </label>
+            <input type="file" name="kycdocument" id="kycdocument" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Tin </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Tan </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Vat </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Cst </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Business Pan Card </label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">GSTIN</label>
+            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Other Kyc Docs(IF ANY):</label>
             <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
           </div>
           <!-- <div class="form-group">

@@ -90,24 +90,13 @@ $(document).ready(function(){
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container" >
   <?php echo $this->session->flashdata('msg2'); ?>
-  <form id="categories" name="categories" action="<?php echo base_url('seller/adddetails/updateseeler_details'); ?>" method="post" >
+  <form  action="<?php echo base_url('seller/adddetails/updateseeler_details'); ?>" method="post" >
     <div class="row setup-content">
       <div class="col-xs-12 ">
         <div class="col-md-12">
           <h3>Select Your Category</h3>
-          <div class="field_wrapper nopaddingRight col-md-5 san-lg pos_r" id="CenterForm" >
-		
-                 <select class="form-control"  id="seller_cat[]" name="seller_cat[]" onchange="categoryid(this.value);" required="required">
-                    <option value="">Select Category</option>
-                    <?php foreach($getcat as $cat_data){ ?>
-                    <option value="<?php echo $cat_data['category_id']; ?>"><?php echo $cat_data['category_name']; ?></option>                  
-                    <?php }?>
-                  </select>
-           </div>
-			<div class="form-group">
-					<input type="hidden" name="centerCount" id="centerCount" value="0" />
-					<button class="btn btn-primary" type="button" onclick="addCenter();"><span>Add More</span></button>
-					</div>
+         
+			<div id="test">	</div>	
       
            </div>
 
@@ -118,28 +107,26 @@ $(document).ready(function(){
     </div>
 </div>
 </html>
+ <link title="defaut" type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/demo/css/jquery.multiSelect.css" media="screen">
+<link href="<?php echo base_url(); ?>assets/demo/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/demo/js/jquery.multiSelect.min.js"></script>
+ <?php foreach($getcat as $cat_data){ 
+
+$data[]=$cat_data['category_name'];
+ }
+ //$details=explode('');
+$details= json_encode($data);
+
+
+ ?>      
+	   <script type="text/javascript">
+            $("#test").multiSelect({
+                title: "Categories",
+                elements: <?php echo $details; ?>
+            });
+        </script>
+
 <script>
-   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/dist/css/bootstrapValidator.css"/>
-    <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/dist/js/bootstrapValidator.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#categories').bootstrapValidator({
-       
-        fields: {
-			  'seller_cat[]': {
-              validators: {
-					 notEmpty: {
-                        message: 'Please select a Category'
-                    }
-                }
-            }
-            
-		
-        }
-    });
-});
 
 function addCenter() 
     {
@@ -150,7 +137,7 @@ function addCenter()
         var toDiv = document.getElementById("CenterForm");
         var div = document.createElement('div');
         div.id = 'mainForms'+val;
-        div.innerHTML = '<div class="form-group" id="CenterForm"><div class="field_wrapper nopaddingRight col-md-5 san-lg pos_r" data-plugin="inputGroupFile"><select class="form-control"  id="seller_cat[]" name="seller_cat[]" required="required"><option value="">Select Category</option><?php foreach($getcat as $cat_data){ ?><option value="<?php echo $cat_data['category_id']; ?>"><?php echo $cat_data['category_name']; ?></option><?php }?></select></div></div><button class="btn btn-primary" type="button" onclick="removeCenterRow(this);"><span>Remove File</span></button>';
+        div.innerHTML = '<div class="form-group" id="CenterForm"><div class="field_wrapper nopaddingRight col-md-5 san-lg pos_r" data-plugin="inputGroupFile"><select class="form-control"  id="category_id" name="seller_cat[]" required="required"><option value="">Select Category</option><?php foreach($getcat as $cat_data){ ?><option value="<?php echo $cat_data['category_id']; ?>"><?php echo $cat_data['category_name']; ?></option><?php }?></select></div></div><button class="btn btn-primary" type="button" onclick="removeCenterRow(this);"><span>Remove File</span></button>';
         toDiv.appendChild(div);
         var divclear = document.createElement('div');
         divclear.className = 'clear';
