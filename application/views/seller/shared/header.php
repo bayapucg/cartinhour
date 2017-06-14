@@ -114,7 +114,7 @@
 								<!--<li><a href="<?php echo base_url();?>seller/aboutus">About Us</a></li>-->
 							   <li><a href="<?php echo base_url();?>seller/faqs">FAQ's</a></li>
 							    <li><a href="<?php echo base_url();?>seller/products/create" class="pull-right">Add Listing</a>  </li>
-								<li><a href="#">Help</a></li>
+								<!--<li><a href="#">Help</a></li>-->
 								<li><a href="<?php echo base_url();?>seller/contactus">Contact Us</a></li>
 								</ul>
 								

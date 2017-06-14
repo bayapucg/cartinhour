@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-*{
-	
-}
+
 ::-webkit-scrollbar { 
   width: 0px!important;
 } 
@@ -18,6 +16,9 @@ html { overflow-y: scroll;
     opacity: 1;
 	
   }
+}
+.mar_t50{
+	margin-top:50px;
 }
 @keyframes hvr-ripple-in {
   100% {
@@ -2245,7 +2246,7 @@ h5 {
       background: url("https://lh3.googleusercontent.com/-8n81FbzWspo/AAAAAAAAAAI/AAAAAAAAWYs/UdI_hiatCk0/s60-p-rw-no/photo.jpg");
       background-size: 100%; }
     .web_disigner .parent_circle .child_round_circle_img4 {
-      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/9.jpg");
+      background: url("https://lh3.googleusercontent.com/-5ZIgyZg9UwQ/AAAAAAAAAAI/AAAAAAAACe4/Lo7IJZ56_EY/s60-p-rw-no/photo.jpg");
       background-size: 100%; }
     .web_disigner .parent_circle .child_round_circle_img5 {
       background: url("http://imensosoftware.com/wp-content/uploads/2016/01/6.jpg");

@@ -677,6 +677,7 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".navbar-fixed-top").addClass("mar_t50");
     }
 });
 
@@ -798,7 +799,7 @@ $(function() {
     });
   
    $(window).scroll(function() {
-if ($(this).scrollTop() > 350) {
+if ($(this).scrollTop() > 650) {
 $('.hm_nav').addClass('affix');
 $('.hm_nav').addClass('animated fadeInDown');
 }

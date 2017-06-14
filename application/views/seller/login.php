@@ -749,7 +749,7 @@
               <div class="col-md-4 padtop30">
                 <center><div class="parent_circle">
                   <div class="parent_circle_contain">
-                  <p>VINITA</p>
+                  <p>Vasudeva</p>
                   <p>DESIGNER PROFILE</p>
                   <a href="#">Know More...</a>
                 </div>
