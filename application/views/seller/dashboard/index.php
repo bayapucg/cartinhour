@@ -64,7 +64,7 @@
                                             <td></td>
                                             <td></td>                                              </tr>
                                         <?php $SNO++; } ?>
-                        </tbody>
+							</tbody>
                     </table>
                 </div>
 				</div>
@@ -78,8 +78,9 @@
       <!-- <h1 class="head_title">My Returns</h1> -->
      <div><?php echo $this->session->flashdata('message');?></div>
       <div class="faq"> 
-      
-        <?php  foreach($returnitemdata as $returncatitem_data )  {    ?>
+      <?php //echo '<pre>';print_r($returnitemdata);exit; ?>
+	  <?php if(count($returnitemdata)>0){ ?>
+		    <?php  foreach($returnitemdata as $returncatitem_data )  {    ?>
         <!--<h1 onclick="document.getElementById('gry').style.display='block'">GETTING STARTED</h1>-->
         <h1 data-toggle="collapse" data-target="#gry<?php echo $returncatitem_data->category_name;   ?>"><?php echo $returncatitem_data->category_name;   ?></h1>
         <div class="demo"> 
@@ -118,7 +119,7 @@
                   <?php if(!empty($subcategory->returndocs12)): ?>
               <tbody>
                 <?php $count = $this->uri->segment(4, 0);
-   foreach($subcategory->returndocs12 as $orders_data){?>
+						foreach($subcategory->returndocs12 as $orders_data){?>
                 <tr>
                   <td><?= ++$count ?></td>
                   <td><?php  echo $orders_data->order_id; ?></td>
@@ -159,11 +160,7 @@
 
               <?php else: ?>
 
-              <center>
-
-                <strong>No Records Found</strong>
-
-              </center>
+              
 
               <?php endif; ?>
                 </table>
@@ -186,6 +183,15 @@
         </div>
         <!-- container --> 
        <?php }?>
+		<?php }else{?>
+		<center>
+
+		<strong>No Records Found</strong>
+
+		</center>
+
+		<?php }   ?>
+      
       </div>
     </div>
   
