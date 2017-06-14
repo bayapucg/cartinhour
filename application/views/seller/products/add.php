@@ -47,6 +47,7 @@
               <form name="addprodustc" id="addprodustc" action="<?php echo base_url(); ?>seller/products/insert/<?php echo $this->uri->segment(4); ?>/<?php echo $this->uri->segment(5); ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group nopaddingRight col-md-6 san-lg">
                   <label for="exampleInputEmail1">Select Category</label>
+				  <?php //echo '<pre>';print_r($sub_cat_data);exit;?>
                  <select class="form-control " id="category_id" name="category_id">
                     <option value="">Select Category</option>
 					
