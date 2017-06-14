@@ -51,6 +51,11 @@
   left: 250px;
 }
 </style>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/dist/css/bootstrapValidator.css"/>
+    <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/bootstrapValidator.js"></script>
+
 <script type="text/javascript">
   $(document).ready(function(){
     $("#details").click(function(){
@@ -155,25 +160,30 @@ $('.window').hide();
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container " >
   <?php echo $this->session->flashdata('msg2'); ?>
-  <form  action="<?php echo base_url(); ?>seller/adddetails/updatebasicdetails" method="post" >
+  <?php if($this->session->flashdata('error')): ?>
+				<div class="alert dark alert-warning alert-dismissible" id="infoMessage"><button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button><?php echo $this->session->flashdata('error');?></div>
+				<?php endif; ?>
+  <form  id="basicdetails" name="basicdetails" action="<?php echo base_url('seller/adddetails/updatebasicdetails'); ?>" method="post" >
     <div class="row setup-content">
       <div class="col-xs-6 col-md-offset-3">
         <div class="col-md-12">
           <h3>Basic Details</h3><br>
           <div class="form-group">
             <label class="control-label">Name</label>
-            <input class="form-control" placeholder="Name" type="text" id="seller_name" name="seller_name" required="required" >
+            <input class="form-control" placeholder="Name" type="text" id="seller_name" name="seller_name" >
           </div>
           <div class="form-group">
             <label class="control-label">Email address</label>
-            <input class="form-control" placeholder="Email Address" type="Email" id="seller_email" name="seller_email" required="required" >
+            <input class="form-control" placeholder="Email Address" type="Email" id="seller_email" name="seller_email">
           </div>         
           <div class="form-group">
             <label class="control-label">Resident address</label>
-            <input maxlength="100" type="text" required="required" name="seller_address" class="form-control" placeholder="Enter Resident address" />
+            <input maxlength="100" type="text" id="seller_address"  name="seller_address" class="form-control" placeholder="Enter Resident address" />
           </div>
 
-             <input type="submit" class="btn btn-primary pull-right" value="Next">
+             <button type="submit" class="btn btn-primary pull-right" value="Next">Next</button>
               </form>
         </div>
       </div>
@@ -188,39 +198,7 @@ $('.window').hide();
   	<div class="row">
 			<h2 class="text-center border_head">Checklist Documents </h2>
 			</div>
-		<!--<div class="">
-		<div class="row">
-			<h2 class="text-center border_head">Checklist Documents </h2>
-			</div>
-			<div class="row mar_t30 text-center">
-				<div class="col-md-12 ">
-					
-					<div class="clearfix "></div>
-					<div class="col-md-4">Adhar Card</div>
-					<div class="col-md-4">Personal PAN Card</div>
-					<div class="col-md-4">Company PAN Card</div>
-					
-				</div>
-			</div>
-			<div class="row mar_t10 text-center">
-			
-				<div class="col-md-12">
-					<div class="col-md-4">TIN / TAN / VAT</div>
-					<div class="col-md-4">GSTIN</div>
-					<div class="col-md-4">Bank Account Details</div>
-					
-				</div>
-			</div>
-			<div class="row mar_t10 text-center">
-			
-				<div class="col-md-12">
-					<div class="col-md-4">Shop licence number</div>
-					<div class="col-md-4">Business Details</div>
-					<div class="col-md-4">Adhar Card</div>
-					
-				</div>
-			</div>
-		</div>-->
+		
 		<div class="row">
 		<div class="col-md-6" style="border-right:1px solid #ddd;">
 			<ul class="doc_list" >
@@ -250,4 +228,56 @@ $('.window').hide();
     </div>
   </footer>
 </html>
+   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/dist/css/bootstrapValidator.css"/>
+    <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#basicdetails').bootstrapValidator({
+       
+        fields: {
+			seller_name: {
+              validators: {
+					notEmpty: {
+						message: 'Name is required'
+					},
+                   regexp: {
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: 'Name can only consist of alphanumaric, space and dot'
+					}
+                }
+            },
+            seller_email: {
+               validators: {
+				notEmpty: {
+					message: 'Email is required'
+				},
+				regexp: {
+				regexp: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+				message: 'Please enter a valid email address. For example johndoe@domain.com.'
+				}
+            
+			}
+            },
+			seller_address: {
+               validators: {
+				notEmpty: {
+					message: 'Address Line is required'
+				},
+				regexp: {
+				regexp:/^[ A-Za-z0-9_@.,/!;:}{@#&`~'"\\|=^?$%*)(_+-]*$/,
+				message: 'Address Line wont allow <>[]'
+				}
+            
+			}
+            }
+            
+		
+        }
+    });
+});
+</script>
+		
+
 
