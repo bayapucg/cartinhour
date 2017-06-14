@@ -8,36 +8,35 @@ class Adddetails_model extends MY_Model
 	parent::__construct();
 
 	}
-public function getcatdata()
-  {
-    
-    $query=$this->db->get('category');
-    return $query->result();
-    
-  }
+	public function getcatdata()
+	  {
+		
+		$query=$this->db->get('category');
+		return $query->result();
+		
+	  }
   public function insertseller_cat($data)
 	{
-		 $this->db->insert('seller_categories', $data);
-  		return $insert_id = $this->db->insert_id();
+		
+		$sid= $this->session->userdata('seller_id');	
+		$this->db->where('seller_id',$sid);
+		$query= $this->db->insert('seller_categories', $data);
+		return $query;
 	}
 
-  public function insertseller_basic($data)
-{
-	
-	// $sid= $this->session->userdata('seller_id');
-	// $this->db->where('seller_id',$sid);	
-	// $query = $this->db->get('sellers');
-	// return $query->row();
+	public function insertseller_basic($data)
+	{
+	 $sid= $this->session->userdata('seller_id');	
+	 $this->db->where('seller_id',$sid);
+	 $query=$this->db->update('sellers',$data);
+	 return $query;
 
-	$sid= $this->session->userdata('seller_id');	
-$this->db->where('seller_id',$sid);
-		$query=$this->db->update('sellers',$data);
-		return $query;
+	}
+	function seller_personal_details($data,$sid){
+		$this->db->where('seller_id',$sid);
+    	return $this->db->update("sellers",$data);
 
-	// $this->db->update('sellers',$data);
-	// 		//print_r($data); exit;
-	// 	return true;	
-}
+	}
 
 
   

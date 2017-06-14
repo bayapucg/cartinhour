@@ -132,7 +132,7 @@ public function insertseller($data)
 	
 	$this->db->insert('sellers',$data);
 			//print_r($data); exit;
-		return true;	
+	return $insert_id = $this->db->insert_id();	
 }
 
 //contact us details
