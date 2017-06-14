@@ -15,6 +15,11 @@ public function getcatdata()
     return $query->result();
     
   }
+  public function insertseller_cat($data)
+	{
+		 $this->db->insert('seller_categories', $data);
+  		return $insert_id = $this->db->insert_id();
+	}
 
   public function insertseller_basic($data)
 {

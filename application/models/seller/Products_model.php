@@ -23,7 +23,8 @@ class Products_model extends MY_Model
 	{
 		
 		$query=$this->db->get('category');
-		return $query->result();
+		return $query->result_array();
+
 		
 	}
 	public function getcateditdata()
