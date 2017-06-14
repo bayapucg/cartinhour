@@ -19,11 +19,11 @@ class Dashboard extends Admin_Controller {
 	{
 		
 		$data['sellersubcatdata'] = $this->dashboard_model->getsellersubcatdata();		
-    $data['returnitemdata'] = $this->products_model->returns();
-    $data['seller_ad'] = $this->dashboard_model->seller_ads();
-    $some['sellerscats'] = $this->dashboard_model->seller_cats();
+		$data['returnitemdata'] = $this->products_model->returns();
+		$data['seller_ad'] = $this->dashboard_model->seller_ads();
+		$data['sellerscats'] = $this->dashboard_model->seller_cats();
 		//echo '<pre>';print_r($data);exit;
-		$this->template->write_view('content', 'seller/dashboard/index', $data,$some);
+		$this->template->write_view('content', 'seller/dashboard/index', $data);
 		$this->template->render();
 	}
 	public function subcategoryview()
@@ -41,16 +41,16 @@ class Dashboard extends Admin_Controller {
 
 	}
 	
-public function change_password()
- 
- {
-	$this->template->write_view('content', 'seller/dashboard/change_password');
+	public function change_password()
+	 
+	 {
+		$this->template->write_view('content', 'seller/dashboard/change_password');
 
-		$this->template->render();  
-	 
-	 
-	 
- }
+			$this->template->render();  
+		 
+		 
+		 
+	 }
  public function success()
  
  {
