@@ -23,6 +23,7 @@ class Adddetails extends Seller_adddetails{
 	{  
 		$data = array(
 
+		'seller_id' => $this->session->userdata('seller_id'),
 		'seller_name' => $this->input->post('seller_name'),
 		'seller_email' => $this->input->post('seller_email'),
 		'seller_address' => $this->input->post('seller_address'),
@@ -30,7 +31,7 @@ class Adddetails extends Seller_adddetails{
 		'updated_at'  => date('Y-m-d H:i:s')
 
 		);
-   //echo '<pre>';print_r($data);exit;
+  //echo '<pre>';print_r($data);exit;
 		$res=$this->adddetails_model->insertseller_basic($data);
 		if(count($res)>0)
 		  {
@@ -56,18 +57,36 @@ class Adddetails extends Seller_adddetails{
 	public function updateseeler_details()
 	{  
 
+			
+			$post=$this->input->post();
+			$result = array_unique($post['seller_cat']);
+			//echo implode(", ",$result);
+			//echo '<pre>';print_r($result);exit;
+			foreach($result as $subcats){
 			$data = array(
 			'seller_id' => $this->session->userdata('seller_id'),
-			'seller_category_id'=> $this->input->post('seller_cat'),
+			'seller_category_id'=> $subcats,
+			'created_at'=> date('Y-m-d h:i:s'),
+			'updated_at'=>  date('Y-m-d h:i:s'),
 			);
-			$post=$this->input->post();
-			echo '<pre>';print_r($post);exit();
+			//echo '<pre>';print_r($data);//exit
 			$res=$this->adddetails_model->insertseller_cat($data);
+			
+			}
+			
 			if(count($res)>0)
 			{
 			$this->session->set_flashdata('success','category details updated');
-			return redirect('seller/adddetails/personaldetails');
+			return redirect('seller/adddetails/storedetails');
 			}
+
+
+    }
+	public function storedetails()
+	{  
+
+		$this->load->view('seller/layouts/header');
+		$this->load->view('seller/adddetails/storedetails');
 
 
     }
@@ -82,27 +101,32 @@ class Adddetails extends Seller_adddetails{
 	 public function updatepersonaldetails()
   {  
 
-echo "erwer";exit;
+   $post=$this->input->post();
+ 
    $data = array(
-    'seller_id' => $this->session->userdata('seller_id'),
-    'seller_bank_account' => $this->input->post('bank_account'), 
-    'seller_adhar' => $this->input->post('aadhaar_card'),
-    'seller_pan_card' => $this->input->post('pan_card'),    
+    'seller_bank_account' => $post['bank_account'], 
+    'seller_adhar' => $post['aadhaar_card'],
+    'seller_pan_card' => $post['pan_card'],    
     'created_at'  => date('Y-m-d H:i:s'),
     'updated_at'  => date('Y-m-d H:i:s')
   
   );
    //echo '<pre>';print_r($data);exit;
-    $result=$this->personaldetails_model->insertseller_personal($data);
+    $result=$this->adddetails_model->seller_personal_details($data,$this->session->userdata('seller_id'));
    
     if(count($result)>0)
       {
-
-        $this->session->set_flashdata('succes','');
-
-        return redirect('seller/success');
+		$this->session->set_flashdata('succes','');
+		return redirect('seller/adddetails/success');
 
       }
+
+
+    }
+	public function success()
+	{  
+		$this->template->write_view('content', 'seller/adddetails/success');
+		$this->template->render();
 
 
     }
