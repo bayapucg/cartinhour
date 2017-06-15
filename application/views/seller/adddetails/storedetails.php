@@ -52,7 +52,7 @@
      <p><strong>Select your Category</strong></p>
     </div>
     <div class="process-step">
-     <button type="button" class="btn btn-success btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
+     <button type="button" class=" btn-info btn btn-circle" data-toggle="tab" href="#menu3"><i class="fa fa-image fa-3x"></i></button>
      <p class="text-default" id="error_p"><strong>Store details</strong></p>
     </div>
   <div class="process-step">
@@ -66,14 +66,14 @@
 </div>
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container" >
-  <?php echo $this->session->flashdata('msg2'); ?>
+  <?php //echo $this->session->flashdata('msg2'); ?>
   <form id="storedetails" name="storedetails" onsubmit="return validation();" action="<?php echo base_url('seller/adddetails/seller_storedetails'); ?>" enctype="multipart/form-data" method="post" >
     <div class="row setup-content">
 		<div class="col-xs-12 ">
         <div class="col-md-6">
-		<input type="hidden" name="cstimageserror1" id="cstimageserror1" value="1">
-		<input type="hidden" name="cstimageserror2" id="cstimageserror2" value="1">
-		<input type="hidden" name="cstimageserror3" id="cstimageserror3" value="1">
+		<input type="hidden" name="timimageserrormsg" id="timimageserrormsg" value="1">
+		<input type="hidden" name="cstimageserrormsg" id="cstimageserrormsg" value="1">
+		<input type="hidden" name="tanimgesserrormsg" id="tanimgesserrormsg" value="1">
           <div class="form-group">
             <label class="control-label">Your Store Name (Which displays on our website)</label>
             <input  type="text" class="form-control" name="storename" id="storename" class="storename">
@@ -141,7 +141,7 @@
 		
 		 
 	
-             <input type="submit" class="btn btn-primary pull-right " value="Next">
+             <input type="submit" id="resubmit" class="btn btn-primary pull-right " value="Next">
               </form>
         </div>
       </div>
@@ -189,12 +189,15 @@ function tinpopupimage(imagename){
 		if(ext !=''){
 			if(ext == "docx" || ext == "doc" || ext == "pdf" || ext == "xlsx" || ext == "xls")
 			{
-			jQuery('#cstimageserror3').val(1);
+			jQuery('#timimageserrormsg').val(1);
 			jQuery(tinimageerror).html('')
+			 document.getElementById("resubmit").disabled = false; 
 			} else{
-			jQuery('#cstimageserror3').val(0);
+				document.getElementById("resubmit").disabled = true; 
+			jQuery('#timimageserrormsg').val(0);
 			jQuery('#tinimageerror').html('Uploaded file is not a valid. Only docx,doc,pdf,xlsx,pdf files are allowed');
 			return false;
+			
 			}
 		}
 	
@@ -223,10 +226,11 @@ function tanimageuload(imagename){
 		if(ext !=''){
 			if(ext == "docx" || ext == "doc" || ext == "pdf" || ext == "xlsx" || ext == "xls")
 			{
-			jQuery('#cstimageserror2').val(1);
+				document.getElementById("resubmit").disabled = false; 
+			jQuery('#tanimgesserrormsg').val(1);
 			jQuery('#tanimgserror').html('')
 			} else{
-			jQuery('#cstimageserror2').val(0);
+			jQuery('#tanimgesserrormsg').val(0);
 			jQuery('#tanimgserror').html('Uploaded file is not a valid. Only docx,doc,pdf,xlsx,pdf files are allowed');
 			return false;
 			}
@@ -244,10 +248,11 @@ function cstimageuload(imagename){
 		if(ext !=''){
 			if(ext == "docx" || ext == "doc" || ext == "pdf" || ext == "xlsx" || ext == "xls")
 			{
-			jQuery('#cstimageserror1').val(1);
+			document.getElementById("resubmit").disabled = false; 
+			jQuery('#cstimageserrormsg').val(1);
 			jQuery('#cstimageserror').html('')
 			} else{
-			jQuery('#cstimageserror1').val(0);
+			jQuery('#cstimageserrormsg').val(0);
 			jQuery('#cstimageserror').html('Uploaded file is not a valid. Only docx,doc,pdf,xlsx,pdf files are allowed');
 			return false;
 			}
@@ -255,14 +260,13 @@ function cstimageuload(imagename){
 }
  function validation(){
 	 
-	 var imageerror1=document.getElementById("cstimageserror1").value;
-	 var imageerror2=document.getElementById("cstimageserror2").value;
-	 var imageerror3=document.getElementById("cstimageserror3").value;
-	
-	 if(imageerror1==1 && imageerror2==1 && imageerror3==1){
-		return true; 
-	 }else{
+	 var imageerror1=document.getElementById("timimageserrormsg").value;
+	 var imageerror2=document.getElementById("cstimageserrormsg").value;
+	 var imageerror3=document.getElementById("tanimgesserrormsg").value;
+	if(imageerror1==0 || imageerror2 ==0 || imageerror3 ==0){
 		return false; 
+	 }else{
+		return true; 
 	 }
 	 
  }
@@ -312,8 +316,8 @@ $(document).ready(function() {
 						message: 'Pincode is required'
 					},
 					regexp: {
-					regexp:  /^[0-9]{8}$/,
-					message:'Pincode must be 8 digits'
+					regexp:  /^[0-9]{6}$/,
+					message:'Pincode must be 6 digits'
 					}
             
 			}
@@ -334,36 +338,6 @@ $(document).ready(function() {
 				regexp: {
 					regexp: /^[a-zA-Z0-9. ]+$/,
 					message: ' Weblink can only consist of alphanumaric, space and dot'
-				}
-            
-			}
-            },
-			timimages: {
-               validators: {
-				
-			regexp: {
-				regexp: "(.*?)\.(docx|doc|pdf|xlsx|xls)$",
-				message: 'Uploaded file is not a valid. Only docx,doc,xlsx,pdf files are allowed'
-				}
-            
-			}
-            },
-			tanimages: {
-               validators: {
-				
-			regexp: {
-				regexp: "(.*?)\.(docx|doc|pdf|xlsx|xls)$",
-				message: 'Uploaded file is not a valid. Only docx,doc,xlsx,pdf files are allowed'
-				}
-            
-			}
-            },
-			cstimag: {
-               validators: {
-				
-			regexp: {
-				regexp: "(.*?)\.(docx|doc|pdf|xlsx|xls)$",
-				message: 'Uploaded file is not a valid. Only docx,doc,xlsx,pdf files are allowed'
 				}
             
 			}

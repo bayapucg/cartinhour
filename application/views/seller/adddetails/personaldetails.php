@@ -54,7 +54,7 @@
      <p><strong>Store details</strong></p>
     </div>
   <div class="process-step">
-     <button type="button" class="btn btn-default btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-image fa-3x"></i></button>
+     <button type="button" class="btn-info btn btn-circle" data-toggle="tab" href="#menu4"><i class="fa fa-image fa-3x"></i></button>
      <p><strong>Personal details</strong></p>
     </div>
     
@@ -72,7 +72,7 @@
           <h3>Personal Details</h3>
           <div class="form-group">
             <label class="control-label">Bank Account</label>
-            <input class="form-control" placeholder="Enter your Bank Account" type="text" id="bank_account" name="bank_account"  >
+            <input class="form-control" maxlength="16" placeholder="Enter your Bank Account" type="text" id="bank_account" name="bank_account"  >
           </div>         
           <div class="form-group">
             <label class="control-label">Aadhaar Card</label>
@@ -108,8 +108,8 @@ $(document).ready(function() {
 						message: 'Bank Account is required'
 					},
                    regexp: {
-					regexp: /^[a-zA-Z0-9. ]+$/,
-					message: 'Bank Account can only consist of alphanumaric, space and dot'
+					regexp:  /^[0-9]{11,16}$/,
+					message:'Bank Account  must be 10 to 14 digits'
 					}
                 }
             },
