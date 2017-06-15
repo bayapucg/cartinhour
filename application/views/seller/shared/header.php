@@ -126,35 +126,40 @@
   <div class="row">
     <div class="col-md-6">
                 
-   <form class="form-horizontal" id="enquery">
-
+<div class=" orm-horizontal" >
   <div class="form-group">
       <label class="control-label col-sm-4" for="">Mobile/Phone No:</label>
       <div class="col-sm-8">
-        <input type="text" class="form-control" id="phone_number" placeholder="Enter Mobile/Phone No" name="phone_number" reqired>
-      </div>
+        <input type="text" class="form-control" maxlength="10" id="phone_number" placeholder="Enter Mobile/Phone No" name="phone_number" reqired>
+	<span id="Emptyforregister"></span>     
+	 </div>
+	  
     </div> 
+	  </br></br></br><div class="clearfix"></div>
   <div class="form-group">
       <label class="control-label col-sm-4" for="">Select Plan :</label>
       <div class="col-sm-8">   
       <div id="register-response"></div>
-                <div id="Emptyforregister"></div>       
+            
         <select class="form-control" id="plan" name="plan" required="required">
         <option>Select Plan</option>
         <option value="Both">Both</option>
         <option value="Inventory management">Inventory management</option>
         <option value="Catalog Management">Catalog Management</option>
       </select>
+	  <div id="selecrpalnerror"></div> 
       </div>
+	   
    </div>
-    <div class="form-group">        
-    </div>
+  </br></br>
+  
     <div class="form-group">        
       <div class="col-sm-offset-4 col-sm-8">
-        <input type="submit" name="enquery_form" id="enquery_form" class="btn btn-primary" value="Send">
+        <button  name="enquery_form" id="enquery_form" onclick="validation();" class="btn btn-primary" value="Send">Send</button>
       </div>
     </div>
-  </form>
+	</div>
+  
       </div>
       <div class="col-md-3">&nbsp;</div>
       
@@ -170,55 +175,57 @@
   </div>
   <!--end Just fill form to Select plan Modal -->
   <script type="text/javascript">
-$(document).ready(function(){
-    $("#enquery_form").click(function(e){
-    e.preventDefault();
-
-    var register;
-    var plan;
-    register = $("#phone_number").val();
-    plan = $("#plan").val();
-
-    //alert(plan);
-    var phone =  /^(?=.*?[1-9])[0-9()-+]+$/;
-   
-   if(register=="")
-  {
-  $("#Emptyforregister").html("Please Enter Mobile Number").css("color", "red");
-    $("#phone_number").focus();
-        return false;
-  }
-  else{
-  $("#Emptyforregister").html(""); 
-  }
-  if(plan=="")
-  {
-  $("#Emptyforregister").html("Chose Your Plan").css("color", "red");
-    $("#phone_number").focus();
-        return false;
-  }
-  else{
-  $("#Emptyforregister").html(""); 
-  }
-    $.ajax({
-    type: "POST",
-    url: '<?php echo base_url(); ?>seller/services/details',
-    data: {phone_number:register,plan:plan},
-    success:function(data)
-    {
-      //alert(data);
-    if(data == 0)
-    {
-   $("#Emptyforregister").html("The Phone Number you entered already exist..").css("color", "red");
-     $('#enquery_form')[0].reset(); 
-    }
-    else if(data == 1)
-    {
-        $("#Emptyforregister").html("Success..").css("color", "green");
-    document.location.href='<?php echo base_url('seller/services'); ?>'; 
- }
-    },
+  function IsLcemail(reasontype) {
+        var regex = /^[0-9]{10}$/;
+        return regex.test(reasontype);
+		}
+  function validation(){
+	  var mobile = $("#phone_number").val();
+	  if(mobile==''){
+		$("#Emptyforregister").html("Please Enter Mobile Number").css("color", "red");
+		$("#phone_number").focus();
+		return false;
+	  }else {
+		  $("#Emptyforregister").html("");
+		 }
+	  if(mobile!=''){
+		  var lcemail = document.getElementById('phone_number').value;
+		if (!IsLcemail(lcemail)) {
+			$("#Emptyforregister").html("Please Enter Correct Mobile Number").css("color", "red");
+			jQuery('#seller_mobile').focus();
+			return false;
+			}else{
+			$("#Emptyforregister").html("");	
+			}
+		}
+		var plans = $("#plan").val();
+		if(plans=="Select Plan"){
+			$("#selecrpalnerror").html("Please Select a Plan").css("color", "red");
+			return false;
+		}else{
+			$("#selecrpalnerror").html("");
+		} 
+		$.ajax({
+			type: "POST",
+			url: '<?php echo base_url('seller/services/details'); ?>',
+			data: {phone_number:mobile,plan:plans},
+				success:function(data)
+				{
+						  //alert(data);
+						if(data == 0)
+						{
+					   $("#Emptyforregister").html("The Phone Number you entered already exist..").css("color", "red");
+						 $('#enquery_form')[0].reset(); 
+						}
+						else if(data == 1)
+						{
+							$("#Emptyforregister").html("Success..").css("color", "green");
+						document.location.href='<?php echo base_url('seller/services'); ?>'; 
+					 }
+				},
     });
-    });
-    });
+	  
+			 
+  }
+ 
 </script>
