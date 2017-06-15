@@ -37,6 +37,23 @@ class Adddetails_model extends MY_Model
     	return $this->db->update("sellers",$data);
 
 	}
+	function storedetails_adding($data){
+		$this->db->insert('seller_store_details', $data);
+		return $insert_id = $this->db->insert_id();
+
+	}
+	function setpassword($sid,$data){
+		$this->db->where('seller_id',$sid);
+    	return $this->db->update("sellers",$data);
+
+	}
+	function getseller_details($sid){
+		$this->db->select('*')->from('sellers');
+		$this->db->where('seller_id', $sid);
+		return $this->db->get()->row_array();
+
+	}
+	
 
 
   
