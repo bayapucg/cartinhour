@@ -29,7 +29,7 @@
   
 
 
-   <form  class=""  method="post" action="<?php echo base_url(); ?>seller/promotions/storepromotions" role="form">
+   <form  name="promotions" id="promotions" class=""  method="post" action="<?php echo base_url('seller/promotions/storepromotions'); ?>" role="form">
           <div class="messages" id="form-messages"></div>
           <?php echo $this->session->flashdata('msg1'); ?>
           <div class="controls">
@@ -82,6 +82,61 @@
      </section>
   </div>
 
+   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/dist/css/bootstrapValidator.css"/>
+    <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#promotions').bootstrapValidator({
+       
+        fields: {
+			        fname: {
+          validators: {
+						notEmpty: {
+						message: 'Firstname is required'
+					},
+					regexp: {
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: 'Firstname can only consist of alphanumaric, space and dot'
+				}
+		  }
+        },
+		email: {
+				validators: {
+					notEmpty: {
+						message: 'Email is required'
+					},
+					regexp: {
+					regexp: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+					message: 'Please enter a valid email address.For example johndoe@domain.com.'
+					}
+				}
+			},
+			phone: {
+				validators: {
+					notEmpty: {
+						message: 'Phone is required'
+					},
+					regexp: {
+					regexp:  /^[0-9]{10}$/,
+					message:'Phone must be 10 digits'
+					}
+				}
+			},
+			message : {
+				validators: {
+					notEmpty: {
+						message: 'Please enter a Message'
+					}
+				}
+			}
+            
+		
+        }
+    });
+});
+</script>
+		
   
   <!--body end here --> 
   
