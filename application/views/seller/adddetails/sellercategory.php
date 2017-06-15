@@ -90,7 +90,7 @@ $(document).ready(function(){
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container" >
   <?php echo $this->session->flashdata('msg2'); ?>
-  <form id="categories" name="categories" action="<?php echo base_url('seller/adddetails/updateseeler_details'); ?>" method="post" >
+  <form id="categories" name="categories" action="<?php echo base_url('seller/adddetails/updateseeler_details'); ?>" enctype="multipart/form-data"ss method="post" >
     <div class="row setup-content">
       <div class="col-xs-12 ">
         <div class="col-md-12">

@@ -12,7 +12,9 @@
 .process-step{display:table-cell;text-align:center;position:relative}
 .process-step p{margin-top:4px}
 .btn-circle{width:80px;height:80px;text-align:center;font-size:12px;border-radius:50%}
-
+.modal-backdrop.in {
+    opacity: 0 !important;
+}
 </style>
 
 <div class="navigation_main ">
@@ -65,131 +67,351 @@
 <div class="" style="margin-bottom:50px;">&nbsp;</div>
 <div class="container" >
   <?php echo $this->session->flashdata('msg2'); ?>
-  <form id="personalidetails" name="personalidetails" action="<?php echo base_url('seller/adddetails/updatepersonaldetails'); ?>" method="post" >
+  <form id="storedetails" name="storedetails" onsubmit="return validation();" action="<?php echo base_url('seller/adddetails/seller_storedetails'); ?>" enctype="multipart/form-data" method="post" >
     <div class="row setup-content">
-      <div class="col-xs-6 col-md-offset-3">
-        <div class="col-md-12">
-          <h3>Store Details</h3>
+		<div class="col-xs-12 ">
+        <div class="col-md-6">
+		<input type="hidden" name="cstimageserror1" id="cstimageserror1" value="1">
+		<input type="hidden" name="cstimageserror2" id="cstimageserror2" value="1">
+		<input type="hidden" name="cstimageserror3" id="cstimageserror3" value="1">
           <div class="form-group">
-            <label class="control-label">Business Name</label>
-            <input class="form-control" placeholder="Enter your Bank Account" type="text" id="bank_account" name="bank_account"  >
-          </div>         
-          <div class="form-group">
-            <label class="control-label">Hyperlocal Store Name </label>
-            <input maxlength="100" type="text" maxlength="12" name="aadhaar_card" class="form-control" placeholder="Enter Your Aadhaar Card" />
+            <label class="control-label">Your Store Name (Which displays on our website)</label>
+            <input  type="text" class="form-control" name="storename" id="storename" class="storename">
           </div>
-          <div class="form-group">
-            <label class="control-label">Store Location</label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+		   <label class="control-label">Enter your Store location</label>
+		<div class="form-group">
+            <label class="control-label">Address Line 1</label>
+            <input  type="text"  name="address1" id="address1" class="form-control" />
           </div>
 		  <div class="form-group">
-            <label class="control-label">Business card </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+            <label class="control-label">Address Line 2</label>
+            <input  type="text"  name="address2" id="address2" class="form-control" />
+          </div>
+		  <div class="form-group">
+            <label class="control-label">Pincode</label>
+            <input  type="text"  name="pincode" id="pincode" class="form-control" />
           </div>
 		  <div class="form-group">
             <label class="control-label">Other Shops (if any): </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+            <input  type="text"  name="other_shops" id="other_shops" class="form-control"  />
           </div>
-		  <div class="form-group">
+		 <div class="form-group">
             <label class="control-label">Other Shop Locations</label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+            <input  type="text"  name="other_shops_location" id="other_shops_location" class="form-control"  />
           </div>
-		  <div class="form-group">
+		 <div class="form-group">
             <label class="control-label">Delivery service on your Own ?</label>
             <input  type="radio" name="deliveryes"  id="deliveryes" value="1" />YES
-            <input  type="radio" name="deliveryes"  id="deliveryes" value="1" />No
+            <input  type="radio" name="deliveryes"  id="deliveryes" value="0" />No
+          </div>
+		 <div class="form-group">
+            <label class="control-label">Any web link </label>
+            <input type="text" id="weblink"  name="weblink" class="form-control"/>
           </div>
 		   <div class="form-group">
-            <label class="control-label">Any web link </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
-          </div>
-		  <div class="form-group">
-            <label class="control-label">Business Kyc Documents </label>
-            <input type="file" name="kycdocument" id="kycdocument" />
-          </div>
-		  <div class="form-group">
-            <label class="control-label">Tin </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+            <label class="control-label">TIN / VAT</label>
+            <input type="text"  name="tin" id="tin" class="form-control" />
+            <input type="file" title="Upload" name="timimages" onchange="tinpopupimage(this.value);" id="timimages" class="form-control" />
+			<a onclick="deactive();" href="javascript:void(0)" >Upload</a>
+			<span id="tinimage"></span>
+			<span style="color:red" id="tinimageerror"></span>
+		
           </div>
 		  <div class="form-group">
             <label class="control-label">Tan </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+            <input  type="text"  name="tan" id="tan" class="form-control"/>
+			<input type="file" name="tanimages" id="tanimages" onchange="tanimageuload(this.value)">
+			<a onclick="deactive1();" href="javascript:void(0)" >Upload</a>
+			<span id="tanimgs"></span>
+			<span style="color:red" id="tanimgserror"></span>
           </div>
-		  <div class="form-group">
-            <label class="control-label">Vat </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
-          </div>
-		  <div class="form-group">
+		<div class="form-group">
             <label class="control-label">Cst </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+            <input  type="text" id="cst"  name="cst" class="form-control"/>
+			<input type="file" id="cstimag" name="cstimag" onchange="cstimageuload(this.value)">
+			<a onclick="deactive2();" href="javascript:void(0)" >Upload</a>
+			<span id="cstimages"></span>
+			<span style="color:red" id="cstimageserror"></span>
           </div>
-		  <div class="form-group">
-            <label class="control-label">Business Pan Card </label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
-          </div>
-		  <div class="form-group">
+		
+		 <div class="form-group">
             <label class="control-label">GSTIN</label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
+            <input  type="text"  name="gstin" id="gstin" class="form-control"  />
           </div>
-		  <div class="form-group">
-            <label class="control-label">Other Kyc Docs(IF ANY):</label>
-            <input maxlength="100" type="text"  name="pan_card" class="form-control" placeholder="Enter your Pan Card" />
-          </div>
-          <!-- <div class="form-group">
-            <label class="control-label">KYC documents of store</label>
-            <input  type="file"   class="form-control" name="report_file" />
-          </div> -->
-             <input type="submit" class="btn btn-primary " value="Next">
+		
+		 
+	
+             <input type="submit" class="btn btn-primary pull-right " value="Next">
               </form>
         </div>
       </div>
+	  
+	   <div class="modal fade" id="tinpopups" role="dialog" style="opacity:1;">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p><input type="file" name="tinimage" id="tinimage" onchange="tinpopupimage(this.value)" ></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
     </div>
-</div>
+  </div>
+    </div>
+	</div>
+	
+
+
 </html>
  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/dist/css/bootstrapValidator.css"/>
     <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/dist/js/bootstrapValidator.js"></script>
 <script type="text/javascript">
+$('#timimages').hide();
+$('#tanimages').hide();
+$('#cstimag').hide();
+function tinpopupimage(imagename){
+ $('input[type="file"]').change(function(e){
+	var fileName0 = e.target.files[0].name;
+		document.getElementById("tinimage").innerHTML = fileName0; 
+	});
+	var fup = document.getElementById('timimages');
+		var fileName = fup.value;
+		var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+		if(ext !=''){
+			if(ext == "docx" || ext == "doc" || ext == "pdf" || ext == "xlsx" || ext == "xls")
+			{
+			jQuery('#cstimageserror3').val(1);
+			jQuery(tinimageerror).html('')
+			} else{
+			jQuery('#cstimageserror3').val(0);
+			jQuery('#tinimageerror').html('Uploaded file is not a valid. Only docx,doc,pdf,xlsx,pdf files are allowed');
+			return false;
+			}
+		}
+	
+}
+
+function deactive(id){
+	$('#timimages').trigger("click");	
+	var imgname=document.getElementById("timimages").value;	
+}
+function deactive1(id){
+	$('#tanimages').trigger("click");	
+	var imgname=document.getElementById("timimages").value;	
+}
+function deactive2(id){
+	$('#cstimag').trigger("click");	
+	var imgname=document.getElementById("timimages").value;	
+}
+function tanimageuload(imagename){
+	$('input[type="file"]').change(function(e){
+	var fileName = e.target.files[0].name;
+		document.getElementById("tanimgs").innerHTML = fileName; 
+	});
+	var fup = document.getElementById('tanimages');
+		var fileName = fup.value;
+		var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+		if(ext !=''){
+			if(ext == "docx" || ext == "doc" || ext == "pdf" || ext == "xlsx" || ext == "xls")
+			{
+			jQuery('#cstimageserror2').val(1);
+			jQuery('#tanimgserror').html('')
+			} else{
+			jQuery('#cstimageserror2').val(0);
+			jQuery('#tanimgserror').html('Uploaded file is not a valid. Only docx,doc,pdf,xlsx,pdf files are allowed');
+			return false;
+			}
+		}
+	
+}
+function cstimageuload(imagename){
+	$('input[type="file"]').change(function(e){
+	var fileName1 = e.target.files[0].name;
+		document.getElementById("cstimages").innerHTML = fileName1; 
+	});
+	var fup = document.getElementById('cstimag');
+		var fileName = fup.value;
+		var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+		if(ext !=''){
+			if(ext == "docx" || ext == "doc" || ext == "pdf" || ext == "xlsx" || ext == "xls")
+			{
+			jQuery('#cstimageserror1').val(1);
+			jQuery('#cstimageserror').html('')
+			} else{
+			jQuery('#cstimageserror1').val(0);
+			jQuery('#cstimageserror').html('Uploaded file is not a valid. Only docx,doc,pdf,xlsx,pdf files are allowed');
+			return false;
+			}
+		}
+}
+ function validation(){
+	 
+	 var imageerror1=document.getElementById("cstimageserror1").value;
+	 var imageerror2=document.getElementById("cstimageserror2").value;
+	 var imageerror3=document.getElementById("cstimageserror3").value;
+	
+	 if(imageerror1==1 && imageerror2==1 && imageerror3==1){
+		return true; 
+	 }else{
+		return false; 
+	 }
+	 
+ }
+ 
 $(document).ready(function() {
-    $('#personalidetails').bootstrapValidator({
+    $('#storedetails').bootstrapValidator({
        
         fields: {
-			bank_account: {
+			storename: {
               validators: {
 					notEmpty: {
-						message: 'Bank Account is required'
+						message: 'Store Name is required'
 					},
                    regexp: {
 					regexp: /^[a-zA-Z0-9. ]+$/,
-					message: 'Bank Account can only consist of alphanumaric, space and dot'
+					message: 'Store Name can only consist of alphanumaric, space and dot'
 					}
                 }
             },
-            aadhaar_card: {
+            address1: {
                validators: {
 				notEmpty: {
-					message: 'Aadhar Number is required'
+						message: 'Address Line 1 is required'
+					},
+					regexp: {
+					regexp:/^[ A-Za-z0-9_@.,/!;:}{@#&`~"\\|^?$*)(_+-]*$/,
+					message: 'Address Line 1 wont allow <> [] = % '
+					}
+            
+			}
+            },
+			address2: {
+               validators: {
+				notEmpty: {
+						message: 'Address Line 2 is required'
+					},
+					regexp: {
+					regexp:/^[ A-Za-z0-9_@.,/!;:}{@#&`~"\\|^?$*)(_+-]*$/,
+					message: 'Address Line 2 wont allow <> [] = % '
+					}
+            
+			}
+            },
+			pincode: {
+               validators: {
+				notEmpty: {
+						message: 'Pincode is required'
+					},
+					regexp: {
+					regexp:  /^[0-9]{8}$/,
+					message:'Pincode must be 8 digits'
+					}
+            
+			}
+            },
+			deliveryes: {
+               validators: {
+				notEmpty: {
+					message: 'Please select a Delivery service'
+				}
+			   }
+            
+			},
+			weblink: {
+               validators: {
+				notEmpty: {
+					message: 'Weblink is required'
 				},
-				stringLength: {
-								min: 12,
-								message: 'Aadhar Number must be 12 digits'
-							},
 				regexp: {
-				regexp: /^[0-9]+$/,
-				message: ' Aadhar Number can only consist of digits'
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: ' Weblink can only consist of alphanumaric, space and dot'
 				}
             
 			}
             },
-			pan_card: {
+			timimages: {
+               validators: {
+				
+			regexp: {
+				regexp: "(.*?)\.(docx|doc|pdf|xlsx|xls)$",
+				message: 'Uploaded file is not a valid. Only docx,doc,xlsx,pdf files are allowed'
+				}
+            
+			}
+            },
+			tanimages: {
+               validators: {
+				
+			regexp: {
+				regexp: "(.*?)\.(docx|doc|pdf|xlsx|xls)$",
+				message: 'Uploaded file is not a valid. Only docx,doc,xlsx,pdf files are allowed'
+				}
+            
+			}
+            },
+			cstimag: {
+               validators: {
+				
+			regexp: {
+				regexp: "(.*?)\.(docx|doc|pdf|xlsx|xls)$",
+				message: 'Uploaded file is not a valid. Only docx,doc,xlsx,pdf files are allowed'
+				}
+            
+			}
+            },
+			tin: {
                validators: {
 				notEmpty: {
-					message: 'Pan Card Number is required'
+					message: 'Tin is required'
 				},
 				regexp: {
 					regexp: /^[a-zA-Z0-9. ]+$/,
-					message: ' Pan Card Number can only consist of alphanumaric, space and dot'
+					message: ' Tin can only consist of alphanumaric, space and dot'
+				}
+            
+			}
+            },
+			tan: {
+               validators: {
+				notEmpty: {
+					message: 'Tin is required'
+				},
+				regexp: {
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: ' Tin can only consist of alphanumaric, space and dot'
+				}
+            
+			}
+            },
+			cst: {
+               validators: {
+				notEmpty: {
+					message: 'Cst is required'
+				},
+				regexp: {
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: ' Cst can only consist of alphanumaric, space and dot'
+				}
+            
+			}
+            },
+			gstin: {
+               validators: {
+				notEmpty: {
+					message: 'GSTIN is required'
+				},
+				regexp: {
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: ' GSTIN can only consist of alphanumaric, space and dot'
 				}
             
 			}
