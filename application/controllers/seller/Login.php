@@ -171,6 +171,8 @@ $this->session->set_userdata('seller_id',$res);
                 );
                 //echo '<pre>';print_r($datavalue);exit;
                 $this->session->set_userdata($datavalue);
+				$this->session->set_flashdata('welcome',"Thank you for visit, Welcome to Seller Portal");
+
                 echo "0";
                 //return redirect(base_url('seller/dashboard')); 
             } else {              

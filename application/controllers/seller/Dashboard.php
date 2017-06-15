@@ -8,9 +8,14 @@ class Dashboard extends Admin_Controller {
 	
 	public function __construct() {
 		parent::__construct();
+		$this->load->library('session');
+		$this->load->helper('security');
+		$this->load->library(array('form_validation','session'));
 		$this->load->model('seller/dashboard_model');
+		$this->load->model('seller/adddetails_model');
 		$this->load->model('admin/sellers_model');
-    $this->load->model('seller/products_model');
+		$this->load->model('seller/products_model');
+		
 		
 		
 	}
@@ -26,6 +31,7 @@ class Dashboard extends Admin_Controller {
 		$this->template->write_view('content', 'seller/dashboard/index', $data);
 		$this->template->render();
 	}
+	
 	public function subcategoryview()
 	{
 		$cat_id = $this->uri->segment(4);
