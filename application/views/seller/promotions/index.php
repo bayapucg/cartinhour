@@ -54,7 +54,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="form_phone">Phone*</label>
-                  <input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+                  <input id="form_phone" maxlength="10" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
                 onchange="try{setCustomValidity('')}catch(e){}">
                 </div>
               </div>
