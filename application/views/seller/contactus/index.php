@@ -26,7 +26,7 @@
 	<div class="panel_cus panel-primary ">
       <div class="panel-heading panel_head_sty">Contact us</div>
 			<div class=" col-md-6 pad_10">	  
-				<form  class=""id="ajax-contact"  method="post" action="<?php echo base_url(); ?>seller/contactus/details" role="form">
+				<form name="contactus" class=""id="contactus"  method="post" action="<?php echo base_url('seller/contactus/details'); ?>" role="form">
 					<div class="messages" id="form-messages"></div>
 					<?php echo $this->session->flashdata('msg1'); ?>
 					<div class="controls">
@@ -57,7 +57,7 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="form_phone">Phone*</label>
-									<input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+									<input id="form_phone" maxlength="10" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
 								onchange="try{setCustomValidity('')}catch(e){}">
 									
 								</div>
@@ -101,5 +101,68 @@
            </div>
            </section>
            </div>
-           
-    
+ <link rel="stylesheet" href="<?php echo base_url(); ?>assets/dist/css/bootstrapValidator.css"/>
+    <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/dist/js/bootstrapValidator.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#contactus').bootstrapValidator({
+       
+        fields: {
+			        fname: {
+          validators: {
+						notEmpty: {
+						message: 'Firstname is required'
+					},
+					regexp: {
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: 'Firstname can only consist of alphanumaric, space and dot'
+				}
+		  }
+        }, 
+		lname: {
+          validators: {
+						notEmpty: {
+						message: 'Lastname is required'
+					},
+					regexp: {
+					regexp: /^[a-zA-Z0-9. ]+$/,
+					message: 'Lastname can only consist of alphanumaric, space and dot'
+				}
+		  }
+        },
+		email: {
+				validators: {
+					notEmpty: {
+						message: 'Email is required'
+					},
+					regexp: {
+					regexp: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+					message: 'Please enter a valid email address.For example johndoe@domain.com.'
+					}
+				}
+			},
+			phone: {
+				validators: {
+					notEmpty: {
+						message: 'Phone is required'
+					},
+					regexp: {
+					regexp:  /^[0-9]{10}$/,
+					message:'Phone must be 10 digits'
+					}
+				}
+			},
+			message : {
+				validators: {
+					notEmpty: {
+						message: 'Please enter a Message'
+					}
+				}
+			}
+            
+		
+        }
+    });
+});
+</script>
