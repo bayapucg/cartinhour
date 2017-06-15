@@ -107,7 +107,7 @@
         <script>
                 "use strict"; // Start of use strict
                 // notification
-               /* setTimeout(function () {
+                setTimeout(function () {
                     toastr.options = {
                         closeButton: true,
                         progressBar: true,
@@ -122,7 +122,7 @@
                 $('.count-number').counterUp({
                     delay: 10,
                     time: 5000
-                });*/
+                });
 
                 //data maps
                 var basic_choropleth = new Datamap({
@@ -288,14 +288,7 @@
 </head>
 <body>
 <!-- container section start -->
-<div class="wrapper">
 
-         
-         <?php echo $header; ?>
-		 <?php echo $sidebar; ?>
-         <?php echo $content; ?>
-		 <?php echo $footer; ?>
-</div>
 <!-- container section start --> 
 
 </body>
