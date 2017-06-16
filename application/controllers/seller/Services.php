@@ -39,17 +39,13 @@ public function details(){
 
   	  	);
 
-
   	  	$contact = $this->login_model->insertservices($data);
   	  	if($contact == 1)
 			{
-				// $this->session->set_flashdata('msg1','<div class="alert alert-success text-center" style="color: green;font-size:13px;">Thank You! Our team will contact you shortly..</div>');
-
-    //               return redirect(base_url('seller/services'));
+	
 				echo "1";
 			}
 			else{
-				// $this->session->set_flashdata('msg1','<div class="alert alert-danger text-center" style="color: green;font-size:13px;">Whoops!</div>');
 				echo "0";
 
 			}
