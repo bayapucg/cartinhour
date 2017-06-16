@@ -46,9 +46,11 @@
                   <?php if(!empty($newordersdata)):?>
                   <tbody>
                      <?php $i=1;
-
+//echo "<pre>";print_r($newordersdata);exit;
    foreach($newordersdata as $neworders_data){
     if($neworders_data->order_status=='0'){
+		
+		//echo "<pre>";print_r($newordersdata);exit;
 ?>
 
     <tr>
@@ -56,7 +58,7 @@
       <td><?=$i;?></td>
      
        <td><?php  echo $neworders_data->order_id; ?></td>
-      <td><?php  echo $neworders_data->seller_shop.'<br>'.$neworders_data->seller_address; ?></td>
+       <td><?php  echo $neworders_data->seller_name; ?></br> <?php  echo $neworders_data->seller_address; ?></td>
       
        <td><a href="<?php echo base_url(); ?>admin/new_orders/view_details/<?php  echo $neworders_data->order_id; ?>" target="_blank"><i class="fa fa-eye" style="font-size:18px"></i></a></td>
       
