@@ -215,15 +215,18 @@ public function seller_storedetails()
 				$this->Personnel_details_model->delet_get_old_seller_categories($delcats['seller_cat_id']);
 			}
 			
-			echo'<pre>';print_r($result);//exit;
+			//echo'<pre>';print_r($result);//exit;
 			foreach($result as $subcats){
-				
+			$carname=$this->Personnel_details_model->get_categories_name($subcats);
+
 			$data = array(
 			'seller_id' => $this->session->userdata('seller_id'),
 			'seller_category_id'=> $subcats,
+			'category_name'=> $carname['category_name'],
 			'created_at'=> date('Y-m-d h:i:s'),
 			'updated_at'=>  date('Y-m-d h:i:s'),
 			);
+			//echo'<pre>';print_r($data);exit;
 			if($subcats!=''){
 				$res=$this->Personnel_details_model->insertseller_cat($data);
 			}

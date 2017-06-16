@@ -61,9 +61,11 @@ class Adddetails extends Seller_adddetails{
 			$post=$this->input->post();
 			$result = array_unique($post['seller_cat']);
 			foreach($result as $subcats){
+			$carname=$this->adddetails_model->get_categories_name($subcats);
 			$data = array(
 			'seller_id' => $this->session->userdata('seller_id'),
 			'seller_category_id'=> $subcats,
+			'category_name'=> $carname['category_name'],
 			'created_at'=> date('Y-m-d h:i:s'),
 			'updated_at'=>  date('Y-m-d h:i:s'),
 			);
