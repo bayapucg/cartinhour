@@ -156,7 +156,7 @@ $this->session->set_userdata('seller_id',$res);
             $username   = $this->input->post('login_email');
             $password = md5($this->input->post('login_password'));           
             $result   = $this->login_model->authenticate($username, $password);
-            //print_r($result); exit;            
+          // echo '<pre>';print_r($result); exit;            
             // if($result->password_status == 0){            	
             //  	return redirect(base_url('seller/dashboard/change_password'));
             //  }            
@@ -176,7 +176,7 @@ $this->session->set_userdata('seller_id',$res);
                 echo "0";
                 //return redirect(base_url('seller/dashboard')); 
             } else {              
-             echo "1";
+				echo "1";
                  // $this->session->set_flashdata('msg','<div style="color: red;font-size:13px;">Invalid username or password.</div>');
 
                  //  return redirect(base_url('seller/login'));
