@@ -882,7 +882,7 @@ $(document).ready(function(){
     else if(data == 0)
     {
     window.location='<?php echo base_url(); ?>seller/dashboard'; 
- }
+	}
     },
     error:function()
     {
