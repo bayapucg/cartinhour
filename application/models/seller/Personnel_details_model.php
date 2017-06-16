@@ -18,6 +18,23 @@ return $query->result();
 }	
 
 
+public function get_all_storedetail($sid)
+{
+		$this->db->select("sellers.*,seller_store_details.*")->from('sellers');
+		$this->db->join('seller_store_details', 'seller_store_details.seller_id = sellers.seller_id', 'left');
+		$this->db->where('sellers.seller_id',$sid);
+		return $this->db->get()->row_array();
+
+}
+public function get_store_category_detail($sid)
+{
+		$this->db->select("seller_categories.*,category.category_name")->from('seller_categories');
+		$this->db->join('category', 'category.category_id = seller_categories.seller_category_id', 'left');
+		$this->db->where('seller_categories.seller_id',$sid);
+		return $this->db->get()->result_array();
+
+}
+
 public function getsellersd()
 {
 $sid= $this->session->userdata('seller_id');
@@ -68,16 +85,41 @@ public function updatepd($data)
 	
 }
 
+function storedetails_adding($sid,$data){
+	
+	
+		$this->db->where('seller_id',$sid);
+		return $this->db->update('seller_store_details', $data);
 
-
-public function updatebd($data)
+	}
+	
+function get_upload_file($seller_id)
 {
-	
-$sid= $this->session->userdata('seller_id');	
-	
-$this->db->where('seller_id',$sid);
-		$query=$this->db->update('sellers',$data);
-		return $query;
+	$this->db->select('*')->from('seller_store_details');
+	$this->db->where('seller_id',$seller_id);
+	return $this->db->get()->row_array();
+}
+function get_old_seller_categories($seller_id)
+{
+	$this->db->select('*')->from('seller_categories');
+	$this->db->where('seller_id',$seller_id);
+	return $this->db->get()->result_array();
+}
+function delet_get_old_seller_categories($catid)
+{
+		$sql1="DELETE FROM seller_categories WHERE seller_cat_id = '".$catid."'";
+		return $this->db->query($sql1);
+}
+function insertseller_cat($data){
+		$this->db->insert('seller_categories', $data);
+		return $insert_id = $this->db->insert_id();
+
+	}
+public function updatebd($sid,$data)
+{
+
+	$this->db->where('seller_id',$sid);
+	return $this->db->update('sellers', $data);
 }
 
 public function updatebankd($data)
