@@ -69,7 +69,9 @@ class Adddetails extends Seller_adddetails{
 			'created_at'=> date('Y-m-d h:i:s'),
 			'updated_at'=>  date('Y-m-d h:i:s'),
 			);
+			if($subcats!=''){
 			$res=$this->adddetails_model->insertseller_cat($data);
+			}
 			
 			}
 			
