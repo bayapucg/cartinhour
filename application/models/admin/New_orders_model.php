@@ -42,6 +42,20 @@ public function get_deliveryboys()
 
 }
 
+public function get_view_neworderdata($id)
+{
+
+  $this->db->select('*');
+  $this->db->from('orders');
+  $this->db->join('sellers', 'orders.seller_id = sellers.seller_id');
+  $this->db->join('seller_store_details', 'orders.seller_id = seller_store_details.seller_id');
+  $this->db->where('orders.order_status','0');
+  $this->db->where('orders.order_id',$id);
+  $this->db->order_by("orders.order_id","desc");    
+  $query=$this->db->get();
+ return $query->row();
+} 
+
  public function get_neworderdata($id)
 {
 
