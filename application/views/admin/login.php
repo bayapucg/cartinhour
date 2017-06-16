@@ -45,7 +45,7 @@
     <div class="header">
       <div class="col-md-6 col-xs-12">
         <div class="logo">
-          <h3><a href="index.html">CART IN HOUR<span> Admin</span></a></h3>
+          <h3><a href="<?php echo base_url('admin/login'); ?>">CART IN HOUR<span> Admin</span></a></h3>
         </div>
       </div>
       <div class="col-md-6 col-xs-12 hidden-xs">
