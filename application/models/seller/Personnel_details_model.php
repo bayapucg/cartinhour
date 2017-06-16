@@ -99,6 +99,12 @@ function get_upload_file($seller_id)
 	$this->db->where('seller_id',$seller_id);
 	return $this->db->get()->row_array();
 }
+function get_categories_name($cat_id)
+{
+	$this->db->select('category.category_name')->from('category');
+	$this->db->where('category_id',$cat_id);
+	return $this->db->get()->row_array();
+}
 function get_old_seller_categories($seller_id)
 {
 	$this->db->select('*')->from('seller_categories');

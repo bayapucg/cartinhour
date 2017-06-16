@@ -32,6 +32,12 @@ class Adddetails_model extends MY_Model
 	 return $query;
 
 	}
+	function get_categories_name($cat_id)
+{
+	$this->db->select('category.category_name')->from('category');
+	$this->db->where('category_id',$cat_id);
+	return $this->db->get()->row_array();
+}
 	function seller_personal_details($data,$sid){
 		$this->db->where('seller_id',$sid);
     	return $this->db->update("sellers",$data);
