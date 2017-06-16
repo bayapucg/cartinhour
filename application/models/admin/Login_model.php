@@ -41,6 +41,16 @@ public function get_data($username, $password)
 	//echo  $this->db->last_query();
 	return $query->result_array();
 	}
+	
+	function forgot_password($email){
+		$this->db->select('*')->from('admin_users');
+		$this->db->where('admin_email', $email);
+		return $this->db->get()->row_array();
+	}
+	function update_password($reset_pass){
+		$sql1="UPDATE admin_users SET admin_password ='".$reset_pass['cpassword']."'WHERE admin_id = '".$reset_pass['userid']."' AND admin_email='".$reset_pass['email']."'";
+		return $this->db->query($sql1);
+	}
 
 
 }
