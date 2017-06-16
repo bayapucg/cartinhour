@@ -108,8 +108,8 @@ $(document).ready(function() {
 						message: 'Bank Account is required'
 					},
                    regexp: {
-					regexp:  /^[0-9]{11,16}$/,
-					message:'Bank Account  must be 10 to 14 digits'
+					regexp:  /^[0-9]{9,16}$/,
+					message:'Bank Account  must be 9 to 16 digits'
 					}
                 }
             },
