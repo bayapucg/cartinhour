@@ -11,9 +11,33 @@ class Login_model extends CI_Model
 
 	}
 
+	
+	
+ public function verify_mobile($mobile) {
+	 
+	 $sql="SELECT * FROM sellers WHERE seller_mobile ='".$mobile."'";
+    return $this->db->query($sql)->row_array(); 
+	 
+ }
+ public function verify_email($email) {
+	 
+	 $sql="SELECT * FROM sellers WHERE seller_email ='".$email."'";
+    return $this->db->query($sql)->row_array(); 
+	 
+ }
+ public function update_forgotpassword($sid,$pass) {
+	$sql1="UPDATE sellers SET seller_password ='".md5($pass)."' WHERE seller_id = '".$sid."'";
+		return $this->db->query($sql1);
+	 
+ }
+public function selleruser_login($username, $password) {
+		$sql = "SELECT * FROM sellers WHERE (seller_email ='".$username."' AND seller_password ='".$password."') OR (seller_mobile ='".$username."' AND seller_password ='".$password."')";
+	return $this->db->query($sql)->row_array();
+}
  public function authenticate($username, $password) {
 
-        	//$encrypted_password = ($password);
+      
+  	//$encrypted_password = ($password);
  	        $this->db->where('seller_email',$username);
 			$this->db->where('seller_password',$password);
 			$this->db->or_where('seller_mobile',$username);
