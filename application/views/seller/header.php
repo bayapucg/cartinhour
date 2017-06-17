@@ -105,8 +105,9 @@
             <div class="innter-form">
               <form method="post"  name="login_form" id="login_submit">
               <div id="login-response"></div>
+                <div id="forgot-response"></div>
                 <div id="EmptyforError"></div>
-              <label >Email Address</label>
+              <label >Email Address / Mobile Number</label>
               <input  name="login_email" id="login_email" class="form-control" type="text" name="username" autofocus>
               <label>Password</label>
               <input  id="login_password" name="login_password" class="form-control" type="password" name="password">
@@ -414,216 +415,7 @@
 			<span style="background:#006a99;padding:5px 10px ;border-radius:5px;font-size:18px;margin-left: 50px;cursor: pointer;" class="" data-dismiss="modal"  data-toggle="modal"
 			data-target="#myModa2">Register Now</span>
 		</div>
-      <!--<div class="container">
-	  
-    <div class="row">
-        <div class="col-xs-12 col-md-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Bronze</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                            <i class="fa fa-inr" aria-hidden="true"></i>10<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                1 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                1 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                100K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                100MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
-                    1 month FREE trial</div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-3">
-            <div class="panel panel-success">
-                <div class="cnrflash">
-                    <div class="cnrflash-inner">
-                        <span class="cnrflash-label">MOST
-                            <br>
-                            POPULR</span>
-                    </div>
-                </div>
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Silver</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                           <i class="fa fa-inr" aria-hidden="true"></i>20<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                2 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                5 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                100K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                200MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a>
-                    1 month FREE trial</div>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Gold</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                           <i class="fa fa-inr" aria-hidden="true"></i>35<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                5 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                20 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                300K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                500MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
-            </div>
-        </div>
-    <div class="col-xs-12 col-md-3">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        Gold</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="the-price">
-                        <h1>
-                           <i class="fa fa-inr" aria-hidden="true"></i>35<span class="subscript">/mo</span></h1>
-                        <small>1 month FREE trial</small>
-                    </div>
-                    <table class="table">
-                        <tr>
-                            <td>
-                                5 Account
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                20 Project
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                300K API Access
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                500MB Storage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Custom Cloud Services
-                            </td>
-                        </tr>
-                        <tr class="active">
-                            <td>
-                                Weekly Reports
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="panel-footer">
-                    <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Sign Up</a> 1 month FREE trial</div>
-            </div>
-        </div>
-    
-    </div>-->
+     
 </div>
         </div>
         
@@ -635,42 +427,152 @@
   <!--end Just fill form to Select plan Modal -->
   <!--Forget Password Modal -->
           <div class="modal fade" id="myModal1" role="dialog">
+		  
               <div class="modal-dialog modal-sm">
+			  <button type="button" id="poupclose" style="color:#444;z-index:1024;opacity:0.5;" class="close" data-dismiss="modal">&times;</button>
                 <div class="modal-content">
                   <div class="modal-body pass_list">
-                    <form method="post" id="forgot_submit">
+
                       <h4>How do you want temporary password to be send:</h4>
                        <div id="forgot-response"></div>
-                       <div id="EmptyforErr"></div>
-                      <label class="radio-inline mki">
-                        <input type="radio" name="optradio" data-toggle="collapse" data-target="#demo">
-                        E-Mail </label>
-                      <div id="demo" class="collapse">
-                        <input type="text" class="form-control" id="forgot_email" name="forgot_email" placeholder="Please enter Email id">
-                        
-                        <span id="EmailforErr"></span>
-                      </div>
-                      <div class="clearfix"></div>
-                      <label class="radio-inline mki">
-                        <input type="radio" name="optradios" data-toggle="collapse" data-target="#pho">
-                        Phone Number </label>
-                      <div id="pho" class="collapse">
-                        <input type="text" class="form-control" id="forgot_mobile" name="forgot_mobile" placeholder="Please enter Mobile No">
+                        <form id="login_pass" name="login_pass" method="post"> 
+						<input type="radio" name="unable_login" id="unable_login" value="1" > E-Mail 
+						<input type="radio" name="unable_login" id="unable_login" value="0" > Mobile
+						<div id="loginerror"></div>
+                        <input type="text" class="form-control" id="forgot_mobile" name="forgot_mobile">
                          <span id="MobileforErr"></span>
-                      </div>
+                      
                       <br>
-                      <button type="submit" id="forgot_password" class="btn btn-success">Submit</button>
-                    </form>
-                  </div>
+                      <a href="javascript:void(0)"  onclick="validationcheckings();"  class="btn btn-success">Submit</a>
+				</div>
+				     </form>           
+				 </div>
                 </div>
               </div>
             </div>
       
       
       
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
 <script>
+function IsMobile(reasontype) {
+        var regex = /^[0-9]{10}$/;
+        return regex.test(reasontype);
+		}
+function emailchecking(reasontype) {
+	var regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+	return regex.test(reasontype);
+}
+ function validationcheckings (){
+	 
+	 
+	  var radiovalue=$('input[name="unable_login"]:checked').val();
+	  alert(radiovalue);
+	  if(radiovalue==1 || radiovalue==0){
+		
+	  if(radiovalue==0){
+		  var mobile = document.getElementById('forgot_mobile').value;
+		  if(mobile==''){
+			  $("#loginerror").html("Please Enter Mobile Number").css("color", "red");
+		  }else{
+			 var mobile = document.getElementById('forgot_mobile').value;
+			if (!IsMobile(mobile)) {
+			$("#loginerror").html("Please Enter Correct Mobile Number").css("color", "red");
+			jQuery('#seller_mobile').focus();
+			return false;
+			} 
+		  }
+		  $("#loginerror").html("");
+			$("#forgot_submit").html("");
+		  $.ajax({
+			  
+					type: 'post',
+					data: {
+					form_key : window.FORM_KEY,
+					mobile_number: jQuery('#forgot_mobile').val(),
+					option: 0,
+					},
+					
+					dataType: 'json',
+					url: '<?php echo base_url("seller/login/forgot"); ?>',
+					success:function(data)
+					{
+					alert(data);
+					if(data.sendmsg==1){
+							$("#myModal1").fadeOut(1);
+							$("#forgot_mobile").val('');
+							$("#forgot-response").html("Temporary Password Successfully Sent").css("color", "Green");
+							
+							return true;
+						}if(data.sendmsg==0){
+							$("#forgot-response").html("Some technical problem are occured").css("color", "red");
+							$('#forgot_submit')[0].reset();
+						}
+						if(data.nomobile==0){
+							$("#forgot-response").html("The Mobile you entered is not a registered Mobile. Please try again").css("color", "red");
+							$('#forgot_submit')[0].reset();
+							return false;
+						}
+					}
+					
+			});
+		  
+	  }
+		
+	  if(radiovalue==1){
+		  var email = document.getElementById('forgot_mobile').value;
+		  if(email==''){
+			  $("#loginerror").html("Please Enter Email").css("color", "red");
+		  }else{
+			  
+			  if (!emailchecking(email)) {
+			$("#loginerror").html("Please enter a valid email address. For example johndoe@domain.com").css("color", "red");
+			jQuery('#seller_mobile').focus();
+			return false;
+			}
+		  }
+			$("#loginerror").html("");
+			$("#forgot_submit").html("");
+				$.ajax({
+					type: 'post',
+					data: {
+					form_key : window.FORM_KEY,
+					mobile_number: jQuery('#forgot_mobile').val(),
+					option: 1,
+					},
+					
+					dataType: 'json',
+					url: '<?php echo base_url("seller/login/forgot"); ?>',
+					success:function(data)
+					{
+						//alert(data.mailsend);return false;
+						if(data.mailsend==1){
+							$("#myModal1").fadeOut(1);
+							$("#forgot_mobile").val('');
+							$("#forgot-response").html("Temporary Password Successfully Sent").css("color", "Green");
+							$('#forgot_submit')[0].reset();
+							
+							return true;
+						}
+						if(data.noemail==0){
+							$("#forgot-response").html("The Email you entered is not a registered email. Please try again").css("color", "red");
+							$('#forgot_submit')[0].reset();
+							return false;
+						}
+					}
+			});
+	  
+	  }
+	 	
+		  
+	
+ }else{
+	 $("#loginerror").html("Please select one option").css("color", "red");
+	 return false;
+ }
+ 
+ }
+
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -694,109 +596,8 @@ $(function() {
 
 </script>
 <script type="text/javascript" language="javascript">
- 
-    $(document).ready(function(){
-    $("#forgot_password").click(function(e){
-    e.preventDefault();
-    var forgot_email = $("#forgot_email").val();
-   var forgot_mobile = $("#forgot_mobile").val();
-    //alert(forgot_mobile);
-   //alert(forgot_email);
-      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-     var phone =  /^(?=.*?[1-9])[0-9()-+]+$/;
-   
-   
-   if(forgot_email == "" && forgot_mobile == "" )
-   {
-     
-    $("#EmptyforErr").html("Please Enter email or phone number").css("color", "red");
-        $("#forgot_email").focus();
-        return false;
-     
-   }
-   else{
-     
-    $("#EmptyforErr").html(""); 
-     
-   }
-      
-      if(forgot_email !="" && forgot_email .match(mailformat)) 
-      {
-        $("#EmailforErr").html("");
-      }
-      else if(forgot_email !="" && !forgot_email .match(mailformat)){
-        
-        $("#EmailforErr").html("Invalid Email Format").css("color", "red");
-        $("#forgot_email").focus();
-        return false;
-        }
-        
-        
-        if(forgot_mobile !="" && forgot_mobile .match(phone)) 
-      {
-        $("#MobileforErr").html("");
-      }
-      else if(forgot_mobile !="" && !forgot_mobile .match(phone)){
-        
-        $("#MobileforErr").html("Invalid Phone Number").css("color", "red");
-        $("#forgot_mobile").focus();
-        return false;
-        } 
-        
-  
 
-    $.ajax({
-    type: "POST",
-    url: '<?php echo base_url(); ?>seller/login/forgot',
-    data: {forgot_mobile:forgot_mobile,forgot_email:forgot_email},
-    success:function(data)
    
-    {
-     //alert(data);
-    if(data == 0)
-    {
-     $("#forgot-response").html("Failed to send").css("color", "red");
-    $('#forgot_submit')[0].reset();
-      
-    }
-  else if(data == 4)
-    {
-     $("#forgot-response").html("The Email id You Entered Not Found").css("color", "red");
-    $('#forgot_submit')[0].reset();
-      
-    }
-  else if(data == 5)
-    {
-     $("#forgot-response").html("The Phone Number You Entered Not Found").css("color", "red");
-    $('#forgot_submit')[0].reset();
-      
-    }
-  else if(data == 6)
-    {
-     $("#forgot-response").html("The Details You Entered Not Found").css("color", "red");
-    $('#forgot_submit')[0].reset();
-      
-    }
-  else if(data == 7)
-    {
-     $("#forgot-response").html("Temporary Password Successfully Sent to Your Email").css("color", "red");
-    $('#forgot_submit')[0].reset();
-      
-    }
-    else{
-     $("#forgot-response").html("Temporary Password Successfully Sent").css("color", "Green");
-     $('#forgot_submit')[0].reset();
-   
-    }
-    },
-    error:function()
-    {
-    $("#forgot-response").html("Oops! Error.  Please try again later!!");
-    }
-    });
-    
-    });
-    });
   
    $(window).scroll(function() {
 if ($(this).scrollTop() > 650) {
@@ -876,12 +677,12 @@ $(document).ready(function(){
     {
     if(data == 1)
     {
-   $("#login-response").html("Invalid username or password.").css("color", "red");
+   $("#login-response").html("Invalid Email / Mobile Number  or password.").css("color", "red");
      $('#login_submit')[0].reset(); 
     }
     else if(data == 0)
     {
-    window.location='<?php echo base_url(); ?>seller/dashboard'; 
+    window.location='<?php echo base_url("seller/dashboard"); ?>'; 
 	}
     },
     error:function()

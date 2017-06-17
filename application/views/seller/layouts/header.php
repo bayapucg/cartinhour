@@ -107,7 +107,7 @@
         <script>
                 "use strict"; // Start of use strict
                 // notification
-                setTimeout(function () {
+               /* setTimeout(function () {
                     toastr.options = {
                         closeButton: true,
                         progressBar: true,
@@ -116,7 +116,7 @@
                     };
                     toastr.success('Thank you for visit', 'Welcome to Seller Portal');
 
-                }, 1300);
+                }, 1300);*/
 
                 //counter
                 $('.count-number').counterUp({
