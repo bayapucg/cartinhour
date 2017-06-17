@@ -155,32 +155,25 @@ $this->session->set_userdata('seller_id',$res);
         if ($this->form_validation->run() == TRUE) {
             $username   = $this->input->post('login_email');
             $password = md5($this->input->post('login_password'));           
-            $result   = $this->login_model->authenticate($username, $password);
-          // echo '<pre>';print_r($result); exit;            
-            // if($result->password_status == 0){            	
-            //  	return redirect(base_url('seller/dashboard/change_password'));
-            //  }            
-             if($result) {
+            $result   = $this->login_model->selleruser_login($username, $password);
+			//echo '<pre>';print_r($result); exit;            
+                        
+             if(count($result)>0) {
                 $datavalue= array(
-                    'seller_id'    => $result->seller_id,
-                    'seller_name'    => $result->seller_name,
-                    'seller_address'    => $result->seller_address,
-                    'seller_rand_id'    => $result->seller_rand_id,
-                    'password_status'    => $result->password_status,                     
+                    'seller_id'    => $result['seller_id'],
+                    'seller_name'    => $result['seller_name'],
+                    'seller_address'    => $result['seller_address'],
+                    'seller_rand_id'    => $result['seller_rand_id'],
+                    'password_status'    => $result['password_status'],                     
                     'loggedin'   => TRUE,
                 );
                 //echo '<pre>';print_r($datavalue);exit;
                 $this->session->set_userdata($datavalue);
 				$this->session->set_flashdata('welcome',"Thank you for visit, Welcome to Seller Portal");
-
-                echo "0";
-                //return redirect(base_url('seller/dashboard')); 
+				echo "0";
             } else {              
 				echo "1";
-                 // $this->session->set_flashdata('msg','<div style="color: red;font-size:13px;">Invalid username or password.</div>');
-
-                 //  return redirect(base_url('seller/login'));
-                }
+				}
                 
 
             }
@@ -446,137 +439,74 @@ $result = $you_make - $actual_price;
 }
 
 
-
-
-
-
-
-
-public function forgot()
- {
- 
- 
-$email = $this->input->post('forgot_email');
-  $phone = $this->input->post('forgot_mobile');
-  $this->load->model('login_model');
-  if($email != "" && $phone == "" )
-  {
-if($this->login_model->checkuseremail($email) == 1)
-{
-
-	
-	 $pat = $this->login_model->getsellerid($email);	
-$six_digit_random_number = mt_rand(100000, 999999);
- $this->login_model->insertrandom($six_digit_random_number,$pat->seller_id);
-
-    $to_email = $email;    
-   $from_email = 'mails@dev2.kateit.in';
-		$subject = 'Temporary Password';
-		$message = "Dear User,\n                
-		Your Password is : ".$six_digit_random_number;
-		
-		//send mail
-		$this->email->set_mailtype("html");
-		$this->email->from($from_email, 'CartinHour');
-		
-				$this->email->to($to_email);
-				$this->email->subject($subject);
-				$this->email->message($message);
-				$this->email->send();
-        echo "7";
-}
-else{
-
-echo "4";
-
-}	
-
-}
-	
-	
-	
-else if($phone !="" && $email == "")
-{
-
-if($this->login_model->checkusermobile($phone) == 1)
-{
-	
-	$pat = $this->login_model->getsellermobile($phone);	
-$six_digit_random_number = mt_rand(100000, 999999);
- $this->login_model->insertrandom($six_digit_random_number,$pat->seller_id);
-	
-	
-	//$this->login_model->insertrandom($six_digit_random_number,$phone);
-		$user_id="cartin"; 
-        $pwd="9494422779";    
-        $sender_id = "CARTIN";          
-        $mobile_num = $phone;  
-        $message = "Your Temporary Password is : " .$six_digit_random_number;        
-        // Sending with PHP CURL
-       $url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
-	$ret = file($url); 
-         
-       if( $ret)
-        
-        {
-        echo "8";
+	public function forgot()
+	{
+		$post=$this->input->post();
+		if($post['option']==0){
+		$checkmobile=$this->login_model->verify_mobile($post['mobile_number']);	
+		//echo '<pre>';print_r($checkmobile);exit;
+		if(count($checkmobile)>0){
+			
+				$six_digit_random_number = mt_rand(100000, 999999);
+				$updatepassword=$this->login_model->update_forgotpassword($checkmobile['seller_id'],$six_digit_random_number);
+				//echo $this->db->last_query();exit;				
+				//echo '<pre>';print_r($updatepassword);exit;
+				$user_id="cartin"; 
+				$pwd="9494422779";    
+				$sender_id = "CARTIN";          
+				$mobile_num = $post['mobile_number'];  
+				$message = "Your Temporary Password is : " .$six_digit_random_number;        
+				// Sending with PHP CURL
+				$url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
+				$ret = file($url); 
+				if($ret)
+				{
+					//echo '<pre>';print_r($ret);exit;
+				$data['sendmsg']=1;
+				echo json_encode($data);
+				}else{
+				$data['sendmsg']=0;
+				echo json_encode($data);	
+				}
+			
+			
+			
+			
+		}else{
+			$data['nomobile']=0;
+			echo json_encode($data);
 		}
-}
-else {
-	
-	echo "5";
-}
-}
-
-else if($phone !="" && $email != "")		
-{
-if($this->login_model->checkusermobileemail($phone,$email) == 1)
-{
-	$pat = $this->login_model->getselleridall($phone,$email);	
-$six_digit_random_number = mt_rand(100000, 999999);
-$this->login_model->insertrandom($six_digit_random_number,$pat->seller_id);
-$to_email = $email;    
-   $from_email = 'mails@dev2.kateit.in';
-		$subject = 'Temporary Password';
-		$message = "Dear User,\n                
-		Your Password is : ".$six_digit_random_number;
-		
-		//send mail
-		$this->email->set_mailtype("html");
-		$this->email->from($from_email, 'CartinHour');
-		
+			
+		}elseif($post['option']==1){
+			
+			$checkemail=$this->login_model->verify_email($post['mobile_number']);	
+			if(count($checkemail)>0){
+				$six_digit_random_number = mt_rand(100000, 999999);
+				$updatepassword=$this->login_model->update_forgotpassword($checkemail['seller_id'],$six_digit_random_number);
+				
+				$to_email = $post['mobile_number'];    
+				$from_email = 'mails@dev2.kateit.in';
+				$subject = 'Temporary Password';
+				$message = "Dear User,\n                
+				Your Password is : ".$six_digit_random_number;
+			//send mail
+				$this->email->set_mailtype("html");
+				$this->email->from($from_email, 'CartinHour');
 				$this->email->to($to_email);
 				$this->email->subject($subject);
 				$this->email->message($message);
 				$this->email->send();
+				$data['mailsend']=1;
+			echo json_encode($data);
+			}else{
+			$data['noemail']=0;
+			echo json_encode($data);
+			}
+		}
+		
 
 
-		$user_id="cartin"; 
-        $pwd="9494422779";    
-        $sender_id = "CARTIN";          
-        $mobile_num = $phone;  
-        $message = "Your Temporary Password is : " .$six_digit_random_number;               
-        // Sending with PHP CURL
-       $url="http://smslogin.mobi/spanelv2/api.php?username=".$user_id."&password=".$pwd."&to=".urlencode($mobile_num)."&from=".$sender_id."&message=".urlencode($message);
-		$ret = file($url); 
-
-echo "9";
-}
-else{
-	
-	echo "6";
-	
-}
-
-}	
-else
-{
-
-echo "0";
-
-}		
-  
- }
+	}
 
 
        
