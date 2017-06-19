@@ -9,8 +9,15 @@ class Dashboard_model extends CI_Model
 	parent::__construct();
 
 	}
+	 
 	
-	
+	public function get_seller_details($sid){
+		
+	$this->db->select('sellers.seller_name')->from('sellers');
+	$this->db->where('seller_id',$sid);
+	return $this->db->get()->row_array();	
+		
+	}
 	public function getcatsubcat()
 	{
 		
