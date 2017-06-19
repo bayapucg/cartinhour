@@ -467,7 +467,6 @@ function emailchecking(reasontype) {
 	 
 	 
 	  var radiovalue=$('input[name="unable_login"]:checked').val();
-	  alert(radiovalue);
 	  if(radiovalue==1 || radiovalue==0){
 		
 	  if(radiovalue==0){
