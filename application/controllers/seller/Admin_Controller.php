@@ -5,10 +5,16 @@ class Admin_Controller extends MY_Controller {
 
 	public function __construct() 
 	{
+		
+			
 			parent::__construct();
+			$this->load->library('session');
 			$this->load->model('admin/request_model');
       		$this->load->model('seller/dashboard_model');
       		$this->load->model('seller/Orders_model');
+			$seller_id=$this->session->userdata('seller_id');
+			$data['sellerdetails'] = $this->dashboard_model->get_seller_details($seller_id);
+		//echo '<pre>';print_r($data);exit;
       		$result=$this->Orders_model->order_by('orders.created_at',$order = 'DESC')->new_orders();
 			$data['ordersdata'] =  $result;
 			$result['sellernotify'] =  $this->request_model->getdata();		
