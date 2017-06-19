@@ -20,7 +20,7 @@
 			<h1>Listing</h1>
 			<small>Add Listing</small>
 			<ol class="breadcrumb hidden-xs">
-				<li><a href="index.html"><i class="pe-7s-home"></i> Home</a></li>
+				<li><a href="<?php echo base_url('seller/dashboard'); ?>"><i class="pe-7s-home"></i> Home</a></li>
 				<li class="active">Dashboard</li>
 			</ol>
 		</div>
